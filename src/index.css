@@ -132,8 +132,9 @@ h1 {
 
 .option-btn:hover {
   background: rgba(255, 255, 255, 0.1);
-  transform: translateY(-2px);
+  transform: translateY(-4px);
   border-color: var(--primary);
+  box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.2);
 }
 
 .option-btn.selected {
