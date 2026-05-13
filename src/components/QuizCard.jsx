@@ -64,7 +64,17 @@ const QuizCard = ({
             className={`feedback-area ${selectedOption === currentQuestion.correct ? 'feedback-success' : 'feedback-error'}`}
           >
             <strong>{selectedOption === currentQuestion.correct ? 'Richtig! ✨' : 'Leider falsch...'}</strong>
-            <p>{currentQuestion.explanation}</p>
+            <p style={{ marginBottom: '0.75rem' }}>{currentQuestion.explanation}</p>
+            {currentQuestion.translation && (
+              <div style={{ marginTop: '0.5rem', fontSize: '0.9rem', opacity: 0.9 }}>
+                <strong>Artinya:</strong> {currentQuestion.translation}
+              </div>
+            )}
+            {currentQuestion.vocabulary && (
+              <div style={{ marginTop: '0.4rem', fontSize: '0.85rem', opacity: 0.8, color: 'var(--primary)' }}>
+                <strong>Wortschatz:</strong> {currentQuestion.vocabulary}
+              </div>
+            )}
           </motion.div>
         )}
       </AnimatePresence>

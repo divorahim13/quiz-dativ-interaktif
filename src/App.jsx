@@ -191,16 +191,38 @@ function App() {
                           <p style={{ color: '#f87171', marginBottom: '0.5rem', fontWeight: 600 }}>
                             Jawaban Benar: <span style={{ color: '#22c55e' }}>{ans.question.correct}</span>
                           </p>
-                          <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', margin: 0 }}>
+                          <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', margin: 0, marginBottom: '0.5rem' }}>
                             <strong>Penjelasan:</strong> {ans.question.explanation}
                           </p>
+                          {ans.question.translation && (
+                            <p style={{ fontSize: '0.85rem', color: 'var(--text)', margin: 0, opacity: 0.8 }}>
+                              <strong>Artinya:</strong> {ans.question.translation}
+                            </p>
+                          )}
+                          {ans.question.vocabulary && (
+                            <p style={{ fontSize: '0.85rem', color: 'var(--primary)', margin: '0.4rem 0 0 0' }}>
+                              <strong>Wortschatz:</strong> {ans.question.vocabulary}
+                            </p>
+                          )}
                         </div>
                       )}
                       
                       {ans.isCorrect && (
-                        <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', margin: 0 }}>
-                          <strong>Penjelasan:</strong> {ans.question.explanation}
-                        </p>
+                        <div style={{ marginTop: '0.5rem' }}>
+                          <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', margin: 0, marginBottom: '0.5rem' }}>
+                            <strong>Penjelasan:</strong> {ans.question.explanation}
+                          </p>
+                          {ans.question.translation && (
+                            <p style={{ fontSize: '0.85rem', color: 'var(--text)', margin: 0, opacity: 0.8 }}>
+                              <strong>Artinya:</strong> {ans.question.translation}
+                            </p>
+                          )}
+                          {ans.question.vocabulary && (
+                            <p style={{ fontSize: '0.85rem', color: 'var(--primary)', margin: '0.4rem 0 0 0' }}>
+                              <strong>Wortschatz:</strong> {ans.question.vocabulary}
+                            </p>
+                          )}
+                        </div>
                       )}
                     </div>
                   ))}

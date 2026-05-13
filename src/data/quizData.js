@@ -14,6 +14,8 @@ export const quizzes = [
         options: ["meinem neuen", "meiner neuen", "meinen neuen"],
         correct: "meinem neuen",
         explanation: "Dativ, unbestimmt, neuter (das Auto). mit + Dativ.",
+        translation: "Saya pergi dengan mobil baru saya.",
+        vocabulary: "das Auto (mobil), fahren (pergi/berkendara)",
       },
       {
         id: 2,
@@ -23,6 +25,8 @@ export const quizzes = [
         options: ["seiner alten", "seinem alten", "seinen alten"],
         correct: "seiner alten",
         explanation: "Dativ, unbestimmt, feminin (die Lehrerin). mit + Dativ.",
+        translation: "Dia berbicara dengan guru (perempuan) lamanya.",
+        vocabulary: "die Lehrerin (guru pr), sprechen (berbicara)",
       },
       {
         id: 3,
@@ -32,6 +36,8 @@ export const quizzes = [
         options: ["ihrem kleinen", "ihrer kleinen", "ihren kleinen"],
         correct: "ihrem kleinen",
         explanation: "Dativ, unbestimmt, maskulin/neuter (der Hund). mit + Dativ.",
+        translation: "Dia datang dengan anjing kecilnya.",
+        vocabulary: "der Hund (anjing), kommen (datang)",
       },
       {
         id: 4,
@@ -41,6 +47,8 @@ export const quizzes = [
         options: ["unseren guten", "unserer guten", "unserem guten"],
         correct: "unseren guten",
         explanation: "Dativ, unbestimmt, plural (die Freunde). mit + Dativ.",
+        translation: "Kami makan bersama teman-teman baik kami.",
+        vocabulary: "die Freunde (teman-teman), essen (makan)",
       },
       {
         id: 5,
@@ -50,6 +58,8 @@ export const quizzes = [
         options: ["seinem bunten", "seiner bunten", "seinen bunten"],
         correct: "seinem bunten",
         explanation: "Dativ, unbestimmt, neuter (das Spielzeug). mit + Dativ.",
+        translation: "Anak itu bermain dengan mainan berwarnanya.",
+        vocabulary: "das Spielzeug (mainan), spielen (bermain)",
       },
       {
         id: 6,
@@ -59,6 +69,8 @@ export const quizzes = [
         options: ["einer großen", "einem großen", "einen großen"],
         correct: "einer großen",
         explanation: "Dativ, unbestimmt, feminin (die Stadt). in + Dativ (lokasi).",
+        translation: "Saya tinggal di sebuah kota besar.",
+        vocabulary: "die Stadt (kota), wohnen (tinggal)",
       },
       {
         id: 7,
@@ -68,6 +80,8 @@ export const quizzes = [
         options: ["einem modernen", "einer modernen", "einen modernen"],
         correct: "einem modernen",
         explanation: "Dativ, unbestimmt, neuter (das Büro). in + Dativ (lokasi).",
+        translation: "Dia bekerja di sebuah kantor modern.",
+        vocabulary: "das Büro (kantor), arbeiten (bekerja)",
       },
       {
         id: 8,
@@ -77,6 +91,8 @@ export const quizzes = [
         options: ["einem gemütlichen", "einer gemütlichen", "einen gemütlichen"],
         correct: "einem gemütlichen",
         explanation: "Dativ, unbestimmt, neuter (das Zimmer). in + Dativ (lokasi).",
+        translation: "Kami tidur di sebuah kamar yang nyaman.",
+        vocabulary: "das Zimmer (kamar), schlafen (tidur)",
       },
       {
         id: 9,
@@ -86,6 +102,8 @@ export const quizzes = [
         options: ["einer alten", "einem alten", "einen alten"],
         correct: "einer alten",
         explanation: "Dativ, unbestimmt, feminin (die Kirche). in + Dativ (lokasi).",
+        translation: "Dia berada di sebuah gereja tua.",
+        vocabulary: "die Kirche (gereja), sein (berada)",
       },
       {
         id: 10,
@@ -95,6 +113,8 @@ export const quizzes = [
         options: ["einer schweren", "einem schweren", "einen schweren"],
         correct: "einer schweren",
         explanation: "Dativ, unbestimmt, feminin (die Tasche). in + Dativ (lokasi).",
+        translation: "Buku itu tergeletak di dalam tas yang berat.",
+        vocabulary: "die Tasche (tas), liegen (tergeletak)",
       },
       {
         id: 11,
@@ -104,6 +124,8 @@ export const quizzes = [
         options: ["meiner kranken", "meinem kranken", "meinen kranken"],
         correct: "meiner kranken",
         explanation: "Dativ, unbestimmt, feminin (die Mutter). bei + Dativ.",
+        translation: "Saya sedang bersama ibu saya yang sakit.",
+        vocabulary: "die Mutter (ibu), bei (bersama/di tempat)",
       },
       {
         id: 12,
@@ -113,6 +135,8 @@ export const quizzes = [
         options: ["seinem neuen", "seiner neuen", "seinen neuen"],
         correct: "seinem neuen",
         explanation: "Dativ, unbestimmt, maskulin (der Arzt). zu + Dativ.",
+        translation: "Dia pergi ke dokter barunya.",
+        vocabulary: "der Arzt (dokter), pergi (gehen)",
       },
       {
         id: 13,
@@ -122,6 +146,8 @@ export const quizzes = [
         options: ["unserer schönen", "unserem schönen", "unseren schönen"],
         correct: "unserer schönen",
         explanation: "Dativ, unbestimmt, feminin (die Heimatstadt). nach + Dativ.",
+        translation: "Kami pergi ke kampung halaman kami yang indah.",
+        vocabulary: "die Heimatstadt (kota asal), nach (ke/menuju)",
       },
       {
         id: 14,
@@ -131,6 +157,8 @@ export const quizzes = [
         options: ["meiner lieben", "meinem lieben", "meinen lieben"],
         correct: "meiner lieben",
         explanation: "Dativ, unbestimmt, feminin (die Tante). von + Dativ.",
+        translation: "Hadiah itu dari bibi saya yang tercinta.",
+        vocabulary: "die Tante (bibi), das Geschenk (hadiah)",
       },
       {
         id: 15,
@@ -140,6 +168,8 @@ export const quizzes = [
         options: ["einem kleinen", "einer kleinen", "einen kleinen"],
         correct: "einem kleinen",
         explanation: "Dativ, unbestimmt, neuter (das Dorf). aus + Dativ.",
+        translation: "Dia berasal dari sebuah desa kecil.",
+        vocabulary: "das Dorf (desa), kommen aus (berasal dari)",
       },
       {
         id: 16,
@@ -149,6 +179,8 @@ export const quizzes = [
         options: ["ein dunkles", "einem dunklen", "einer dunklen"],
         correct: "ein dunkles",
         explanation: "Akkusativ! (arah/tujuan, wohin?). in + Akkusativ.",
+        translation: "Saya pergi ke bioskop yang gelap.",
+        vocabulary: "das Kino (bioskop), gehen in (pergi ke dalam)",
       },
       {
         id: 17,
@@ -158,6 +190,8 @@ export const quizzes = [
         options: ["einem dunklen", "ein dunkles", "einer dunklen"],
         correct: "einem dunklen",
         explanation: "Dativ! (lokasi, wo?). in + Dativ.",
+        translation: "Saya duduk di dalam bioskop yang gelap.",
+        vocabulary: "das Kino (bioskop), duduk di (sitzen in)",
       },
       {
         id: 18,
@@ -167,6 +201,8 @@ export const quizzes = [
         options: ["seinem schnellen", "seinen schnellen", "seiner schnellen"],
         correct: "seinem schnellen",
         explanation: "Dativ, unbestimmt, maskulin (der Hund). mit + Dativ.",
+        translation: "Dia berlari dengan anjing cepatnya.",
+        vocabulary: "der Hund (anjing), berlari (laufen)",
       },
       {
         id: 19,
@@ -176,6 +212,8 @@ export const quizzes = [
         options: ["ihrer netten", "ihrem netten", "ihren netten"],
         correct: "ihrer netten",
         explanation: "Dativ, unbestimmt, feminin (die Nachbarin). bei + Dativ.",
+        translation: "Dia tinggal bersama tetangga (perempuan) yang baik.",
+        vocabulary: "die Nachbarin (tetangga pr), tinggal di tempat (wohnen bei)",
       },
       {
         id: 20,
@@ -185,6 +223,8 @@ export const quizzes = [
         options: ["meinen guten", "meinem guten", "meiner guten"],
         correct: "meinen guten",
         explanation: "Akkusativ! (für + Akkusativ). maskulin.",
+        translation: "Ini adalah hadiah untuk teman baik saya.",
+        vocabulary: "der Freund (teman laki-laki), das Geschenk (hadiah)",
       },
     ]
   },
@@ -203,6 +243,8 @@ export const quizzes = [
         options: ["ein", "eine", "einen"],
         correct: "eine",
         explanation: "Uhr = feminin.",
+        translation: "Sebuah jam tangan yang mahal.",
+        vocabulary: "die Uhr (jam tangan), teuer (mahal)",
       },
       {
         id: 22,
@@ -211,6 +253,8 @@ export const quizzes = [
         options: ["ein", "eine", "einen"],
         correct: "ein",
         explanation: "Rock = maskulin Nominativ.",
+        translation: "Sebuah rok hijau.",
+        vocabulary: "der Rock (rok), grün (hijau)",
       },
       {
         id: 23,
@@ -219,6 +263,8 @@ export const quizzes = [
         options: ["ein", "eine", "einen"],
         correct: "ein",
         explanation: "Haus = neuter.",
+        translation: "Sebuah rumah kecil.",
+        vocabulary: "das Haus (rumah), klein (kecil)",
       },
       {
         id: 24,
@@ -227,6 +273,8 @@ export const quizzes = [
         options: ["ein", "eine", "einen"],
         correct: "eine",
         explanation: "Antwort = feminin.",
+        translation: "Sebuah jawaban positif.",
+        vocabulary: "die Antwort (jawaban), positiv (positif)",
       },
       {
         id: 25,
@@ -235,6 +283,8 @@ export const quizzes = [
         options: ["ein", "eine", "einen"],
         correct: "ein",
         explanation: "Hund = maskulin Nominativ.",
+        translation: "Seekor anjing yang cepat.",
+        vocabulary: "der Hund (anjing), cepat (schnell)",
       },
       {
         id: 26,
@@ -243,6 +293,8 @@ export const quizzes = [
         options: ["ein neuer", "eine neue", "einen neuen"],
         correct: "ein neuer",
         explanation: "Tisch maskulin + Nominativ.",
+        translation: "Itu adalah sebuah meja baru.",
+        vocabulary: "der Tisch (meja), baru (neu)",
       },
       {
         id: 27,
@@ -251,6 +303,8 @@ export const quizzes = [
         options: ["eine rote", "ein roter", "einem roten"],
         correct: "eine rote",
         explanation: "Bluse feminin + Akkusativ.",
+        translation: "Saya membeli sebuah blus merah.",
+        vocabulary: "die Bluse (blus), merah (rot), membeli (kaufen)",
       },
       {
         id: 28,
@@ -259,6 +313,8 @@ export const quizzes = [
         options: ["einem alten", "einer alten", "ein alten"],
         correct: "einem alten",
         explanation: "Haus neuter + Dativ (lokasi).",
+        translation: "Kami tinggal di sebuah rumah tua.",
+        vocabulary: "das Haus (rumah), tua (alt), tinggal di (wohnen in)",
       },
       {
         id: 29,
@@ -267,6 +323,8 @@ export const quizzes = [
         options: ["eine grüne", "ein grüner", "einen grünen"],
         correct: "eine grüne",
         explanation: "Hose feminin + Akkusativ.",
+        translation: "Dia sedang mencari sebuah celana hijau.",
+        vocabulary: "die Hose (celana), hijau (grün), mencari (suchen)",
       },
       {
         id: 30,
@@ -275,6 +333,8 @@ export const quizzes = [
         options: ["Ein langer", "Einen langen", "Eine lange"],
         correct: "Ein langer",
         explanation: "Rock maskulin + Nominativ.",
+        translation: "Sebuah rok panjang (itu) menyenangkan bagi saya.",
+        vocabulary: "der Rock (rok), panjang (lang), menyenangkan (gefallen)",
       },
       // Bagian B: Nominativ vs Akkusativ
       {
@@ -284,6 +344,8 @@ export const quizzes = [
         options: ["Ein teurer", "Einen teuren"],
         correct: "Ein teurer",
         explanation: "Nominativ (subjek).",
+        translation: "Sebuah mobil (yang) mahal itu sangat cepat.",
+        vocabulary: "der Wagen (mobil), teuer (mahal), schnell (cepat)",
       },
       {
         id: 32,
@@ -292,6 +354,8 @@ export const quizzes = [
         options: ["einen teuren", "ein teurer"],
         correct: "einen teuren",
         explanation: "Akkusativ (objek).",
+        translation: "Saya mengendarai sebuah mobil yang mahal.",
+        vocabulary: "der Wagen (mobil), teuer (mahal), fahren (mengendarai)",
       },
       {
         id: 33,
@@ -300,6 +364,8 @@ export const quizzes = [
         options: ["Ein grünes", "Einen grünen"],
         correct: "Ein grünes",
         explanation: "Nominativ (subjek).",
+        translation: "Sebuah gaun hijau (itu) cocok sekali.",
+        vocabulary: "das Kleid (gaun), grün (hijau), passen (cocok)",
       },
       {
         id: 34,
@@ -308,6 +374,8 @@ export const quizzes = [
         options: ["ein grünes", "einen grünen"],
         correct: "ein grünes",
         explanation: "Akkusativ (objek).",
+        translation: "Dia memakai sebuah gaun hijau.",
+        vocabulary: "das Kleid (gaun), grün (hijau), tragen (memakai)",
       },
       {
         id: 35,
@@ -316,6 +384,8 @@ export const quizzes = [
         options: ["Ein langer", "Einen langen"],
         correct: "Ein langer",
         explanation: "Nominativ (subjek).",
+        translation: "Sebuah surat panjang (itu) penting.",
+        vocabulary: "der Brief (surat), lang (panjang), penting (wichtig/penting)",
       },
       {
         id: 36,
@@ -324,6 +394,8 @@ export const quizzes = [
         options: ["Rote", "Roten"],
         correct: "Rote",
         explanation: "Nominativ plural (sein = Nominativ).",
+        translation: "Sepatu-sepatu merah (itu) kotor.",
+        vocabulary: "die Schuhe (sepatu-sepatu), rot (merah), schmutzig (kotor)",
       },
       {
         id: 37,
@@ -332,6 +404,8 @@ export const quizzes = [
         options: ["rote", "roten"],
         correct: "rote",
         explanation: "Akkusativ plural (waschen = Akkusativ).",
+        translation: "Saya mencuci sepatu-sepatu merah.",
+        vocabulary: "die Schuhe (sepatu-sepatu), rot (merah), waschen (mencuci)",
       },
       {
         id: 38,
@@ -340,6 +414,8 @@ export const quizzes = [
         options: ["Ein kleines", "Einen kleinen"],
         correct: "Ein kleines",
         explanation: "Nominativ neuter (subjek).",
+        translation: "Seorang anak kecil sedang bermain di luar.",
+        vocabulary: "das Kind (anak), klein (kecil), spielen (bermain)",
       },
       {
         id: 39,
@@ -348,6 +424,8 @@ export const quizzes = [
         options: ["ein kleines", "einen kleinen"],
         correct: "ein kleines",
         explanation: "Akkusativ neuter (suchen = Akkusativ).",
+        translation: "Dia sedang mencari seorang anak kecil.",
+        vocabulary: "das Kind (anak), klein (kecil), suchen (mencari)",
       },
       {
         id: 40,
@@ -356,6 +434,8 @@ export const quizzes = [
         options: ["Eine positive", "Ein positiver"],
         correct: "Eine positive",
         explanation: "Nominativ feminin (subjek).",
+        translation: "Sebuah jawaban positif membantu saya.",
+        vocabulary: "die Antwort (jawaban), positiv (positif), helfen (membantu)",
       },
       // Bagian C: Superlatif
       {
@@ -365,6 +445,8 @@ export const quizzes = [
         options: ["der beste", "den besten", "dem besten"],
         correct: "der beste",
         explanation: "Superlatif + Nominativ maskulin.",
+        translation: "Itu adalah film terbaik.",
+        vocabulary: "der Film (film), gut/beste (baik/terbaik)",
       },
       {
         id: 42,
@@ -373,6 +455,8 @@ export const quizzes = [
         options: ["den besten", "der beste", "dem besten"],
         correct: "den besten",
         explanation: "Superlatif + Akkusativ maskulin.",
+        translation: "Saya menonton film terbaik.",
+        vocabulary: "der Film (film), gut/beste (baik/terbaik), sehen (menonton)",
       },
       {
         id: 43,
@@ -381,6 +465,8 @@ export const quizzes = [
         options: ["der besten", "die beste", "den besten"],
         correct: "der besten",
         explanation: "Superlatif + Dativ feminin.",
+        translation: "Dia tinggal di apartemen terbaik.",
+        vocabulary: "die Wohnung (apartemen), gut/beste (baik/terbaik), wohnen in (tinggal di)",
       },
       {
         id: 44,
@@ -389,6 +475,8 @@ export const quizzes = [
         options: ["den reichsten", "der reichste", "dem reichsten"],
         correct: "den reichsten",
         explanation: "Superlatif + Akkusativ maskulin.",
+        translation: "Kami bertemu pria terkaya.",
+        vocabulary: "der Mann (pria), reich/reichste (kaya/terkaya), treffen (bertemu)",
       },
       {
         id: 45,
@@ -397,6 +485,8 @@ export const quizzes = [
         options: ["die schönste", "der schönste", "das schönste"],
         correct: "die schönste",
         explanation: "Superlatif + Nominativ feminin.",
+        translation: "Kota tercantik adalah Berlin.",
+        vocabulary: "die Stadt (kota), schön/schönste (cantik/tercantik)",
       },
       // Bagian D: Campuran
       {
@@ -406,6 +496,8 @@ export const quizzes = [
         options: ["eine alte", "einer alten", "ein altes"],
         correct: "eine alte",
         explanation: "Akkusativ (arah/wohin?).",
+        translation: "Saya pergi ke gereja tua.",
+        vocabulary: "die Kirche (gereja), alt (tua), gehen in (pergi ke)",
       },
       {
         id: 47,
@@ -414,6 +506,8 @@ export const quizzes = [
         options: ["einer alten", "eine alte", "ein altes"],
         correct: "einer alten",
         explanation: "Dativ (lokasi/wo?).",
+        translation: "Saya berdoa di dalam gereja tua.",
+        vocabulary: "die Kirche (gereja), alt (tua), beten (berdoa)",
       },
       {
         id: 48,
@@ -422,6 +516,8 @@ export const quizzes = [
         options: ["seinem schnellen", "seinen schnellen", "seiner schnellen"],
         correct: "seinem schnellen",
         explanation: "Dativ (mit + Dativ).",
+        translation: "Dia berlari dengan anjing cepatnya.",
+        vocabulary: "der Hund (anjing), schnell (cepat), laufen (berlari)",
       },
       {
         id: 49,
@@ -430,14 +526,19 @@ export const quizzes = [
         options: ["einen schnellen", "ein schneller", "einem schnellen"],
         correct: "einen schnellen",
         explanation: "Akkusativ (objek).",
+        translation: "Dia membeli seekor anjing yang cepat.",
+        vocabulary: "der Hund (anjing), schnell (cepat), kaufen (membeli)",
       },
       {
         id: 50,
         title: "Bagian D: Campuran (Jebakan!)",
+        sentence: "___ (ander, Lehrer) komt morgen.",
         sentence: "___ (ander, Lehrer) kommt morgen.",
         options: ["Ein anderer", "Einen anderen", "Eine andere"],
         correct: "Ein anderer",
         explanation: "Nominativ maskulin (subjek).",
+        translation: "Seorang guru lain akan datang besok.",
+        vocabulary: "der Lehrer (guru lk), ander (lain), morgen (besok)",
       },
     ]
   },
@@ -457,6 +558,8 @@ export const quizzes = [
         options: ["alte", "alten", "alter"],
         correct: "alte",
         explanation: "Maskulin Nom = -e. Karena ada artikel bestimmt 'Der'.",
+        translation: "Pria tua itu sedang membaca koran.",
+        vocabulary: "der Mann (pria), die Zeitung (koran), lesen (membaca)",
       },
       {
         id: 52,
@@ -466,6 +569,8 @@ export const quizzes = [
         options: ["kleine", "kleinen", "kleiner"],
         correct: "kleine",
         explanation: "Feminin Akk = -e. Karena ada artikel bestimmt 'die'.",
+        translation: "Saya melihat kucing kecil itu.",
+        vocabulary: "die Katze (kucing), sehen (melihat), klein (kecil)",
       },
       {
         id: 53,
@@ -475,6 +580,8 @@ export const quizzes = [
         options: ["schöne", "schönen", "schönes"],
         correct: "schöne",
         explanation: "Neuter Nom = -e. Karena ada artikel bestimmt 'Das'.",
+        translation: "Rumah indah itu mahal.",
+        vocabulary: "das Haus (rumah), schön (indah), teuer (mahal)",
       },
       {
         id: 54,
@@ -484,6 +591,8 @@ export const quizzes = [
         options: ["kranken", "kranke", "krankem"],
         correct: "kranken",
         explanation: "Neuter Dat = -en. Setelah artikel bestimmt 'dem' di kasus Dativ, ending selalu -en.",
+        translation: "Dia memberikan obat kepada anak yang sakit itu.",
+        vocabulary: "das Kind (anak), krank (sakit), memberikan (geben), die Medizin (obat)",
       },
       {
         id: 55,
@@ -493,6 +602,8 @@ export const quizzes = [
         options: ["armen", "arme", "armer"],
         correct: "armen",
         explanation: "Plural Dat = -en. Setelah artikel bestimmt 'den' di kasus Dativ Plural, ending selalu -en.",
+        translation: "Kami membantu orang-orang miskin itu.",
+        vocabulary: "die Leute (orang-orang), arm (miskin), helfen (membantu)",
       },
       {
         id: 56,
@@ -502,6 +613,8 @@ export const quizzes = [
         options: ["rote", "roten", "roter"],
         correct: "rote",
         explanation: "Feminin Akk = -e. Sama seperti Nominativ.",
+        translation: "Dia memakai blus merah itu.",
+        vocabulary: "die Bluse (blus), rot (merah), tragen (memakai)",
       },
       {
         id: 57,
@@ -511,6 +624,8 @@ export const quizzes = [
         options: ["netten", "nette", "netter"],
         correct: "netten",
         explanation: "Maskulin Akk = -en. Setelah 'den', ending selalu -en.",
+        translation: "Saya kenal guru yang baik itu.",
+        vocabulary: "der Lehrer (guru lk), nett (baik), kennen (kenal)",
       },
       {
         id: 58,
@@ -520,6 +635,8 @@ export const quizzes = [
         options: ["gute", "guten", "gutes"],
         correct: "gute",
         explanation: "Neuter Nom = -e. Setelah 'Das'.",
+        translation: "Makanan lezat itu rasanya mantap.",
+        vocabulary: "das Essen (makanan), gut (baik/lezat), schmecken (rasanya)",
       },
       {
         id: 59,
@@ -529,6 +646,8 @@ export const quizzes = [
         options: ["schnellen", "schnelle", "schnelles"],
         correct: "schnellen",
         explanation: "Neuter Dat = -en. Mit + Dativ.",
+        translation: "Saya pergi dengan mobil cepat itu.",
+        vocabulary: "das Auto (mobil), cepat (schnell), pergi/berkendara (fahren)",
       },
       {
         id: 60,
@@ -538,6 +657,8 @@ export const quizzes = [
         options: ["jungen", "junge", "junger"],
         correct: "jungen",
         explanation: "Plural Nom = -en. Setelah 'Die' (plural), ending selalu -en.",
+        translation: "Dokter-dokter muda itu banyak bekerja.",
+        vocabulary: "die Ärzte (dokter-dokter), jung (muda), bekerja (arbeiten)",
       },
       // BAGIAN B: Unbestimmter Artikel
       {
@@ -548,6 +669,8 @@ export const quizzes = [
         options: ["gutes", "gute", "gutem"],
         correct: "gutes",
         explanation: "Neuter Nom = -es. 'ein' tidak menunjukkan gender, maka ending adjektif mengambil ciri khas 'das' (-es).",
+        translation: "Itu adalah buku yang bagus.",
+        vocabulary: "das Buch (buku), gut (bagus)",
       },
       {
         id: 62,
@@ -557,6 +680,8 @@ export const quizzes = [
         options: ["schöne", "schönen", "schöner"],
         correct: "schöne",
         explanation: "Feminin Akk = -e. 'eine' sudah menunjukkan feminin.",
+        translation: "Saya membeli jam tangan yang indah.",
+        vocabulary: "die Uhr (jam tangan), schön (indah), kaufen (membeli)",
       },
       {
         id: 63,
@@ -566,6 +691,8 @@ export const quizzes = [
         options: ["intelligenter", "intelligenten", "intelligente"],
         correct: "intelligenter",
         explanation: "Maskulin Nom = -er. 'ein' tidak menunjukkan gender, maka ending adjektif mengambil ciri khas 'der' (-er).",
+        translation: "Dia adalah mahasiswa yang cerdas.",
+        vocabulary: "der Student (mahasiswa lk), intelligent (cerdas)",
       },
       {
         id: 64,
@@ -575,6 +702,8 @@ export const quizzes = [
         options: ["freundlichen", "freundlicher", "freundlichem"],
         correct: "freundlichen",
         explanation: "Maskulin Dat = -en. Dalam Dativ (einem), ending adjektif selalu -en.",
+        translation: "Dia berbicara dengan seorang pria yang ramah.",
+        vocabulary: "der Mann (pria), freundlich (ramah), sprechen mit (berbicara dengan)",
       },
       {
         id: 65,
@@ -584,6 +713,8 @@ export const quizzes = [
         options: ["gemütlichen", "gemütliches", "gemütlichem"],
         correct: "gemütlichen",
         explanation: "Neuter Dat = -en. Dalam Dativ (einem), ending adjektif selalu -en.",
+        translation: "Kami makan di restoran yang nyaman.",
+        vocabulary: "das Restaurant (restoran), gemütlich (nyaman), essen (makan)",
       },
       {
         id: 66,
@@ -593,6 +724,8 @@ export const quizzes = [
         options: ["neue", "neuen", "neuer"],
         correct: "neue",
         explanation: "Feminin Akk = -e. 'eine' sudah menunjukkan feminin.",
+        translation: "Saya mencari apartemen baru.",
+        vocabulary: "die Wohnung (apartemen), neu (baru), suchen (mencari)",
       },
       {
         id: 67,
@@ -602,6 +735,8 @@ export const quizzes = [
         options: ["interessanter", "interessanten", "interessante"],
         correct: "interessanter",
         explanation: "Maskulin Nom = -er. 'ein' tidak menunjukkan gender, maka ending adjektif mengambil ciri khas 'der' (-er).",
+        translation: "Itu adalah film yang menarik.",
+        vocabulary: "der Film (film), interessant (menarik)",
       },
       {
         id: 68,
@@ -611,6 +746,8 @@ export const quizzes = [
         options: ["schnellen", "schneller", "schnellem"],
         correct: "schnellen",
         explanation: "Maskulin Dat = -en. Dalam Dativ (einem), ending adjektif selalu -en.",
+        translation: "Dia pergi dengan kereta api yang cepat.",
+        vocabulary: "der Zug (kereta api), schnell (cepat), fahren (pergi/berkendara)",
       },
       {
         id: 69,
@@ -620,6 +757,8 @@ export const quizzes = [
         options: ["alte", "alten", "alter"],
         correct: "alte",
         explanation: "Feminin Akk = -e. 'eine' sudah menunjukkan feminin.",
+        translation: "Dia memiliki bibi yang sudah tua.",
+        vocabulary: "die Tante (bibi), alt (tua), haben (memiliki)",
       },
       {
         id: 70,
@@ -629,6 +768,8 @@ export const quizzes = [
         options: ["nettes", "nette", "nettem"],
         correct: "nettes",
         explanation: "Neuter Akk = -es. 'ein' tidak menunjukkan gender, maka ending adjektif mengambil ciri khas 'das' (-es).",
+        translation: "Kami bertemu seorang gadis yang manis.",
+        vocabulary: "das Mädchen (gadis), nett (manis/baik), treffen (bertemu)",
       },
       // BAGIAN C: Campuran
       {
@@ -639,6 +780,8 @@ export const quizzes = [
         options: ["den neuen", "der neue", "dem neuen"],
         correct: "den neuen",
         explanation: "Bestimmt Maskulin Akk. Laptop = maskulin.",
+        translation: "Saya punya laptop baru itu.",
+        vocabulary: "der Laptop (laptop), neu (baru), haben (punya)",
       },
       {
         id: 72,
@@ -648,6 +791,8 @@ export const quizzes = [
         options: ["einem kleinen", "ein kleines", "einer kleinen"],
         correct: "einem kleinen",
         explanation: "Unbestimmt Neuter Dat. Dorf = neuter. in + Dativ (lokasi).",
+        translation: "Dia tinggal di sebuah desa kecil.",
+        vocabulary: "das Dorf (desa), klein (kecil), wohnen in (tinggal di)",
       },
       {
         id: 73,
@@ -657,6 +802,8 @@ export const quizzes = [
         options: ["Die roten", "Die rote", "Rote"],
         correct: "Die roten",
         explanation: "Bestimmt Plural Nom. Schuhe = plural.",
+        translation: "Sepatu merah itu mahal.",
+        vocabulary: "die Schuhe (sepatu), rot (merah), teuer (mahal)",
       },
       {
         id: 74,
@@ -666,6 +813,8 @@ export const quizzes = [
         options: ["eine große", "ein große", "einer großen"],
         correct: "eine große",
         explanation: "Unbestimmt Feminin Akk. Pizza = feminin.",
+        translation: "Dia makan sebuah pizza besar.",
+        vocabulary: "die Pizza (pizza), groß (besar), essen (makan)",
       },
       {
         id: 75,
@@ -675,6 +824,8 @@ export const quizzes = [
         options: ["der alten", "die alte", "den alten"],
         correct: "der alten",
         explanation: "Bestimmt Feminin Dat. Frau = feminin. mit + Dativ.",
+        translation: "Saya berbicara dengan wanita tua itu.",
+        vocabulary: "die Frau (wanita), alt (tua), sprechen mit (berbicara dengan)",
       },
       {
         id: 76,
@@ -684,6 +835,8 @@ export const quizzes = [
         options: ["keine guten", "keine gute", "kein guten"],
         correct: "keine guten",
         explanation: "Negasi Plural Nom. Ideen = plural.",
+        translation: "Itu bukanlah ide-ide yang bagus.",
+        vocabulary: "die Ideen (ide-ide), gut (bagus), kein (bukan/tidak ada)",
       },
       {
         id: 77,
@@ -693,6 +846,8 @@ export const quizzes = [
         options: ["einen guten", "ein guter", "einem guten"],
         correct: "einen guten",
         explanation: "Unbestimmt Maskulin Akk. Job = maskulin.",
+        translation: "Dia mencari sebuah pekerjaan yang bagus.",
+        vocabulary: "der Job (pekerjaan), gut (bagus), suchen (mencari)",
       },
       {
         id: 78,
@@ -702,6 +857,8 @@ export const quizzes = [
         options: ["meinem neuen", "meiner neuen", "meinen neuen"],
         correct: "meinem neuen",
         explanation: "Possessiv Neuter Dat. Auto = neuter. mit + Dativ.",
+        translation: "Saya puas dengan mobil baru saya.",
+        vocabulary: "das Auto (mobil), neu (baru), zufrieden mit (puas dengan)",
       },
       {
         id: 79,
@@ -711,6 +868,8 @@ export const quizzes = [
         options: ["Diese schönen", "Diese schöne", "Diesen schönen"],
         correct: "Diese schönen",
         explanation: "Demonstrativ Plural Nom. Blumen = plural.",
+        translation: "Bunga-bunga indah ini saya sukai.",
+        vocabulary: "die Blumen (bunga-bunga), schön (indah), gefallen (menyenangkan/disukai)",
       },
       {
         id: 80,
@@ -720,6 +879,8 @@ export const quizzes = [
         options: ["keine lange", "kein langes", "keiner langen"],
         correct: "keine lange",
         explanation: "Negasi Feminin Akk. Geduld = feminin.",
+        translation: "Dia tidak punya kesabaran yang panjang.",
+        vocabulary: "die Geduld (kesabaran), lang (panjang), haben (punya)",
       },
       // BAGIAN D: Jebakan Preposisi
       {
@@ -730,6 +891,8 @@ export const quizzes = [
         options: ["ein dunkles", "einem dunklen", "einer dunklen"],
         correct: "ein dunkles",
         explanation: "Unbestimmt Neuter Akk (arah/wohin?). Kino = neuter.",
+        translation: "Saya pergi ke sebuah bioskop yang gelap.",
+        vocabulary: "das Kino (bioskop), dunkel (gelap), gehen in (pergi ke)",
       },
       {
         id: 82,
@@ -739,6 +902,8 @@ export const quizzes = [
         options: ["einem dunklen", "ein dunkles", "einer dunklen"],
         correct: "einem dunklen",
         explanation: "Unbestimmt Neuter Dat (lokasi/wo?). Kino = neuter.",
+        translation: "Saya duduk di dalam sebuah bioskop yang gelap.",
+        vocabulary: "das Kino (bioskop), dunkel (gelap), sitzen in (duduk di dalam)",
       },
       {
         id: 83,
@@ -748,6 +913,8 @@ export const quizzes = [
         options: ["den grünen", "dem grünen", "der grüne"],
         correct: "den grünen",
         explanation: "Bestimmt Maskulin Akk (arah/wohin?). Tisch = maskulin.",
+        translation: "Dia meletakkan buku itu di atas meja hijau tersebut.",
+        vocabulary: "der Tisch (meja), grün (hijau), legen auf (meletakkan di atas)",
       },
       {
         id: 84,
@@ -757,6 +924,8 @@ export const quizzes = [
         options: ["dem grünen", "den grünen", "der grüne"],
         correct: "dem grünen",
         explanation: "Bestimmt Maskulin Dat (lokasi/wo?). Tisch = maskulin.",
+        translation: "Buku itu terletak di atas meja hijau tersebut.",
+        vocabulary: "der Tisch (meja), grün (hijau), liegen auf (terletak di atas)",
       },
       {
         id: 85,
@@ -766,6 +935,8 @@ export const quizzes = [
         options: ["einen großen", "einem großen", "ein großer"],
         correct: "einen großen",
         explanation: "Unbestimmt Maskulin Akk (arah/wohin?). Schrank = maskulin.",
+        translation: "Dia menaruh vas bunga itu di belakang sebuah lemari besar.",
+        vocabulary: "der Schrank (lemari), groß (besar), stellen hinter (menaruh di belakang)",
       },
       {
         id: 86,
@@ -775,6 +946,8 @@ export const quizzes = [
         options: ["einem großen", "einen großen", "ein großer"],
         correct: "einem großen",
         explanation: "Unbestimmt Maskulin Dat (lokasi/wo?). Schrank = maskulin.",
+        translation: "Vas bunga itu berdiri di belakang sebuah lemari besar.",
+        vocabulary: "der Schrank (lemari), groß (besar), stehen hinter (berdiri di belakang)",
       },
       {
         id: 87,
@@ -784,6 +957,8 @@ export const quizzes = [
         options: ["die weiße", "der weißen", "das weiße"],
         correct: "die weiße",
         explanation: "Bestimmt Feminin Akk (arah/wohin?). Wand = feminin.",
+        translation: "Kami menggantung gambar itu di dinding putih tersebut.",
+        vocabulary: "die Wand (dinding), weiß (putih), hängen an (menggantung di)",
       },
       {
         id: 88,
@@ -793,6 +968,8 @@ export const quizzes = [
         options: ["der weißen", "die weiße", "das weiße"],
         correct: "der weißen",
         explanation: "Bestimmt Feminin Dat (lokasi/wo?). Wand = feminin.",
+        translation: "Gambar itu tergantung di dinding putih tersebut.",
+        vocabulary: "die Wand (dinding), weiß (putih), hängen an (tergantung di)",
       },
       {
         id: 89,
@@ -802,6 +979,8 @@ export const quizzes = [
         options: ["eine alte", "einer alten", "ein altes"],
         correct: "eine alte",
         explanation: "Unbestimmt Feminin Akk (arah/wohin?). Brücke = feminin.",
+        translation: "Dia melompat ke bawah sebuah jembatan tua.",
+        vocabulary: "die Brücke (jembatan), alt (tua), springen unter (melompat ke bawah)",
       },
       {
         id: 90,
@@ -811,6 +990,8 @@ export const quizzes = [
         options: ["einer alten", "eine alte", "ein altes"],
         correct: "einer alten",
         explanation: "Unbestimmt Feminin Dat (lokasi/wo?). Brücke = feminin.",
+        translation: "Dia berenang di bawah sebuah jembatan tua.",
+        vocabulary: "die Brücke (jembatan), alt (tua), schwimmen unter (berenang di bawah)",
       },
     ]
   }
