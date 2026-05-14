@@ -188,20 +188,33 @@ const FlashcardViewer = ({ chapter, onBack }) => {
                 >
               {/* Front of Card */}
               <div className="flashcard-front">
-                {currentCard.image && (
-                  <div className="flashcard-image-container">
-                    <img src={currentCard.image} alt="flashcard" className="flashcard-image" />
-                  </div>
-                )}
-                <div className="flashcard-content" style={{ width: '100%' }}>
-                  <h2 style={{ fontSize: 'clamp(1.5rem, 5vw, 2rem)', margin: 0, fontWeight: 700, overflowWrap: 'break-word', padding: '0 10px' }}>{renderColorizedText(currentCard.front)}</h2>
+                <div style={{ height: '20px' }}></div> {/* Top spacer */}
+                <div className="flashcard-content" style={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', width: '100%' }}>
+                  {currentCard.image && (
+                    <div className="flashcard-image-container">
+                      <img src={currentCard.image} alt="flashcard" className="flashcard-image" />
+                    </div>
+                  )}
+                  <h2 style={{ 
+                    fontSize: window.getAdaptiveFontSize(renderColorizedText(currentCard.front), 'main'), 
+                    margin: 0, 
+                    fontWeight: 700, 
+                    overflowWrap: 'break-word', 
+                    padding: '0 10px',
+                    textAlign: 'center'
+                  }}>
+                    {renderColorizedText(currentCard.front)}
+                  </h2>
                 </div>
-                <div className="flashcard-hint">Klik atau spasi untuk membalik</div>
+                <div className="flashcard-hint" style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginTop: 'auto' }}>
+                  Klik atau spasi untuk membalik
+                </div>
               </div>
 
               {/* Back of Card */}
               <div className="flashcard-back">
-                <div className="flashcard-content" style={{ width: '100%' }}>
+                <div style={{ height: '20px' }}></div> {/* Top spacer */}
+                <div className="flashcard-content" style={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', width: '100%' }}>
                   <h2 style={{ 
                     fontSize: window.getAdaptiveFontSize(currentCard.back, 'main'), 
                     color: 'var(--primary)', 
@@ -244,7 +257,9 @@ const FlashcardViewer = ({ chapter, onBack }) => {
                     </div>
                   )}
                 </div>
-                <div className="flashcard-hint">Klik atau spasi untuk membalik</div>
+                <div className="flashcard-hint" style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginTop: 'auto' }}>
+                  Klik atau spasi untuk membalik
+                </div>
               </div>
             </motion.div>
           </motion.div>
