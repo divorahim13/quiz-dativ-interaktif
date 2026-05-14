@@ -40,7 +40,7 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  flex-grow: 1;
 }
 
 .glass-card {
@@ -234,19 +234,22 @@ h1 {
 @media (max-width: 640px) {
   .container {
     padding: 0.5rem;
+    width: 100% !important;
+    max-width: none !important;
   }
   .glass-card {
-    padding: 1rem;
+    padding: 0.75rem;
   }
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   .flashcard-scene {
-    min-height: 380px;
+    min-height: 280px;
     height: auto;
+    width: 100%;
   }
   .flashcard-front, .flashcard-back {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 0.75rem;
   }
   .hide-mobile {
     display: none;
@@ -279,7 +282,7 @@ h1 {
 
 .flashcard-scene {
   width: 100%;
-  min-height: 450px;
+  min-height: 400px;
   height: auto;
   perspective: 1000px;
   cursor: pointer;

@@ -111,7 +111,7 @@ function App() {
   return (
     <div className="container" style={{ 
       maxWidth: selectedFlashcardChapter ? '1200px' : (showReview ? '800px' : '600px'),
-      width: selectedFlashcardChapter ? '95%' : '100%',
+      width: selectedFlashcardChapter ? '100%' : '100%',
       transition: 'all 0.5s ease' 
     }}>
       <AnimatePresence mode="wait">
