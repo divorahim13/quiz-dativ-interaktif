@@ -1,10 +1,41 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Calendar, BookOpen, ChevronRight, GraduationCap, Layers, ArrowLeft } from 'lucide-react';
+import { Calendar, BookOpen, ChevronRight, GraduationCap, Layers, ArrowLeft, Plus, X } from 'lucide-react';
 
-const Dashboard = ({ quizzes, onSelectQuiz, flashcardLevels, onSelectChapter }) => {
+const Dashboard = ({ quizzes, onSelectQuiz, flashcardLevels, onSelectChapter, onAddFlashcards }) => {
   const [activeTab, setActiveTab] = useState('kuis'); // 'kuis' | 'flashcard'
   const [selectedLevel, setSelectedLevel] = useState(null); // 'A1' | 'A2' | 'B1' | 'B2'
+  
+  // Modal State
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [inputText, setInputText] = useState('');
+  const [selectedAddLevel, setSelectedAddLevel] = useState('A1');
+  const [selectedAddChapter, setSelectedAddChapter] = useState('1');
+
+  const handleAddSubmit = (e) => {
+    e.preventDefault();
+    if (!inputText.trim()) return;
+
+    const newCards = inputText.split('\n').map((line) => {
+      const parts = line.split('|').map(p => p.trim());
+      if (parts.length >= 2) {
+        return {
+          id: Date.now() + Math.random(),
+          front: parts[0],
+          back: parts[1],
+          example: parts[2] || ''
+        };
+      }
+      return null;
+    }).filter(Boolean);
+
+    if (newCards.length > 0 && onAddFlashcards) {
+      const chapterId = `${selectedAddLevel}-K${selectedAddChapter}`;
+      onAddFlashcards(chapterId, newCards);
+      setIsModalOpen(false);
+      setInputText('');
+    }
+  };
 
   const activeFlashcardLevel = flashcardLevels?.find(l => l.id === selectedLevel);
 
@@ -120,6 +151,25 @@ const Dashboard = ({ quizzes, onSelectQuiz, flashcardLevels, onSelectChapter }) 
 
         {activeTab === 'flashcard' && !selectedLevel && (
           <motion.div key="flashcard-levels" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }}>
+            <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '1rem' }}>
+              <button 
+                onClick={() => setIsModalOpen(true)}
+                style={{
+                  background: 'var(--primary)',
+                  color: 'white',
+                  border: 'none',
+                  padding: '0.5rem 1rem',
+                  borderRadius: '8px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '6px',
+                  cursor: 'pointer',
+                  fontWeight: 600
+                }}
+              >
+                <Plus size={16} /> Tambah Wortschatz
+              </button>
+            </div>
             <div className="options-grid" style={{ gap: '1.5rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))' }}>
               {flashcardLevels?.map((level) => (
                 <button
@@ -218,6 +268,84 @@ const Dashboard = ({ quizzes, onSelectQuiz, flashcardLevels, onSelectChapter }) 
               ))}
             </div>
           </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Add Wortschatz Modal */}
+      <AnimatePresence>
+        {isModalOpen && (
+          <div style={{
+            position: 'fixed',
+            top: 0, left: 0, right: 0, bottom: 0,
+            background: 'rgba(0,0,0,0.7)',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            zIndex: 1000,
+            padding: '1rem'
+          }}>
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.9 }}
+              className="glass-card"
+              style={{ width: '100%', maxWidth: '500px', position: 'relative', padding: '2rem' }}
+            >
+              <button 
+                onClick={() => setIsModalOpen(false)}
+                style={{ position: 'absolute', top: '1rem', right: '1rem', background: 'none', border: 'none', color: 'var(--text-secondary)', cursor: 'pointer' }}
+              >
+                <X size={24} />
+              </button>
+              <h2 style={{ marginBottom: '1.5rem', color: 'var(--text)' }}>Tambah Wortschatz Baru</h2>
+              <form onSubmit={handleAddSubmit}>
+                <div style={{ display: 'flex', gap: '1rem', marginBottom: '1rem' }}>
+                  <div style={{ flex: 1 }}>
+                    <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Level</label>
+                    <select 
+                      value={selectedAddLevel} 
+                      onChange={(e) => setSelectedAddLevel(e.target.value)}
+                      style={{ width: '100%', padding: '0.75rem', borderRadius: '8px', background: 'rgba(30,41,59,0.9)', border: '1px solid var(--glass-border)', color: '#fff' }}
+                    >
+                      <option value="A1">A1</option>
+                      <option value="A2">A2</option>
+                      <option value="B1">B1</option>
+                      <option value="B2">B2</option>
+                    </select>
+                  </div>
+                  <div style={{ flex: 1 }}>
+                    <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Kapitel</label>
+                    <select 
+                      value={selectedAddChapter} 
+                      onChange={(e) => setSelectedAddChapter(e.target.value)}
+                      style={{ width: '100%', padding: '0.75rem', borderRadius: '8px', background: 'rgba(30,41,59,0.9)', border: '1px solid var(--glass-border)', color: '#fff' }}
+                    >
+                      {Array.from({length: 12}, (_, i) => (
+                        <option key={i+1} value={i+1}>Kapitel {i+1}</option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
+                
+                <div style={{ marginBottom: '1.5rem' }}>
+                  <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+                    Data Flashcard (Tiap baris: Depan | Belakang | Contoh)
+                  </label>
+                  <textarea 
+                    value={inputText}
+                    onChange={(e) => setInputText(e.target.value)}
+                    placeholder="Contoh:&#10;der Apfel | Apel | Ich esse einen Apfel.&#10;die Banane | Pisang | Die Banane ist gelb."
+                    rows={6}
+                    style={{ width: '100%', padding: '0.75rem', borderRadius: '8px', background: 'rgba(255,255,255,0.05)', border: '1px solid var(--glass-border)', color: 'var(--text)', resize: 'vertical', fontFamily: 'inherit' }}
+                  />
+                </div>
+                
+                <button type="submit" className="next-btn" style={{ marginTop: 0 }}>
+                  Simpan Flashcard
+                </button>
+              </form>
+            </motion.div>
+          </div>
         )}
       </AnimatePresence>
     </motion.div>

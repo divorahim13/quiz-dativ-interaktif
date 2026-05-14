@@ -28,6 +28,34 @@ const FlashcardViewer = ({ chapter, onBack }) => {
     setIsFlipped(!isFlipped);
   };
 
+  const renderColorizedText = (text) => {
+    if (!text) return null;
+    
+    // Split by comma if there are multiple parts (e.g. "die Bahn, -en")
+    return text.split(',').map((part, index, array) => {
+      let content = part;
+      // Handle the first part which usually contains the article
+      if (index === 0) {
+        content = part.replace(/\b(der|die|das)\b/gi, (match) => {
+          const lowerMatch = match.toLowerCase();
+          let color = '';
+          if (lowerMatch === 'der') color = '#3b82f6'; // blue
+          if (lowerMatch === 'die') color = '#ef4444'; // red
+          if (lowerMatch === 'das') color = '#22c55e'; // green
+          return `<span style="color: ${color}; font-weight: 600;">${match}</span>`;
+        });
+      }
+      
+      const isLast = index === array.length - 1;
+      return (
+        <span key={index}>
+          <span dangerouslySetInnerHTML={{ __html: content }} />
+          {!isLast && ','}
+        </span>
+      );
+    });
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -83,11 +111,11 @@ const FlashcardViewer = ({ chapter, onBack }) => {
               <div className="flashcard-front glass-card">
                 {currentCard.image && (
                   <div className="flashcard-image-container">
-                    <img src={currentCard.image} alt={currentCard.front} className="flashcard-image" />
+                    <img src={currentCard.image} alt="flashcard" className="flashcard-image" />
                   </div>
                 )}
                 <div className="flashcard-content">
-                  <h2 style={{ fontSize: '2rem', margin: 0 }}>{currentCard.front}</h2>
+                  <h2 style={{ fontSize: '2rem', margin: 0 }}>{renderColorizedText(currentCard.front)}</h2>
                 </div>
                 <div className="flashcard-hint">Klik untuk membalik kartu</div>
               </div>

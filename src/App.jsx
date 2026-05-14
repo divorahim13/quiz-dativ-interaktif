@@ -19,6 +19,33 @@ function App() {
   const [userAnswers, setUserAnswers] = useState([]);
   const [showReview, setShowReview] = useState(false);
 
+  // Custom Flashcards State
+  const [customFlashcards, setCustomFlashcards] = useState(() => {
+    try {
+      const saved = localStorage.getItem('customFlashcards');
+      return saved ? JSON.parse(saved) : {};
+    } catch {
+      return {};
+    }
+  });
+
+  const handleAddCustomFlashcards = (chapterId, newCards) => {
+    const updated = {
+      ...customFlashcards,
+      [chapterId]: [...(customFlashcards[chapterId] || []), ...newCards]
+    };
+    setCustomFlashcards(updated);
+    localStorage.setItem('customFlashcards', JSON.stringify(updated));
+  };
+
+  const mergedFlashcardLevels = flashcardLevels.map(level => ({
+    ...level,
+    chapters: level.chapters.map(chapter => ({
+      ...chapter,
+      cards: [...chapter.cards, ...(customFlashcards[chapter.id] || [])]
+    }))
+  }));
+
   const currentQuestion = selectedQuiz?.questions[currentIdx];
   const progress = selectedQuiz ? ((currentIdx + 1) / selectedQuiz.questions.length) * 100 : 0;
 
@@ -88,8 +115,9 @@ function App() {
           <Dashboard 
             quizzes={quizzes} 
             onSelectQuiz={handleSelectQuiz} 
-            flashcardLevels={flashcardLevels}
+            flashcardLevels={mergedFlashcardLevels}
             onSelectChapter={setSelectedFlashcardChapter}
+            onAddFlashcards={handleAddCustomFlashcards}
           />
         ) : selectedFlashcardChapter ? (
           <FlashcardViewer 
