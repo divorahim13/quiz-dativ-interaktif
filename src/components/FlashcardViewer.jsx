@@ -170,7 +170,7 @@ const FlashcardViewer = ({ chapter, onBack }) => {
                   className="flashcard-inner"
                   onClick={flipCard}
                   animate={{ rotateY: isFlipped ? 180 : 0 }}
-                  transition={{ duration: 0.15, ease: "easeInOut" }}
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
                   style={{ width: '100%', height: '100%' }}
                 >
               {/* Front of Card */}

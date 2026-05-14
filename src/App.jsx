@@ -109,7 +109,10 @@ function App() {
   };
 
   return (
-    <div className="container" style={{ maxWidth: showReview ? '800px' : '600px', transition: 'max-width 0.5s ease' }}>
+    <div className="container" style={{ 
+      maxWidth: selectedFlashcardChapter ? '1000px' : (showReview ? '800px' : '600px'), 
+      transition: 'max-width 0.5s ease' 
+    }}>
       <AnimatePresence mode="wait">
         {!selectedQuiz && !selectedFlashcardChapter ? (
           <Dashboard 
