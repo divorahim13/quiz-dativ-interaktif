@@ -156,7 +156,7 @@ const FlashcardViewer = ({ chapter, onBack }) => {
                 animate="center"
                 exit="exit"
                 transition={{
-                  duration: 0.5,
+                  duration: 0.2,
                   ease: "easeInOut"
                 }}
                 drag="x"
