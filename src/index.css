@@ -233,10 +233,16 @@ h1 {
     padding: 1rem;
   }
   .glass-card {
-    padding: 1.5rem;
+    padding: 1.25rem;
   }
   h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
+  }
+  .flashcard-scene {
+    height: 350px;
+  }
+  .flashcard-front, .flashcard-back {
+    padding: 1.5rem;
   }
 }
 
@@ -260,6 +266,8 @@ h1 {
 
 .flashcard-deck {
   perspective: 1000px;
+  overflow: hidden;
+  padding: 1rem 0;
 }
 
 .flashcard-scene {
@@ -296,6 +304,8 @@ h1 {
   background: rgba(30, 41, 59, 0.7);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .flashcard-back {

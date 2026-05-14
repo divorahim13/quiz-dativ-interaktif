@@ -56,9 +56,9 @@ const FlashcardViewer = ({ chapter, onBack }) => {
 
   const variants = {
     enter: (direction) => ({
-      x: direction > 0 ? 300 : -300,
+      x: direction > 0 ? '100%' : '-100%',
       opacity: 0,
-      scale: 0.95,
+      scale: 0.9,
     }),
     center: {
       zIndex: 1,
@@ -68,9 +68,9 @@ const FlashcardViewer = ({ chapter, onBack }) => {
     },
     exit: (direction) => ({
       zIndex: 0,
-      x: direction < 0 ? 300 : -300,
+      x: direction < 0 ? '100%' : '-100%',
       opacity: 0,
-      scale: 0.95,
+      scale: 0.9,
     })
   };
   const renderColorizedText = (text) => {
@@ -134,7 +134,7 @@ const FlashcardViewer = ({ chapter, onBack }) => {
             Kartu {currentIndex + 1} dari {cards.length}
           </div>
 
-          <div className="flashcard-scene" style={{ position: 'relative', display: 'flex', justifyContent: 'center' }}>
+          <div className="flashcard-scene" style={{ position: 'relative', display: 'flex', justifyContent: 'center', overflow: 'hidden' }}>
             <AnimatePresence initial={false} custom={direction}>
               <motion.div
                 key={currentIndex}
