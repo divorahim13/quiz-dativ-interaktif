@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { quizzes } from './data/quizData';
+import { flashcardLevels } from './data/flashcardData';
 import confetti from 'canvas-confetti';
 import { Trophy, RefreshCw, Languages, ArrowLeft, CheckCircle, XCircle, ChevronDown, ChevronUp } from 'lucide-react';
 import QuizCard from './components/QuizCard';
 import Dashboard from './components/Dashboard';
+import FlashcardViewer from './components/FlashcardViewer';
 
 function App() {
   const [selectedQuiz, setSelectedQuiz] = useState(null);
+  const [selectedFlashcardChapter, setSelectedFlashcardChapter] = useState(null);
   const [currentIdx, setCurrentIdx] = useState(0);
   const [score, setScore] = useState(0);
   const [selectedOption, setSelectedOption] = useState(null);
@@ -75,13 +78,25 @@ function App() {
 
   const goBackToDashboard = () => {
     setSelectedQuiz(null);
+    setSelectedFlashcardChapter(null);
   };
 
   return (
     <div className="container" style={{ maxWidth: showReview ? '800px' : '600px', transition: 'max-width 0.5s ease' }}>
       <AnimatePresence mode="wait">
-        {!selectedQuiz ? (
-          <Dashboard quizzes={quizzes} onSelectQuiz={handleSelectQuiz} />
+        {!selectedQuiz && !selectedFlashcardChapter ? (
+          <Dashboard 
+            quizzes={quizzes} 
+            onSelectQuiz={handleSelectQuiz} 
+            flashcardLevels={flashcardLevels}
+            onSelectChapter={setSelectedFlashcardChapter}
+          />
+        ) : selectedFlashcardChapter ? (
+          <FlashcardViewer 
+            key="flashcard-viewer"
+            chapter={selectedFlashcardChapter} 
+            onBack={() => setSelectedFlashcardChapter(null)} 
+          />
         ) : !isQuizOver ? (
           <div key="quiz-container">
             <button 
