@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, ChevronLeft, ChevronRight, RefreshCw, Image as ImageIcon } from 'lucide-react';
 
 const FlashcardViewer = ({ chapter, onBack }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
+  const [direction, setDirection] = useState(0);
 
   const cards = chapter.cards || [];
   const hasCards = cards.length > 0;
@@ -12,6 +13,7 @@ const FlashcardViewer = ({ chapter, onBack }) => {
 
   const handleNext = () => {
     if (currentIndex < cards.length - 1) {
+      setDirection(1);
       setIsFlipped(false);
       setCurrentIndex((prev) => prev + 1);
     }
@@ -19,6 +21,7 @@ const FlashcardViewer = ({ chapter, onBack }) => {
 
   const handlePrev = () => {
     if (currentIndex > 0) {
+      setDirection(-1);
       setIsFlipped(false);
       setCurrentIndex((prev) => prev - 1);
     }
@@ -28,6 +31,48 @@ const FlashcardViewer = ({ chapter, onBack }) => {
     setIsFlipped(!isFlipped);
   };
 
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (!hasCards) return;
+      if (e.key === 'ArrowRight') handleNext();
+      if (e.key === 'ArrowLeft') handlePrev();
+      if (e.key === ' ' || e.key === 'ArrowUp' || e.key === 'ArrowDown') {
+        e.preventDefault();
+        flipCard();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [currentIndex, cards.length, isFlipped, hasCards]);
+
+  const handleDragEnd = (e, { offset, velocity }) => {
+    const swipe = offset.x;
+    if (swipe < -100) {
+      handleNext();
+    } else if (swipe > 100) {
+      handlePrev();
+    }
+  };
+
+  const variants = {
+    enter: (direction) => ({
+      x: direction > 0 ? 300 : -300,
+      opacity: 0,
+      scale: 0.95,
+    }),
+    center: {
+      zIndex: 1,
+      x: 0,
+      opacity: 1,
+      scale: 1,
+    },
+    exit: (direction) => ({
+      zIndex: 0,
+      x: direction < 0 ? 300 : -300,
+      opacity: 0,
+      scale: 0.95,
+    })
+  };
   const renderColorizedText = (text) => {
     if (!text) return null;
     
@@ -101,43 +146,66 @@ const FlashcardViewer = ({ chapter, onBack }) => {
             Kartu {currentIndex + 1} dari {cards.length}
           </div>
 
-          <div className="flashcard-scene" onClick={flipCard}>
-            <motion.div 
-              className="flashcard-inner"
-              animate={{ rotateY: isFlipped ? 180 : 0 }}
-              transition={{ duration: 0.6, type: "spring", stiffness: 260, damping: 20 }}
-            >
+          <div className="flashcard-scene" style={{ position: 'relative', display: 'flex', justifyContent: 'center' }}>
+            <AnimatePresence initial={false} custom={direction}>
+              <motion.div
+                key={currentIndex}
+                custom={direction}
+                variants={variants}
+                initial="enter"
+                animate="center"
+                exit="exit"
+                transition={{
+                  x: { type: "spring", stiffness: 300, damping: 30 },
+                  opacity: { duration: 0.2 }
+                }}
+                drag="x"
+                dragConstraints={{ left: 0, right: 0 }}
+                dragElastic={1}
+                onDragEnd={handleDragEnd}
+                style={{ position: 'absolute', width: '100%', height: '100%', cursor: 'grab' }}
+                whileTap={{ cursor: 'grabbing' }}
+              >
+                <motion.div 
+                  className="flashcard-inner"
+                  onClick={flipCard}
+                  animate={{ rotateY: isFlipped ? 180 : 0 }}
+                  transition={{ duration: 0.6, type: "spring", stiffness: 260, damping: 20 }}
+                  style={{ width: '100%', height: '100%' }}
+                >
               {/* Front of Card */}
-              <div className="flashcard-front glass-card">
+              <div className="flashcard-front">
                 {currentCard.image && (
                   <div className="flashcard-image-container">
                     <img src={currentCard.image} alt="flashcard" className="flashcard-image" />
                   </div>
                 )}
                 <div className="flashcard-content">
-                  <h2 style={{ fontSize: '2rem', margin: 0 }}>{renderColorizedText(currentCard.front)}</h2>
+                  <h2 style={{ fontSize: '2.5rem', margin: 0, fontWeight: 700 }}>{renderColorizedText(currentCard.front)}</h2>
                 </div>
-                <div className="flashcard-hint">Klik untuk membalik kartu</div>
+                <div className="flashcard-hint">Klik atau spasi untuk membalik</div>
               </div>
 
               {/* Back of Card */}
-              <div className="flashcard-back glass-card">
+              <div className="flashcard-back">
                 <div className="flashcard-content">
-                  <h2 style={{ fontSize: '2rem', color: 'var(--primary)', marginBottom: '1rem' }}>
+                  <h2 style={{ fontSize: '2.5rem', color: 'var(--primary)', marginBottom: '1.5rem', fontWeight: 700 }}>
                     {currentCard.back}
                   </h2>
                   {currentCard.example && (
-                    <div className="flashcard-example" style={{ background: 'rgba(255,255,255,0.05)', padding: '1rem', borderRadius: '8px', fontSize: '1rem', fontStyle: 'italic', color: 'var(--text-secondary)' }}>
+                    <div className="flashcard-example" style={{ background: 'rgba(255,255,255,0.05)', padding: '1.5rem', borderRadius: '12px', fontSize: '1.1rem', fontStyle: 'italic', color: 'var(--text)', borderLeft: '4px solid var(--primary)' }}>
                       "{currentCard.example}"
                     </div>
                   )}
                 </div>
-                <div className="flashcard-hint">Klik untuk membalik kartu</div>
+                <div className="flashcard-hint">Klik atau spasi untuk membalik</div>
               </div>
             </motion.div>
-          </div>
+          </motion.div>
+        </AnimatePresence>
+      </div>
 
-          <div className="flashcard-controls" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '1.5rem', marginTop: '2rem' }}>
+      <div className="flashcard-controls" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '1.5rem', marginTop: '2rem' }}>
             <button 
               onClick={handlePrev} 
               disabled={currentIndex === 0}
