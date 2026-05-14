@@ -76,29 +76,17 @@ const FlashcardViewer = ({ chapter, onBack }) => {
   const renderColorizedText = (text) => {
     if (!text) return null;
     
-    // Split by comma if there are multiple parts (e.g. "die Bahn, -en")
-    return text.split(',').map((part, index, array) => {
-      let content = part;
-      // Handle the first part which usually contains the article
-      if (index === 0) {
-        content = part.replace(/\b(der|die|das)\b/gi, (match) => {
-          const lowerMatch = match.toLowerCase();
-          let color = '';
-          if (lowerMatch === 'der') color = '#3b82f6'; // blue
-          if (lowerMatch === 'die') color = '#ef4444'; // red
-          if (lowerMatch === 'das') color = '#22c55e'; // green
-          return `<span style="color: ${color}; font-weight: 600;">${match}</span>`;
-        });
-      }
-      
-      const isLast = index === array.length - 1;
-      return (
-        <span key={index}>
-          <span dangerouslySetInnerHTML={{ __html: content }} />
-          {!isLast && ','}
-        </span>
-      );
-    });
+    const lowerText = text.toLowerCase();
+    let color = 'inherit';
+    if (/\bder\b/i.test(lowerText)) color = '#3b82f6'; // blue
+    else if (/\bdie\b/i.test(lowerText)) color = '#ef4444'; // red
+    else if (/\bdas\b/i.test(lowerText)) color = '#22c55e'; // green
+
+    return (
+      <span style={{ color, fontWeight: color !== 'inherit' ? 700 : 'inherit' }}>
+        {text}
+      </span>
+    );
   };
 
   return (
