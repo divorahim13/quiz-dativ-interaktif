@@ -1,17 +1,17 @@
 export const a2Kapitel6Cards = [
   // Arbeitswelten
-  { id: 1, front: "die Tätigkeit, -en", back: "kegiatan, aktivitas", example: "Welche Tätigkeit machen Sie?" },
-  { id: 2, front: "einen Termin einhalten", back: "menepati janji/jadwal", example: "Ich muss den Termin einhalten." },
-  { id: 3, front: "beraten, er berät, hat beraten", back: "menasihati, memberi saran", example: "Der Arzt hat mich gut beraten." },
-  { id: 4, front: "sich beeilen", back: "bergegas, buru-buru", example: "Wir müssen uns beeilen." },
-  { id: 5, front: "klappen (Hier klappt gar nichts!)", back: "berhasil, berjalan lancar (Di sini tidak ada yang berjalan lancar!)", example: "Hat alles gut geklappt?" },
-  { id: 6, front: "der Ärger (Sg.)", back: "kemarahan, masalah", example: "Ich hatte gestern viel Ärger." },
+  { id: 1, front: "die Tätigkeit, -en", back: "kegiatan, aktivitas", example: "Welche Tätigkeit machen Sie?", example_id: "Pekerjaan apa yang Anda lakukan?" },
+  { id: 2, front: "einen Termin einhalten", back: "menepati janji/jadwal", example: "Ich muss den Termin einhalten.", example_id: "Saya harus menepati janji/jadwal." },
+  { id: 3, front: "beraten, er berät, hat beraten", back: "menasihati, memberi saran", example: "Der Arzt hat mich gut beraten.", example_id: "Dokter itu telah memberi saya saran yang baik." },
+  { id: 4, front: "sich beeilen", back: "bergegas, buru-buru", example: "Wir müssen uns beeilen.", example_id: "Kita harus bergegas." },
+  { id: 5, front: "klappen (Hier klappt gar nichts!)", back: "berhasil, berjalan lancar (Di sini tidak ada yang berjalan lancar!)", example: "Hat alles gut geklappt?", example_id: "Apakah semuanya berjalan lancar?" },
+  { id: 6, front: "der Ärger (Sg.)", back: "kemarahan, masalah", example: "Ich hatte gestern viel Ärger.", example_id: "Saya mendapat banyak masalah kemarin." },
   
   // am Bahnhof und am Schalter
-  { id: 7, front: "die Bahn, -en", back: "kereta", example: "Wir fahren mit der Bahn." },
-  { id: 8, front: "der Fahrplan, ¨e", back: "jadwal perjalanan", example: "Schau mal auf den Fahrplan." },
-  { id: 9, front: "die Zugverbindung, -en", back: "koneksi/sambungan kereta", example: "Die Zugverbindung ist schlecht." },
-  { id: 10, front: "die Durchsage, -n", back: "pengumuman", example: "Hören Sie die Durchsage." },
+  { id: 7, front: "die Bahn, -en", back: "kereta", example: "Wir fahren mit der Bahn.", example_id: "Kami pergi dengan kereta." },
+  { id: 8, front: "der Fahrplan, ¨e", back: "jadwal perjalanan", example: "Schau mal auf den Fahrplan.", example_id: "Lihatlah jadwal perjalanannya." },
+  { id: 9, front: "die Zugverbindung, -en", back: "koneksi/sambungan kereta", example: "Die Zugverbindung ist schlecht.", example_id: "Koneksi keretanya buruk." },
+  { id: 10, front: "die Durchsage, -n", back: "pengumuman", example: "Hören Sie die Durchsage.", example_id: "Dengarkan pengumumannya." },
   { id: 11, front: "der Wagen, -", back: "gerbong, mobil", example: "Ich sitze im Wagen 4." },
   { id: 12, front: "die Geschäftsreise, -n", back: "perjalanan bisnis", example: "Er ist auf Geschäftsreise." },
   { id: 13, front: "der Schalter, -", back: "loket", example: "Bitte gehen Sie zum Schalter." },

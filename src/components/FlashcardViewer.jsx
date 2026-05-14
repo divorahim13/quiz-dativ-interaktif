@@ -130,6 +130,25 @@ const FlashcardViewer = ({ chapter, onBack }) => {
         </div>
       ) : (
         <div className="flashcard-deck">
+          {/* Adaptive font size logic */}
+          {(() => {
+            const getAdaptiveFontSize = (text, type = 'main') => {
+              const length = String(text)?.length || 0;
+              if (type === 'main') {
+                if (length > 80) return '1.2rem';
+                if (length > 50) return '1.5rem';
+                if (length > 30) return '2rem';
+                return '2.5rem';
+              } else { // example
+                if (length > 80) return '0.9rem';
+                if (length > 50) return '1rem';
+                return '1.1rem';
+              }
+            };
+            window.getAdaptiveFontSize = getAdaptiveFontSize;
+            return null;
+          })()}
+
           <div className="progress-indicator" style={{ textAlign: 'center', marginBottom: '1rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
             Kartu {currentIndex + 1} dari {cards.length}
           </div>
@@ -177,12 +196,44 @@ const FlashcardViewer = ({ chapter, onBack }) => {
               {/* Back of Card */}
               <div className="flashcard-back">
                 <div className="flashcard-content" style={{ width: '100%' }}>
-                  <h2 style={{ fontSize: 'clamp(1.5rem, 5vw, 2rem)', color: 'var(--primary)', marginBottom: '1.5rem', fontWeight: 700, padding: '0 10px' }}>
-                    {currentCard.back}
+                  <h2 style={{ 
+                    fontSize: window.getAdaptiveFontSize(currentCard.back, 'main'), 
+                    color: 'var(--primary)', 
+                    marginBottom: '1.5rem', 
+                    fontWeight: 700, 
+                    padding: '0 10px',
+                    textAlign: 'center',
+                    lineHeight: '1.3'
+                  }}>
+                    {renderColorizedText(currentCard.back)}
                   </h2>
                   {currentCard.example && (
-                    <div className="flashcard-example" style={{ background: 'rgba(255,255,255,0.05)', padding: '1.5rem', borderRadius: '12px', fontSize: '1.1rem', fontStyle: 'italic', color: 'var(--text)', borderLeft: '4px solid var(--primary)' }}>
-                      "{currentCard.example}"
+                    <div className="flashcard-example-container" style={{ width: '100%' }}>
+                      <div className="flashcard-example" style={{ 
+                        background: 'rgba(255,255,255,0.05)', 
+                        padding: '1.25rem', 
+                        borderRadius: '12px', 
+                        fontSize: window.getAdaptiveFontSize(currentCard.example, 'example'), 
+                        fontStyle: 'italic', 
+                        color: 'var(--text)', 
+                        borderLeft: '4px solid var(--primary)',
+                        marginBottom: '0.5rem',
+                        textAlign: 'left'
+                      }}>
+                        "{currentCard.example}"
+                      </div>
+                      {currentCard.example_id && (
+                        <div className="flashcard-example-translation" style={{ 
+                          fontSize: '0.95rem', 
+                          color: 'var(--text-secondary)', 
+                          paddingLeft: '1rem',
+                          fontStyle: 'normal',
+                          opacity: 0.9,
+                          textAlign: 'left'
+                        }}>
+                          → {currentCard.example_id}
+                        </div>
+                      )}
                     </div>
                   )}
                 </div>
