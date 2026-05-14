@@ -170,7 +170,7 @@ const FlashcardViewer = ({ chapter, onBack }) => {
                   className="flashcard-inner"
                   onClick={flipCard}
                   animate={{ rotateY: isFlipped ? 180 : 0 }}
-                  transition={{ duration: 0.6, type: "spring", stiffness: 260, damping: 20 }}
+                  transition={{ duration: 0.25, ease: "easeInOut" }}
                   style={{ width: '100%', height: '100%' }}
                 >
               {/* Front of Card */}
@@ -180,16 +180,16 @@ const FlashcardViewer = ({ chapter, onBack }) => {
                     <img src={currentCard.image} alt="flashcard" className="flashcard-image" />
                   </div>
                 )}
-                <div className="flashcard-content">
-                  <h2 style={{ fontSize: '2.5rem', margin: 0, fontWeight: 700 }}>{renderColorizedText(currentCard.front)}</h2>
+                <div className="flashcard-content" style={{ width: '100%' }}>
+                  <h2 style={{ fontSize: 'clamp(1.5rem, 5vw, 2rem)', margin: 0, fontWeight: 700, overflowWrap: 'break-word', padding: '0 10px' }}>{renderColorizedText(currentCard.front)}</h2>
                 </div>
                 <div className="flashcard-hint">Klik atau spasi untuk membalik</div>
               </div>
 
               {/* Back of Card */}
               <div className="flashcard-back">
-                <div className="flashcard-content">
-                  <h2 style={{ fontSize: '2.5rem', color: 'var(--primary)', marginBottom: '1.5rem', fontWeight: 700 }}>
+                <div className="flashcard-content" style={{ width: '100%' }}>
+                  <h2 style={{ fontSize: 'clamp(1.5rem, 5vw, 2rem)', color: 'var(--primary)', marginBottom: '1.5rem', fontWeight: 700, padding: '0 10px' }}>
                     {currentCard.back}
                   </h2>
                   {currentCard.example && (
