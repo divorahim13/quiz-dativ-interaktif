@@ -96,28 +96,34 @@ const FlashcardViewer = ({ chapter, onBack }) => {
       exit={{ opacity: 0, y: -20 }}
       className="flashcard-container"
     >
-      <div style={{ display: 'flex', alignItems: 'center', marginBottom: '2rem' }}>
+      <div className="flashcard-header" style={{ 
+        display: 'grid', 
+        gridTemplateColumns: '1fr auto 1fr', 
+        alignItems: 'center', 
+        marginBottom: '2rem',
+        width: '100%'
+      }}>
         <button 
           onClick={onBack}
-          className="back-btn"
-          style={{ 
-            background: 'none', 
-            border: 'none', 
-            color: 'var(--text-secondary)', 
-            display: 'flex', 
-            alignItems: 'center', 
-            gap: '8px', 
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.5rem',
+            background: 'none',
+            border: 'none',
+            color: 'var(--text-secondary)',
             cursor: 'pointer',
             fontSize: '1rem',
-            padding: 0
+            padding: '0.5rem 0',
+            justifySelf: 'start'
           }}
         >
-          <ArrowLeft size={20} /> Kembali
+          <ArrowLeft size={20} /> <span className="hide-mobile">Kembali</span>
         </button>
-        <h2 style={{ margin: '0 auto', fontSize: '1.25rem', color: 'var(--text)' }}>
+        <h2 style={{ fontSize: '1.25rem', color: 'var(--text)', margin: 0, textAlign: 'center' }}>
           {chapter.title}
         </h2>
-        <div style={{ width: '80px' }}></div> {/* Spacer for centering */}
+        <div></div> {/* Empty div for grid balance */}
       </div>
 
       {!hasCards ? (
@@ -211,29 +217,30 @@ const FlashcardViewer = ({ chapter, onBack }) => {
                     <div className="flashcard-example-container" style={{ width: '100%' }}>
                       <div className="flashcard-example" style={{ 
                         background: 'rgba(255,255,255,0.05)', 
-                        padding: '1.25rem', 
+                        padding: '1rem 1.25rem', 
                         borderRadius: '12px', 
                         fontSize: window.getAdaptiveFontSize(currentCard.example, 'example'), 
                         fontStyle: 'italic', 
                         color: 'var(--text)', 
                         borderLeft: '4px solid var(--primary)',
-                        marginBottom: '0.5rem',
-                        textAlign: 'left'
+                        textAlign: 'left',
+                        width: '100%'
                       }}>
-                        "{currentCard.example}"
+                        <div>"{currentCard.example}"</div>
+                        {currentCard.example_id && (
+                          <div className="flashcard-example-translation" style={{ 
+                            fontSize: '0.85rem', 
+                            color: 'var(--text-secondary)', 
+                            marginTop: '0.5rem',
+                            fontStyle: 'normal',
+                            opacity: 0.8,
+                            borderTop: '1px solid rgba(255,255,255,0.1)',
+                            paddingTop: '0.5rem'
+                          }}>
+                            {currentCard.example_id}
+                          </div>
+                        )}
                       </div>
-                      {currentCard.example_id && (
-                        <div className="flashcard-example-translation" style={{ 
-                          fontSize: '0.95rem', 
-                          color: 'var(--text-secondary)', 
-                          paddingLeft: '1rem',
-                          fontStyle: 'normal',
-                          opacity: 0.9,
-                          textAlign: 'left'
-                        }}>
-                          → {currentCard.example_id}
-                        </div>
-                      )}
                     </div>
                   )}
                 </div>
