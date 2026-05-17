@@ -1,6 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, ChevronLeft, ChevronRight, RefreshCw, Image as ImageIcon } from 'lucide-react';
+
+const getAdaptiveFontSize = (text, type = 'main') => {
+  const length = String(text || '').length;
+
+  if (type === 'example') {
+    if (length > 90) return '0.95rem';
+    if (length > 60) return '1rem';
+    return '1.1rem';
+  }
+
+  if (length > 90) return '1.3rem';
+  if (length > 65) return '1.55rem';
+  if (length > 42) return '1.85rem';
+  if (length > 26) return '2.15rem';
+  return '2.6rem';
+};
 
 const FlashcardViewer = ({ chapter, onBack }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -11,25 +27,25 @@ const FlashcardViewer = ({ chapter, onBack }) => {
   const hasCards = cards.length > 0;
   const currentCard = hasCards ? cards[currentIndex] : null;
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     if (currentIndex < cards.length - 1) {
       setDirection(1);
       setIsFlipped(false);
       setCurrentIndex((prev) => prev + 1);
     }
-  };
+  }, [cards.length, currentIndex]);
 
-  const handlePrev = () => {
+  const handlePrev = useCallback(() => {
     if (currentIndex > 0) {
       setDirection(-1);
       setIsFlipped(false);
       setCurrentIndex((prev) => prev - 1);
     }
-  };
+  }, [currentIndex]);
 
-  const flipCard = () => {
-    setIsFlipped(!isFlipped);
-  };
+  const flipCard = useCallback(() => {
+    setIsFlipped((prev) => !prev);
+  }, []);
 
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -43,9 +59,9 @@ const FlashcardViewer = ({ chapter, onBack }) => {
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [currentIndex, cards.length, isFlipped, hasCards]);
+  }, [handleNext, handlePrev, flipCard, hasCards]);
 
-  const handleDragEnd = (e, { offset, velocity }) => {
+  const handleDragEnd = (e, { offset }) => {
     const swipe = offset.x;
     if (swipe < -100) {
       handleNext();
@@ -136,25 +152,6 @@ const FlashcardViewer = ({ chapter, onBack }) => {
         </div>
       ) : (
         <div className="flashcard-deck">
-          {/* Adaptive font size logic */}
-          {(() => {
-            const getAdaptiveFontSize = (text, type = 'main') => {
-              const length = String(text)?.length || 0;
-              if (type === 'main') {
-                if (length > 80) return '1.2rem';
-                if (length > 50) return '1.5rem';
-                if (length > 30) return '2rem';
-                return '2.5rem';
-              } else { // example
-                if (length > 80) return '0.9rem';
-                if (length > 50) return '1rem';
-                return '1.1rem';
-              }
-            };
-            window.getAdaptiveFontSize = getAdaptiveFontSize;
-            return null;
-          })()}
-
           <div className="progress-indicator" style={{ textAlign: 'center', marginBottom: '1rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
             Kartu {currentIndex + 1} dari {cards.length}
           </div>
@@ -195,13 +192,8 @@ const FlashcardViewer = ({ chapter, onBack }) => {
                       <img src={currentCard.image} alt="flashcard" className="flashcard-image" />
                     </div>
                   )}
-                  <h2 style={{ 
-                    fontSize: window.getAdaptiveFontSize(renderColorizedText(currentCard.front), 'main'), 
-                    margin: 0, 
-                    fontWeight: 700, 
-                    overflowWrap: 'break-word', 
-                    padding: '0 10px',
-                    textAlign: 'center'
+                  <h2 className="flashcard-title" style={{ 
+                    fontSize: getAdaptiveFontSize(currentCard.front, 'main')
                   }}>
                     {renderColorizedText(currentCard.front)}
                   </h2>
@@ -215,29 +207,15 @@ const FlashcardViewer = ({ chapter, onBack }) => {
               <div className="flashcard-back">
                 <div style={{ height: '20px' }}></div> {/* Top spacer */}
                 <div className="flashcard-content" style={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', width: '100%' }}>
-                  <h2 style={{ 
-                    fontSize: window.getAdaptiveFontSize(currentCard.back, 'main'), 
-                    color: 'var(--primary)', 
-                    marginBottom: '1.5rem', 
-                    fontWeight: 700, 
-                    padding: '0 10px',
-                    textAlign: 'center',
-                    lineHeight: '1.3'
+                  <h2 className="flashcard-title flashcard-title-back" style={{ 
+                    fontSize: getAdaptiveFontSize(currentCard.back, 'main')
                   }}>
                     {renderColorizedText(currentCard.back)}
                   </h2>
                   {currentCard.example && (
-                    <div className="flashcard-example-container" style={{ width: '100%' }}>
+                    <div className="flashcard-example-container">
                       <div className="flashcard-example" style={{ 
-                        background: 'rgba(255,255,255,0.05)', 
-                        padding: '1rem 1.25rem', 
-                        borderRadius: '12px', 
-                        fontSize: window.getAdaptiveFontSize(currentCard.example, 'example'), 
-                        fontStyle: 'italic', 
-                        color: 'var(--text)', 
-                        borderLeft: '4px solid var(--primary)',
-                        textAlign: 'left',
-                        width: '100%'
+                        fontSize: getAdaptiveFontSize(currentCard.example, 'example')
                       }}>
                         <div>"{currentCard.example}"</div>
                         {currentCard.example_id && (

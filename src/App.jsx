@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { Fragment, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { quizzes } from './data/quizData';
 import { flashcardLevels } from './data/flashcardData';
 import confetti from 'canvas-confetti';
-import { Trophy, RefreshCw, Languages, ArrowLeft, CheckCircle, XCircle, ChevronDown, ChevronUp } from 'lucide-react';
+import { Trophy, RefreshCw, Languages, ArrowLeft, CheckCircle, XCircle } from 'lucide-react';
 import QuizCard from './components/QuizCard';
 import Dashboard from './components/Dashboard';
 import FlashcardViewer from './components/FlashcardViewer';
@@ -222,14 +222,14 @@ function App() {
                       
                       <p style={{ fontSize: '1.1rem', marginBottom: '1rem' }}>
                         {ans.question.sentence.split('___').map((part, i, arr) => (
-                          <React.Fragment key={i}>
+                          <Fragment key={i}>
                             {part}
                             {i < arr.length - 1 && (
                               <span style={{ color: ans.isCorrect ? '#22c55e' : '#ef4444', fontWeight: 700, textDecoration: 'underline' }}>
                                 {ans.selected}
                               </span>
                             )}
-                          </React.Fragment>
+                          </Fragment>
                         ))}
                       </p>
 

@@ -1,6 +1,87 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Calendar, BookOpen, ChevronRight, GraduationCap, Layers, ArrowLeft, Plus, X } from 'lucide-react';
+import { AlertCircle, BookOpen, Calendar, CheckCircle, ChevronRight, Clipboard, ClipboardCheck, Copy, Eraser, GraduationCap, Layers, ListPlus, Plus, Sparkles, Wand2, X, ArrowLeft } from 'lucide-react';
+
+const FLASHCARD_TEMPLATE_SAMPLE = `die Tätigkeit, -en | kegiatan, aktivitas | Welche Tätigkeit machen Sie? | Pekerjaan apa yang Anda lakukan?
+einen Termin einhalten | menepati janji/jadwal | Ich muss den Termin einhalten. | Saya harus menepati janji/jadwal.`;
+
+const stripLineMarker = (line) => line
+  .replace(/^\s*[-*•]\s+/, '')
+  .replace(/^\s*\d+[.)\s-]+/, '')
+  .trim();
+
+const splitTemplateLine = (line) => {
+  const spacedParts = line.split(/\s+\|\s+/).map((part) => part.trim());
+  if (spacedParts.length >= 4) return spacedParts;
+  return line.split('|').map((part) => part.trim());
+};
+
+const parseFlashcardTemplate = (rawText) => {
+  const lines = rawText
+    .replace(/```(?:\w+)?/g, '')
+    .split('\n')
+    .map(stripLineMarker)
+    .filter(Boolean)
+    .filter((line) => !/^front\s*\|/i.test(line) && !/^depan\s*\|/i.test(line));
+
+  const seen = new Set();
+  const cards = [];
+  const invalidRows = [];
+
+  lines.forEach((line, index) => {
+    const parts = splitTemplateLine(line);
+
+    if (parts.length < 4) {
+      invalidRows.push({ line: index + 1, reason: 'Kolom kurang dari 4', value: line });
+      return;
+    }
+
+    const [front, back, example, ...translationParts] = parts;
+    const exampleId = translationParts.join(' | ').trim();
+
+    if (!front || !back || !example || !exampleId) {
+      invalidRows.push({ line: index + 1, reason: 'Ada kolom kosong', value: line });
+      return;
+    }
+
+    const uniqueKey = `${front.toLowerCase()}::${back.toLowerCase()}`;
+    if (seen.has(uniqueKey)) return;
+    seen.add(uniqueKey);
+
+    cards.push({
+      front,
+      back,
+      example,
+      example_id: exampleId,
+    });
+  });
+
+  return { cards, invalidRows };
+};
+
+const buildAiTemplatePrompt = ({ level, chapter, count, source }) => {
+  const material = source.trim() || `Kosakata baru untuk ${level} Kapitel ${chapter}`;
+
+  return `Buat ${count} flashcard Wortschatz bahasa Jerman untuk ${level} Kapitel ${chapter}.
+
+Gunakan template persis seperti ini:
+front | back | example | example_id
+
+Aturan:
+- front: kata/frasa bahasa Jerman, sertakan artikel dan plural jika noun, atau bentuk penting jika verb.
+- back: arti singkat dalam bahasa Indonesia.
+- example: satu kalimat contoh bahasa Jerman yang natural dan sesuai level ${level}.
+- example_id: terjemahan natural kalimat contoh ke bahasa Indonesia.
+- Pakai delimiter " | " dengan spasi kiri-kanan.
+- Keluarkan hanya baris data, tanpa nomor, tanpa tabel markdown, tanpa penjelasan.
+
+Contoh format:
+die Tätigkeit, -en | kegiatan, aktivitas | Welche Tätigkeit machen Sie? | Pekerjaan apa yang Anda lakukan?
+einen Termin einhalten | menepati janji/jadwal | Ich muss den Termin einhalten. | Saya harus menepati janji/jadwal.
+
+Materi/topik:
+${material}`;
+};
 
 const Dashboard = ({ quizzes, onSelectQuiz, flashcardLevels, onSelectChapter, onAddFlashcards }) => {
   const [activeTab, setActiveTab] = useState('kuis'); // 'kuis' | 'flashcard'
@@ -8,32 +89,90 @@ const Dashboard = ({ quizzes, onSelectQuiz, flashcardLevels, onSelectChapter, on
   
   // Modal State
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [addMode, setAddMode] = useState('ai');
   const [inputText, setInputText] = useState('');
+  const [aiSource, setAiSource] = useState('');
+  const [aiPrompt, setAiPrompt] = useState('');
+  const [aiCount, setAiCount] = useState(10);
+  const [copyState, setCopyState] = useState('');
+  const [formError, setFormError] = useState('');
   const [selectedAddLevel, setSelectedAddLevel] = useState('A1');
   const [selectedAddChapter, setSelectedAddChapter] = useState('1');
+  const parsedTemplate = parseFlashcardTemplate(inputText);
+  const validPreviewCards = parsedTemplate.cards;
+
+  const openAddModal = () => {
+    setIsModalOpen(true);
+    setFormError('');
+    setCopyState('');
+  };
+
+  const closeAddModal = () => {
+    setIsModalOpen(false);
+    setFormError('');
+    setCopyState('');
+  };
+
+  const handleBuildAiPrompt = () => {
+    const prompt = buildAiTemplatePrompt({
+      level: selectedAddLevel,
+      chapter: selectedAddChapter,
+      count: aiCount,
+      source: aiSource,
+    });
+    setAiPrompt(prompt);
+    setCopyState('');
+  };
+
+  const handleCopyPrompt = async () => {
+    const prompt = aiPrompt || buildAiTemplatePrompt({
+      level: selectedAddLevel,
+      chapter: selectedAddChapter,
+      count: aiCount,
+      source: aiSource,
+    });
+
+    setAiPrompt(prompt);
+
+    try {
+      await navigator.clipboard.writeText(prompt);
+      setCopyState('Prompt disalin');
+    } catch {
+      setCopyState('Tidak bisa menyalin otomatis');
+    }
+  };
+
+  const handleUseTemplateSample = () => {
+    setInputText(FLASHCARD_TEMPLATE_SAMPLE);
+    setFormError('');
+  };
+
+  const handleClearTemplate = () => {
+    setInputText('');
+    setFormError('');
+  };
 
   const handleAddSubmit = (e) => {
     e.preventDefault();
-    if (!inputText.trim()) return;
+    if (!inputText.trim()) {
+      setFormError('Template masih kosong.');
+      return;
+    }
 
-    const newCards = inputText.split('\n').map((line) => {
-      const parts = line.split('|').map(p => p.trim());
-      if (parts.length >= 2) {
-        return {
-          id: Date.now() + Math.random(),
-          front: parts[0],
-          back: parts[1],
-          example: parts[2] || ''
-        };
-      }
-      return null;
-    }).filter(Boolean);
-
-    if (newCards.length > 0 && onAddFlashcards) {
+    if (validPreviewCards.length > 0 && onAddFlashcards) {
       const chapterId = `${selectedAddLevel}-K${selectedAddChapter}`;
+      const newCards = validPreviewCards.map((card, index) => ({
+        id: `${chapterId}-custom-${index + 1}-${card.front.toLowerCase().replace(/\s+/g, '-')}`,
+        ...card,
+        source: addMode === 'ai' ? 'ai-template' : 'manual-template',
+      }));
       onAddFlashcards(chapterId, newCards);
-      setIsModalOpen(false);
+      closeAddModal();
       setInputText('');
+      setAiSource('');
+      setAiPrompt('');
+    } else {
+      setFormError('Belum ada baris valid sesuai template.');
     }
   };
 
@@ -153,7 +292,7 @@ const Dashboard = ({ quizzes, onSelectQuiz, flashcardLevels, onSelectChapter, on
           <motion.div key="flashcard-levels" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }}>
             <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '1rem' }}>
               <button 
-                onClick={() => setIsModalOpen(true)}
+                onClick={openAddModal}
                 style={{
                   background: 'var(--primary)',
                   color: 'white',
@@ -167,7 +306,7 @@ const Dashboard = ({ quizzes, onSelectQuiz, flashcardLevels, onSelectChapter, on
                   fontWeight: 600
                 }}
               >
-                <Plus size={16} /> Tambah Wortschatz
+                <Sparkles size={16} /> AI Tambah Wortschatz
               </button>
             </div>
             <div className="options-grid" style={{ gap: '1.5rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))' }}>
@@ -274,74 +413,203 @@ const Dashboard = ({ quizzes, onSelectQuiz, flashcardLevels, onSelectChapter, on
       {/* Add Wortschatz Modal */}
       <AnimatePresence>
         {isModalOpen && (
-          <div style={{
-            position: 'fixed',
-            top: 0, left: 0, right: 0, bottom: 0,
-            background: 'rgba(0,0,0,0.7)',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            zIndex: 1000,
-            padding: '1rem'
-          }}>
+          <div className="modal-backdrop">
             <motion.div 
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
-              className="glass-card"
-              style={{ width: '100%', maxWidth: '500px', position: 'relative', padding: '2rem' }}
+              className="glass-card add-modal"
             >
               <button 
-                onClick={() => setIsModalOpen(false)}
-                style={{ position: 'absolute', top: '1rem', right: '1rem', background: 'none', border: 'none', color: 'var(--text-secondary)', cursor: 'pointer' }}
+                onClick={closeAddModal}
+                className="modal-close-btn"
+                type="button"
+                aria-label="Tutup"
               >
                 <X size={24} />
               </button>
-              <h2 style={{ marginBottom: '1.5rem', color: 'var(--text)' }}>Tambah Wortschatz Baru</h2>
+
+              <div className="add-modal-header">
+                <div className="add-modal-icon">
+                  <Sparkles size={22} />
+                </div>
+                <div>
+                  <h2>Tambah Wortschatz</h2>
+                  <p>{validPreviewCards.length} kartu siap disimpan</p>
+                </div>
+              </div>
+
               <form onSubmit={handleAddSubmit}>
-                <div style={{ display: 'flex', gap: '1rem', marginBottom: '1rem' }}>
-                  <div style={{ flex: 1 }}>
-                    <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Level</label>
+                <div className="add-form-grid">
+                  <label className="form-field">
+                    <span>Level</span>
                     <select 
                       value={selectedAddLevel} 
                       onChange={(e) => setSelectedAddLevel(e.target.value)}
-                      style={{ width: '100%', padding: '0.75rem', borderRadius: '8px', background: 'rgba(30,41,59,0.9)', border: '1px solid var(--glass-border)', color: '#fff' }}
+                      className="form-control"
                     >
                       <option value="A1">A1</option>
                       <option value="A2">A2</option>
                       <option value="B1">B1</option>
                       <option value="B2">B2</option>
                     </select>
-                  </div>
-                  <div style={{ flex: 1 }}>
-                    <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Kapitel</label>
+                  </label>
+
+                  <label className="form-field">
+                    <span>Kapitel</span>
                     <select 
                       value={selectedAddChapter} 
                       onChange={(e) => setSelectedAddChapter(e.target.value)}
-                      style={{ width: '100%', padding: '0.75rem', borderRadius: '8px', background: 'rgba(30,41,59,0.9)', border: '1px solid var(--glass-border)', color: '#fff' }}
+                      className="form-control"
                     >
                       {Array.from({length: 12}, (_, i) => (
                         <option key={i+1} value={i+1}>Kapitel {i+1}</option>
                       ))}
                     </select>
+                  </label>
+                </div>
+
+                <div className="add-mode-tabs" role="tablist" aria-label="Mode tambah wortschatz">
+                  <button
+                    type="button"
+                    className={`add-mode-btn ${addMode === 'ai' ? 'active' : ''}`}
+                    onClick={() => setAddMode('ai')}
+                  >
+                    <Wand2 size={16} /> AI Template
+                  </button>
+                  <button
+                    type="button"
+                    className={`add-mode-btn ${addMode === 'manual' ? 'active' : ''}`}
+                    onClick={() => setAddMode('manual')}
+                  >
+                    <ListPlus size={16} /> Manual
+                  </button>
+                </div>
+
+                {addMode === 'ai' && (
+                  <div className="ai-template-panel">
+                    <div className="add-form-grid ai-grid">
+                      <label className="form-field">
+                        <span>Jumlah</span>
+                        <input
+                          value={aiCount}
+                          onChange={(e) => setAiCount(Math.max(1, Number(e.target.value) || 1))}
+                          type="number"
+                          min="1"
+                          max="50"
+                          className="form-control"
+                        />
+                      </label>
+
+                      <div className="ai-action-row">
+                        <button type="button" className="secondary-btn" onClick={handleBuildAiPrompt}>
+                          <Clipboard size={16} /> Buat Prompt
+                        </button>
+                        <button type="button" className="secondary-btn" onClick={handleCopyPrompt}>
+                          {copyState === 'Prompt disalin' ? <ClipboardCheck size={16} /> : <Copy size={16} />}
+                          {copyState || 'Salin Prompt'}
+                        </button>
+                      </div>
+                    </div>
+
+                    <label className="form-field">
+                      <span>Topik atau materi</span>
+                      <textarea
+                        value={aiSource}
+                        onChange={(e) => setAiSource(e.target.value)}
+                        placeholder="Contoh: kosakata A2 tentang Bahnhof, Arbeit, telefonieren, atau tempel daftar kata dari buku."
+                        rows={3}
+                        className="form-control textarea-control"
+                      />
+                    </label>
+
+                    {aiPrompt && (
+                      <label className="form-field">
+                        <span>Prompt AI</span>
+                        <textarea
+                          value={aiPrompt}
+                          onChange={(e) => setAiPrompt(e.target.value)}
+                          rows={6}
+                          className="form-control textarea-control prompt-output"
+                        />
+                      </label>
+                    )}
+                  </div>
+                )}
+
+                <div className="template-toolbar">
+                  <div className="template-format">
+                    front | back | example | example_id
+                  </div>
+                  <div className="template-actions">
+                    <button type="button" className="icon-text-btn" onClick={handleUseTemplateSample}>
+                      <ClipboardCheck size={15} /> Contoh
+                    </button>
+                    <button type="button" className="icon-text-btn" onClick={handleClearTemplate}>
+                      <Eraser size={15} /> Bersihkan
+                    </button>
                   </div>
                 </div>
-                
-                <div style={{ marginBottom: '1.5rem' }}>
-                  <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
-                    Data Flashcard (Tiap baris: Depan | Belakang | Contoh)
-                  </label>
+
+                <label className="form-field template-input-field">
+                  <span>Template siap simpan</span>
                   <textarea 
                     value={inputText}
-                    onChange={(e) => setInputText(e.target.value)}
-                    placeholder="Contoh:&#10;der Apfel | Apel | Ich esse einen Apfel.&#10;die Banane | Pisang | Die Banane ist gelb."
-                    rows={6}
-                    style={{ width: '100%', padding: '0.75rem', borderRadius: '8px', background: 'rgba(255,255,255,0.05)', border: '1px solid var(--glass-border)', color: 'var(--text)', resize: 'vertical', fontFamily: 'inherit' }}
+                    onChange={(e) => {
+                      setInputText(e.target.value);
+                      setFormError('');
+                    }}
+                    placeholder="der Apfel | apel | Ich esse einen Apfel. | Saya makan sebuah apel."
+                    rows={7}
+                    className="form-control textarea-control"
                   />
+                </label>
+
+                {(formError || parsedTemplate.invalidRows.length > 0) && (
+                  <div className="form-alert">
+                    <AlertCircle size={16} />
+                    <span>
+                      {formError || `${parsedTemplate.invalidRows.length} baris belum sesuai template.`}
+                    </span>
+                  </div>
+                )}
+
+                <div className="preview-panel">
+                  <div className="preview-header">
+                    <span>Preview</span>
+                    <span className={`status-pill ${validPreviewCards.length > 0 ? 'ready' : ''}`}>
+                      {validPreviewCards.length} valid
+                    </span>
+                  </div>
+
+                  {validPreviewCards.length > 0 ? (
+                    <div className="preview-list">
+                      {validPreviewCards.slice(0, 4).map((card, index) => (
+                        <div className="preview-card" key={`${card.front}-${index}`}>
+                          <div className="preview-card-top">
+                            <strong>{card.front}</strong>
+                            <CheckCircle size={15} />
+                          </div>
+                          <p>{card.back}</p>
+                          <small>{card.example} — {card.example_id}</small>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="empty-preview">
+                      <Clipboard size={18} />
+                      <span>Belum ada kartu valid</span>
+                    </div>
+                  )}
                 </div>
-                
-                <button type="submit" className="next-btn" style={{ marginTop: 0 }}>
-                  Simpan Flashcard
+
+                <button
+                  type="submit"
+                  className="next-btn"
+                  style={{ marginTop: '1rem' }}
+                  disabled={validPreviewCards.length === 0}
+                >
+                  <Plus size={18} /> Simpan {validPreviewCards.length} Flashcard
                 </button>
               </form>
             </motion.div>

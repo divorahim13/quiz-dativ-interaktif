@@ -532,7 +532,6 @@ export const quizzes = [
       {
         id: 50,
         title: "Bagian D: Campuran (Jebakan!)",
-        sentence: "___ (ander, Lehrer) komt morgen.",
         sentence: "___ (ander, Lehrer) kommt morgen.",
         options: ["Ein anderer", "Einen anderen", "Eine andere"],
         correct: "Ein anderer",
