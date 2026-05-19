@@ -119,6 +119,139 @@ export const a2Kapitel6Cards = [
   { id: 105, front: "das Jahrhundert, -e", back: "abad", example: "Das war im 19. Jahrhundert.", example_id: "Itu terjadi pada abad ke-19." }
 ];
 
+export const a2Kapitel7Cards = [
+  // Verkehr in der Stadt
+  { id: 1, front: "das E-Bike, -s", back: "sepeda listrik", example: "Ich fahre mit dem E-Bike zur Arbeit.", example_id: "Saya pergi bekerja dengan sepeda listrik." },
+  { id: 2, front: "ab|stellen", back: "memarkir, menaruh", example: "Du kannst dein Fahrrad hier abstellen.", example_id: "Kamu bisa memarkir sepedamu di sini." },
+  { id: 3, front: "die Fahrt, -en", back: "perjalanan", example: "Die Fahrt dauert zwanzig Minuten.", example_id: "Perjalanannya berlangsung dua puluh menit." },
+  { id: 4, front: "flexibel", back: "fleksibel", example: "Mit dem Fahrrad bin ich sehr flexibel.", example_id: "Dengan sepeda saya sangat fleksibel." },
+  { id: 5, front: "die Linie, -en", back: "jalur, rute", example: "Welche Linie fährt zum Bahnhof?", example_id: "Jalur mana yang menuju stasiun?" },
+  { id: 6, front: "der Radfahrer, -", back: "pengendara sepeda laki-laki", example: "Der Radfahrer fährt auf dem Radweg.", example_id: "Pengendara sepeda itu berjalan di jalur sepeda." },
+  { id: 7, front: "der Radweg, -e", back: "jalur sepeda", example: "In dieser Straße gibt es einen Radweg.", example_id: "Di jalan ini ada jalur sepeda." },
+  { id: 8, front: "die Seilbahn, -en", back: "kereta gantung", example: "Die Seilbahn fährt auf den Berg.", example_id: "Kereta gantung itu naik ke gunung." },
+
+  // Verkehrsprobleme
+  { id: 9, front: "das Chaos (Sg.)", back: "kekacauan", example: "Nach dem Unfall gab es Chaos auf der Straße.", example_id: "Setelah kecelakaan ada kekacauan di jalan." },
+  { id: 10, front: "der Stau, -s (im Stau stehen)", back: "kemacetan (terjebak macet)", example: "Wir stehen seit einer Stunde im Stau.", example_id: "Kami sudah terjebak macet selama satu jam." },
+  { id: 11, front: "die Luft (Sg.)", back: "udara", example: "Die Luft in der Stadt ist schlecht.", example_id: "Udara di kota itu buruk." },
+  { id: 12, front: "in Zukunft", back: "di masa depan", example: "In Zukunft möchte ich öfter den Bus nehmen.", example_id: "Di masa depan saya ingin lebih sering naik bus." },
+  { id: 13, front: "reduzieren", back: "mengurangi", example: "Wir müssen den Verkehr reduzieren.", example_id: "Kita harus mengurangi lalu lintas." },
+  { id: 14, front: "umweltfreundlich", back: "ramah lingkungan", example: "E-Bikes sind umweltfreundlich.", example_id: "Sepeda listrik ramah lingkungan." },
+  { id: 15, front: "die Großstadt, ¨e", back: "kota besar", example: "Jakarta ist eine Großstadt.", example_id: "Jakarta adalah sebuah kota besar." },
+  { id: 16, front: "die Innenstadt, ¨e", back: "pusat kota", example: "In der Innenstadt gibt es viele Geschäfte.", example_id: "Di pusat kota ada banyak toko." },
+  { id: 17, front: "die Kombination, -en", back: "kombinasi", example: "Die Kombination aus Bus und Fahrrad ist praktisch.", example_id: "Kombinasi bus dan sepeda itu praktis." },
+  { id: 18, front: "die Konsequenz, -en", back: "konsekuensi", example: "Das hat viele Konsequenzen.", example_id: "Itu memiliki banyak konsekuensi." },
+  { id: 19, front: "das Konzept, -e", back: "konsep", example: "Die Stadt braucht ein neues Verkehrskonzept.", example_id: "Kota itu membutuhkan konsep lalu lintas baru." },
+
+  // rund ums Auto
+  { id: 20, front: "das Fahrzeug, -e", back: "kendaraan", example: "Dieses Fahrzeug ist sehr modern.", example_id: "Kendaraan ini sangat modern." },
+  { id: 21, front: "das Kfz, -s / das Kraftfahrzeug, -e", back: "kendaraan bermotor", example: "Das Kfz muss versichert sein.", example_id: "Kendaraan bermotor itu harus diasuransikan." },
+  { id: 22, front: "der Pkw, -s", back: "mobil penumpang", example: "Auf dem Parkplatz stehen viele Pkws.", example_id: "Di tempat parkir ada banyak mobil penumpang." },
+  { id: 23, front: "das Kennzeichen, -", back: "pelat nomor", example: "Das Kennzeichen ist gut sichtbar.", example_id: "Pelat nomornya terlihat jelas." },
+  { id: 24, front: "der Motor, -en", back: "mesin", example: "Der Motor ist kaputt.", example_id: "Mesinnya rusak." },
+  { id: 25, front: "der Reifen, -", back: "ban", example: "Der Reifen ist platt.", example_id: "Bannya kempis." },
+  { id: 26, front: "die Panne, -n", back: "kerusakan, mogok", example: "Wir hatten eine Panne auf der Autobahn.", example_id: "Kami mogok di jalan tol." },
+  { id: 27, front: "bremsen", back: "mengerem", example: "Du musst langsam bremsen.", example_id: "Kamu harus mengerem pelan-pelan." },
+  { id: 28, front: "die Garage, -n", back: "garasi", example: "Das Auto steht in der Garage.", example_id: "Mobil itu berada di garasi." },
+  { id: 29, front: "das Navi, -s", back: "alat navigasi, GPS", example: "Das Navi zeigt den Weg.", example_id: "GPS menunjukkan jalan." },
+  { id: 30, front: "das Benzin (Sg.)", back: "bensin", example: "Das Benzin ist teuer.", example_id: "Bensin itu mahal." },
+  { id: 31, front: "der Diesel (Sg.)", back: "solar, diesel", example: "Dieses Auto braucht Diesel.", example_id: "Mobil ini membutuhkan diesel." },
+  { id: 32, front: "tanken", back: "mengisi bahan bakar", example: "Ich muss noch tanken.", example_id: "Saya masih harus mengisi bahan bakar." },
+  { id: 33, front: "die Tankstelle, -n", back: "pom bensin", example: "Die Tankstelle ist gleich um die Ecke.", example_id: "Pom bensin ada tepat di dekat sini." },
+  { id: 34, front: "parken", back: "parkir", example: "Hier darf man nicht parken.", example_id: "Di sini orang tidak boleh parkir." },
+  { id: 35, front: "das Parkhaus, ¨er", back: "gedung parkir", example: "Wir parken im Parkhaus.", example_id: "Kami parkir di gedung parkir." },
+  { id: 36, front: "der Parkplatz, ¨e", back: "tempat parkir", example: "Ich suche einen Parkplatz.", example_id: "Saya mencari tempat parkir." },
+  { id: 37, front: "der TÜV (Sg.)", back: "uji kelayakan kendaraan", example: "Mein Auto muss zum TÜV.", example_id: "Mobil saya harus menjalani uji kelayakan kendaraan." },
+  { id: 38, front: "versichert", back: "diasuransikan", example: "Das Fahrzeug ist versichert.", example_id: "Kendaraan itu diasuransikan." },
+  { id: 39, front: "die Versicherung, -en", back: "asuransi", example: "Die Versicherung bezahlt den Schaden.", example_id: "Asuransi membayar kerusakannya." },
+
+  // im Zug
+  { id: 40, front: "die Zugfahrt, -en", back: "perjalanan dengan kereta", example: "Die Zugfahrt war angenehm.", example_id: "Perjalanan dengan kereta itu menyenangkan." },
+  { id: 41, front: "das Bordbistro, -s", back: "bistro/kafe di kereta", example: "Im Bordbistro kann man Kaffee kaufen.", example_id: "Di bistro kereta orang bisa membeli kopi." },
+  { id: 42, front: "das Kinderabteil, -e", back: "kompartemen anak", example: "Die Familie sitzt im Kinderabteil.", example_id: "Keluarga itu duduk di kompartemen anak." },
+  { id: 43, front: "die Monatskarte, -en", back: "tiket bulanan", example: "Ich kaufe jeden Monat eine Monatskarte.", example_id: "Saya membeli tiket bulanan setiap bulan." },
+  { id: 44, front: "die Platzreservierung, -en", back: "reservasi tempat duduk", example: "Haben Sie eine Platzreservierung?", example_id: "Apakah Anda punya reservasi tempat duduk?" },
+  { id: 45, front: "pendeln", back: "bolak-balik kerja/sekolah", example: "Viele Menschen pendeln jeden Tag.", example_id: "Banyak orang bolak-balik setiap hari." },
+  { id: 46, front: "brauchen (Wie lange brauchst du zur Arbeit?)", back: "membutuhkan, memerlukan waktu", example: "Wie lange brauchst du zur Arbeit?", example_id: "Berapa lama kamu membutuhkan waktu ke tempat kerja?" },
+  { id: 47, front: "weiter|fahren, er fährt weiter, ist weitergefahren", back: "melanjutkan perjalanan", example: "Der Zug fährt gleich weiter.", example_id: "Kereta akan segera melanjutkan perjalanan." },
+  { id: 48, front: "Mensch, wann geht es weiter?", back: "Aduh, kapan lanjut?", example: "Mensch, wann geht es endlich weiter?", example_id: "Aduh, kapan akhirnya lanjut?" },
+
+  // rund ums Flugzeug
+  { id: 49, front: "ab|fliegen, er fliegt ab, ist abgeflogen", back: "berangkat/lepas landas", example: "Das Flugzeug fliegt um acht Uhr ab.", example_id: "Pesawat berangkat pukul delapan." },
+  { id: 50, front: "der Abflug, ¨e", back: "keberangkatan", example: "Der Abflug ist um 10 Uhr.", example_id: "Keberangkatannya pukul 10." },
+  { id: 51, front: "buchen", back: "memesan", example: "Ich möchte einen Flug buchen.", example_id: "Saya ingin memesan penerbangan." },
+  { id: 52, front: "landen", back: "mendarat", example: "Das Flugzeug landet pünktlich.", example_id: "Pesawat mendarat tepat waktu." },
+
+  // einen Weg beschreiben
+  { id: 53, front: "die Beschreibung, -en", back: "deskripsi, penjelasan", example: "Die Beschreibung ist sehr genau.", example_id: "Deskripsinya sangat tepat." },
+  { id: 54, front: "an ... vorbei (+D.)", back: "melewati ...", example: "Gehen Sie an der Bank vorbei.", example_id: "Berjalanlah melewati bank itu." },
+  { id: 55, front: "gegenüber von (+D.)", back: "di seberang dari", example: "Die Apotheke ist gegenüber vom Bahnhof.", example_id: "Apotek berada di seberang stasiun." },
+  { id: 56, front: "dorthin", back: "ke sana", example: "Wie komme ich dorthin?", example_id: "Bagaimana saya sampai ke sana?" },
+  { id: 57, front: "die Richtung, -en", back: "arah", example: "Gehen Sie in diese Richtung.", example_id: "Pergilah ke arah ini." },
+  { id: 58, front: "vorwärts", back: "maju, ke depan", example: "Fahren Sie langsam vorwärts.", example_id: "Majulah pelan-pelan." },
+  { id: 59, front: "rückwärts", back: "mundur, ke belakang", example: "Fahren Sie bitte rückwärts.", example_id: "Silakan mundur." },
+  { id: 60, front: "Geh immer geradeaus.", back: "Pergilah lurus terus.", example: "Geh immer geradeaus bis zur Kreuzung.", example_id: "Pergilah lurus terus sampai persimpangan." },
+  { id: 61, front: "vorbei|gehen, er geht vorbei, ist vorbeigegangen", back: "berjalan melewati", example: "Gehen Sie am Supermarkt vorbei.", example_id: "Berjalanlah melewati supermarket." },
+  { id: 62, front: "die Kreuzung, -en", back: "persimpangan", example: "An der Kreuzung biegen Sie rechts ab.", example_id: "Di persimpangan belok kanan." },
+  { id: 63, front: "die Ampel, -n", back: "lampu lalu lintas", example: "An der Ampel müssen wir halten.", example_id: "Di lampu lalu lintas kita harus berhenti." },
+  { id: 64, front: "halten, er hält, hat gehalten (Lukas hält an der Ampel.)", back: "berhenti", example: "Der Bus hält an der Haltestelle.", example_id: "Bus berhenti di halte." },
+
+  // einen Service nutzen
+  { id: 65, front: "der Kundenservice, -s", back: "layanan pelanggan", example: "Rufen Sie bitte den Kundenservice an.", example_id: "Silakan telepon layanan pelanggan." },
+  { id: 66, front: "telefonisch", back: "melalui telepon", example: "Sie können uns telefonisch erreichen.", example_id: "Anda dapat menghubungi kami melalui telepon." },
+  { id: 67, front: "erreichen", back: "menghubungi, mencapai", example: "Ich kann den Kundenservice nicht erreichen.", example_id: "Saya tidak bisa menghubungi layanan pelanggan." },
+  { id: 68, front: "lösen (ein Problem lösen)", back: "menyelesaikan (menyelesaikan masalah)", example: "Wir müssen das Problem lösen.", example_id: "Kita harus menyelesaikan masalah itu." },
+  { id: 69, front: "registrieren (sich)", back: "mendaftar", example: "Sie müssen sich zuerst registrieren.", example_id: "Anda harus mendaftar terlebih dahulu." },
+  { id: 70, front: "die PIN, -s", back: "PIN, nomor sandi", example: "Geben Sie bitte Ihre PIN ein.", example_id: "Silakan masukkan PIN Anda." },
+
+  // von Untersuchungen berichten
+  { id: 71, front: "die Expertin, -nen", back: "ahli perempuan", example: "Die Expertin erklärt die Untersuchung.", example_id: "Ahli perempuan itu menjelaskan penelitian." },
+  { id: 72, front: "das Prozent, -e", back: "persen", example: "Fünfzig Prozent fahren mit dem Auto.", example_id: "Lima puluh persen pergi dengan mobil." },
+  { id: 73, front: "etwa (etwa ein Drittel)", back: "sekitar (sekitar sepertiga)", example: "Etwa ein Drittel nutzt den Bus.", example_id: "Sekitar sepertiga menggunakan bus." },
+  { id: 74, front: "die Untersuchung, -en", back: "penelitian, pemeriksaan", example: "Die Untersuchung zeigt neue Ergebnisse.", example_id: "Penelitian itu menunjukkan hasil baru." },
+  { id: 75, front: "zeigen (Untersuchungen zeigen, dass ...)", back: "menunjukkan", example: "Untersuchungen zeigen, dass viele Menschen pendeln.", example_id: "Penelitian menunjukkan bahwa banyak orang bolak-balik kerja." },
+
+  // die Meinung sagen
+  { id: 76, front: "die Meinung, -en (Ich bin der Meinung, dass ...)", back: "pendapat", example: "Ich bin der Meinung, dass Busse praktisch sind.", example_id: "Saya berpendapat bahwa bus praktis." },
+  { id: 77, front: "Du hast recht.", back: "Kamu benar.", example: "Du hast recht, das ist eine gute Idee.", example_id: "Kamu benar, itu ide yang bagus." },
+  { id: 78, front: "gegen (+A.) (Ich bin gegen Autos im Stadtzentrum.)", back: "menentang, melawan", example: "Ich bin gegen Autos im Stadtzentrum.", example_id: "Saya menentang mobil di pusat kota." },
+  { id: 79, front: "dafür sein", back: "setuju, mendukung", example: "Ich bin dafür.", example_id: "Saya mendukung itu." },
+  { id: 80, front: "dagegen sein", back: "tidak setuju, menentang", example: "Viele Leute sind dagegen.", example_id: "Banyak orang tidak setuju." },
+  { id: 81, front: "Es geht auch anders.", back: "Ada cara lain juga.", example: "Es geht auch anders: Wir können den Bus nehmen.", example_id: "Ada cara lain juga: kita bisa naik bus." },
+
+  // andere wichtige Wörter und Wendungen
+  { id: 82, front: "der Artikel, - (ein Artikel in der Zeitung)", back: "artikel", example: "Ich lese einen Artikel in der Zeitung.", example_id: "Saya membaca artikel di koran." },
+  { id: 83, front: "d. h. (das heißt)", back: "yaitu, artinya", example: "d. h., wir fahren morgen.", example_id: "Artinya, kita berangkat besok." },
+  { id: 84, front: "der Kinderwagen, -", back: "kereta bayi", example: "Der Kinderwagen steht im Flur.", example_id: "Kereta bayi berada di lorong." },
+  { id: 85, front: "die Mama, -s", back: "mama, ibu", example: "Meine Mama kommt später.", example_id: "Mama saya datang nanti." },
+  { id: 86, front: "die Stadtbesichtigung, -en", back: "tur keliling kota", example: "Die Stadtbesichtigung beginnt um neun Uhr.", example_id: "Tur keliling kota dimulai pukul sembilan." },
+  { id: 87, front: "der Konzertsaal, ¨e", back: "aula konser", example: "Der Konzertsaal ist sehr groß.", example_id: "Aula konser itu sangat besar." },
+  { id: 88, front: "klatschen", back: "bertepuk tangan", example: "Nach dem Konzert klatschen alle.", example_id: "Setelah konser semua orang bertepuk tangan." },
+  { id: 89, front: "das Gewitter, -", back: "badai petir", example: "Am Abend kommt ein Gewitter.", example_id: "Pada malam hari akan datang badai petir." },
+  { id: 90, front: "die Kaution, -en", back: "uang jaminan", example: "Die Kaution beträgt 200 Euro.", example_id: "Uang jaminannya sebesar 200 euro." },
+  { id: 91, front: "ob (Ich möchte gern wissen, ob der Zug pünktlich ist.)", back: "apakah", example: "Ich möchte wissen, ob der Zug pünktlich ist.", example_id: "Saya ingin tahu apakah keretanya tepat waktu." },
+  { id: 92, front: "Ganz schön schnell!", back: "Cepat sekali!", example: "Das E-Bike ist ganz schön schnell!", example_id: "Sepeda listrik itu cepat sekali!" },
+  { id: 93, front: "schon mal", back: "pernah", example: "Bist du schon mal mit der Seilbahn gefahren?", example_id: "Apakah kamu pernah naik kereta gantung?" },
+  { id: 94, front: "die SMS, -", back: "SMS, pesan singkat", example: "Ich schicke dir eine SMS.", example_id: "Saya mengirimimu SMS." },
+  { id: 95, front: "der Tarif, -e", back: "tarif", example: "Der neue Tarif ist günstiger.", example_id: "Tarif baru itu lebih murah." },
+  { id: 96, front: "die Werbung, -en", back: "iklan", example: "Die Werbung ist überall.", example_id: "Iklan ada di mana-mana." },
+  { id: 97, front: "sogar", back: "bahkan", example: "Sogar Kinder verstehen das.", example_id: "Bahkan anak-anak memahami itu." },
+  { id: 98, front: "elektrisch", back: "elektrik, listrik", example: "Das Auto fährt elektrisch.", example_id: "Mobil itu berjalan dengan tenaga listrik." },
+  { id: 99, front: "allgemein", back: "umum", example: "Das ist ein allgemeines Problem.", example_id: "Itu adalah masalah umum." },
+  { id: 100, front: "ewig", back: "selamanya, sangat lama", example: "Wir warten schon ewig.", example_id: "Kami sudah menunggu sangat lama." },
+  { id: 101, front: "nervig", back: "menyebalkan", example: "Der Stau ist nervig.", example_id: "Kemacetan itu menyebalkan." },
+  { id: 102, front: "nötig", back: "perlu", example: "Eine Reservierung ist nötig.", example_id: "Reservasi itu perlu." },
+  { id: 103, front: "sinnvoll", back: "masuk akal, bermanfaat", example: "Ein neues Konzept ist sinnvoll.", example_id: "Konsep baru itu masuk akal." },
+  { id: 104, front: "ungeduldig", back: "tidak sabar", example: "Die Fahrgäste werden ungeduldig.", example_id: "Para penumpang menjadi tidak sabar." },
+  { id: 105, front: "unpraktisch", back: "tidak praktis", example: "Diese Lösung ist unpraktisch.", example_id: "Solusi ini tidak praktis." },
+  { id: 106, front: "unterschiedlich", back: "berbeda-beda", example: "Die Meinungen sind unterschiedlich.", example_id: "Pendapatnya berbeda-beda." },
+  { id: 107, front: "setzen (sich)", back: "duduk", example: "Setzen Sie sich bitte.", example_id: "Silakan duduk." },
+  { id: 108, front: "überlegen (sich)", back: "mempertimbangkan, memikirkan", example: "Ich muss mir das überlegen.", example_id: "Saya harus mempertimbangkan itu." },
+  { id: 109, front: "versprechen, er verspricht, hat versprochen", back: "berjanji", example: "Er verspricht, pünktlich zu sein.", example_id: "Dia berjanji untuk tepat waktu." },
+  { id: 110, front: "vor|haben, er hat vor, hat vorgehabt", back: "berencana", example: "Was hast du am Wochenende vor?", example_id: "Apa rencanamu pada akhir pekan?" },
+  { id: 111, front: "zusammen|fassen", back: "merangkum", example: "Kannst du den Text zusammenfassen?", example_id: "Bisakah kamu merangkum teks itu?" }
+];
+
 export const flashcardLevels = [
   {
     id: "A1",
@@ -135,12 +268,19 @@ export const flashcardLevels = [
     title: "Niveau A2",
     description: "Kosakata tingkat dasar lanjutan.",
     chapters: Array.from({ length: 12 }, (_, i) => {
-      // Masukkan data A2 Kapitel 6
+      // Masukkan data A2 Kapitel 6 dan 7
       if (i + 1 === 6) {
         return {
           id: `A2-K${i + 1}`,
           title: `Kapitel ${i + 1}`,
           cards: a2Kapitel6Cards
+        };
+      }
+      if (i + 1 === 7) {
+        return {
+          id: `A2-K${i + 1}`,
+          title: `Kapitel ${i + 1}`,
+          cards: a2Kapitel7Cards
         };
       }
       return {
