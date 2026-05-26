@@ -1,3 +1,91 @@
+export const a2Kapitel1Cards = [
+  // Familie
+  { id: 1, front: "geboren sein", back: "lahir", example: "Ich bin in Jakarta geboren.", example_id: "Saya lahir di Jakarta." },
+  { id: 2, front: "geschieden", back: "bercerai", example: "Meine Eltern sind geschieden.", example_id: "Orang tua saya bercerai." },
+  { id: 3, front: "heiraten", back: "menikah", example: "Wir wollen nächstes Jahr heiraten.", example_id: "Kami ingin menikah tahun depan." },
+  { id: 4, front: "die Hochzeit, -en", back: "pernikahan", example: "Die Hochzeit war wunderschön.", example_id: "Pernikahannya sangat indah." },
+  { id: 5, front: "romantisch", back: "romantis", example: "Er hat ihr einen romantischen Antrag gemacht.", example_id: "Dia mengajukan lamaran yang romantis padanya." },
+  { id: 6, front: "der Rentner, -", back: "pensiunan (laki-laki)", example: "Mein Großvater ist seit zwei Jahren Rentner.", example_id: "Kakek saya sudah menjadi pensiunan selama dua tahun." },
+  { id: 7, front: "die Rentnerin, -nen", back: "pensiunan (perempuan)", example: "Meine Oma ist Rentnerin.", example_id: "Nenek saya adalah seorang pensiunan." },
+
+  // Beruf und Uni
+  { id: 8, front: "die Ausbildung, -en", back: "pelatihan kerja / magang", example: "Er macht eine Ausbildung als Mechatroniker.", example_id: "Dia melakukan pelatihan kerja sebagai mekanik mekatronika." },
+  { id: 9, front: "ab|schließen, er schließt ab, hat abgeschlossen", back: "menyelesaikan / lulus", example: "Sie hat ihre Ausbildung erfolgreich abgeschlossen.", example_id: "Dia telah menyelesaikan pelatihan kerjanya dengan sukses." },
+  { id: 10, front: "beenden", back: "mengakhiri / menyelesaikan", example: "Ich möchte mein Studium dieses Jahr beenden.", example_id: "Saya ingin menyelesaikan studi saya tahun ini." },
+  { id: 11, front: "die Arbeit (Sg.)", back: "pekerjaan", example: "Das war wirklich viel Arbeit.", example_id: "Itu benar-benar banyak pekerjaan." },
+  { id: 12, front: "die Überstunde, -n", back: "lembur / jam lembur", example: "Heute muss ich Überstunden machen.", example_id: "Hari ini saya harus kerja lembur." },
+  { id: 13, front: "der Augenoptiker, -", back: "ahli optik (laki-laki)", example: "Der Augenoptiker prüft meine Augen.", example_id: "Ahli optik memeriksa mata saya." },
+  { id: 14, front: "die Augenoptikerin, -nen", back: "ahli optik (perempuan)", example: "Die Augenoptikerin empfiehlt mir eine Brille.", example_id: "Ahli optik itu merekomendasikan kacamata kepada saya." },
+  { id: 15, front: "der Bankkaufmann, ¨er", back: "staf/pegawai bank (laki-laki)", example: "Mein Bruder arbeitet als Bankkaufmann.", example_id: "Saudara laki-laki saya bekerja sebagai pegawai bank." },
+  { id: 16, front: "die Bankkauffrau, -en", back: "staf/pegawai bank (perempuan)", example: "Sie membuat pelatihan kerja menjadi pegawai bank.", example_id: "Dia sedang menjalani pelatihan kerja menjadi pegawai bank." },
+  { id: 17, front: "Biologie (Sg.)", back: "Biologi", example: "Ich studiere Biologie an der Universität.", example_id: "Saya belajar Biologi di universitas." },
+  { id: 18, front: "Mathematik (Sg.)", back: "Matematika", example: "Mathematik war mein Lieblingsfach in der Schule.", example_id: "Matematika adalah mata pelajaran favorit saya di sekolah." },
+  { id: 19, front: "die Note, -n", back: "nilai (pelajaran)", example: "Er hat eine gute Note in Deutsch bekommen.", example_id: "Dia mendapatkan nilai yang bagus dalam bahasa Jerman." },
+
+  // wohnen
+  { id: 20, front: "mieten", back: "menyewa", example: "Wir möchten eine Wohnung in Berlin mieten.", example_id: "Kami ingin menyewa sebuah apartemen di Berlin." },
+  { id: 21, front: "renovieren", back: "merenovasi", example: "Wir müssen das Wohnzimmer renovieren.", example_id: "Kami harus merenovasi ruang tamu." },
+  { id: 22, front: "das Stadtzentrum, Stadtzentren", back: "pusat kota", example: "Die Geschäfte im Stadtzentrum sind sehr teuer.", example_id: "Toko-toko di pusat kota sangat mahal." },
+  { id: 23, front: "auf dem Land leben", back: "tinggal di pedesaan", example: "Viele Familien wollen auf dem Land leben.", example_id: "Banyak keluarga ingin tinggal di pedesaan." },
+  { id: 24, front: "weiter|suchen", back: "lanjut mencari", example: "Ich habe noch keine Wohnung, ich muss weitersuchen.", example_id: "Saya belum mendapatkan apartemen, saya harus lanjut mencari." },
+  { id: 25, front: "zusammen|leben", back: "hidup bersama", example: "Wir leben seit zwei Jahren zusammen.", example_id: "Kami sudah hidup bersama selama dua tahun." },
+
+  // Freizeit
+  { id: 26, front: "vor|schlagen, er schlägt vor, hat vorgeschlagen", back: "menyarankan / mengusulkan", example: "Was schlägst du für heute Abend vor?", example_id: "Apa yang kamu usulkan untuk malam ini?" },
+  { id: 27, front: "ab|sagen", back: "membatalkan / menolak", example: "Er musste den Termin leider absagen.", example_id: "Sayang sekali dia harus membatalkan janji temu tersebut." },
+  { id: 28, front: "zu|sagen", back: "menyetujui / menerima (undangan/tawaran)", example: "Ich habe die Einladung zugesagt.", example_id: "Saya telah menerima undangan tersebut." },
+  { id: 29, front: "einverstanden sein", back: "setuju", example: "Kommst du mit? - Einverstanden!", example_id: "Apakah kamu mau ikut? - Setuju!" },
+  { id: 30, front: "einen Plan ändern", back: "mengubah rencana", example: "Wir müssen unseren Plan ändern.", example_id: "Kita harus mengubah rencana kita." },
+  { id: 31, front: "der Verein, -e", back: "perkumpulan / klub / asosiasi", example: "Ich bin Mitglied in einem Sportverein.", example_id: "Saya adalah anggota di sebuah klub olahraga." },
+  { id: 32, front: "(sich) an|melden", back: "mendaftar", example: "Wo kann ich mich für den Kurs anmelden?", example_id: "Di mana saya bisa mendaftar untuk kursus tersebut?" },
+  { id: 33, front: "teil|nehmen, er nimmt teil, hat teilgenommen", back: "berpartisipasi / ikut serta", example: "Möchten Sie an dem Seminar teilnehmen?", example_id: "Apakah Anda ingin ikut serta dalam seminar tersebut?" },
+  { id: 34, front: "gemeinsam", back: "bersama-sama", example: "Wir haben gemeinsam eine Lösung gefunden.", example_id: "Kami telah menemukan solusi bersama-sama." },
+  { id: 35, front: "organisieren", back: "mengorganisasi / mengatur", example: "Wer organisiert die Geburtstagsparty?", example_id: "Siapa yang mengatur pesta ulang tahun?" },
+  { id: 36, front: "der Flohmarkt, ¨e", back: "pasar loak", example: "Am Sonntag gehen wir auf den Flohmarkt.", example_id: "Hari Minggu kita pergi ke pasar loak." },
+  { id: 37, front: "liegen, er liegt, hat gelegen", back: "berbaring / terletak", example: "Er liegt am Wochenende gern auf dem Sofa.", example_id: "Dia suka berbaring di sofa saat akhir pekan." },
+  { id: 38, front: "das Pferd, -e", back: "kuda", example: "Mein Traum ist ein eigenes Pferd.", example_id: "Impian saya adalah memiliki kuda sendiri." },
+  { id: 39, front: "reiten, er reitet, ist geritten", back: "menunggang kuda", example: "Kannst du gut reiten?", example_id: "Apakah kamu bisa menunggang kuda dengan baik?" },
+  { id: 40, front: "spannend", back: "menegangkan / seru", example: "Der Film gestern war sehr spannend.", example_id: "Film kemarin sangat seru." },
+
+  // im Restaurant
+  { id: 41, front: "der Aufenthalt, -e", back: "masa tinggal / kunjungan", example: "Wie war Ihr Aufenthalt im Hotel?", example_id: "Bagaimana masa tinggal Anda di hotel?" },
+  { id: 42, front: "der Eingang, ¨e", back: "pintu masuk", example: "Der Eingang ist auf der rechten Seite.", example_id: "Pintu masuknya ada di sisi sebelah kanan." },
+  { id: 43, front: "empfangen, er empfängt, hat empfangen", back: "menerima / menyambut", example: "Der Chef empfängt seine Gäste persönlich.", example_id: "Bos menyambut tamu-tamunya secara langsung." },
+  { id: 44, front: "der Platz, ¨e", back: "tempat / kursi", example: "Ein Kellner führt Sie zum Platz.", example_id: "Seorang pelayan mengantar Anda ke tempat duduk." },
+  { id: 45, front: "(sich) informieren (über + A.)", back: "mencari informasi", example: "Ich möchte mich über die Kurse informieren.", example_id: "Saya ingin mencari informasi tentang kursus-kursus tersebut." },
+  { id: 46, front: "aus|wählen", back: "memilih", example: "Sie können ein Gericht aus der Speisekarte auswählen.", example_id: "Anda bisa memilih hidangan dari daftar menu." },
+  { id: 47, front: "die Reservierung, -en", back: "reservasi / pemesanan", example: "Haben Sie eine Reservierung auf den Namen Müller?", example_id: "Apakah Anda memiliki reservasi atas nama Müller?" },
+  { id: 48, front: "spätestens", back: "paling lambat", example: "Ich komme spätestens um drei Uhr.", example_id: "Saya datang paling lambat pukul tiga." },
+  { id: 49, front: "bitter", back: "pahit", example: "Der Kaffee schmeckt sehr bitter.", example_id: "Kopinya terasa sangat pahit." },
+  { id: 50, front: "salzig", back: "asin", example: "Die Suppe ist mir zu salzig.", example_id: "Sup ini terlalu asin bagi saya." },
+  { id: 51, front: "sauer", back: "asam", example: "Zitronen sind sehr sauer.", example_id: "Lemon sangat asam." },
+  { id: 52, front: "scharf", back: "pedas", example: "Das Essen in Indonesien ist oft scharf.", example_id: "Makanan di Indonesia seringkali pedas." },
+  { id: 53, front: "das WC, -s", back: "WC / toilet", example: "Entschuldigung, wo ist das WC?", example_id: "Permisi, di mana toiletnya?" },
+  { id: 54, front: "weiter|helfen, er hilft weiter, hat weitergeholfen", back: "membantu lebih lanjut", example: "Kann ich Ihnen weiterfelten?", example_id: "Ada yang bisa saya bantu lebih lanjut?" },
+  { id: 55, front: "aus sein", back: "mati / padam", example: "Handys müssen während des Unterrichts aus sein.", example_id: "Ponsel harus dimatikan selama pelajaran berlangsung." },
+  { id: 56, front: "die Zigarette, -n", back: "rokok", example: "Er raucht eine Zigarette.", example_id: "Dia merokok sebatang rokok." },
+
+  // mit allen Sinnen lernen
+  { id: 57, front: "fühlen", back: "merasakan / meraba", example: "Fühl mal, wie kalt meine Hände sind.", example_id: "Rasakan seberapa dingin tangan saya." },
+  { id: 58, front: "der Gegenstand, ¨e", back: "benda / objek", example: "Was ist das für ein Gegenstand?", example_id: "Benda apakah ini?" },
+  { id: 59, front: "der Sinn, -e", back: "indra / makna", example: "Wir lernen mit allen fünf Sinnen.", example_id: "Kita belajar dengan kelima pancaindra." },
+  { id: 60, front: "zu|hören", back: "mendengarkan", example: "Hör mir bitte genau zu.", example_id: "Tolong dengarkan saya baik-baik." },
+
+  // andere wichtige Wörter und Wendungen
+  { id: 61, front: "die Angst, ¨e", back: "ketakutan / rasa takut", example: "Ich habe große Angst vor Hunden.", example_id: "Saya sangat takut pada anjing." },
+  { id: 62, front: "die Grippe (Sg.)", back: "flu", example: "Er liegt im Bett, weil er die Grippe hat.", example_id: "Dia terbaring di tempat tidur karena terkena flu." },
+  { id: 63, front: "das Handy, -s", back: "ponsel / HP", example: "Mein Handy hat keinen Akku mehr.", example_id: "Ponsel saya kehabisan baterai." },
+  { id: 64, front: "fast", back: "hampir", example: "Das Konzert ist fast ausverkauft.", example_id: "Konsernya hampir habis terjual." },
+  { id: 65, front: "also", back: "jadi / oleh karena itu", example: "Ich habe kein Auto, also fahre ich mit dem Bus.", example_id: "Saya tidak punya mobil, jadi saya naik bus." },
+  { id: 66, front: "fließend", back: "lancar (berbicara)", example: "Sie spricht fließend Deutsch.", example_id: "Dia berbicara bahasa Jerman dengan lancar." },
+  { id: 67, front: "eine Sprache fließend sprechen", back: "berbicara suatu bahasa dengan lancar", example: "Er möchte bald Englisch fließend sprechen.", example_id: "Dia ingin segera berbicara bahasa Inggris dengan lancar." },
+  { id: 68, front: "begründen", back: "memberikan alasan / menjustifikasi", example: "Bitte begründen Sie Ihre Meinung.", example_id: "Tolong berikan alasan atas pendapat Anda." },
+  { id: 69, front: "rufen, er ruft, hat gerufen", back: "memanggil / berteriak", example: "Sie ruft laut nach Hilfe.", example_id: "Dia berteriak keras meminta bantuan." },
+  { id: 70, front: "ganz (ganz am Ende)", back: "seluruhnya / persis di bagian paling akhir", example: "Die Toilette ist ganz am Ende des Flurs.", example_id: "Toilet berada persis di ujung lorong." },
+  { id: 71, front: "Mal sehen.", back: "Mari kita lihat. / Lihat saja nanti.", example: "Ob es klappt? Mal sehen.", example_id: "Apakah itu akan berhasil? Lihat saja nanti." },
+  { id: 72, front: "weil", back: "karena", example: "Marvin kommt später, weil er arbeiten muss.", example_id: "Marvin datang terlambat karena dia harus bekerja." }
+];
+
 export const a2Kapitel6Cards = [
   // Arbeitswelten
   { id: 1, front: "die Tätigkeit, -en", back: "kegiatan, aktivitas", example: "Welche Tätigkeit machen Sie?", example_id: "Pekerjaan apa yang Anda lakukan?" },
@@ -403,7 +491,14 @@ export const flashcardLevels = [
     title: "Niveau A2",
     description: "Kosakata tingkat dasar lanjutan.",
     chapters: Array.from({ length: 12 }, (_, i) => {
-      // Masukkan data A2 Kapitel 6, 7, dan 8
+      // Masukkan data A2 Kapitel 1, 6, 7, dan 8
+      if (i + 1 === 1) {
+        return {
+          id: `A2-K${i + 1}`,
+          title: `Kapitel ${i + 1}`,
+          cards: a2Kapitel1Cards
+        };
+      }
       if (i + 1 === 6) {
         return {
           id: `A2-K${i + 1}`,
