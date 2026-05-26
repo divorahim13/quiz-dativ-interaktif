@@ -22,6 +22,7 @@ const FlashcardViewer = ({ chapter, onBack }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [direction, setDirection] = useState(0);
+  const [studyMode, setStudyMode] = useState('passive'); // 'passive' = German -> Indo, 'active' = Indo -> German
 
   const cards = chapter.cards || [];
   const hasCards = cards.length > 0;
@@ -89,6 +90,7 @@ const FlashcardViewer = ({ chapter, onBack }) => {
       scale: 0.9,
     })
   };
+
   const renderColorizedText = (text) => {
     if (!text) return null;
     
@@ -116,7 +118,7 @@ const FlashcardViewer = ({ chapter, onBack }) => {
         display: 'grid', 
         gridTemplateColumns: '1fr auto 1fr', 
         alignItems: 'center', 
-        marginBottom: '2rem',
+        marginBottom: '1.5rem',
         width: '100%'
       }}>
         <button 
@@ -141,6 +143,65 @@ const FlashcardViewer = ({ chapter, onBack }) => {
         </h2>
         <div></div> {/* Empty div for grid balance */}
       </div>
+
+      {hasCards && (
+        <div className="recall-mode-selector" style={{
+          display: 'flex',
+          background: 'var(--glass)',
+          border: '1px solid var(--glass-border)',
+          borderRadius: '16px',
+          padding: '0.35rem',
+          marginBottom: '2rem',
+          gap: '0.35rem',
+          maxWidth: '420px',
+          margin: '0 auto 2rem auto',
+        }}>
+          <button 
+            onClick={() => { setStudyMode('passive'); setIsFlipped(false); }}
+            style={{
+              flex: 1,
+              padding: '0.65rem 1rem',
+              borderRadius: '12px',
+              border: 'none',
+              background: studyMode === 'passive' ? 'var(--primary)' : 'transparent',
+              color: studyMode === 'passive' ? '#fff' : 'var(--text-secondary)',
+              fontWeight: 700,
+              cursor: 'pointer',
+              transition: 'all 0.25s ease',
+              fontSize: '0.875rem',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '0.4rem',
+            }}
+          >
+            <span>🇩🇪 ➡️ 🇮🇩</span>
+            <span>Passive Recall</span>
+          </button>
+          <button 
+            onClick={() => { setStudyMode('active'); setIsFlipped(false); }}
+            style={{
+              flex: 1,
+              padding: '0.65rem 1rem',
+              borderRadius: '12px',
+              border: 'none',
+              background: studyMode === 'active' ? 'var(--primary)' : 'transparent',
+              color: studyMode === 'active' ? '#fff' : 'var(--text-secondary)',
+              fontWeight: 700,
+              cursor: 'pointer',
+              transition: 'all 0.25s ease',
+              fontSize: '0.875rem',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '0.4rem',
+            }}
+          >
+            <span>🇮🇩 ➡️ 🇩🇪</span>
+            <span>Active Recall</span>
+          </button>
+        </div>
+      )}
 
       {!hasCards ? (
         <div className="glass-card empty-state" style={{ textAlign: 'center', padding: '4rem 2rem' }}>
@@ -183,68 +244,69 @@ const FlashcardViewer = ({ chapter, onBack }) => {
                   transition={{ duration: 0.1, ease: "linear" }}
                   style={{ width: '100%', height: '100%' }}
                 >
-              {/* Front of Card */}
-              <div className="flashcard-front">
-                <div style={{ height: '20px' }}></div> {/* Top spacer */}
-                <div className="flashcard-content" style={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', width: '100%' }}>
-                  {currentCard.image && (
-                    <div className="flashcard-image-container">
-                      <img src={currentCard.image} alt="flashcard" className="flashcard-image" />
-                    </div>
-                  )}
-                  <h2 className="flashcard-title" style={{ 
-                    fontSize: getAdaptiveFontSize(currentCard.front, 'main')
-                  }}>
-                    {renderColorizedText(currentCard.front)}
-                  </h2>
-                </div>
-                <div className="flashcard-hint" style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginTop: 'auto' }}>
-                  Klik atau spasi untuk membalik
-                </div>
-              </div>
-
-              {/* Back of Card */}
-              <div className="flashcard-back">
-                <div style={{ height: '20px' }}></div> {/* Top spacer */}
-                <div className="flashcard-content" style={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', width: '100%' }}>
-                  <h2 className="flashcard-title flashcard-title-back" style={{ 
-                    fontSize: getAdaptiveFontSize(currentCard.back, 'main')
-                  }}>
-                    {renderColorizedText(currentCard.back)}
-                  </h2>
-                  {currentCard.example && (
-                    <div className="flashcard-example-container">
-                      <div className="flashcard-example" style={{ 
-                        fontSize: getAdaptiveFontSize(currentCard.example, 'example')
+                  {/* Front of Card */}
+                  <div className="flashcard-front">
+                    <div style={{ height: '20px' }}></div> {/* Top spacer */}
+                    <div className="flashcard-content" style={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', width: '100%' }}>
+                      {currentCard.image && studyMode === 'passive' && (
+                        <div className="flashcard-image-container">
+                          <img src={currentCard.image} alt="flashcard" className="flashcard-image" />
+                        </div>
+                      )}
+                      <h2 className="flashcard-title" style={{ 
+                        fontSize: getAdaptiveFontSize(studyMode === 'passive' ? currentCard.front : currentCard.back, 'main')
                       }}>
-                        <div>"{currentCard.example}"</div>
-                        {currentCard.example_id && (
-                          <div className="flashcard-example-translation" style={{ 
-                            fontSize: '0.85rem', 
-                            color: 'var(--text-secondary)', 
-                            marginTop: '0.5rem',
-                            fontStyle: 'normal',
-                            opacity: 0.8,
-                            borderTop: '1px solid rgba(255,255,255,0.1)',
-                            paddingTop: '0.5rem'
-                          }}>
-                            {currentCard.example_id}
-                          </div>
-                        )}
-                      </div>
+                        {studyMode === 'passive' ? renderColorizedText(currentCard.front) : currentCard.back}
+                      </h2>
                     </div>
-                  )}
-                </div>
-                <div className="flashcard-hint" style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginTop: 'auto' }}>
-                  Klik atau spasi untuk membalik
-                </div>
-              </div>
-            </motion.div>
-          </motion.div>
-        </AnimatePresence>
-      </div>
+                    <div className="flashcard-hint" style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginTop: 'auto' }}>
+                      Klik atau spasi untuk membalik
+                    </div>
+                  </div>
 
-      <div className="flashcard-controls" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '1.5rem', marginTop: '2rem' }}>
+                  {/* Back of Card */}
+                  <div className="flashcard-back">
+                    <div style={{ height: '20px' }}></div> {/* Top spacer */}
+                    <div className="flashcard-content" style={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', width: '100%' }}>
+                      <h2 className="flashcard-title flashcard-title-back" style={{ 
+                        fontSize: getAdaptiveFontSize(studyMode === 'passive' ? currentCard.back : currentCard.front, 'main'),
+                        color: studyMode === 'active' ? '#fff' : 'var(--primary)'
+                      }}>
+                        {studyMode === 'passive' ? currentCard.back : renderColorizedText(currentCard.front)}
+                      </h2>
+                      {currentCard.example && (
+                        <div className="flashcard-example-container">
+                          <div className="flashcard-example" style={{ 
+                            fontSize: getAdaptiveFontSize(currentCard.example, 'example')
+                          }}>
+                            <div>"{currentCard.example}"</div>
+                            {currentCard.example_id && (
+                              <div className="flashcard-example-translation" style={{ 
+                                fontSize: '0.85rem', 
+                                color: 'var(--text-secondary)', 
+                                marginTop: '0.5rem',
+                                fontStyle: 'normal',
+                                opacity: 0.8,
+                                borderTop: '1px solid rgba(255,255,255,0.1)',
+                                paddingTop: '0.5rem'
+                              }}>
+                                {currentCard.example_id}
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                    <div className="flashcard-hint" style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginTop: 'auto' }}>
+                      Klik atau spasi untuk membalik
+                    </div>
+                  </div>
+                </motion.div>
+              </motion.div>
+            </AnimatePresence>
+          </div>
+
+          <div className="flashcard-controls" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '1.5rem', marginTop: '2rem' }}>
             <button 
               onClick={handlePrev} 
               disabled={currentIndex === 0}
