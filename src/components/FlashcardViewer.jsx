@@ -23,6 +23,27 @@ const FlashcardViewer = ({ chapter, onBack }) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [direction, setDirection] = useState(0);
   const [studyMode, setStudyMode] = useState('passive'); // 'passive' = German -> Indo, 'active' = Indo -> German
+  const [tempInput, setTempInput] = useState('1');
+
+  useEffect(() => {
+    setTempInput(String(currentIndex + 1));
+  }, [currentIndex]);
+
+  const handleInputChange = (e) => {
+    const valueStr = e.target.value;
+    setTempInput(valueStr);
+    
+    const val = parseInt(valueStr, 10);
+    if (!isNaN(val) && val >= 1 && val <= cards.length) {
+      setDirection(val - 1 > currentIndex ? 1 : -1);
+      setIsFlipped(false);
+      setCurrentIndex(val - 1);
+    }
+  };
+
+  const handleInputBlur = () => {
+    setTempInput(String(currentIndex + 1));
+  };
 
   const cards = chapter.cards || [];
   const hasCards = cards.length > 0;
@@ -213,8 +234,46 @@ const FlashcardViewer = ({ chapter, onBack }) => {
         </div>
       ) : (
         <div className="flashcard-deck">
-          <div className="progress-indicator" style={{ textAlign: 'center', marginBottom: '1rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
-            Kartu {currentIndex + 1} dari {cards.length}
+          <div className="progress-indicator" style={{ 
+            display: 'flex', 
+            alignItems: 'center', 
+            justifyContent: 'center', 
+            gap: '8px', 
+            marginBottom: '1.25rem', 
+            color: 'var(--text-secondary)', 
+            fontSize: '0.95rem' 
+          }}>
+            <span>Kartu</span>
+            <input 
+              type="number" 
+              min={1} 
+              max={cards.length} 
+              value={tempInput} 
+              onChange={handleInputChange}
+              onBlur={handleInputBlur}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  e.target.blur();
+                }
+              }}
+              style={{
+                width: '64px',
+                background: 'rgba(255, 255, 255, 0.06)',
+                border: '1px solid var(--glass-border)',
+                borderRadius: '10px',
+                color: 'var(--text)',
+                padding: '6px 8px',
+                textAlign: 'center',
+                fontWeight: '600',
+                outline: 'none',
+                fontFamily: 'inherit',
+                fontSize: '0.95rem',
+                boxShadow: 'inset 0 2px 4px rgba(0,0,0,0.2)',
+                transition: 'all 0.2s ease',
+              }}
+              onFocus={(e) => e.target.select()}
+            />
+            <span>dari {cards.length}</span>
           </div>
 
           <div className="flashcard-scene" style={{ position: 'relative', display: 'flex', justifyContent: 'center', overflow: 'hidden' }}>
