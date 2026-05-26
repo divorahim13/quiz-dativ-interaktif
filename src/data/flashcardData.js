@@ -83,7 +83,41 @@ export const a2Kapitel1Cards = [
   { id: 69, front: "rufen, er ruft, hat gerufen", back: "memanggil / berteriak", example: "Sie ruft laut nach Hilfe.", example_id: "Dia berteriak keras meminta bantuan." },
   { id: 70, front: "ganz (ganz am Ende)", back: "seluruhnya / persis di bagian paling akhir", example: "Die Toilette ist ganz am Ende des Flurs.", example_id: "Toilet berada persis di ujung lorong." },
   { id: 71, front: "Mal sehen.", back: "Mari kita lihat. / Lihat saja nanti.", example: "Ob es klappt? Mal sehen.", example_id: "Apakah itu akan berhasil? Lihat saja nanti." },
-  { id: 72, front: "weil", back: "karena", example: "Marvin kommt später, weil er arbeiten muss.", example_id: "Marvin datang terlambat karena dia harus bekerja." }
+  { id: 72, front: "weil", back: "karena", example: "Marvin kommt später, weil er arbeiten muss.", example_id: "Marvin datang terlambat karena dia harus bekerja." },
+
+  // Kata Kerja (Verben) & Kata Depan
+  { id: 73, front: "vergleichen (mit)", back: "membandingkan (dengan)", example: "Man kann Äpfel nicht mit Birnen vergleichen.", example_id: "Orang tidak bisa membandingkan apel dengan pir." },
+  { id: 74, front: "kennen", back: "kenal atau mengetahui (orang/tempat/situasi)", example: "Kennst du diesen Mann dort?", example_id: "Apakah kamu kenal pria di sana itu?" },
+  { id: 75, front: "riechen, er riecht, hat gerochen", back: "mencium bau / berbau", example: "Die Blumen riechen sehr gut.", example_id: "Bunga-bunga itu berbau sangat harum." },
+  { id: 76, front: "fühlen", back: "merasa / meraba", example: "Ich fühle mich heute viel besser.", example_id: "Saya merasa jauh lebih baik hari ini." },
+  { id: 77, front: "klettern, er klettert, ist geklettert", back: "memanjat / mendaki", example: "Die Kinder klettern gern auf Bäume.", example_id: "Anak-anak suka memanjat pohon." },
+  { id: 78, front: "mit|bringen, er bringt mit, hat mitgebracht", back: "membawa serta", example: "Was hast du mir mitgebracht?", example_id: "Apa yang telah kamu bawakan untukku?" },
+  { id: 79, front: "schmeckten", back: "terasa (makanan) (bentuk lampau/Präteritum dari schmecken)", example: "Die Nudeln schmeckten sehr lecker.", example_id: "Mi itu rasanya sangat lezat." },
+  { id: 80, front: "durch (+ Akkusativ)", back: "melalui / lewat (kata depan)", example: "Wir gehen durch den Park.", example_id: "Kita berjalan melalui taman." },
+
+  // Kata Benda (Nomen)
+  { id: 81, front: "die Überschriften (Tunggal: die Überschrift)", back: "judul / kepala tulisan", example: "Lies die Überschriften im Text.", example_id: "Bacalah judul-judul dalam teks tersebut." },
+  { id: 82, front: "die Ausdrücke (Tunggal: der Ausdruck)", back: "ungkapan / istilah / ekspresi bahasa", example: "Diese Ausdrücke sind typisch für Berlin.", example_id: "Ungkapan-ungkapan ini khas untuk Berlin." },
+  { id: 83, front: "die Verwandten (Tunggal: der/die Verwandte)", back: "kerabat / saudara", example: "An Weihnachten besuchen wir unsere Verwandten.", example_id: "Pada hari Natal kami mengunjungi kerabat kami." },
+  { id: 84, front: "die Reihenfolge, -n", back: "urutan (misalnya urutan kalimat/kata)", example: "Bringen Sie die Sätze in die richtige Reihenfolge.", example_id: "Urutkan kalimat-kalimat tersebut ke dalam urutan yang benar." },
+  { id: 85, front: "die Sinne (Tunggal: der Sinn)", back: "indra (seperti panca indra)", example: "Menschen haben fünf Sinne.", example_id: "Manusia memiliki lima indra." },
+  { id: 86, front: "die Regeln (Tunggal: die Regel)", back: "peraturan-peraturan", example: "Hier gelten strenge Regeln.", example_id: "Di sini berlaku peraturan yang ketat." },
+  { id: 87, front: "die Hände (Tunggal: die Hand)", back: "tangan-tangan", example: "Wasch dir bitte vor dem Essen die Hände.", example_id: "Tolong cuci tanganmu sebelum makan." },
+  { id: 88, front: "die Gläser (Tunggal: das Glas)", back: "gelas-gelas", example: "Stell die Gläser bitte auf den Tisch.", example_id: "Tolong taruh gelas-gelas itu di atas meja." },
+  { id: 89, front: "das Besteck, -e", back: "alat makan (sendok, garpu, pisau)", example: "Wo liegt das Besteck?", example_id: "Di mana letak alat makannya?" },
+  { id: 90, front: "die Welt (Sg.)", back: "dunia", example: "Sie möchte um die ganze Welt reisen.", example_id: "Dia ingin bepergian keliling dunia." },
+  { id: 91, front: "die Natur (Sg.)", back: "alam", example: "Ich verbringe meine Freizeit gern in der Natur.", example_id: "Saya suka menghabiskan waktu luang saya di alam." },
+
+  // Kata Sifat, Keterangan, & Frasa
+  { id: 92, front: "echt", back: "benar-benar / asli", example: "Das Bild ist ein echter Picasso.", example_id: "Lukisan itu adalah sebuah Picasso asli." },
+  { id: 93, front: "gleich", back: "sama / segera", example: "Ich komme gleich.", example_id: "Saya segera datang." },
+  { id: 94, front: "vorher", back: "sebelumnya", example: "Wir müssen vorher reservieren.", example_id: "Kita harus memesan sebelumnya." },
+  { id: 95, front: "etwas", back: "sesuatu / sedikit", example: "Möchten Sie etwas trinken?", example_id: "Apakah Anda ingin minum sesuatu?" },
+  { id: 96, front: "genug", back: "cukup", example: "Ich habe nicht genug Geld dabei.", example_id: "Saya tidak membawa cukup uang." },
+  { id: 97, front: "fröhlich", back: "gembira / ceria", example: "Die Stimmung auf der Party war sehr fröhlich.", example_id: "Suasana di pesta itu sangat ceria." },
+  { id: 98, front: "unpünktlich", back: "tidak tepat waktu / telat", example: "Der Bus war leider unpünktlich.", example_id: "Sayangnya bus tersebut tidak tepat waktu." },
+  { id: 99, front: "dafür", back: "untuk itu / untuk hal tersebut", example: "Ich danke dir dafür.", example_id: "Saya berterima kasih kepadamu untuk hal itu." },
+  { id: 100, front: "mag Bremen", back: "suka kota Bremen (mögen + nama kota)", example: "Er mag Bremen, weil es dort sehr schön ist.", example_id: "Dia suka kota Bremen karena di sana sangat indah." }
 ];
 
 export const a2Kapitel6Cards = [
