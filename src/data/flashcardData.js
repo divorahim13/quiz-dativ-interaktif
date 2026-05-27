@@ -507,6 +507,215 @@ export const a2Kapitel8Cards = [
   { id: 117, front: "übrigens", back: "omong-omong", example: "Übrigens, hast du die E-Mail gelesen?", example_id: "Omong-omong, apakah kamu sudah membaca emailnya?" }
 ];
 
+export const a2Kapitel9Cards = [
+  // die Sportart, -en | jenis olahraga
+  { id: 1, front: "die Sportart, -en", back: "jenis olahraga", example: "Welche Sportart magst du am liebsten?", example_id: "Jenis olahraga apa yang paling kamu sukai?" },
+  // sich bewegen | bergerak (aktif)
+  { id: 2, front: "sich bewegen", back: "bergerak (aktif)", example: "Es ist wichtig, sich jeden Tag zu bewegen.", example_id: "Sangat penting untuk bergerak (aktif) setiap hari." },
+  // das Kajak, -s | kayak
+  { id: 3, front: "das Kajak, -s", back: "kayak", example: "Wir fahren mit dem Kajak auf dem Fluss.", example_id: "Kami naik kayak di sungai." },
+  // Kajak fahren | bermain kayak
+  { id: 4, front: "Kajak fahren", back: "bermain kayak", example: "Im Sommer wollen wir Kajak fahren.", example_id: "Di musim panas kami ingin bermain kayak." },
+  // das Kitesurfen (Sg.) | kitesurf
+  { id: 5, front: "das Kitesurfen (Sg.)", back: "kitesurf", example: "Kitesurfen ist ein spannender Wassersport.", example_id: "Kitesurf adalah olahraga air yang seru." },
+  // surfen | berselancar
+  { id: 6, front: "surfen", back: "berselancar", example: "Er kann sehr gut im Ozean surfen.", example_id: "Dia bisa berselancar dengan sangat baik di samudra." },
+  // tauchen | menyelam
+  { id: 7, front: "tauchen", back: "menyelam", example: "Ich möchte im Urlaub im Meer tauchen.", example_id: "Saya ingin menyelam di laut saat liburan." },
+  // langlaufen | ski lintas alam
+  { id: 8, front: "langlaufen, er läuft lang, ist langgelaufen", back: "ski lintas alam", example: "Wir sind stundenlang langgelaufen.", example_id: "Kami telah bermain ski lintas alam selama berjam-jam." },
+  // Volleyball spielen | main voli
+  { id: 9, front: "Volleyball spielen", back: "main voli", example: "Am Strand spielen wir oft Volleyball.", example_id: "Di pantai kami sering bermain voli." },
+  // das Tor, -e | gol / gawang
+  { id: 10, front: "das Tor, -e", back: "gol / gawang", example: "Der Spieler schießt ein Tor.", example_id: "Pemain itu mencetak gol." },
+  // schießen | menendang / menembak (bola)
+  { id: 11, front: "schießen, er schießt, hat geschossen", back: "menendang / menembak (bola)", example: "Er schießt den Ball direkt ins Tor.", example_id: "Dia menembak bola langsung ke gawang." },
+  // werfen | melempar
+  { id: 12, front: "werfen, er wirft, hat geworfen", back: "melempar", example: "Du musst den Ball mir werfen.", example_id: "Kamu harus melempar bola kepadaku." },
+  // mitspielen | ikut bermain
+  { id: 13, front: "mitspielen", back: "ikut bermain", example: "Darf ich bei euch mitspielen?", example_id: "Bolehkah saya ikut bermain bersama kalian?" },
+  // das Rad, ⁼er | sepeda
+  { id: 14, front: "das Rad, ⁼er", back: "sepeda", example: "Mein Rad steht vor dem Haus.", example_id: "Sepedaku berada di depan rumah." },
+  // Rad fahren | bersepeda
+  { id: 15, front: "Rad fahren", back: "bersepeda", example: "Ich fahre jeden Tag mit dem Rad zur Arbeit.", example_id: "Saya bersepeda ke tempat kerja setiap hari." },
+  // die Radtour, -en | tur bersepeda
+  { id: 16, front: "die Radtour, -en", back: "tur bersepeda", example: "Am Wochenende machen wir eine große Radtour.", example_id: "Di akhir pekan kami melakukan tur bersepeda yang besar." },
+  // reiten | berkuda
+  { id: 17, front: "reiten, er reitet, ist geritten", back: "berkuda", example: "Sie reitet seit ihrer Kindheit.", example_id: "Dia sudah berkuda sejak masa kecilnya." },
+  // Yoga machen | melakukan yoga
+  { id: 18, front: "Yoga machen", back: "melakukan yoga", example: "Yoga machen hilft gegen Stress.", example_id: "Melakukan yoga membantu meredakan stres." },
+  // der Kletterer, - | pemanjat tebing (L)
+  { id: 19, front: "der Kletterer, -", back: "pemanjat tebing (L)", example: "Der Kletterer steigt auf den Berg.", example_id: "Pemanjat tebing laki-laki itu mendaki gunung." },
+  // die Kletterin, -nen | pemanjat tebing (P)
+  { id: 20, front: "die Kletterin, -nen", back: "pemanjat tebing (P)", example: "Sie ist eine sehr erfahrene Kletterin.", example_id: "Dia adalah pemanjat tebing perempuan yang sangat berpengalaman." },
+  // die Wanderung, -en | pendakian / hiking
+  { id: 21, front: "die Wanderung, -en", back: "pendakian / hiking", example: "Die Wanderung in den Bergen war anstrengend.", example_id: "Pendakian di pegunungan itu melelahkan." },
+  // eine Wanderung machen | melakukan pendakian / hiking
+  { id: 22, front: "eine Wanderung machen", back: "melakukan pendakian / hiking", example: "Wir wollen morgen eine Wanderung machen.", example_id: "Kami ingin melakukan pendakian besok." },
+  // die Strecke, -n | rute / jarak tempuh
+  { id: 23, front: "die Strecke, -n", back: "rute / jarak tempuh", example: "Die Strecke ist etwa zehn Kilometer lang.", example_id: "Rute tersebut panjangnya sekitar sepuluh kilometer." },
+  // die Kondition(Sg.) | kondisi fisik / stamina
+  { id: 24, front: "die Kondition (Sg.)", back: "kondisi fisik / stamina", example: "Für diese Sportart braucht man eine gute Kondition.", example_id: "Untuk jenis olahraga ini orang membutuhkan stamina yang baik." },
+  // die Gesundheit(Sg.) | kesehatan
+  { id: 25, front: "die Gesundheit (Sg.)", back: "kesehatan", example: "Sport ist sehr gut für die Gesundheit.", example_id: "Olahraga sangat baik untuk kesehatan." },
+  // sich entspannen | bersantai / relaksasi
+  { id: 26, front: "sich entspannen", back: "bersantai / relaksasi", example: "Nach dem Sport kann ich mich gut entspannen.", example_id: "Setelah berolahraga saya bisa bersantai dengan baik." },
+  // der Wettbewerb, -e | kompetisi / perlombaan
+  { id: 27, front: "der Wettbewerb, -e", back: "kompetisi / perlombaan", example: "Wer hat den Wettbewerb gewonnen?", example_id: "Siapa yang memenangkan kompetisi tersebut?" },
+
+  // 🎽 SPORTGERÄTE (Peralatan Olahraga)
+  // der Fußballschuh, -e | sepatu bola
+  { id: 28, front: "der Fußballschuh, -e", back: "sepatu bola", example: "Ich muss meine neuen Fußballschuhe putzen.", example_id: "Saya harus membersihkan sepatu bola baru saya." },
+  // der Klettergurt, -e | tali pengaman panjat tebing
+  { id: 29, front: "der Klettergurt, -e", back: "tali pengaman panjat tebing", example: "Ohne Klettergurt darf man nicht klettern.", example_id: "Tanpa tali pengaman orang tidak boleh memanjat." },
+  // der Helm, -e | helm
+  { id: 30, front: "der Helm, -e", back: "helm", example: "Beim Radfahren solltest du immer einen Helm tragen.", example_id: "Saat bersepeda kamu sebaiknya selalu memakai helm." },
+  // die Matte, -n | matras
+  { id: 31, front: "die Matte, -n", back: "matras", example: "Für Yoga brauchst du eine weiche Matte.", example_id: "Untuk yoga kamu membutuhkan matras yang empuk." },
+  // das Mountainbike, -s | sepeda gunung
+  { id: 32, front: "das Mountainbike, -s", back: "sepeda gunung", example: "Er fährt mit dem Mountainbike durch den Wald.", example_id: "Dia mengendarai sepeda gunung melewati hutan." },
+  // der Schläger, - | raket / pemukul
+  { id: 33, front: "der Schläger, -", back: "raket / pemukul", example: "Ich habe meinen Tennisschläger vergessen.", example_id: "Saya melupakan raket tenis saya." },
+  // der Skistock, ⁼e | tongkat ski
+  { id: 34, front: "der Skistock, ⁼e", back: "tongkat ski", example: "Wo sind meine Skistöcke geblieben?", example_id: "Di mana tongkat ski saya berada?" },
+  // das Paddel, - | dayung (kayak)
+  { id: 35, front: "das Paddel, -", back: "dayung (kayak)", example: "Halte das Paddel fest mit beiden Händen.", example_id: "Pegang dayung itu erat-erat dengan kedua tangan." },
+  // das Surfbrett, -er | papan selancar
+  { id: 36, front: "das Surfbrett, -er", back: "papan selancar", example: "Sie trägt ihr Surfbrett zum Strand.", example_id: "Dia membawa papan selancarnya ke pantai." },
+  // die Taucherbrille, -n | kacamata selam
+  { id: 37, front: "die Taucherbrille, -n", back: "kacamata selam", example: "Mit der Taucherbrille kann ich unter Wasser sehen.", example_id: "Dengan kacamata selam saya bisa melihat di bawah air." },
+
+  // 🏆 VEREINE UND FANS (Klub & Penggemar)
+  // der Sportverein, -e | klub olahraga
+  { id: 38, front: "der Sportverein, -e", back: "klub olahraga", example: "Ich bin im Sportverein.", example_id: "Saya bergabung di klub olahraga." },
+  // die Mannschaft, -en | tim
+  { id: 39, front: "die Mannschaft, -en", back: "tim", example: "Unsere Mannschaft hat das Spiel gewonnen.", example_id: "Tim kami telah memenangkan pertandingan." },
+  // der Fußballstar, -s | bintang sepak bola
+  { id: 40, front: "der Fußballstar, -s", back: "bintang sepak bola", example: "Er möchte ein berühmter Fußballstar werden.", example_id: "Dia ingin menjadi bintang sepak bola terkenal." },
+  // der Fanartikel, - | merchandise / atribut fan
+  { id: 41, front: "der Fanartikel, -", back: "merchandise / atribut fan", example: "Mein Sohn kauft viele Fanartikel.", example_id: "Anak laki-laki saya membeli banyak merchandise." },
+  // treu | setia
+  { id: 42, front: "treu", back: "setia", example: "Sie ist ein treuer Fan.", example_id: "Dia adalah seorang penggemar setia." },
+  // sich benehmen | bertingkah laku
+  { id: 43, front: "sich benehmen, er benimmt sich, hat sich benommen", back: "bertingkah laku", example: "Er benimmt sich wie ein Fußballstar.", example_id: "Dia bertingkah laku seperti bintang sepak bola." },
+  // das Vorbild, -er | panutan / idola
+  { id: 44, front: "das Vorbild, -er", back: "panutan / idola", example: "Sportler sind oft ein Vorbild für Jugendliche.", example_id: "Para atlet sering kali menjadi panutan bagi remaja." },
+  // sympathisch | simpatik / menyenangkan
+  { id: 45, front: "sympathisch", back: "simpatik / menyenangkan", example: "Ich finde den neuen Trainer sehr sympathisch.", example_id: "Saya rasa pelatih baru itu sangat menyenangkan." },
+  // großartig | luar biasa / hebat
+  { id: 46, front: "großartig", back: "luar biasa / hebat", example: "Das war ein großartiges Spiel!", example_id: "Itu adalah pertandingan yang luar biasa!" },
+  // genial | jenius / brilian
+  { id: 47, front: "genial", back: "jenius / brilian", example: "Seine Taktik für das Spiel war absolut genial.", example_id: "Taktik permainannya benar-benar brilian." },
+  // unglaublich | tidak percaya / luar biasa
+  { id: 48, front: "unglaublich", back: "tidak percaya / luar biasa", example: "Das Spiel war unglaublich gut!", example_id: "Pertandingan itu luar biasa bagus!" },
+  // der Wahnsinn | gila! (ekspresi kagum)
+  { id: 49, front: "der Wahnsinn", back: "gila! (ekspresi kagum)", example: "Wahnsinn! So ein tolles Spiel!", example_id: "Gila! Sungguh pertandingan yang hebat!" },
+  // wahnsinnig gut | bagus banget!
+  { id: 50, front: "wahnsinnig gut", back: "bagus banget!", example: "Das war wahnsinnig gut!", example_id: "Itu bagus banget!" },
+  // die Hoffnung, -en | harapan
+  { id: 51, front: "die Hoffnung, -en", back: "harapan", example: "Wir haben immer noch Hoffnung auf den Sieg.", example_id: "Kami masih memiliki harapan untuk menang." },
+  // bestimmt | pasti / tentu saja
+  { id: 52, front: "bestimmt", back: "pasti / tentu saja", example: "Das nächste Mal klappt es bestimmt.", example_id: "Lain kali pasti akan berhasil." },
+  // der Erfolg, -e | keberhasilan / sukses
+  { id: 53, front: "der Erfolg, -e", back: "keberhasilan / sukses", example: "Ich wünsche dir viel Erfolg beim Turnier.", example_id: "Saya doakan kamu sukses besar di turnamen." },
+  // die Enttäuschung, -en | kekecewaan
+  { id: 54, front: "die Enttäuschung, -en", back: "kekecewaan", example: "Die Niederlage war eine große Enttäuschung.", example_id: "Kekalahan itu merupakan kekecewaan yang besar." },
+  // verlieren | kalah / kehilangan
+  { id: 55, front: "verlieren, er verliert, hat verloren", back: "kalah / kehilangan", example: "Wir wollen das finale nicht verlieren.", example_id: "Kami tidak ingin kalah di babak final." },
+  // die Katastrophe, -n | bencana / kegagalan total
+  { id: 56, front: "die Katastrophe, -n", back: "bencana / kegagalan total", example: "Das ist eine Katastrophe!", example_id: "Ini adalah bencana!" },
+
+  // 💬 VORSCHLÄGE MACHEN & VERABREDEN (Mengusulkan & Membuat Janji)
+  // Was denkst du, sollen wir ...? | Menurutmu, haruskah kita ...?
+  { id: 57, front: "Was denkst du, sollen wir ...?", back: "Menurutmu, haruskah kita ...?", example: "Was denkst du, sollen wir heute Tennis spielen?", example_id: "Menurutmu, haruskah kita bermain tenis hari ini?" },
+  // Wir könnten ... | Kita bisa saja ...
+  { id: 58, front: "Wir könnten ...", back: "Kita bisa saja ...", example: "Wir könnten am Sonntag eine Radtour machen.", example_id: "Kita bisa saja melakukan tur bersepeda di hari Minggu." },
+  // einverstanden sein | setuju
+  { id: 59, front: "einverstanden sein", back: "setuju", example: "Kommst du mit? - Ich bin einverstanden.", example_id: "Apakah kamu ikut? - Saya setuju." },
+  // passen | cocok
+  { id: 60, front: "passen", back: "cocok", example: "Das passt mir gut.", example_id: "Itu cocok untukku." },
+
+  // 🗺️ UNTERWEGS IN D-A-CH (Bepergian di Jerman-Austria-Swiss)
+  // die Anreise, -n | perjalanan menuju (tujuan)
+  { id: 61, front: "die Anreise, -n", back: "perjalanan menuju (tujuan)", example: "Die Anreise nach Salzburg dauert drei Stunden.", example_id: "Perjalanan menuju Salzburg memakan waktu tiga jam." },
+  // der Einwohner, - | penduduk (L)
+  { id: 62, front: "der Einwohner, -", back: "penduduk (L)", example: "Berlin hat mehr als drei Millionen Einwohner.", example_id: "Berlin memiliki lebih dari tiga juta penduduk." },
+  // die Einwohnerin, -nen | penduduk (P)
+  { id: 63, front: "die Einwohnerin, -nen", back: "penduduk (P)", example: "Sie ist eine Einwohnerin von Wien.", example_id: "Dia adalah penduduk kota Wina." },
+  // entfernt | jauh / berjarak
+  { id: 64, front: "entfernt", back: "jauh / berjarak", example: "Salzburg ist nur 40 km entfernt.", example_id: "Salzburg hanya berjarak 40 km." },
+  // kulturell | secara budaya
+  { id: 65, front: "kulturell", back: "secara budaya", example: "Das kulturelle Angebot ist groß.", example_id: "Penawaran budaya sangat banyak." },
+  // faszinierend | memukau / menakjubkan
+  { id: 66, front: "faszinierend", back: "memukau / menakjubkan", example: "Die Aussicht vom Berg ist faszinierend.", example_id: "Pemandangan dari atas gunung itu memukau." },
+  // das Gasthaus, ⁼er | penginapan / kedai tradisional
+  { id: 67, front: "das Gasthaus, ⁼er", back: "penginapan / kedai tradisional", example: "Wir essen zu Mittag in einem alten Gasthaus.", example_id: "Kami makan siang di sebuah kedai tradisional tua." },
+  // hinunter | ke bawah
+  { id: 68, front: "hinunter", back: "ke bawah", example: "Wir müssen den Berg hinunter wandern.", example_id: "Kita harus berjalan turun ke bawah gunung." },
+  // das Gebiet, -e | wilayah / kawasan
+  { id: 69, front: "das Gebiet, -e", back: "wilayah / kawasan", example: "Das Gebiet ist für seine Wanderwege bekannt.", example_id: "Wilayah tersebut terkenal dengan jalur pendakiannya." },
+  // die Umgebung, -en | sekitar / lingkungan
+  { id: 70, front: "die Umgebung, -en", back: "sekitar / lingkungan", example: "Die Umgebung des Sees ist wunderschön.", example_id: "Sekitar danau itu sangat indah." },
+  // der Nationalpark, -s | taman nasional
+  { id: 71, front: "der Nationalpark, -s", back: "taman nasional", example: "Im Nationalpark darf man keine Blumen pflücken.", example_id: "Di taman nasional orang tidak boleh memetik bunga." },
+  // das Tal, ⁼er | lembah
+  { id: 72, front: "das Tal, ⁼er", back: "lembah", example: "Das Tal liegt zwischen zwei Bergen.", example_id: "Lembah itu terletak di antara dua gunung." },
+  // die Höhle, -n | gua
+  { id: 73, front: "die Höhle, -n", back: "gua", example: "Wir besichtigen eine dunkle Höhle.", example_id: "Kami mengunjungi gua yang gelap." },
+  // der Führer, - | pemandu (L)
+  { id: 74, front: "der Führer, -", back: "pemandu (L)", example: "Sie wandern mit einem Führer.", example_id: "Mereka mendaki dengan seorang pemandu." },
+  // die Führerin, -nen | pemandu (P)
+  { id: 75, front: "die Führerin, -nen", back: "pemandu (P)", example: "Die Führerin zeigt uns die Altstadt.", example_id: "Pemandu perempuan itu menunjukkan kota tua kepada kami." },
+  // die Temperatur, -en | suhu
+  { id: 76, front: "die Temperatur, -en", back: "suhu", example: "Die Temperatur liegt unter null Grad.", example_id: "Suhu berada di bawah nol derajat." },
+  // der Nebel, - | kabut
+  { id: 77, front: "der Nebel, -", back: "kabut", example: "Wegen des Nebels kann man nichts sehen.", example_id: "Karena kabut orang tidak bisa melihat apa-apa." },
+  // stark | deras / kuat
+  { id: 78, front: "stark", back: "deras / kuat", example: "Heute regnet es stark.", example_id: "Hari ini hujan deras." },
+  // trocken | kering / tidak hujan
+  { id: 79, front: "trocken", back: "kering / tidak hujan", example: "Heute bleibt es trocken.", example_id: "Hari ini cuaca tetap kering." },
+
+  // 📌 ANDERE WICHTIGE WÖRTER (Kata-kata Penting Lainnya)
+  // außer (+ D.) | selain / kecuali
+  { id: 80, front: "außer (+ D.)", back: "selain / kecuali", example: "Alle außer mir waren pünktlich.", example_id: "Semua orang kecuali saya tepat waktu." },
+  // ausfaller | batal / tidak jadi
+  { id: 81, front: "ausfallen, er fällt aus, ist ausgefallen", back: "batal / tidak jadi", example: "Das Spiel fällt leider aus.", example_id: "Sayang sekali pertandingannya batal." },
+  // deshalb | oleh karena itu
+  { id: 82, front: "deshalb", back: "oleh karena itu", example: "Es regnet, deshalb bleiben wir zu Hause.", example_id: "Hari hujan, oleh karena itu kami tinggal di rumah." },
+  // trotzdem | tetap saja / meskipun begitu
+  { id: 83, front: "trotzdem", back: "tetap saja / meskipun begitu", example: "Es regnet, trotzdem gehen wir wandern.", example_id: "Hari hujan, meskipun begitu kami tetap pergi mendaki." },
+  // basteln | membuat kerajinan tangan
+  { id: 84, front: "basteln", back: "membuat kerajinan tangan", example: "Kinder basteln gern Geschenke für ihre Eltern.", example_id: "Anak-anak suka membuat kerajinan tangan hadiah untuk orang tua mereka." },
+  // die Kette, -n | rantai / kalung
+  { id: 85, front: "die Kette, -n", back: "rantai / kalung", example: "Sie trägt eine goldene Kette.", example_id: "Dia memakai sebuah kalung emas." },
+  // das Material, -ien | bahan / material
+  { id: 86, front: "das Material, -ien", back: "bahan / material", example: "Welches Material hat dieses Surfbrett?", example_id: "Bahan apa yang digunakan pada papan selancar ini?" },
+  // zurückgeben | mengembalikan
+  { id: 87, front: "zurückgeben, er gibt zurück, hat zurückgegeben", back: "mengembalikan", example: "Ich muss das Buch der Bibliothek zurückgeben.", example_id: "Saya harus mengembalikan buku itu ke perpustakaan." },
+  // bewachen | menjaga / mengawasi
+  { id: 88, front: "bewachen", back: "menjaga / mengawasi", example: "Ein Hund bewacht das Haus.", example_id: "Seekor anjing menjaga rumah itu." },
+  // der Staat, -en | negara
+  { id: 89, front: "der Staat, -en", back: "negara", example: "Deutschland ist ein demokratischer Staat.", example_id: "Jerman adalah sebuah negara demokratis." },
+  // der Kanton, -e | kanton (wilayah di Swiss)
+  { id: 90, front: "der Kanton, -e", back: "kanton (wilayah di Swiss)", example: "Die Schweiz hat 26 Kantone.", example_id: "Swiss memiliki 26 kanton." },
+  // der Cousin, -s | sepupu (L)
+  { id: 91, front: "der Cousin, -s", back: "sepupu (L)", example: "Mein Cousin wohnt in Zürich.", example_id: "Sepupu laki-laki saya tinggal di Zurich." },
+  // die Cousine, -n | sepupu (P)
+  { id: 92, front: "die Cousine, -n", back: "sepupu (P)", example: "Ich treffe mich heute mit meiner Cousine.", example_id: "Saya bertemu dengan sepupu perempuan saya hari ini." },
+  // die Sendung, -en | acara / siaran TV
+  { id: 93, front: "die Sendung, -en", back: "acara / siaran TV", example: "Diese Sendung ist sehr populär.", example_id: "Acara TV ini sangat populer." },
+  // eine Antwort geben | memberi jawaban
+  { id: 94, front: "eine Antwort geben", back: "memberi jawaban", example: "Kannst du mir bitte eine Antwort geben?", example_id: "Bisakah kamu memberi saya jawaban?" },
+  // der Hinweis, -e | petunjuk / saran
+  { id: 95, front: "der Hinweis, -e", back: "petunjuk / saran", example: "Dieser Hinweis war sehr hilfreich.", example_id: "Petunjuk ini sangat membantu." },
+  // quer | menyilang / melintang
+  { id: 96, front: "quer", back: "menyilang / melintang", example: "Wir laufen quer durch den Park.", example_id: "Kami berjalan menyilang melalui taman." },
+  // übermorgen | lusa (dua hari lagi)
+  { id: 97, front: "übermorgen", back: "lusa (dua hari lagi)", example: "Wir treffen uns übermorgen wieder.", example_id: "Kita bertemu lagi lusa." },
+  // neulich | baru-baru ini
+  { id: 98, front: "neulich", back: "baru-baru ini", example: "Ich habe ihn erst neulich im Sportverein gesehen.", example_id: "Saya baru saja melihatnya baru-baru ini di klub olahraga." }
+];
+
 export const flashcardLevels = [
   {
     id: "A1",
@@ -550,6 +759,13 @@ export const flashcardLevels = [
           id: `A2-K${i + 1}`,
           title: `Kapitel ${i + 1}`,
           cards: a2Kapitel8Cards
+        };
+      }
+      if (i + 1 === 9) {
+        return {
+          id: `A2-K${i + 1}`,
+          title: `Kapitel ${i + 1}`,
+          cards: a2Kapitel9Cards
         };
       }
       return {
