@@ -713,7 +713,51 @@ export const a2Kapitel9Cards = [
   // übermorgen | lusa (dua hari lagi)
   { id: 97, front: "übermorgen", back: "lusa (dua hari lagi)", example: "Wir treffen uns übermorgen wieder.", example_id: "Kita bertemu lagi lusa." },
   // neulich | baru-baru ini
-  { id: 98, front: "neulich", back: "baru-baru ini", example: "Ich habe ihn erst neulich im Sportverein gesehen.", example_id: "Saya baru saja melihatnya baru-baru ini di klub olahraga." }
+  { id: 98, front: "neulich", back: "baru-baru ini", example: "Ich habe ihn erst neulich im Sportverein gesehen.", example_id: "Saya baru saja melihatnya baru-baru ini di klub olahraga." },
+
+  // Sport
+  { id: 99, front: "der Sport (Sg.)", back: "olahraga", example: "Sport ist wichtig für die Gesundheit.", example_id: "Olahraga penting untuk kesehatan." },
+  { id: 100, front: "der Fußball (Sg.)", back: "sepak bola", example: "Er spielt gern Fußball.", example_id: "Dia suka bermain sepak bola." },
+  { id: 101, front: "das Tennis (Sg.)", back: "tenis", example: "Wir spielen am Wochenende Tennis.", example_id: "Kami bermain tenis di akhir pekan." },
+  { id: 102, front: "das Schwimmen (Sg.)", back: "renang", example: "Schwimmen ist mein Lieblingssport.", example_id: "Renang adalah olahraga favorit saya." },
+  { id: 103, front: "das Radfahren (Sg.)", back: "bersepeda", example: "Beim Radfahren kann man die Natur genießen.", example_id: "Saat bersepeda orang bisa menikmati alam." },
+  { id: 104, front: "das Laufen / Joggen", back: "berlari / jogging", example: "Ich gehe jeden Morgen joggen.", example_id: "Saya pergi jogging setiap pagi." },
+  { id: 105, front: "das Spiel, -e", back: "permainan / pertandingan", example: "Das Spiel war sehr spannend.", example_id: "Pertandingan itu sangat menegangkan." },
+  { id: 106, front: "der Sieg, -e", back: "kemenangan", example: "Wir feiern den Sieg unserer Mannschaft.", example_id: "Kami merayakan kemenangan tim kami." },
+  { id: 107, front: "die Niederlage, -n", back: "kekalahan", example: "Die Mannschaft muss die Niederlage akzeptieren.", example_id: "Tim harus menerima kekalahan." },
+  { id: 108, front: "der Sportler, - / die Sportlerin, -nen", back: "atlet (L/P)", example: "Die Sportlerin trainiert jeden Tag.", example_id: "Atlet perempuan itu berlatih setiap hari." },
+  { id: 109, front: "der Verein, -e", back: "klub / perkumpulan", example: "Er ist Mitglied in einem Fußballverein.", example_id: "Dia adalah anggota klub sepak bola." },
+  { id: 110, front: "das Stadion, Stadien", back: "stadion", example: "Das Stadion ist voll mit Fans.", example_id: "Stadion penuh dengan penggemar." },
+  { id: 111, front: "das Training, -s", back: "latihan", example: "Das Training beginnt um 18 Uhr.", example_id: "Latihan dimulai pukul 18." },
+  { id: 112, front: "trainieren", back: "berlatih", example: "Wir trainieren dreimal pro Woche.", example_id: "Kami berlatih tiga kali seminggu." },
+  { id: 113, front: "gewinnen, er gewinnt, hat gewonnen", back: "menang", example: "Wer wird das Spiel gewinnen?", example_id: "Siapa yang akan memenangkan pertandingan?" },
+  { id: 114, front: "spielen", back: "bermain", example: "Die Kinder spielen draußen.", example_id: "Anak-anak bermain di luar." },
+  { id: 115, front: "mit|machen", back: "ikut berpartisipasi", example: "Möchtest du bei uns mitmachen?", example_id: "Apakah kamu ingin ikut berpartisipasi dengan kami?" },
+
+  // Fans & Reaktionen
+  { id: 116, front: "der Fan, -s", back: "penggemar", example: "Die Fans jubeln laut.", example_id: "Para penggemar bersorak keras." },
+  { id: 117, front: "die Begeisterung (Sg.)", back: "antusiasme / semangat", example: "Ihre Begeisterung für Tennis ist groß.", example_id: "Antusiasmenya terhadap tenis sangat besar." },
+  { id: 118, front: "begeistert sein", back: "merasa antusias", example: "Ich bin von dem Spiel begeistert.", example_id: "Saya merasa antusias dengan pertandingan itu." },
+  { id: 119, front: "hoffen", back: "berharap", example: "Wir hoffen auf einen Sieg.", example_id: "Kami berharap pada sebuah kemenangan." },
+  { id: 120, front: "enttäuscht sein", back: "merasa kecewa", example: "Er ist nach der Niederlage sehr enttäuscht.", example_id: "Dia merasa sangat kecewa setelah kekalahan itu." },
+  { id: 121, front: "feuern (an|feuern)", back: "menyemangati", example: "Die Fans feuern ihre Mannschaft an.", example_id: "Para penggemar menyemangati tim mereka." },
+  { id: 122, front: "jubeln", back: "bersorak gembira", example: "Die Zuschauer jubeln bei jedem Tor.", example_id: "Para penonton bersorak gembira pada setiap gol." },
+  { id: 123, front: "leider", back: "sayangnya", example: "Leider haben wir das Spiel verloren.", example_id: "Sayangnya kami kalah dalam pertandingan itu." },
+  { id: 124, front: "toll! / super!", back: "keren! / luar biasa!", example: "Das hast du super gemacht!", example_id: "Kamu melakukan itu dengan luar biasa!" },
+  { id: 125, front: "Schade!", back: "Sayang sekali!", example: "Schade, dass du nicht mitkommen kannst.", example_id: "Sayang sekali kamu tidak bisa ikut." },
+  { id: 126, front: "Das ist unglaublich!", back: "Itu luar biasa!", example: "Das ist unglaublich, wie gut er spielt!", example_id: "Itu luar biasa, betapa bagusnya dia bermain!" },
+
+  // Verabredungen (Janji Temu)
+  { id: 127, front: "sich verabreden", back: "membuat janji temu", example: "Wir haben uns für morgen verabredet.", example_id: "Kami telah membuat janji temu untuk besok." },
+  { id: 128, front: "die Verabredung, -en", back: "janji temu", example: "Ich habe um 15 Uhr eine Verabredung.", example_id: "Saya ada janji temu pukul 15." },
+  { id: 129, front: "vor|schlagen, er schlägt vor, hat vorgeschlagen", back: "mengusulkan", example: "Was schlägst du vor?", example_id: "Apa yang kamu usulkan?" },
+  { id: 130, front: "der Vorschlag, ⁼e", back: "usulan", example: "Das ist ein sehr guter Vorschlag.", example_id: "Itu adalah usulan yang sangat bagus." },
+  { id: 131, front: "ab|lehnen", back: "menolak", example: "Er musste das Angebot leider ablehnen.", example_id: "Sayangnya dia harus menolak tawaran itu." },
+  { id: 132, front: "zu|stimmen", back: "menyetujui", example: "Ich stimme deinem Plan zu.", example_id: "Saya menyetujui rencanamu." },
+  { id: 133, front: "Das passt mir leider nicht.", back: "Sayangnya itu tidak cocok untukku.", example: "Morgen um 10? Das passt mir leider nicht.", example_id: "Besok pukul 10? Sayangnya itu tidak cocok untukku." },
+  { id: 134, front: "Hast du Lust, ...?", back: "Apa kamu mau / ingin ...?", example: "Hast du Lust, ins Kino zu gehen?", example_id: "Apa kamu ingin pergi ke bioskop?" },
+  { id: 135, front: "Ich schlage vor, ...", back: "Aku mengusulkan ...", example: "Ich schlage vor, wir treffen uns um acht.", example_id: "Aku mengusulkan kita bertemu jam delapan." },
+  { id: 136, front: "Klar! / Gerne!", back: "Tentu! / Dengan senang hati!", example: "Kommst du mit? - Klar! Gerne!", example_id: "Apakah kamu ikut? - Tentu! Dengan senang hati!" }
 ];
 
 export const flashcardLevels = [
