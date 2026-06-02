@@ -757,8 +757,64 @@ export const a2Kapitel9Cards = [
   { id: 133, front: "Das passt mir leider nicht.", back: "Sayangnya itu tidak cocok untukku.", example: "Morgen um 10? Das passt mir leider nicht.", example_id: "Besok pukul 10? Sayangnya itu tidak cocok untukku." },
   { id: 134, front: "Hast du Lust, ...?", back: "Apa kamu mau / ingin ...?", example: "Hast du Lust, ins Kino zu gehen?", example_id: "Apa kamu ingin pergi ke bioskop?" },
   { id: 135, front: "Ich schlage vor, ...", back: "Aku mengusulkan ...", example: "Ich schlage vor, wir treffen uns um acht.", example_id: "Aku mengusulkan kita bertemu jam delapan." },
-  { id: 136, front: "Klar! / Gerne!", back: "Tentu! / Dengan senang hati!", example: "Kommst du mit? - Klar! Gerne!", example_id: "Apakah kamu ikut? - Tentu! Dengan senang hati!" }
-];
+  { id: 136, front: "Klar! / Gerne!", back: "Tentu! / Dengan senang hati!", example: "Kommst du mit? - Klar! Gerne!", example_id: "Apakah kamu ikut? - Tentu! Dengan senang hati!" },
+
+  // Bab 1: Olahraga Tambahan (Zusatzsport)
+  { id: 137, front: "heute", back: "Hari ini", example: "Heute haben wir schönes Wetter.", example_id: "Hari ini kita memiliki cuaca yang indah." },
+  { id: 138, front: "Frankreich", back: "Prancis (Nama Negara)", example: "Frankreich liegt in Europa.", example_id: "Prancis terletak di Eropa." },
+  { id: 139, front: "der Weitsprung", back: "Lompat jauh (cabang atletik)", example: "Er hat beim Weitsprung gewonnen.", example_id: "Dia menang dalam lompat jauh." },
+  { id: 140, front: "so gute Chancen", back: "Peluang yang sangat bagus", example: "Unsere Mannschaft hat so gute Chancen.", example_id: "Tim kita memiliki peluang yang sangat bagus." },
+  { id: 141, front: "kein Sieg", back: "Tidak ada kemenangan", example: "Ohne Tore gibt es kein Sieg.", example_id: "Tanpa gol tidak ada kemenangan." },
+  { id: 142, front: "gespielt hat", back: "Telah bermain (bentuk lampau)", example: "Ich weiß, wer gestern gespielt hat.", example_id: "Saya tahu siapa yang telah bermain kemarin." },
+
+  // 🏔️ Bab 2: Biografi & Petualangan (Biografie & Bergsteigen)
+  { id: 143, front: "die Österreicherin", back: "Wanita asal Austria", example: "Die Österreicherin wandert gern in den Alpen.", example_id: "Wanita asal Austria itu suka mendaki di Pegunungan Alpen." },
+  { id: 144, front: "klettert", back: "Memanjat / mendaki", example: "Sie klettert ohne Angst auf den Berg.", example_id: "Dia memanjat gunung tanpa rasa takut." },
+  { id: 145, front: "die höchsten Berge", back: "Gunung-gunung tertinggi", example: "Wir wollen die höchsten Berge der Welt sehen.", example_id: "Kita ingin melihat gunung-gunung tertinggi di dunia." },
+  { id: 146, front: "der Welt", back: "Di dunia / dari dunia", example: "Er ist der beste Bergsteiger der Welt.", example_id: "Dia adalah pendaki gunung terbaik di dunia." },
+  { id: 147, front: "die Touren", back: "Tur / rute petualangan / ekspedisi", example: "Wir planen unsere Touren für den Sommer.", example_id: "Kami merencanakan tur-tur kami untuk musim panas." },
+  { id: 148, front: "touren", back: "Melakukan perjalanan keliling / tur", example: "Die Musiker touren durch ganz Europa.", example_id: "Para musisi melakukan perjalanan keliling ke seluruh Eropa." },
+  { id: 149, front: "die Profi-Bergsteigerin", back: "Pendaki gunung wanita profesional", example: "Gerlinde ist eine bekannte Profi-Bergsteigerin.", example_id: "Gerlinde adalah seorang pendaki gunung wanita profesional yang terkenal." },
+  { id: 150, front: "beim Bau", back: "Saat pembangunan / dalam konstruksi", example: "Er hilft beim Bau eines neuen Hauses.", example_id: "Dia membantu saat pembangunan sebuah rumah baru." },
+  { id: 151, front: "von Schulen", back: "Dari/untuk sekolah-sekolah", example: "Die Stiftung hilft beim Bau von Schulen.", example_id: "Yayasan tersebut membantu dalam pembangunan sekolah-sekolah." },
+
+  // 🧩 Bab 3: Tata Bahasa & Kata Hubung (Grammatik & Partikeln)
+  { id: 152, front: "bekannt", back: "Dikenal / terkenal / familiar", example: "Der Ort ist für seine schöne Natur bekannt.", example_id: "Tempat itu dikenal karena alamnya yang indah." },
+  { id: 153, front: "denn", back: "Karena (posisi verb tetap) / kata penegas (sih/dong)", example: "Ich bleibe zu Hause, denn ich bin müde.", example_id: "Saya tinggal di rumah karena saya lelah." },
+  { id: 154, front: "eigentlich", back: "Sebenarnya / ngomong-ngomong (melunakkan kalimat tanya)", example: "Was machst du eigentlich heute Abend?", example_id: "Sebenarnya apa yang kamu lakukan nanti malam?" },
+  { id: 155, front: "durch", back: "Melalui / lewat / oleh (wajib + Akkusativ)", example: "Wir gehen zusammen durch den Wald.", example_id: "Kita berjalan bersama-sama melalui hutan." },
+  { id: 156, front: "außerdem", back: "Selain itu / lagipula (posisi kata kerja langsung di belakangnya)", example: "Er spielt Fußball, außerdem läuft er jeden Tag.", example_id: "Dia bermain sepak bola, selain itu dia berlari setiap hari." },
+  { id: 157, front: "weil", back: "Karena (membuat kata kerja pindah ke ujung akhir kalimat)", example: "Er schläft, weil er sehr müde ist.", example_id: "Dia tidur karena dia sangat lelah." },
+  { id: 158, front: "noch", back: "Masih", example: "Bist du noch im Büro?", example_id: "Apakah kamu masih berada di kantor?" },
+  { id: 159, front: "sind", back: "Adalah / ada", example: "Wir sind sehr glücklich hier.", example_id: "Kami sangat bahagia di sini." },
+  { id: 160, front: "Zeit", back: "Waktu", example: "Hast du heute Zeit für mich?", example_id: "Apakah kamu punya waktu untukku hari ini?" },
+  { id: 161, front: "ganz sicher", back: "Sangat pasti / benar-benar yakin", example: "Ich bin mir ganz sicher, dass wir gewinnen.", example_id: "Saya sangat yakin bahwa kita akan menang." },
+  { id: 162, front: "war / hatte", back: "Dulu tadinya (ist) / dulu mempunyai (hat)", example: "Er war müde und hatte keine Lust.", example_id: "Dia dulu lelah dan tidak punya keinginan." },
+  { id: 163, front: "viel besser", back: "Jauh lebih baik", example: "Dein Deutsch ist jetzt viel besser.", example_id: "Bahasa Jermanmu sekarang jauh lebih baik." },
+  { id: 164, front: "als", back: "Daripada (dipakai untuk membandingkan)", example: "Er ist größer als sein Bruder.", example_id: "Dia lebih besar daripada saudara laki-lakinya." },
+  { id: 165, front: "nicht", back: "Tidak", example: "Das ist nicht meine Tasche.", example_id: "Itu bukan tas saya." },
+  { id: 166, front: "bis zum Schluss", back: "Sampai akhir / sampai selesai", example: "Wir müssen bis zum Schluss spielen.", example_id: "Kita harus bermain sampai akhir." },
+
+  // 🗣️ Bab 4: Ungkapan Emosi & Media (Ausdrücke & Medien)
+  { id: 167, front: "Kopf hoch!", back: "Angkat kepala! / Jangan menyerah! (Penyemangat)", example: "Kopf hoch! Alles wird gut.", example_id: "Jangan menyerah! Semua akan baik-baik saja." },
+  { id: 168, front: "Wie schön ist das!", back: "Betapa indahnya ini! (Ekspresi kekaguman/senang)", example: "Ein Geschenk für mich? Wie schön ist das!", example_id: "Kado untukku? Betapa indahnya ini!" },
+  { id: 169, front: "kein Glück", back: "Tidak beruntung / tidak ada hoki", example: "Heute hatten wir leider kein Glück.", example_id: "Sayangnya hari ini kita tidak beruntung." },
+  { id: 170, front: "die Ticker-Nachrichten", back: "Berita kilat / teks berita berjalan (breaking news)", example: "Ich lese die neuesten Ticker-Nachrichten.", example_id: "Saya membaca berita kilat terbaru." },
+  { id: 171, front: "das Sinnbild / das Symbol", back: "Simbol / lambang / perwujudan nyata", example: "Die Taube ist das Symbol für Frieden.", example_id: "Burung merpati adalah simbol perdamaian." },
+
+  // 🏢 Bab 5: Dunia Kerja & Umum (Beruf & Allgemein)
+  { id: 172, front: "die Stiftung", back: "Yayasan / lembaga nonprofit", example: "Die Stiftung unterstützt arme Familien.", example_id: "Yayasan itu mendukung keluarga miskin." },
+  { id: 173, front: "gegründet", back: "Didirikan / dibentuk (bentuk lampau)", example: "Die Firma wurde im Jahr 2010 gegründet.", example_id: "Perusahaan itu didirikan pada tahun 2010." },
+  { id: 174, front: "bietet", back: "Menawarkan / menyediakan / menyajikan", example: "Das Hotel bietet kostenloses WLAN.", example_id: "Hotel tersebut menyediakan Wi-Fi gratis." },
+  { id: 175, front: "begleitet", back: "Menemani / mendampingi / mengiringi", example: "Der Hund begleitet mich beim Spaziergang.", example_id: "Anjing itu menemani saya saat berjalan-jalan." },
+  { id: 176, front: "kurzfristig", back: "Jangka pendek / secara mendadak / tiba-tiba", example: "Er musste den Termin kurzfristig absagen.", example_id: "Dia harus membatalkan janji temu secara mendadak." },
+  { id: 177, front: "der Fehler", back: "Kesalahan", example: "Jeder macht mal einen Fehler.", example_id: "Setiap orang pernah membuat kesalahan." },
+  { id: 178, front: "vom", back: "Dari", example: "Das ist ein Geschenk vom Chef.", example_id: "Ini adalah hadiah dari bos." },
+  { id: 179, front: "der Trainer", back: "Pelatih", example: "Der Trainer spricht mit der Mannschaft.", example_id: "Pelatih itu berbicara dengan tim." },
+  { id: 180, front: "der Einstieg", back: "Awal mula / langkah awal / pintu masuk", example: "Aller Einstieg ist schwer.", example_id: "Setiap langkah awal itu sulit." },
+  { id: 181, front: "das Ziel", back: "Tujuan / target / garis finish", example: "Wir haben unser Ziel erreicht.", example_id: "Kita telah mencapai target kita." },
+  { id: 182, front: "unterstützt", back: "Mendukung / membantu", example: "Meine Familie unterstützt mich immer.", example_id: "Keluarga saya selalu mendukung saya." },
+  ];
 
 export const flashcardLevels = [
   {
