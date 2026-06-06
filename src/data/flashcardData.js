@@ -816,6 +816,118 @@ export const a2Kapitel9Cards = [
   { id: 182, front: "unterstützt", back: "Mendukung / membantu", example: "Meine Familie unterstützt mich immer.", example_id: "Keluarga saya selalu mendukung saya." },
   ];
 
+export const a2Kapitel10Cards = [
+  // Wohnformen
+  { id: 1, front: "das Zuhause (Sg.)", back: "rumah, tempat tinggal", example: "Ich fühle mich hier wie zu Hause.", example_id: "Saya merasa seperti di rumah sendiri di sini." },
+  { id: 2, front: "der Bauernhof, ¨e", back: "peternakan, rumah pertanian", example: "Wir verbringen unseren Urlaub auf einem Bauernhof.", example_id: "Kami menghabiskan liburan kami di sebuah peternakan." },
+  { id: 3, front: "die Ferienwohnung, -en", back: "apartemen liburan", example: "Die Ferienwohnung liegt direkt am Meer.", example_id: "Apartemen liburan itu terletak tepat di tepi laut." },
+  { id: 4, front: "der Bauer, -n", back: "petani (laki-laki)", example: "Der Bauer arbeitet auf dem Feld.", example_id: "Petani itu bekerja di ladang." },
+  { id: 5, front: "mitten (mitten in der Natur)", back: "di tengah-tengah (di tengah alam)", example: "Unser Haus liegt mitten in der Natur.", example_id: "Rumah kami terletak di tengah-tengah alam." },
+  { id: 6, front: "einsam", back: "kesepian, sunyi", example: "Manchmal fühlt sie sich in der großen Stadt einsam.", example_id: "Terkadang dia merasa kesepian di kota besar." },
+  { id: 7, front: "der Stadtrand, ¨er (am Stadtrand wohnen)", back: "pinggiran kota (tinggal di pinggiran kota)", example: "Am Stadtrand ist es viel ruhiger als im Zentrum.", example_id: "Di pinggiran kota jauh lebih tenang daripada di pusat." },
+  { id: 8, front: "außerhalb von (+ D.) (6 km außerhalb vom Dorf wohnen)", back: "di luar (tinggal 6 km di luar desa)", example: "Wir wohnen etwas außerhalb von der Stadt.", example_id: "Kami tinggal agak di luar kota." },
+  { id: 9, front: "das Hausboot, -e", back: "rumah perahu", example: "Das Hausboot liegt ruhig am Ufer.", example_id: "Rumah perahu itu bersandar dengan tenang di tepi sungai." },
+  { id: 10, front: "das Ufer, -", back: "tepi (sungai/danau/laut)", example: "Wir spazieren am Ufer des Sees.", example_id: "Kami berjalan-jalan di tepi danau." },
+  { id: 11, front: "schaukeln (Das Boot schaukelt auf dem Wasser.)", back: "bergoyang, berayun (Perahu itu bergoyang di atas air.)", example: "Die Wellen lassen das Boot schaukeln.", example_id: "Ombak membuat perahu itu bergoyang." },
+  { id: 12, front: "nass", back: "basah", example: "Die Wäsche ist noch nass.", example_id: "Cucian itu masih basah." },
+  { id: 13, front: "spiegeln (sich) (Wolken spiegeln sich im Wasser.)", back: "bercermin, terpantul (Awan terpantul di dalam air.)", example: "Die Bäume spiegeln sich im ruhigen See.", example_id: "Pohon-pohon terpantul di danau yang tenang." },
+  { id: 14, front: "einfach (Das Leben ist sehr einfach.)", back: "sederhana, mudah (Hidup itu sangat sederhana.)", example: "Das Leben auf dem Land ist einfach.", example_id: "Kehidupan di desa itu sederhana." },
+  { id: 15, front: "der Luxus (Sg.)", back: "kemewahan", example: "Ein eigenes Auto ist für viele Menschen ein Luxus.", example_id: "Mobil pribadi adalah sebuah kemewahan bagi banyak orang." },
+  { id: 16, front: "das Gartenhaus, ¨er", back: "rumah kebun", example: "Wir lagern die Werkzeuge im Gartenhaus.", example_id: "Kami menyimpan perkakas di rumah kebun." },
+  { id: 17, front: "der Altbau, -ten", back: "bangunan tua / gedung lama", example: "Ich wohne in einem schönen Altbau mit hohen Decken.", example_id: "Saya tinggal di sebuah bangunan tua yang indah dengan langit-langit tinggi." },
+  { id: 18, front: "das Stockwerk, -e", back: "lantai, tingkat", example: "Unsere Wohnung liegt im dritten Stockwerk.", example_id: "Apartemen kami berada di lantai tiga." },
+  { id: 19, front: "der Keller, -", back: "ruang bawah tanah", example: "Die Kartoffeln werden im Keller gelagert.", example_id: "Kentang-kentang itu disimpan di ruang bawah tanah." },
+  { id: 20, front: "das Dach, ¨er", back: "atap", example: "Das Dach des Hauses muss repariert werden.", example_id: "Atap rumah itu harus diperbaiki." },
+  { id: 21, front: "der Boden, ¨", back: "lantai, tanah", example: "Das Spielzeug liegt auf dem Boden.", example_id: "Mainan itu tergeletak di lantai." },
+  { id: 22, front: "der Blumentopf, ¨e", back: "pot bunga", example: "Auf dem Fensterbrett steht ein roter Blumentopf.", example_id: "Di ambang jendela terdapat sebuah pot bunga berwarna merah." },
+  { id: 23, front: "der Briefkasten, ¨", back: "kotak surat", example: "Hast du schon in den Briefkasten geschaut?", example_id: "Apakah kamu sudah memeriksa kotak surat?" },
+  { id: 24, front: "das Päckchen, -", back: "paket kecil", example: "Der Briefträger bringt ein kleines Päckchen.", example_id: "Tukang pos membawa sebuah paket kecil." },
+  { id: 25, front: "aus|packen", back: "membuka paket/membongkar isi", example: "Ich muss noch meine Koffer auspacken.", example_id: "Saya masih harus membongkar koper saya." },
+  { id: 26, front: "der Lärm (Sg.) (sich über den Lärm beschweren)", back: "kebisingan, keributan (mengeluh tentang kebisingan)", example: "Die Nachbarn beschweren sich über den Lärm.", example_id: "Tetangga mengeluh tentang kebisingan itu." },
+  { id: 27, front: "stinken, er stinkt, hat gestunken (Der Müll stinkt.)", back: "berbau busuk (Sampah itu berbau busuk.)", example: "Der Fisch ist alt und stinkt.", example_id: "Ikan itu sudah lama dan berbau busuk." },
+  { id: 28, front: "Verzeihung, bitte!", back: "Mohon maaf! / Permisi!", example: "Verzeihung, bitte! Können Sie mir helfen?", example_id: "Mohon maaf! Bisakah Anda membantu saya?" },
+  { id: 29, front: "vor|kommen, er kommt vor, ist vorgekommen (Entschuldigung, das kommt nicht mehr vor.)", back: "terjadi (Maaf, hal itu tidak akan terjadi lagi.)", example: "So ein Fehler darf nicht wieder vorkommen.", example_id: "Kesalahan seperti itu tidak boleh terjadi lagi." },
+
+  // Maße angeben
+  { id: 30, front: "die Länge, -n", back: "panjang", example: "Die Länge des Tisches beträgt zwei Meter.", example_id: "Panjang meja tersebut adalah dua meter." },
+  { id: 31, front: "die Breite, -n", back: "lebar", example: "Wie groß ist die Breite des Zimmers?", example_id: "Berapa lebar ruangan tersebut?" },
+  { id: 32, front: "die Höhe, -n", back: "tinggi", example: "Die Höhe des Schranks ist perfekt.", example_id: "Tinggi lemari itu sangat sempurna." },
+  { id: 33, front: "die Fläche, -n", back: "luas, area", example: "Die Fläche der Wohnung ist sehr groß.", example_id: "Luas apartemen tersebut sangat besar." },
+  { id: 34, front: "der Quadratmeter, - (= qm, m²)", back: "meter persegi", example: "Die Wohnung hat 80 Quadratmeter.", example_id: "Apartemen itu berukuran 80 meter persegi." },
+
+  // Nachbarn
+  { id: 35, front: "nebenan (in der Wohnung nebenan leben)", back: "di sebelah, tetangga sebelah (tinggal di apartemen sebelah)", example: "Wer wohnt nebenan?", example_id: "Siapa yang tinggal di sebelah?" },
+  { id: 36, front: "gießen, er gießt, hat gegossen (die Blumen gießen)", back: "menyiram (menyiram bunga)", example: "Vergiss nicht, am Abend die Blumen zu gießen.", example_id: "Jangan lupa menyiram bunga di sore hari." },
+
+  // ein Fest vorbereiten
+  { id: 37, front: "das Sommerfest, -e", back: "pesta musim panas", example: "Unser Betrieb organisiert ein Sommerfest.", example_id: "Perusahaan kami menyelenggarakan pesta musim panas." },
+  { id: 38, front: "die Torte, -n (Kuchen und Torten mitbringen)", back: "kue tart (membawa kue dan tart)", example: "Sie backt eine leckere Torte zum Geburtstag.", example_id: "Dia membuat kue tart yang lezat untuk ulang tahun." },
+  { id: 39, front: "der Wein, -e", back: "anggur (minuman)", example: "Möchten Sie ein Glas Rotwein trinken?", example_id: "Apakah Anda ingin minum segelas anggur merah?" },
+  { id: 40, front: "das Poster, -", back: "poster", example: "An der Wand hängt ein großes Poster.", example_id: "Di dinding tergantung sebuah poster besar." },
+  { id: 41, front: "der Lampion, -s", back: "lampion", example: "Wir hängen bunte Lampions im Garten auf.", example_id: "Kami menggantungkan lampion warna-warni di kebun." },
+  { id: 42, front: "die Kerze, -n", back: "lilin", example: "Ich zünde eine Kerze an.", example_id: "Saya menyalakan sebatang lilin." },
+  { id: 43, front: "das Spielzeug, -e", back: "mainan", example: "Das Kind räumt sein Spielzeug auf.", example_id: "Anak itu merapikan mainannya." },
+  { id: 44, front: "der Roller, - (mit dem Roller fahren)", back: "skuter (mengendarai skuter)", example: "Das Kind fährt gern mit dem Roller.", example_id: "Anak itu suka mengendarai skuter." },
+  { id: 45, front: "das Kissen, -", back: "bantal", example: "Ich lege ein weiches Kissen auf das Sofa.", example_id: "Saya menaruh bantal yang empuk di atas sofa." },
+  { id: 46, front: "legen (das Kissen auf den Stuhl legen)", back: "meletakkan secara mendatar (meletakkan bantal di atas kursi)", example: "Kannst du das Buch auf den Tisch legen?", example_id: "Bisakah kamu meletakkan buku itu di atas meja?" },
+  { id: 47, front: "hängen (Er hängt Lampions in den Baum.)", back: "menggantungkan (Dia menggantungkan lampion di pohon.)", example: "Ich hänge meine Jacke in den Schrank.", example_id: "Saya menggantungkan jaket saya di lemari." },
+  { id: 48, front: "hängen, er hängt, hat gehangen (Das Poster hängt am Gartenhaus.)", back: "tergantung (Poster itu tergantung di rumah kebun.)", example: "Die Wäsche hat den ganzen Tag auf dem Balkon gehangen.", example_id: "Cucian itu telah tergantung sepanjang hari di balkon." },
+
+  // Zimmer tauschen
+  { id: 49, front: "die Mieterin, -nen", back: "penyewa perempuan", example: "Die neue Mieterin zieht am Samstag ein.", example_id: "Penyewa baru perempuan itu pindah pada hari Sabtu." },
+  { id: 50, front: "der Mitbewohner, -", back: "teman sekamar / teman serumah", example: "Mein neuer Mitbewohner ist sehr nett.", example_id: "Teman serumah baru saya sangat ramah." },
+  { id: 51, front: "möbliert", back: "berperabot / lengkap dengan perabotan", example: "Ich suche ein möbliertes Zimmer in Berlin.", example_id: "Saya sedang mencari kamar berperabot di Berlin." },
+  { id: 52, front: "die Nebenkosten (Pl.)", back: "biaya tambahan (air, listrik, sampah, dll.)", example: "Die Miete beträgt 400 Euro plus Nebenkosten.", example_id: "Uang sewa sebesar 400 euro ditambah biaya tambahan." },
+  { id: 53, front: "ein|ziehen, er zieht ein, ist eingezogen", back: "pindah masuk (ke rumah baru)", example: "Wir sind gestern in die neue Wohnung eingezogen.", example_id: "Kami pindah masuk ke apartemen baru kemarin." },
+  { id: 54, front: "gespannt (Ich bin schon gespannt.)", back: "penasaran / tidak sabar menanti (Saya sangat penasaran.)", example: "Ich bin gespannt auf deine Antwort.", example_id: "Saya penasaran dengan jawabanmu." },
+  { id: 55, front: "aus|kennen (sich), er kennt aus, hat ausgekannt", back: "sangat tahu / familier / paham daerah", example: "In Berlin kenne ich mich gut aus.", example_id: "Saya sangat mengenal kota Berlin." },
+  { id: 56, front: "verirren (sich)", back: "tersesat", example: "Wir haben uns im Wald verirrt.", example_id: "Kami tersesat di hutan." },
+  { id: 57, front: "kündigen (die Arbeit / die Wohnung kündigen)", back: "mengundurkan diri / memutuskan kontrak (memutuskan kontrak kerja / apartemen)", example: "Er hat seine Stelle gekündigt.", example_id: "Dia telah mengundurkan diri dari pekerjaannya." },
+
+  // Tiere
+  { id: 58, front: "das Haustier, -e", back: "hewan peliharaan", example: "Hast du ein Haustier?", example_id: "Apakah kamu punya hewan peliharaan?" },
+  { id: 59, front: "die Katze, -n", back: "kucing", example: "Unsere Katze schläft auf dem Sofa.", example_id: "Kucing kami tidur di atas sofa." },
+  { id: 60, front: "das Kätzchen, - (So ein süßes kleines Kätzchen!)", back: "anak kucing (Anak kucing kecil yang sangat lucu!)", example: "Das kleine Kätzchen spielt mit einem ball.", example_id: "Anak kucing kecil itu bermain dengan bola." },
+  { id: 61, front: "bellen (Der Hund bellt laut.)", back: "menggonggong (Anjing menggonggong dengan keras.)", example: "Der Hund bellt, wenn jemand kommt.", example_id: "Anjing menggonggong ketika seseorang datang." },
+  { id: 62, front: "der Vogel, ¨", back: "burung", example: "Auf dem Baum singt ein Vogel.", example_id: "Seekor burung sedang bernyanyi di atas pohon." },
+  { id: 63, front: "die Ratte, -n", back: "tikus besar", example: "Im Keller haben wir eine Ratte gesehen.", example_id: "Kami melihat tikus besar di ruang bawah tanah." },
+  { id: 64, front: "die Maus, ¨e", back: "tikus kecil", example: "Die Katze fängt eine Maus.", example_id: "Kucing menangkap tikus kecil." },
+  { id: 65, front: "der Hase, -n", back: "kelinci", example: "Der Hase läuft schnell über die Wiese.", example_id: "Kelinci itu berlari cepat melintasi padang rumput." },
+  { id: 66, front: "die Kuh, ¨e", back: "sapi", example: "Auf der Weide stehen viele Kühe.", example_id: "Di padang rumput ada banyak sapi." },
+  { id: 67, front: "das Schaf, -e", back: "domba", example: "Die Wolle kommt vom Schaf.", example_id: "Wol berasal dari domba." },
+  { id: 68, front: "das Schwein, -e", back: "babi", example: "Schweine sind eigentlich sehr saubere Tiere.", example_id: "Babi sebenarnya adalah hewan yang sangat bersih." },
+  { id: 69, front: "der Bär, -en", back: "beruang", example: "Der Bär sucht im Fluss nach Fischen.", example_id: "Beruang itu mencari ikan di sungai." },
+  { id: 70, front: "die Besitzerin, -nen", back: "pemilik perempuan", example: "Wer ist die Besitzerin der Katze?", example_id: "Siapa pemilik kucing itu?" },
+  { id: 71, front: "das Futter (Sg.)", back: "pakan / makanan hewan", example: "Wir müssen neues Futter für den Hund kaufen.", example_id: "Kita harus membeli pakan baru untuk anjing." },
+  { id: 72, front: "füttern (die Katze füttern)", back: "memberi makan hewan (memberi makan kucing)", example: "Hast du den Hund schon gefüttert?", example_id: "Apakah kamu sudah memberi makan anjing itu?" },
+  { id: 73, front: "dick (Viele Haustiere sind zu dick.)", back: "gemuk / tebal (Banyak hewan peliharaan terlalu gemuk.)", example: "Der Kater ist sehr dick geworden.", example_id: "Kucing jantan itu telah menjadi sangat gemuk." },
+  { id: 74, front: "dünn (Der Hund war sehr dünn.)", back: "kurus / tipis (Anjing itu sangat kurus.)", example: "Das Buch ist sehr dünn.", example_id: "Buku itu sangat tipis." },
+  { id: 75, front: "der Tierarzt, ¨e", back: "dokter hewan", example: "Wir bringen den kranken Hund zum Tierarzt.", example_id: "Kami membawa anjing yang sakit ke dokter hewan." },
+
+  // Andere Wörter und Wendungen
+  { id: 76, front: "modisch", back: "modis, bergaya modern", example: "Sie trägt sehr modische Kleidung.", example_id: "Dia mengenakan pakaian yang sangat modis." },
+  { id: 77, front: "besorgt (Die Besitzer waren besorgt.)", back: "khawatir (Para pemilik khawatir.)", example: "Die Mutter ist besorgt über die Gesundheit ihres Kindes.", example_id: "Ibu khawatir tentang kesehatan anaknya." },
+  { id: 78, front: "blitzschnell", back: "secepat kilat", example: "Die Katze lief blitzschnell weg.", example_id: "Kucing itu lari secepat kilat." },
+  { id: 79, front: "her|geben, er gibt her, hat hergegeben", back: "menyerahkan, memberikan", example: "Gib das Spielzeug her!", example_id: "Serahkan mainan itu!" },
+  { id: 80, front: "weg|laufen, er läuft weg, ist weggelaufen", back: "lari menjauh / kabur", example: "Der Hund ist im Park weggelaufen.", example_id: "Anjing itu kabur di taman." },
+  { id: 81, front: "zurück|laufen, er läuft zurück, ist zurückgelaufen", back: "berlari kembali", example: "Er läuft schnell zum Bahnhof zurück.", example_id: "Dia berlari kembali dengan cepat ke stasiun." },
+
+  // andere wichtige Wörter und Wendungen
+  { id: 82, front: "die Zulassung, -en (die Zulassung zum Studium bekommen)", back: "persetujuan penerimaan / izin masuk (diterima di perguruan tinggi)", example: "Er hat die Zulassung für die Universität erhalten.", example_id: "Dia telah menerima surat penerimaan untuk universitas." },
+  { id: 83, front: "per (etwas per Mail schicken)", back: "melalui / via (mengirimkan sesuatu via email)", example: "Ich schicke dir das Dokument per Post.", example_id: "Saya mengirimkan dokumen itu kepadamu via pos." },
+  { id: 84, front: "intensiv", back: "intensif, mendalam", example: "Wir haben intensiv für die Prüfung gelernt.", example_id: "Kami telah belajar dengan intensif untuk ujian." },
+  { id: 85, front: "schmutzig", back: "kotor", example: "Deine Hände sind schmutzig.", example_id: "Tanganmu kotor." },
+  { id: 86, front: "nämlich (Der Hund war nämlich gern allein.)", back: "karena / yakni (Sebab anjing itu suka sendirian.)", example: "Ich kann nicht kommen, ich bin nämlich krank.", example_id: "Saya tidak bisa datang, karena saya sakit." },
+  { id: 87, front: "nie mehr", back: "tidak akan pernah lagi", example: "Ich möchte das nie mehr erleben.", example_id: "Saya tidak ingin mengalami hal itu lagi." },
+  { id: 88, front: "zum Teil", back: "sebagian", example: "Die Aufgaben sind zum Teil schwierig.", example_id: "Tugas-tugas itu sebagian sulit." },
+  { id: 89, front: "zumindest", back: "setidaknya, minimal", example: "Du solltest zumindest anrufen.", example_id: "Kamu setidaknya harus menelepon." },
+  { id: 90, front: "als (Als ich ein Kind war, ...)", back: "ketika / sewaktu (Ketika saya masih anak-anak...)", example: "Als ich in Deutschland war, habe ich viel gelernt.", example_id: "Sewaktu saya di Jerman, saya belajar banyak hal." },
+  { id: 91, front: "die Vergangenheit (Sg.)", back: "masa lalu", example: "Man kann die Vergangenheit nicht ändern.", example_id: "Orang tidak bisa mengubah masa lalu." },
+  { id: 92, front: "der Stil, -e", back: "gaya", example: "Ihr Kleid hat einen schönen Stil.", example_id: "Gaunnya memiliki gaya yang indah." },
+  { id: 93, front: "verbessern", back: "memperbaiki, meningkatkan", example: "Ich möchte meine Deutschkenntnisse verbessern.", example_id: "Saya ingin meningkatkan kemampuan bahasa Jerman saya." },
+  { id: 94, front: "die Veränderung, -en", back: "perubahan", example: "Es gibt viele Veränderungen in der Firma.", example_id: "Ada banyak perubahan di perusahaan." }
+];
+
 export const flashcardLevels = [
   {
     id: "A1",
@@ -866,6 +978,13 @@ export const flashcardLevels = [
           id: `A2-K${i + 1}`,
           title: `Kapitel ${i + 1}`,
           cards: a2Kapitel9Cards
+        };
+      }
+      if (i + 1 === 10) {
+        return {
+          id: `A2-K${i + 1}`,
+          title: `Kapitel ${i + 1}`,
+          cards: a2Kapitel10Cards
         };
       }
       return {
