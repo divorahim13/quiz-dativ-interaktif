@@ -1008,6 +1008,100 @@ export const a2Kapitel10Cards = [
   { id: 174, front: "Wie schön! / Toll!", back: "Indah sekali! / Keren!", example: "Du hast die Prüfung bestanden? Toll!", example_id: "Kamu lulus ujian? Keren!" }
 ];
 
+export const a2Kapitel11Cards = [
+  // Lebensphasen
+  { id: 1, front: "vergehen, er vergeht, ist vergangen", back: "berlalu (waktu)", example: "Die Zeit vergeht schnell.", example_id: "Waktu berlalu dengan cepat." },
+  { id: 2, front: "Die Zeit vergeht schnell.", back: "Waktu berlalu cepat.", example: "Die Zeit vergeht schnell, wenn man Spaß hat.", example_id: "Waktu berlalu cepat ketika kita bersenang-senang." },
+  { id: 3, front: "die Ehe, -n", back: "pernikahan, perkawinan", example: "Sie führen eine glückliche Ehe.", example_id: "Mereka menjalani pernikahan yang bahagia." },
+  { id: 4, front: "die Hausfrau, -en", back: "ibu rumah tangga", example: "Meine Mutter ist Hausfrau.", example_id: "Ibu saya adalah seorang ibu rumah tangga." },
+  { id: 5, front: "der Hausmann, -¨er", back: "bapak rumah tangga", example: "Er arbeitet nicht, er ist Hausmann.", example_id: "Dia tidak bekerja, dia adalah bapak rumah tangga." },
+  { id: 6, front: "backen", back: "memanggang (roti/kue)", example: "Ich backe am Wochenende ein Brot.", example_id: "Saya memanggang roti di akhir pekan." },
+  { id: 7, front: "einen Kuchen backen", back: "membuat/memanggang kue", example: "Zum Geburtstag möchte ich einen Kuchen backen.", example_id: "Untuk hari ulang tahun, saya ingin membuat kue." },
+  { id: 8, front: "bauen", back: "membangun", example: "Wir wollen ein neues Haus bauen.", example_id: "Kami ingin membangun sebuah rumah baru." },
+  { id: 9, front: "ein|richten (das Zimmer schön einrichten)", back: "menata/mengatur perabotan (menata kamar dengan indah)", example: "Sie möchte ihre neue Wohnung einrichten.", example_id: "Dia ingin menata apartemen barunya." },
+  { id: 10, front: "sparen", back: "menabung, menghemat", example: "Ich spare Geld für eine Reise.", example_id: "Saya menabung uang untuk sebuah perjalanan." },
+  { id: 11, front: "verletzen (Ich habe mich an der Hand verletzt.)", back: "melukai (Saya melukai tangan saya.)", example: "Er hat sich beim Fußballspielen verletzt.", example_id: "Dia melukai dirinya saat bermain sepak bola." },
+  { id: 12, front: "verreisen (Wir verreisen nicht oft.)", back: "bepergian (Kami tidak sering bepergian.)", example: "Im Sommer wollen wir verreisen.", example_id: "Di musim panas kami ingin bepergian." },
+  { id: 13, front: "an deiner Stelle", back: "di posisimu / jika aku jadi kamu", example: "An deiner Stelle würde ich zum Arzt gehen.", example_id: "Jika aku jadi kamu, aku akan pergi ke dokter." },
+  { id: 14, front: "meiner Meinung nach", back: "menurut pendapat saya", example: "Meiner Meinung nach ist Deutsch eine schöne Sprache.", example_id: "Menurut pendapat saya, bahasa Jerman adalah bahasa yang indah." },
+
+  // Arbeit
+  { id: 15, front: "an|stellen", back: "mempekerjakan", example: "Die Firma möchte neue Mitarbeiter anstellen.", example_id: "Perusahaan ingin mempekerjakan karyawan baru." },
+  { id: 16, front: "entlassen, er entlässt, hat entlassen (Die Firma musste ihn entlassen.)", back: "memecat/mem-PHK (Perusahaan harus memecatnya.)", example: "Viele Mitarbeiter wurden entlassen.", example_id: "Banyak karyawan dipecat." },
+  { id: 17, front: "behalten, er behält, hat behalten (Er möchte seine Stelle behalten.)", back: "mempertahankan/menyimpan (Dia ingin mempertahankan pekerjaannya.)", example: "Du kannst das Buch behalten.", example_id: "Kamu boleh menyimpan buku itu." },
+  { id: 18, front: "der Werktag, -e", back: "hari kerja", example: "Das Geschäft hat an Werktagen geöffnet.", example_id: "Toko itu buka pada hari kerja." },
+  { id: 19, front: "der Export, -e", back: "ekspor", example: "Der Export von Autos ist wichtig.", example_id: "Ekspor mobil sangatlah penting." },
+  { id: 20, front: "der Import, -e", back: "impor", example: "Der Import von Kaffee steigt.", example_id: "Impor kopi sedang meningkat." },
+  { id: 21, front: "die Frist, -en", back: "tenggat waktu, batas waktu", example: "Die Frist endet am Montag.", example_id: "Tenggat waktu berakhir pada hari Senin." },
+
+  // (Frei-)Zeit
+  { id: 22, front: "Ich würde gern ...", back: "Saya ingin sekali ...", example: "Ich würde gern nach Deutschland reisen.", example_id: "Saya ingin sekali bepergian ke Jerman." },
+  { id: 23, front: "aus|schalten (das Handy ausschalten)", back: "mematikan (mematikan HP)", example: "Vor dem Unterricht muss man das Handy ausschalten.", example_id: "Sebelum pelajaran kita harus mematikan HP." },
+  { id: 24, front: "klingeln (Das Handy hat geklingelt.)", back: "berdering (HP telah berdering.)", example: "Es klingelt an der Tür.", example_id: "Ada bel berbunyi di pintu." },
+  { id: 25, front: "ständig (Sie rufen ständig an.)", back: "terus-menerus (Mereka terus-menerus menelepon.)", example: "Er lernt ständig Deutsch.", example_id: "Dia terus-menerus belajar bahasa Jerman." },
+  { id: 26, front: "schimpfen", back: "memarahi, mengomel", example: "Die Mutter schimpft mit dem Kind.", example_id: "Ibu itu memarahi anaknya." },
+  { id: 27, front: "verbringen (mit + D.), er verbringt, hat verbracht (Zeit mit der Familie verbringen)", back: "menghabiskan waktu (dengan) (menghabiskan waktu dengan keluarga)", example: "Ich verbringe meine Freizeit gerne im Park.", example_id: "Saya suka menghabiskan waktu luang saya di taman." },
+
+  // Ausflüge organisieren
+  { id: 28, front: "interessieren (sich) (für + A.)", back: "tertarik (pada)", example: "Ich interessiere mich für Musik.", example_id: "Saya tertarik pada musik." },
+  { id: 29, front: "Wofür interessierst du dich?", back: "Kamu tertarik pada apa? / Apa minatmu?", example: "Wofür interessierst du dich in deiner Freizeit?", example_id: "Kamu tertarik pada apa di waktu luangmu?" },
+  { id: 30, front: "vor|bereiten (sich) (auf + A.)", back: "mempersiapkan diri (untuk)", example: "Ich bereite mich auf die Prüfung vor.", example_id: "Saya mempersiapkan diri untuk ujian." },
+  { id: 31, front: "kümmern (sich) (um + A.)", back: "mengurus, memedulikan (tentang/akan)", example: "Wer kümmert sich um die Katze?", example_id: "Siapa yang mengurus kucing itu?" },
+  { id: 32, front: "Worum kümmert sich Linda?", back: "Linda sedang mengurus apa?", example: "Worum kümmert sich Linda bei der Arbeit?", example_id: "Linda sedang mengurus apa di tempat kerja?" },
+  { id: 33, front: "unterhalten (sich) (mit + D.)", back: "mengobrol (dengan)", example: "Ich unterhalte mich gern mit meinen Nachbarn.", example_id: "Saya senang mengobrol dengan tetangga saya." },
+  { id: 34, front: "Mit wem hast du dich so lang unterhalten?", back: "Dengan siapa kamu mengobrol begitu lama?", example: "Mit wem hast du dich so lang am Telefon unterhalten?", example_id: "Dengan siapa kamu mengobrol begitu lama di telepon." },
+  { id: 35, front: "erinnern (sich) (an + A.)", back: "mengingat (akan)", example: "Erinnert sich jemand an den Namen?", example_id: "Apakah ada yang ingat namanya?" },
+  { id: 36, front: "Ich erinnere mich noch an den letzten Ausflug.", back: "Saya masih ingat perjalanan terakhir.", example: "Ich erinnere mich noch gut an den letzten Ausflug.", example_id: "Saya masih ingat dengan baik perjalanan terakhir." },
+  { id: 37, front: "Alles bestens.", back: "Semuanya baik-baik saja / Semua berjalan sangat baik.", example: "Wie geht es dir? - Danke, alles bestens!", example_id: "Bagaimana kabarmu? - Terima kasih, semua baik-baik saja!" },
+
+  // Zeitreise
+  { id: 38, front: "das Feuer, -", back: "api", example: "Wir machen ein großes Feuer.", example_id: "Kami membuat api yang besar." },
+  { id: 39, front: "das Gas, -e", back: "gas", example: "Wir kochen mit Gas.", example_id: "Kami memasak menggunakan gas." },
+  { id: 40, front: "die Heizung, -en", back: "pemanas ruangan", example: "Im Winter schalten wir die Heizung an.", example_id: "Di musim dingin kami menyalakan pemanas." },
+  { id: 41, front: "heizen", back: "memanaskan (ruangan)", example: "Wir heizen das Wohnzimmer.", example_id: "Kami memanaskan ruang tamu." },
+  { id: 42, front: "der Strom (Sg.)", back: "listrik", example: "Wir sparen Strom.", example_id: "Kami menghemat listrik." },
+  { id: 43, front: "die Hektik (Sg.) (ein Leben ohne Hektik und Stress)", back: "hiruk-pikuk, kesibukan (hidup tanpa hiruk-pikuk dan stres)", example: "In der Großstadt gibt es viel Hektik.", example_id: "Di kota besar ada banyak hiruk-pikuk." },
+  { id: 44, front: "der Helfer, -", back: "penolong, asisten (pria)", example: "Er arbeitet als Helfer bei der Ernte.", example_id: "Dia bekerja sebagai penolong saat panen." },
+  { id: 45, front: "die Helferin, -nen", back: "penolong, asisten (wanita)", example: "Die Helferin war sehr freundlich.", example_id: "Penolong wanita itu sangat ramah." },
+  { id: 46, front: "der Notfall, -¨e", back: "keadaan darurat", example: "Im Notfall drücken Sie diesen Knopf.", example_id: "Dalam keadaan darurat, tekan tombol ini." },
+  { id: 47, front: "Bei einem Notfall rufen wir die Polizei.", back: "Dalam keadaan darurat kami memanggil polisi.", example: "Bei einem Notfall rufen wir sofort die Polizei.", example_id: "Dalam keadaan darurat kami segera memanggil polisi." },
+  { id: 48, front: "die Unterkunft, -¨e", back: "akomodasi, tempat penginapan", example: "Wir suchen eine günstige Unterkunft.", example_id: "Kami sedang mencari akomodasi yang murah." },
+  { id: 49, front: "bieten, er bietet, hat geboten (Wir bieten Unterkunft.)", back: "menawarkan (Kami menawarkan akomodasi.)", example: "Das Hotel bietet einen guten Service.", example_id: "Hotel itu menawarkan layanan yang baik." },
+  { id: 50, front: "das Einkaufszentrum, -zentren", back: "pusat perbelanjaan, mal", example: "Wir gehen im Einkaufszentrum shoppen.", example_id: "Kami pergi berbelanja di mal." },
+  { id: 51, front: "besitzen, er besitzt, hat besessen", back: "memiliki", example: "Sie besitzt ein großes Haus.", example_id: "Sie besitzt ein großes Haus." },
+  { id: 52, front: "produzieren", back: "memproduksi", example: "Die Fabrik produziert Spielzeug.", example_id: "Pabrik itu memproduksi mainan." },
+  { id: 53, front: "träumen (von + D.)", back: "bermimpi (tentang)", example: "Ich träume von einem Urlaub am Meer.", example_id: "Saya bermimpi tentang liburan di pantai." },
+  { id: 54, front: "verzichten (auf + A.)", back: "melepaskan, merelakan, verzichten (pada)", example: "Ich kann nicht auf Kaffee verzichten.", example_id: "Saya tidak bisa merelakan kopi." },
+  { id: 55, front: "altmodisch", back: "kuno, ketinggalan zaman", example: "Das Kleid sieht etwas altmodisch aus.", example_id: "Gaun itu terlihat agak kuno." },
+  { id: 56, front: "damals", back: "saat itu, dahulu kala", example: "Damals gab es noch keine Handys.", example_id: "Saat itu belum ada ponsel." },
+
+  // Sprichwörter
+  { id: 57, front: "das Sprichwort, -¨er", back: "peribahasa", example: "Kennst du ein deutsches Sprichwort?", example_id: "Apakah kamu tahu peribahasa Jerman?" },
+  { id: 58, front: "die Erklärung, -en", back: "penjelasan", example: "Die Erklärung des Lehrers war sehr klar.", example_id: "Penjelasan guru itu sangat jelas." },
+  { id: 59, front: "das Gold (Sg.)", back: "emas", example: "Der Ring ist aus reinem Gold.", example_id: "Cincin itu terbuat dari emas murni." },
+  { id: 60, front: "der Rat (Sg.) (Ich gebe dir einen Rat.)", back: "nasihat (Saya memberi kamu nasihat.)", example: "Vielen Dank für deinen guten Rat.", example_id: "Terima kasih banyak atas nasihat baikmu." },
+  { id: 61, front: "heilen", back: "menyembuhkan", example: "Die Wunde heilt langsam.", example_id: "Luka itu sembuh secara perlahan." },
+
+  // andere wichtige Wörter und Wendungen
+  { id: 62, front: "Acht geben", back: "berhati-hati, memperhatikan", example: "Du musst im Verkehr Acht geben.", example_id: "Kamu harus berhati-hati di jalan raya." },
+  { id: 63, front: "herein|kommen, er kommt herein, ist hereingekommen", back: "masuk", example: "Darf ich hereinkommen?", example_id: "Bolehkah saya masuk?" },
+  { id: 64, front: "brechen, er bricht, ist gebrochen (Das Glas ist gebrochen.)", back: "pecah, patah (Gelas itu pecah.)", example: "Der Ast ist gebrochen.", example_id: "Dahan itu patah." },
+  { id: 65, front: "die Lücke, -n", back: "celah, kekosongan", example: "Füllen Sie die Lücke aus.", example_id: "Isilah bagian yang kosong (celah tersebut)." },
+  { id: 66, front: "das Mitleid (Sg.) (Ich habe Mitleid mit ihm.)", back: "rasa kasihan, simpati (Saya merasa kasihan padanya.)", example: "Sie hat Mitleid mit den armen Leuten.", example_id: "Dia merasa kasihan kepada orang-orang miskin." },
+  { id: 67, front: "Du Armer! / Du Arme!", back: "Kasihan sekali kamu (pria / wanita)!", example: "Du bist krank? Du Armer!", example_id: "Kamu sakit? Kasihan sekali kamu!" },
+  { id: 68, front: "besorgen (Ich muss noch etwas im Supermarkt besorgen.)", back: "membeli, mencarikan, menyediakan (Saya harus membeli sesuatu di supermarket.)", example: "Kannst du bitte Brot besorgen?", example_id: "Bisakah kamu membelikan roti?" },
+  { id: 69, front: "der Alkohol (Sg.)", back: "alkohol", example: "Getränke mit viel Alkohol sind teuer.", example_id: "Minuman dengan banyak alkohol harganya mahal." },
+  { id: 70, front: "betrunken", back: "mabuk", example: "Er hat zu viel Bier getrunken und ist betrunken.", example_id: "Dia minum terlalu banyak bir dan mabuk." },
+  { id: 71, front: "bluten", back: "berdarah", example: "Deine Nase blutet.", example_id: "Hidungmu berdarah." },
+  { id: 72, front: "effektiv", back: "efektif", example: "Diese Lernmethode ist sehr effektiv.", example_id: "Metode belajar ini sangat efektif." },
+  { id: 73, front: "kühl (Am Abend ist es kühl.)", back: "sejuk, dingin (Di malam hari suasananya sejuk.)", example: "Im Herbst wird das Wetter kühl.", example_id: "Di musim gugur cuaca menjadi sejuk." },
+  { id: 74, front: "niedrig", back: "rendah", example: "Die Temperatur ist heute sehr niedrig.", example_id: "Suhu hari ini sangat rendah." },
+  { id: 75, front: "reich", back: "kaya", example: "Er ist ein sehr reicher Mann.", example_id: "Dia adalah pria yang sangat kaya." },
+  { id: 76, front: "meist", back: "kebanyakan, biasanya", example: "Die meisten Leute essen morgens Brot.", example_id: "Kebanyakan orang makan roti di pagi hari." },
+  { id: 77, front: "vor allem (v. a.)", back: "terutama, khususnya", example: "Ich mag Obst, vor allem Äpfel.", example_id: "Saya suka buah, terutama apel." },
+  { id: 78, front: "Papa (Hilfst du mir, Papa?)", back: "Papa (Apakah kamu membantuku, Papa?)", example: "Mein Papa arbeitet als Ingenieur.", example_id: "Papa saya bekerja sebagai insinyur." }
+];
+
 export const flashcardLevels = [
   {
     id: "A1",
@@ -1065,6 +1159,13 @@ export const flashcardLevels = [
           id: `A2-K${i + 1}`,
           title: `Kapitel ${i + 1}`,
           cards: a2Kapitel10Cards
+        };
+      }
+      if (i + 1 === 11) {
+        return {
+          id: `A2-K${i + 1}`,
+          title: `Kapitel ${i + 1}`,
+          cards: a2Kapitel11Cards
         };
       }
       return {
