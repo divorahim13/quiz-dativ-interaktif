@@ -202,7 +202,7 @@ const Dashboard = ({ quizzes, onSelectQuiz, flashcardLevels, onSelectChapter, on
             color: activeTab === 'kuis' ? '#fff' : 'var(--text-secondary)',
             fontWeight: 600,
             cursor: 'pointer',
-            transition: 'all 0.3s ease',
+            transition: 'background 0.3s ease, color 0.3s ease',
             display: 'flex',
             alignItems: 'center',
             gap: '8px'
@@ -221,7 +221,7 @@ const Dashboard = ({ quizzes, onSelectQuiz, flashcardLevels, onSelectChapter, on
             color: activeTab === 'flashcard' ? '#fff' : 'var(--text-secondary)',
             fontWeight: 600,
             cursor: 'pointer',
-            transition: 'all 0.3s ease',
+            transition: 'background 0.3s ease, color 0.3s ease',
             display: 'flex',
             alignItems: 'center',
             gap: '8px'
@@ -390,7 +390,7 @@ const Dashboard = ({ quizzes, onSelectQuiz, flashcardLevels, onSelectChapter, on
                     border: '1px solid rgba(255,255,255,0.1)',
                     background: 'rgba(255,255,255,0.02)',
                     cursor: 'pointer',
-                    transition: 'all 0.2s ease',
+                    transition: 'border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease',
                     borderRadius: '12px'
                   }}
                 >

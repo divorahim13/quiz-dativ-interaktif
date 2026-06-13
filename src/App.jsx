@@ -1,4 +1,4 @@
-import { Fragment, useState } from 'react';
+import { Fragment, useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { quizzes } from './data/quizData';
 import { flashcardLevels } from './data/flashcardData';
@@ -38,13 +38,13 @@ function App() {
     localStorage.setItem('customFlashcards', JSON.stringify(updated));
   };
 
-  const mergedFlashcardLevels = flashcardLevels.map(level => ({
+  const mergedFlashcardLevels = useMemo(() => flashcardLevels.map(level => ({
     ...level,
     chapters: level.chapters.map(chapter => ({
       ...chapter,
       cards: [...chapter.cards, ...(customFlashcards[chapter.id] || [])]
     }))
-  }));
+  })), [customFlashcards]);
 
   const currentQuestion = selectedQuiz?.questions[currentIdx];
   const progress = selectedQuiz ? ((currentIdx + 1) / selectedQuiz.questions.length) * 100 : 0;
@@ -112,7 +112,7 @@ function App() {
     <div className="container" style={{ 
       maxWidth: selectedFlashcardChapter ? '1200px' : (showReview ? '800px' : '600px'),
       width: selectedFlashcardChapter ? '100%' : '100%',
-      transition: 'all 0.5s ease' 
+      transition: 'max-width 0.5s ease'
     }}>
       <AnimatePresence mode="wait">
         {!selectedQuiz && !selectedFlashcardChapter ? (
