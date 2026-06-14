@@ -111,10 +111,10 @@ function App() {
   return (
     <div className="container" style={{ 
       maxWidth: selectedFlashcardChapter ? '1200px' : (showReview ? '800px' : '600px'),
-      width: selectedFlashcardChapter ? '100%' : '100%',
-      transition: 'max-width 0.5s ease'
+      width: '100%',
+      transition: 'max-width 0.3s cubic-bezier(0.4, 0, 0.2, 1)'
     }}>
-      <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait" initial={false}>
         {!selectedQuiz && !selectedFlashcardChapter ? (
           <Dashboard 
             quizzes={quizzes} 
@@ -161,8 +161,9 @@ function App() {
         ) : (
           <motion.div
             key="result"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.2, ease: [0.4, 0, 0.2, 1] }}
             className="glass-card result-card"
           >
             {!showReview ? (

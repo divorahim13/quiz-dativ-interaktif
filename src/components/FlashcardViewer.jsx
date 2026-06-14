@@ -177,9 +177,10 @@ const FlashcardViewer = ({ chapter, onBack }) => {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -20 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.2, ease: [0.4, 0, 0.2, 1] }}
       className="flashcard-container"
     >
       <div className="flashcard-header" style={{ 
@@ -397,8 +398,8 @@ const FlashcardViewer = ({ chapter, onBack }) => {
                 animate="center"
                 exit="exit"
                 transition={{
-                  duration: 0.1,
-                  ease: "linear"
+                  duration: 0.15,
+                  ease: [0.4, 0, 0.2, 1]
                 }}
                 drag={exerciseType === 'quiz' ? false : "x"}
                 dragConstraints={{ left: 0, right: 0 }}
@@ -495,8 +496,9 @@ const FlashcardViewer = ({ chapter, onBack }) => {
                       {/* Quiz Feedback and Translation / Example Sentence */}
                       {isQuizAnswered && (
                         <motion.div 
-                          initial={{ opacity: 0, y: 10 }}
-                          animate={{ opacity: 1, y: 0 }}
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          transition={{ duration: 0.15 }}
                           style={{ marginTop: '1.25rem', width: '100%', textAlign: 'left' }}
                         >
                           <div style={{ 
@@ -539,7 +541,7 @@ const FlashcardViewer = ({ chapter, onBack }) => {
                     className="flashcard-inner"
                     onClick={flipCard}
                     animate={{ rotateY: isFlipped ? 180 : 0 }}
-                    transition={{ duration: 0.1, ease: "linear" }}
+                    transition={{ duration: 0.25, ease: [0.4, 0, 0.2, 1] }}
                     style={{ width: '100%', height: '100%' }}
                   >
                     {/* Front of Card */}

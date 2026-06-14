@@ -180,8 +180,9 @@ const Dashboard = ({ quizzes, onSelectQuiz, flashcardLevels, onSelectChapter, on
 
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.95 }}
-      animate={{ opacity: 1, scale: 1 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.2, ease: [0.4, 0, 0.2, 1] }}
       className="dashboard-container"
     >
       <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
@@ -233,7 +234,7 @@ const Dashboard = ({ quizzes, onSelectQuiz, flashcardLevels, onSelectChapter, on
 
       <AnimatePresence mode="wait">
         {activeTab === 'kuis' && (
-          <motion.div key="kuis" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 20 }}>
+          <motion.div key="kuis" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.15 }}>
             <div className="options-grid" style={{ gap: '1.5rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))' }}>
               {quizzes.map((quiz) => (
                 <button
@@ -289,7 +290,7 @@ const Dashboard = ({ quizzes, onSelectQuiz, flashcardLevels, onSelectChapter, on
         )}
 
         {activeTab === 'flashcard' && !selectedLevel && (
-          <motion.div key="flashcard-levels" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }}>
+          <motion.div key="flashcard-levels" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.15 }}>
             <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '1rem' }}>
               <button 
                 onClick={openAddModal}
@@ -351,7 +352,7 @@ const Dashboard = ({ quizzes, onSelectQuiz, flashcardLevels, onSelectChapter, on
         )}
 
         {activeTab === 'flashcard' && selectedLevel && (
-          <motion.div key="flashcard-chapters" initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.95 }}>
+          <motion.div key="flashcard-chapters" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.15 }}>
             <div style={{ display: 'flex', alignItems: 'center', marginBottom: '1.5rem', gap: '1rem' }}>
               <button 
                 onClick={() => setSelectedLevel(null)}
@@ -415,9 +416,10 @@ const Dashboard = ({ quizzes, onSelectQuiz, flashcardLevels, onSelectChapter, on
         {isModalOpen && (
           <div className="modal-backdrop">
             <motion.div 
-              initial={{ opacity: 0, scale: 0.9 }}
+              initial={{ opacity: 0, scale: 0.97 }}
               animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.9 }}
+              exit={{ opacity: 0, scale: 0.97 }}
+              transition={{ duration: 0.2, ease: [0.4, 0, 0.2, 1] }}
               className="glass-card add-modal"
             >
               <button 

@@ -19,6 +19,11 @@
   box-sizing: border-box;
 }
 
+/* GPU optimization for animated elements */
+button, a, .glass-card, .flashcard-inner, .flashcard-front, .flashcard-back {
+  -webkit-tap-highlight-color: transparent;
+}
+
 body {
   font-family: 'Outfit', sans-serif;
   background-color: var(--bg);
@@ -62,13 +67,12 @@ button:focus-visible {
 }
 
 .glass-card {
-  background: rgba(30, 41, 59, 0.85);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  background: rgba(30, 41, 59, 0.88);
   border: 1px solid var(--glass-border);
   border-radius: 24px;
   padding: 2.5rem;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 12px 40px -8px rgba(0, 0, 0, 0.4);
+  will-change: transform;
 }
 
 h1 {
@@ -100,7 +104,8 @@ h1 {
 .progress-bar {
   height: 100%;
   background: linear-gradient(to right, var(--primary), #a855f7);
-  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: width;
 }
 
 .level-badge {
@@ -154,9 +159,9 @@ h1 {
 
 .option-btn:hover {
   background: rgba(255, 255, 255, 0.1);
-  transform: translateY(-4px);
+  transform: translateY(-3px);
   border-color: var(--primary);
-  box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.2);
+  box-shadow: 0 6px 16px -4px rgba(99, 102, 241, 0.2);
 }
 
 .option-btn.selected {
@@ -215,7 +220,7 @@ h1 {
 .next-btn:hover {
   background: var(--primary-hover);
   transform: translateY(-2px);
-  box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 6px 12px -3px rgba(99, 102, 241, 0.25);
 }
 
 .next-btn:disabled {
@@ -641,6 +646,7 @@ h1 {
   transition: transform 0.1s;
   transform-style: preserve-3d;
   outline: none;
+  will-change: transform;
 }
 
 .flashcard-scene > div {
@@ -658,15 +664,16 @@ h1 {
   align-items: center;
   padding: 2.5rem 2rem;
   border-radius: 24px;
-  background: rgba(30, 41, 59, 0.85);
+  background: rgba(30, 41, 59, 0.92);
   border: 1px solid rgba(255, 255, 255, 0.1);
   user-select: none;
   -webkit-user-select: none;
+  will-change: transform;
 }
 
 .flashcard-back {
   transform: rotateY(180deg);
-  background: rgba(15, 23, 42, 0.85); /* Slightly darker back */
+  background: rgba(15, 23, 42, 0.92); /* Slightly darker back */
 }
 
 .flashcard-hint {
@@ -725,13 +732,13 @@ h1 {
 
 .chapter-btn:hover {
   border-color: var(--primary) !important;
-  transform: translateY(-4px);
-  box-shadow: 0 10px 20px -5px rgba(99, 102, 241, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px -4px rgba(99, 102, 241, 0.2);
 }
 
 .control-btn:hover:not(:disabled) {
-  transform: scale(1.1);
-  box-shadow: 0 5px 15px -3px rgba(99, 102, 241, 0.3);
+  transform: scale(1.08);
+  box-shadow: 0 4px 12px -3px rgba(99, 102, 241, 0.25);
 }
 
 .control-btn {

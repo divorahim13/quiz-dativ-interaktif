@@ -2,7 +2,7 @@ import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CheckCircle2, XCircle, ArrowRight } from 'lucide-react';
 
-const QuizCard = ({ 
+const QuizCard = React.memo(({ 
   currentQuestion, 
   progress, 
   isAnswered, 
@@ -15,9 +15,10 @@ const QuizCard = ({
   return (
     <motion.div
       key="quiz"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -20 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.2, ease: [0.4, 0, 0.2, 1] }}
       className="glass-card"
     >
       <div className="level-badge">{currentQuestion.title}</div>
@@ -59,8 +60,9 @@ const QuizCard = ({
       <AnimatePresence>
         {isAnswered && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.15 }}
             className={`feedback-area ${selectedOption === currentQuestion.correct ? 'feedback-success' : 'feedback-error'}`}
           >
             <strong>{selectedOption === currentQuestion.correct ? 'Richtig! ✨' : 'Leider falsch...'}</strong>
@@ -86,6 +88,6 @@ const QuizCard = ({
       )}
     </motion.div>
   );
-};
+});
 
 export default QuizCard;
