@@ -1099,7 +1099,24 @@ export const a2Kapitel11Cards = [
   { id: 75, front: "reich", back: "kaya", example: "Er ist ein sehr reicher Mann.", example_id: "Dia adalah pria yang sangat kaya." },
   { id: 76, front: "meist", back: "kebanyakan, biasanya", example: "Die meisten Leute essen morgens Brot.", example_id: "Kebanyakan orang makan roti di pagi hari." },
   { id: 77, front: "vor allem (v. a.)", back: "terutama, khususnya", example: "Ich mag Obst, vor allem Äpfel.", example_id: "Saya suka buah, terutama apel." },
-  { id: 78, front: "Papa (Hilfst du mir, Papa?)", back: "Papa (Apakah kamu membantuku, Papa?)", example: "Mein Papa arbeitet als Ingenieur.", example_id: "Papa saya bekerja sebagai insinyur." }
+  { id: 78, front: "Papa (Hilfst du mir, Papa?)", back: "Papa (Apakah kamu membantuku, Papa?)", example: "Mein Papa arbeitet als Ingenieur.", example_id: "Papa saya bekerja sebagai insinyur." },
+  
+  // Verben mit Präpositionen (dari gambar)
+  { id: 79, front: "aufpassen auf + Akk.", back: "menjaga / memperhatikan", example: "Wer passt heute Abend auf das Baby auf?", example_id: "Siapa yang menjaga bayi malam ini?" },
+  { id: 80, front: "aufhören mit + Dat.", back: "berhenti melakukan sesuatu", example: "Wir müssen mit dieser Diskussion aufhören.", example_id: "Kita harus menghentikan diskusi ini." },
+  { id: 81, front: "sich bewerben um + Akk.", back: "melamar (pekerjaan)", example: "Sie bewirbt sich um ein Stipendium.", example_id: "Dia melamar untuk beasiswa." },
+  { id: 82, front: "sich entschuldigen bei + Dat. + für + Akk.", back: "meminta maaf kepada seseorang untuk sesuatu", example: "Er entschuldigt sich bei dem Lehrer für die Verspätung.", example_id: "Dia meminta maaf kepada guru atas keterlambatan tersebut." },
+  { id: 83, front: "fragen nach + Dat.", back: "bertanya tentang sesuatu", example: "Ich frage den Kellner nach der Rechnung.", example_id: "Saya bertanya kepada pelayan tentang tagihan." },
+  { id: 84, front: "arbeiten bei + Dat.", back: "bekerja di (perusahaan)", example: "Sie arbeitet bei einer großen Bank.", example_id: "Dia bekerja di sebuah bank besar." },
+  { id: 85, front: "informieren über + Akk.", back: "menginformasikan tentang", example: "Der Arzt informiert den Patienten über das Medikament.", example_id: "Dokter menginformasikan pasien tentang obat tersebut." },
+  { id: 86, front: "klagen über + Akk.", back: "mengeluh tentang", example: "Die Mitarbeiter klagen über zu viel Arbeit.", example_id: "Para karyawan mengeluh tentang terlalu banyak pekerjaan." },
+  { id: 87, front: "einverstanden sein mit + Dat.", back: "setuju dengan", example: "Sind Sie mit diesem Termin einverstanden?", example_id: "Apakah Anda setuju dengan jadwal ini?" },
+  { id: 88, front: "telefonieren mit + Dat.", back: "menelepon seseorang", example: "Er telefoniert gerade mit einem Kunden.", example_id: "Dia sedang menelepon seorang pelanggan." },
+  { id: 89, front: "nachdenken über + Akk.", back: "merenungkan / memikirkan secara mendalam", example: "Wir müssen über das Angebot nachdenken.", example_id: "Kami harus memikirkan tawaran itu secara mendalam." },
+  { id: 90, front: "schreiben an + Akk.", back: "menulis kepada seseorang", example: "Ich schreibe eine E-Mail an meine Kollegin.", example_id: "Saya menulis email kepada rekan kerja saya." },
+  { id: 91, front: "schreiben über + Akk.", back: "menulis tentang sesuatu", example: "Der Autor schreibt ein Buch über die Natur.", example_id: "Penulis itu menulis buku tentang alam." },
+  { id: 92, front: "reden mit + Dat.", back: "berbicara dengan seseorang", example: "Ich würde gern mit dem Chef reden.", example_id: "Saya ingin berbicara dengan bos." },
+  { id: 93, front: "reden über + Akk.", back: "berbicara tentang sesuatu", example: "Wir reden nicht gern über Politik.", example_id: "Kami tidak suka berbicara tentang politik." }
 ];
 
 export const flashcardLevels = [
