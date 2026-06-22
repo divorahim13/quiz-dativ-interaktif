@@ -395,11 +395,22 @@ const Dashboard = ({ quizzes, onSelectQuiz, flashcardLevels, onSelectChapter, on
                     borderRadius: '12px'
                   }}
                 >
-                  <span style={{ fontSize: '1.25rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.5rem' }}>
-                    {chapter.title.split(' ')[1]}
+                  <span style={{ 
+                    fontSize: chapter.id.includes('latihan') ? '0.95rem' : '1.25rem', 
+                    fontWeight: 600, 
+                    color: 'var(--text)', 
+                    marginBottom: '0.5rem',
+                    textAlign: 'center'
+                  }}>
+                    {chapter.id.includes('latihan') ? '12 Latihan' : chapter.title.split(' ')[1]}
                   </span>
-                  <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
-                    Kapitel
+                  <span style={{ 
+                    fontSize: chapter.id.includes('latihan') ? '0.65rem' : '0.75rem', 
+                    color: 'var(--text-secondary)',
+                    textAlign: 'center',
+                    lineHeight: 1.2
+                  }}>
+                    {chapter.id.includes('latihan') ? 'Gute Unterhaltung' : 'Kapitel'}
                   </span>
                   <div style={{ marginTop: '0.75rem', fontSize: '0.7rem', color: chapter.cards.length > 0 ? '#22c55e' : 'var(--text-secondary)', opacity: 0.8 }}>
                     {chapter.cards.length} Kartu

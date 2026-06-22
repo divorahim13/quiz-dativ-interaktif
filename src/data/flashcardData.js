@@ -1119,6 +1119,79 @@ export const a2Kapitel11Cards = [
   { id: 93, front: "reden über + Akk.", back: "berbicara tentang sesuatu", example: "Wir reden nicht gern über Politik.", example_id: "Kami tidak suka berbicara tentang politik." }
 ];
 
+export const a2Kapitel12LatihanCards = [
+  // Kunst & Kultur
+  { id: 1, front: "die Bestseller-Liste, -n", back: "daftar buku terlaris", example: "Das neue Buch steht sofort auf der Bestseller-Liste.", example_id: "Buku baru itu segera masuk ke dalam daftar buku terlaris." },
+  { id: 2, front: "das Werk, -e", back: "karya seni", example: "Dieses Bild ist ein bekanntes Werk von ihm.", example_id: "Gambar ini adalah karya seni terkenal darinya." },
+  { id: 3, front: "die Kunsthalle, -n", back: "galeri seni", example: "Die neue Ausstellung in der Kunsthalle ist toll.", example_id: "Pameran baru di galeri seni itu sangat bagus." },
+  { id: 4, front: "der Besucher, -", back: "pengunjung", example: "Die Kunsthalle hat heute viele Besucher.", example_id: "Galeri seni itu memiliki banyak pengunjung hari ini." },
+  { id: 5, front: "erfolgreich", back: "sukses/berhasil", example: "Sein neues Projekt war sehr erfolgreich.", example_id: "Proyek barunya sangat sukses." },
+  { id: 6, front: "bekannt", back: "terkenal", example: "Sie ist eine bekannte Künstlerin in Deutschland.", example_id: "Dia adalah seniman wanita terkenal di Jerman." },
+  { id: 7, front: "interessant", back: "menarik", example: "Das Gespräch über Kunst war sehr interessant.", example_id: "Percakapan tentang seni itu sangat menarik." },
+  { id: 8, front: "jährlich", back: "tahun-an / tahunan", example: "Das Festival findet jährlich im Sommer statt.", example_id: "Festival itu diadakan setiap tahun di musim panas." },
+
+  // Festival & Konzert
+  { id: 9, front: "das Drei-Tages-Ticket, -s", back: "tiket 3 hari", example: "Ich habe ein Drei-Tages-Ticket gekauft.", example_id: "Saya telah membeli tiket 3 hari." },
+  { id: 10, front: "die Bühne, -n", back: "panggung", example: "Die Musiker stehen schon auf der Bühne.", example_id: "Para musisi sudah berdiri di atas panggung." },
+  { id: 11, front: "der Hit, -s", back: "lagu populer", example: "Dieses neue Lied ist ein weltweiter Hit.", example_id: "Lagu baru ini adalah lagu populer di seluruh dunia." },
+  { id: 12, front: "das Lied, -er", back: "lagu", example: "Wir singen zusammen ein schönes Lied.", example_id: "Kita menyanyikan lagu yang indah bersama-sama." },
+  { id: 13, front: "die Band, -s", back: "band", example: "Die Band spielt heute Abend live im Club.", example_id: "Band tersebut bermain langsung malam ini di klub." },
+  { id: 14, front: "der Musiker, -", back: "musisi", example: "Der Musiker spielt sehr gut Gitarre.", example_id: "Musisi itu bermain gitar dengan sangat baik." },
+  { id: 15, front: "der Text, -e", back: "lirik/teks", example: "Ich kenne den Text von diesem Lied nicht.", example_id: "Saya tidak tahu lirik dari lagu ini." },
+  { id: 16, front: "ungeduldig", back: "tidak sabar", example: "Die Besucher warten ungeduldig vor dem Eingang.", example_id: "Para pengunjung menunggu dengan tidak sabar di depan pintu masuk." },
+  { id: 17, front: "die Schlange, -n", back: "antrean", example: "Vor der Kasse gibt es eine lange Schlange.", example_id: "Di depan kasir ada antrean panjang." },
+  { id: 18, front: "die Kontrolle, -n", back: "pemeriksaan", example: "Die Sicherheitskontrolle am Flughafen dauert lang.", example_id: "Pemeriksaan keamanan di bandara membutuhkan waktu lama." },
+
+  // Ticket kaufen online
+  { id: 19, front: "die Kreditkarte, -n", back: "kartu kredit", example: "Kann ich online mit Kreditkarte bezahlen?", example_id: "Bisakah saya membayar online dengan kartu kredit?" },
+  { id: 20, front: "der Versand (Sg.)", back: "pengiriman", example: "Wie viel kostet der Versand nach Indonesien?", example_id: "Berapa biaya pengiriman ke Indonesia?" },
+  { id: 21, front: "das Prozent, -e", back: "persen", example: "Heute gibt es zwanzig Prozent Rabatt auf Tickets.", example_id: "Hari ini ada diskon dua puluh persen untuk tiket." },
+  { id: 22, front: "der Warenkorb, -¨er", back: "keranjang belanja", example: "Legen Sie das Ticket in den Warenkorb.", example_id: "Masukkan tiket ke dalam keranjang belanja." },
+  { id: 23, front: "die Kontaktdaten (Pl.)", back: "data kontak", example: "Geben Sie bitte Ihre Kontaktdaten ein.", example_id: "Silakan masukkan data kontak Anda." },
+  { id: 24, front: "zustimmen (hat zugestimmt)", back: "menyetujui", example: "Sie müssen den Bedingungen zustimmen.", example_id: "Anda harus menyetujui persyaratannya." },
+  { id: 25, front: "die Überweisung, -en", back: "transfer bank", example: "Ich bezahle die Tickets per Überweisung.", example_id: "Saya membayar tiket melalui transfer bank." },
+
+  // Bildbeschreibung
+  { id: 26, front: "im Vordergrund", back: "di latar depan", example: "Im Vordergrund steht ein großer Tisch.", example_id: "Di latar depan berdiri sebuah meja besar." },
+  { id: 27, front: "im Hintergrund", back: "di latar belakang", example: "Im Hintergrund sieht man schöne Berge.", example_id: "Di latar belakang terlihat pegunungan yang indah." },
+  { id: 28, front: "auf dem Bild", back: "di dalam gambar", example: "Auf dem Bild sehe ich viele Menschen.", example_id: "Di dalam gambar saya melihat banyak orang." },
+  { id: 29, front: "links", back: "di sebelah kiri", example: "Auf dem Bild links steht das Fahrrad.", example_id: "Di dalam gambar sebelah kiri ada sepeda." },
+  { id: 30, front: "rechts", back: "di sebelah kanan", example: "Rechts neben dem Haus ist ein Garten.", example_id: "Di sebelah kanan rumah ada kebun." },
+  { id: 31, front: "oben", back: "di atas", example: "Oben am Himmel scheint die Sonne.", example_id: "Di atas langit matahari bersinar." },
+  { id: 32, front: "unten", back: "di bawah", example: "Unten im Bild steht die Erklärung.", example_id: "Di bagian bawah gambar terdapat penjelasan." },
+  { id: 33, front: "vorne", back: "di depan", example: "Der Lehrer steht ganz vorne an der Tafel.", example_id: "Guru itu berdiri paling depan di papan tulis." },
+  { id: 34, front: "der See, -n", back: "danau", example: "Wir machen ein Picknick am See.", example_id: "Kami melakukan piknik di tepi danau." },
+  { id: 35, front: "die Mauer, -n", back: "tembok/dinding", example: "Die Katze klettert auf die Mauer.", example_id: "Kucing itu memanjat ke atas tembok." },
+  { id: 36, front: "der Wald, -¨er", back: "hutan", example: "Im Wald wachsen viele Bäume.", example_id: "Di hutan tumbuh banyak pohon." },
+  { id: 37, front: "der Stein, -e", back: "batu", example: "Der Weg ist voll von kleinen Steinen.", example_id: "Jalan itu penuh dengan batu-batu kecil." },
+  { id: 38, front: "das Fahrrad, -¨er", back: "sepeda", example: "Ich fahre gerne mit dem Fahrrad.", example_id: "Saya suka mengendarai sepeda." },
+  { id: 39, front: "die Sonne (Sg.)", back: "matahari", example: "Die Sonne scheint den ganzen Tag.", example_id: "Matahari bersinar sepanjang hari." },
+
+  // Compound Adjektive
+  { id: 40, front: "hellblau", back: "biru muda", example: "Er trägt ein hellblaues T-Shirt.", example_id: "Dia mengenakan kaos biru muda." },
+  { id: 41, front: "dunkelblau", back: "biru tua", example: "Seine Jacke ist dunkelblau.", example_id: "Jaketnya berwarna biru tua." },
+  { id: 42, front: "hellgrün", back: "hijau muda", example: "Das Zimmer ist hellgrün gestrichen.", example_id: "Kamar itu dicat hijau muda." },
+  { id: 43, front: "dunkelgrün", back: "hijau tua", example: "Sie mag dunkelgrüne Kleider.", example_id: "Dia menyukai gaun hijau tua." },
+  { id: 44, front: "hellbraun", back: "coklat muda", example: "Der Hund hat ein hellbraunes Fell.", example_id: "Anjing itu memiliki bulu coklat muda." },
+  { id: 45, front: "dunkelbraun", back: "coklat tua", example: "Die Schuhe sind dunkelbraun.", example_id: "Sepatu itu berwarna coklat tua." },
+  { id: 46, front: "hellblond", back: "pirang muda", example: "Sie hat schöne hellblonde Haare.", example_id: "Dia memiliki rambut pirang muda yang indah." },
+  { id: 47, front: "blaugrün", back: "biru kehijauan", example: "Die Augen der Katze sind blaugrün.", example_id: "Mata kucing itu berwarna biru kehijauan." },
+  { id: 48, front: "gelbgrün", back: "kuning kehijauan", example: "Die Blätter färben sich gelbgrün.", example_id: "Daun-daun berubah warna menjadi kuning kehijauan." },
+  { id: 49, front: "graubraun", back: "abu-abu kecoklatan", example: "Die Erde hier ist graubraun.", example_id: "Tanah di sini berwarna abu-abu kecoklatan." },
+  { id: 50, front: "dunkelrot", back: "merah tua", example: "Der Wein hat eine dunkelrote Farbe.", example_id: "Anggur itu memiliki warna merah tua." },
+
+  // Orang & Profesi
+  { id: 51, front: "der Sammler, -", back: "kolektor", example: "Er ist ein Sammler von alten Autos.", example_id: "Dia adalah seorang kolektor mobil-mobil tua." },
+  { id: 52, front: "der Zahnarzt, -¨e", back: "dokter gigi", example: "Ich gehe zweimal im Jahr zum Zahnarzt.", example_id: "Saya pergi ke dokter gigi dua kali setahun." },
+  { id: 53, front: "die Chefin, -nen", back: "bos (wanita)", example: "Unsere Chefin hat heute Geburtstag.", example_id: "Bos wanita kami berulang tahun hari ini." },
+  { id: 54, front: "der Schauspieler, -", back: "aktor", example: "Der Schauspieler spielt im neuen Film mit.", example_id: "Aktor itu ikut bermain di film baru." },
+  { id: 55, front: "der Sportler, -", back: "atlet", example: "Als Sportler trainiert er jeden Tag.", example_id: "Sebagai seorang atlet, dia berlatih setiap hari." },
+  { id: 56, front: "die Autorin, -nen", back: "penulis (wanita)", example: "Die Autorin schreibt ein neues Buch.", example_id: "Penulis wanita itu sedang menulis buku baru." },
+  { id: 57, front: "die Sängerin, -nen", back: "penyanyi (wanita)", example: "Die Sängerin singt ein schönes Lied.", example_id: "Penyanyi wanita itu menyanyikan lagu yang indah." },
+  { id: 58, front: "die Stimme, -n", back: "suara", example: "Sie hat eine sehr laute Stimme.", example_id: "Dia memiliki suara yang sangat lantang." },
+  { id: 59, front: "der Grund, -¨e", back: "alasan", example: "Es gibt keinen Grund zur Sorge.", example_id: "Tidak ada alasan untuk khawatir." }
+];
+
 export const flashcardLevels = [
   {
     id: "A1",
@@ -1134,63 +1207,70 @@ export const flashcardLevels = [
     id: "A2",
     title: "Niveau A2",
     description: "Kosakata tingkat dasar lanjutan.",
-    chapters: Array.from({ length: 12 }, (_, i) => {
-      // Masukkan data A2 Kapitel 1, 6, 7, dan 8
-      if (i + 1 === 1) {
+    chapters: [
+      ...Array.from({ length: 12 }, (_, i) => {
+        // Masukkan data A2 Kapitel 1, 6, 7, dan 8
+        if (i + 1 === 1) {
+          return {
+            id: `A2-K${i + 1}`,
+            title: `Kapitel ${i + 1}`,
+            cards: a2Kapitel1Cards
+          };
+        }
+        if (i + 1 === 6) {
+          return {
+            id: `A2-K${i + 1}`,
+            title: `Kapitel ${i + 1}`,
+            cards: a2Kapitel6Cards
+          };
+        }
+        if (i + 1 === 7) {
+          return {
+            id: `A2-K${i + 1}`,
+            title: `Kapitel ${i + 1}`,
+            cards: a2Kapitel7Cards
+          };
+        }
+        if (i + 1 === 8) {
+          return {
+            id: `A2-K${i + 1}`,
+            title: `Kapitel ${i + 1}`,
+            cards: a2Kapitel8Cards
+          };
+        }
+        if (i + 1 === 9) {
+          return {
+            id: `A2-K${i + 1}`,
+            title: `Kapitel ${i + 1}`,
+            cards: a2Kapitel9Cards
+          };
+        }
+        if (i + 1 === 10) {
+          return {
+            id: `A2-K${i + 1}`,
+            title: `Kapitel ${i + 1}`,
+            cards: a2Kapitel10Cards
+          };
+        }
+        if (i + 1 === 11) {
+          return {
+            id: `A2-K${i + 1}`,
+            title: `Kapitel ${i + 1}`,
+            cards: a2Kapitel11Cards
+          };
+        }
         return {
           id: `A2-K${i + 1}`,
           title: `Kapitel ${i + 1}`,
-          cards: a2Kapitel1Cards
+          cards: [] 
         };
+      }),
+      {
+        id: "A2-K12-latihan",
+        title: "Kapitel 12 A2 Gute Unterhaltung Latihan",
+        cards: a2Kapitel12LatihanCards
       }
-      if (i + 1 === 6) {
-        return {
-          id: `A2-K${i + 1}`,
-          title: `Kapitel ${i + 1}`,
-          cards: a2Kapitel6Cards
-        };
-      }
-      if (i + 1 === 7) {
-        return {
-          id: `A2-K${i + 1}`,
-          title: `Kapitel ${i + 1}`,
-          cards: a2Kapitel7Cards
-        };
-      }
-      if (i + 1 === 8) {
-        return {
-          id: `A2-K${i + 1}`,
-          title: `Kapitel ${i + 1}`,
-          cards: a2Kapitel8Cards
-        };
-      }
-      if (i + 1 === 9) {
-        return {
-          id: `A2-K${i + 1}`,
-          title: `Kapitel ${i + 1}`,
-          cards: a2Kapitel9Cards
-        };
-      }
-      if (i + 1 === 10) {
-        return {
-          id: `A2-K${i + 1}`,
-          title: `Kapitel ${i + 1}`,
-          cards: a2Kapitel10Cards
-        };
-      }
-      if (i + 1 === 11) {
-        return {
-          id: `A2-K${i + 1}`,
-          title: `Kapitel ${i + 1}`,
-          cards: a2Kapitel11Cards
-        };
-      }
-      return {
-        id: `A2-K${i + 1}`,
-        title: `Kapitel ${i + 1}`,
-        cards: [] 
-      };
-    })
+    ]
   },
   {
     id: "B1",
