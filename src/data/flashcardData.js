@@ -1118,6 +1118,115 @@ export const a2Kapitel11Cards = [
   { id: 92, front: "reden mit + Dat.", back: "berbicara dengan seseorang", example: "Ich würde gern mit dem Chef reden.", example_id: "Saya ingin berbicara dengan bos." },
   { id: 93, front: "reden über + Akk.", back: "berbicara tentang sesuatu", example: "Wir reden nicht gern über Politik.", example_id: "Kami tidak suka berbicara tentang politik." }
 ];
+export const a2Kapitel12Cards = [
+  // Gute Unterhaltung!
+  { id: 1, front: "die Unterhaltung (Sg.)", back: "hiburan / obrolan", example: "Wir wünschen Ihnen gute Unterhaltung!", example_id: "Kami berharap Anda mendapatkan hiburan yang menyenangkan!" },
+  { id: 2, front: "die Gesellschaft, -en", back: "masyarakat / perkumpulan / perusahaan", example: "Die Gesellschaft verändert sich schnell.", example_id: "Masyarakat berubah dengan cepat." },
+  { id: 3, front: "das Werk, -e", back: "karya seni / pabrik", example: "Dieses Werk von Goethe ist weltberühmt.", example_id: "Karya Goethe ini terkenal di dunia." },
+  { id: 4, front: "das Schloss, \"-er", back: "istana / kastil / gembok", example: "Wir haben das alte Schloss besichtigt.", example_id: "Kami telah mengunjungi kastil tua itu." },
+  { id: 5, front: "der König, -e", back: "raja", example: "Der König wohnt im Schloss.", example_id: "Raja tinggal di kastil." },
+  { id: 6, front: "die Königin, -nen", back: "ratu", example: "Die Königin trägt eine Krone.", example_id: "Ratu mengenakan mahkota." },
+  { id: 7, front: "die Führung, -en", back: "tur berpemandu / kepemimpinan", example: "Wir haben im Museum eine Führung mitgemacht.", example_id: "Kami mengikuti tur berpemandu di museum." },
+  { id: 8, front: "der Roman, -e", back: "novel", example: "Ich lese gerade einen spannenden Roman.", example_id: "Saya sedang membaca novel yang seru." },
+  { id: 9, front: "der Bestseller, -", back: "buku terlaris / bestseller", example: "Sein Buch wurde schnell ein Bestseller.", example_id: "Bukunya dengan cepat menjadi buku terlaris." },
+  { id: 10, front: "jährlich", back: "tahunan / setiap tahun", example: "Das Musikfestival findet jährlich statt.", example_id: "Festival musik tersebut diadakan setiap tahun." },
+  { id: 11, front: "die Verfilmung, -en", back: "adaptasi film", example: "Die Verfilmung des Romans war sehr erfolgreich.", example_id: "Adaptasi film dari novel tersebut sangat sukses." },
+  { id: 12, front: "meist-", back: "kebanyakan / paling banyak", example: "Das ist der meistabonnierte Video-Kanal.", example_id: "Ini adalah saluran video dengan pelanggan terbanyak." },
+
+  // Festivalbesuch
+  { id: 13, front: "das Festival, -s", back: "festival", example: "Wir gehen am Wochenende auf ein Festival.", example_id: "Kami pergi ke festival di akhir pekan." },
+  { id: 14, front: "live", back: "secara langsung / live", example: "Die Band spielt heute Abend live.", example_id: "Band tersebut bermain langsung malam ini." },
+  { id: 15, front: "der Hit, -s", back: "lagu populer / hit", example: "Sein neues Lied ist ein echter Hit.", example_id: "Lagu barunya adalah hit yang nyata." },
+  { id: 16, front: "der Musikstil, -e", back: "gaya musik / aliran musik", example: "Welcher Musikstil gefällt dir am besten?", example_id: "Aliran musik mana yang paling kamu sukai?" },
+  { id: 17, front: "Pop (Sg.)", back: "pop (aliran musik)", example: "Ich höre gerne Popmusik.", example_id: "Saya suka mendengarkan musik pop." },
+  { id: 18, front: "Rap (Sg.)", back: "rap (aliran musik)", example: "Er mag Rap und hört viele amerikanische Rapper.", example_id: "Dia suka rap dan mendengarkan banyak rapper Amerika." },
+  { id: 19, front: "Rock (Sg.)", back: "rock (aliran musik)", example: "Die Rockband gibt ein Konzert.", example_id: "Band rock itu mengadakan konser." },
+  { id: 20, front: "rockig", back: "bernuansa rock", example: "Das new Lied klingt sehr rockig.", example_id: "Lagu baru itu terdengar sangat bernuansa rock." },
+  { id: 21, front: "Elektro (Sg.)", back: "elektro (aliran musik)", example: "Sie tanzt gerne zu Elektro.", example_id: "Dia suka menari dengan musik elektro." },
+  { id: 22, front: "melodisch", back: "merdu / melodis", example: "Die Melodie des Liedes ist sehr melodisch.", example_id: "Melodi lagu tersebut sangat merdu." },
+  { id: 23, front: "die Stimmung, -en", back: "suasana / mood", example: "Die Stimmung auf dem Konzert war fantastisch.", example_id: "Suasana di konser itu sangat fantastis." },
+  { id: 24, front: "der Campingplatz, \"-e", back: "tempat berkemah", example: "Wir haben unser Zelt auf dem Campingplatz aufgebaut.", example_id: "Kami mendirikan tenda kami di tempat berkemah." },
+  { id: 25, front: "die Übernachtung, -en", back: "menginap / akomodasi satu malam", example: "Die Übernachtung im Hotel ist teuer.", example_id: "Menginap di hotel itu mahal." },
+  { id: 26, front: "die Verpflegung, -en", back: "konsumsi / makanan dan minuman", example: "Die Verpflegung ist im Preis inklusive.", example_id: "Konsumsi sudah termasuk dalam harga." },
+  { id: 27, front: "der Rucksack, \"-e", back: "ransel", example: "Ich packe meinen Rucksack für die Reise.", example_id: "Saya mengepak ransel saya untuk perjalanan." },
+
+  // ein Ticket online kaufen
+  { id: 28, front: "der Kauf, \"-e", back: "pembelian", example: "Der Kauf des Tickets war sehr einfach.", example_id: "Pembelian tiket itu sangat mudah." },
+  { id: 29, front: "der Stehplatz, \"-e", back: "tempat berdiri", example: "Ich habe nur noch einen Stehplatz bekommen.", example_id: "Saya hanya mendapatkan tempat berdiri." },
+  { id: 30, front: "der Sitzplatz, \"-e", back: "tempat duduk", example: "Haben Sie einen Sitzplatz reserviert?", example_id: "Apakah Anda memesan tempat duduk?" },
+  { id: 31, front: "die Reihe, -n", back: "baris / deret", example: "Wir sitzen in der dritten Reihe.", example_id: "Kami duduk di baris ketiga." },
+  { id: 32, front: "der Warenkorb, \"-er", back: "keranjang belanja", example: "Legen Sie das Ticket in den Warenkorb.", example_id: "Masukkan tiket ke dalam keranjang belanja." },
+  { id: 33, front: "netto", back: "bersih (sebelum pajak) / neto", example: "Das Gehalt beträgt 2000 Euro netto.", example_id: "Gajinya sebesar 2000 euro bersih." },
+  { id: 34, front: "die Mehrwertsteuer (Sg.) (MwSt.)", back: "Pajak Pertambahan Nilai (PPN)", example: "Die Preise enthalten bereits die Mehrwertsteuer.", example_id: "Harga-harga sudah termasuk Pajak Pertambahan Nilai." },
+  { id: 35, front: "zuzüglich (zzgl.)", back: "ditambah / plus", example: "Der Preis ist 100 Euro zuzüglich Versandkosten.", example_id: "Harganya adalah 100 euro ditambah biaya pengiriman." },
+  { id: 36, front: "inklusive (inkl.)", back: "termasuk / inklusif", example: "Das Frühstück im Hotel ist inklusive.", example_id: "Sarapan di hotel sudah termasuk." },
+  { id: 37, front: "die Vorwahl, -en", back: "kode area / kode telepon", example: "Wie lautet die Vorwahl von Berlin?", example_id: "Berapa kode area Berlin?" },
+  { id: 38, front: "Mobil-", back: "seluler / nomor hp", example: "Bitte geben Sie Ihre Mobilnummer an.", example_id: "Harap cantumkan nomor handphone Anda." },
+  { id: 39, front: "der Versand (Sg.)", back: "pengiriman", example: "Der Versand dauert in der Regel zwei Tage.", example_id: "Pengiriman biasanya memakan waktu dua hari." },
+  { id: 40, front: "die Versandkosten (Pl.)", back: "biaya pengiriman", example: "Die Versandkosten sind frei ab 50 Euro.", example_id: "Biaya pengiriman gratis mulai dari 50 euro." },
+  { id: 41, front: "die Gebühr, -en", back: "biaya / tarif", example: "Für die Nutzung fällt eine Gebühr an.", example_id: "Ada biaya untuk penggunaannya." },
+  { id: 42, front: "die Zahlungsart, -en", back: "metode pembayaran", example: "Welche Zahlungsart bevorzugen Sie?", example_id: "Metode pembayaran mana yang Anda pilih?" },
+  { id: 43, front: "die Überweisung, -en", back: "transfer bank", example: "Ich bezahle die Tickets per Überweisung.", example_id: "Saya membayar tiket via transfer bank." },
+
+  // Meldungen
+  { id: 44, front: "die Meldung, -en", back: "laporan / berita / pesan", example: "Die Meldung im Radio war sehr wichtig.", example_id: "Berita di radio itu sangat penting." },
+  { id: 45, front: "der/die Prominente, -n", back: "orang terkenal / selebriti", example: "Viele Prominente besuchen das Festival.", example_id: "Banyak selebriti mengunjungi festival tersebut." },
+  { id: 46, front: "der Nachrichtensprecher, -", back: "pembaca berita (laki-laki)", example: "Der Nachrichtensprecher liest die Nachrichten vor.", example_id: "Pembaca berita itu membacakan berita." },
+  { id: 47, front: "die Nachrichtensprecherin, -nen", back: "pembaca berita (perempuan)", example: "Die Nachrichtensprecherin arbeitet beim Fernsehen.", example_id: "Pembaca berita wanita itu bekerja di televisi." },
+  { id: 48, front: "der Hörer, -", back: "pendengar (laki-laki)", example: "Ein Hörer hat beim Radio angerufen.", example_id: "Seorang pendengar laki-laki menelepon radio." },
+  { id: 49, front: "die Hörerin, -nen", back: "pendengar (perempuan)", example: "Die Hörerin stellt dem Sprecher eine Frage.", example_id: "Pendengar perempuan itu mengajukan pertanyaan kepada pembicara." },
+  { id: 50, front: "die Sendung, -en", back: "acara / siaran", example: "Ich mag diese Sendung im Fernsehen.", example_id: "Saya suka acara di televisi ini." },
+  { id: 51, front: "der Einsatz, \"-e", back: "tugas / operasi / penggunaan", example: "Die Polizei war schnell im Einsatz.", example_id: "Polisi segera bertugas/beroperasi." },
+  { id: 52, front: "die Stimme, -n", back: "suara / hak pilih", example: "Sie hat eine wunderschöne Stimme.", example_id: "Dia memiliki suara yang sangat indah." },
+  { id: 53, front: "die Stille (Sg.)", back: "keheningan / kesunyian", example: "In der Nacht herrscht große Stille.", example_id: "Pada malam hari terdapat keheningan yang luar biasa." },
+  { id: 54, front: "verschlafen, er verschläft, hat verschlafen", back: "kesiangan / ketiduran", example: "Ich habe heute Morgen verschlafen.", example_id: "Saya bangun kesiangan pagi ini." },
+  { id: 55, front: "der Sammler, -", back: "kolektor (laki-laki)", example: "Er ist ein leidenschaftlicher Sammler.", example_id: "Dia adalah seorang kolektor yang bersemangat." },
+  { id: 56, front: "die Sammlerin, -nen", back: "kolektor (perempuan)", example: "Die Sammlerin zeigt ihre Kunstwerke.", example_id: "Kolektor wanita itu memamerkan karya-karya seninya." },
+  { id: 57, front: "das Schnäppchen, -", back: "barang murah / obral", example: "Nur 5 Euro? Das ist ein Schnäppchen!", example_id: "Hanya 5 Euro? Itu barang murah banget!" },
+  { id: 58, front: "der Wert, -e", back: "nilai / harga", example: "Das Bild hat einen hohen Wert.", example_id: "Lukisan itu memiliki nilai yang tinggi." },
+  { id: 59, front: "wertvoll", back: "berharga / bernilai tinggi", example: "Das Bild ist sehr wertvoll.", example_id: "Lukisan itu sangat berharga." },
+  { id: 60, front: "befreundet sein", back: "berteman / bersahabat", example: "Er ist mit einer Kunstexpertin befreundet.", example_id: "Dia berteman dengan seorang ahli seni." },
+  { id: 61, front: "bestätigen", back: "mengonfirmasi / membenarkan", example: "Können Sie den Termin bestätigen?", example_id: "Bisakah Anda mengonfirmasi janji temu tersebut?" },
+  { id: 62, front: "das Quiz, -ze", back: "kuis", example: "Wir machen heute ein interessantes Quiz.", example_id: "Kita bermain kuis yang menarik hari ini." },
+
+  // Malerei
+  { id: 63, front: "die Malerei (Sg.)", back: "seni lukis", example: "Sie interessiert sich für moderne Malerei.", example_id: "Dia tertarik pada seni lukis modern." },
+  { id: 64, front: "der Titel, -", back: "judul / gelar", example: "Auf dem Bild mit dem Titel \"Abend\" sieht man Boote.", example_id: "Pada gambar dengan judul \"Abend\" terlihat kapal-kapal." },
+  { id: 65, front: "die Bedeutung, -en", back: "arti / makna", example: "Dieses Wort hat mehrere Bedeutungen.", example_id: "Kata ini memiliki beberapa arti." },
+  { id: 66, front: "der Ausblick, -e", back: "pemandangan", example: "Von hier hat man einen tollen Ausblick auf das Meer.", example_id: "Dari sini kita memiliki pemandangan yang indah ke laut." },
+  { id: 67, front: "das Blatt, \"-er", back: "daun / selembar kertas", example: "Die Blätter fallen im Herbst von den Bäumen.", example_id: "Daun-daun berguguran dari pepohonan di musim gugur." },
+  { id: 68, front: "hübsch", back: "cantik / manis / tampan", example: "Das ist ein sehr hübsches Kleid.", example_id: "Itu adalah gaun yang sangat cantik." },
+  { id: 69, front: "verrückt", back: "gila / aneh", example: "Ich finde die Farben auf dem Bild ein bisschen verrückt.", example_id: "Saya rasa warna-warna di gambar itu agak gila/aneh." },
+  { id: 70, front: "uninteressant", back: "tidak menarik", example: "Ich finde das Buch uninteressant.", example_id: "Saya rasa buku itu tidak menarik." },
+  { id: 71, front: "abstrakt", back: "abstrak", example: "Das Gemälde ist sehr abstrakt.", example_id: "Lukisan itu sangat abstrak." },
+  { id: 72, front: "der Vordergrund, \"-e", back: "latar depan", example: "Im Vordergrund steht ein großer Tisch.", example_id: "Di latar depan berdiri sebuah meja besar." },
+  { id: 73, front: "davor", back: "di depannya / sebelumnya", example: "Das Auto steht vor dem Haus und der Hund liegt davor.", example_id: "Mobil itu terparkir di depan rumah dan anjingnya berbaring di depannya." },
+  { id: 74, front: "der Hintergrund, \"-e", back: "latar belakang", example: "Im Hintergrund sieht man schöne Berge.", example_id: "Di latar belakang terlihat pegunungan yang indah." },
+  { id: 75, front: "dahinter", back: "di belakangnya / di balik itu", example: "Das Haus hat einen schönen Garten dahinter.", example_id: "Rumah itu memiliki taman yang indah di belakangnya." },
+  { id: 76, front: "die Stelle, -n", back: "tempat / posisi / lowongan", example: "Das Bild zeigt die Stelle, wo heute der Supermarkt ist.", example_id: "Gambar itu menunjukkan tempat di mana supermarket berada hari ini." },
+  { id: 77, front: "hell-", back: "terang / muda (untuk warna)", example: "Die Blätter sind hellgrün.", example_id: "Daun-daunnya berwarna hijau muda." },
+  { id: 78, front: "dunkel-", back: "gelap / tua (untuk warna)", example: "Der Himmel ist dunkelblau.", example_id: "Langitnya berwarna biru tua." },
+  { id: 79, front: "ab|malen", back: "menyalin lukisan / meniru gambar", example: "Die Künstlerin malt das Bild ab.", example_id: "Seniman itu menyalin lukisan tersebut." },
+
+  // andere wichtige Wörter und Wendungen
+  { id: 80, front: "die Kriminalität (Sg.)", back: "kriminalitas", example: "Die Kriminalität in Großstädten nimmt zu.", example_id: "Kriminalitas di kota-kota besar meningkat." },
+  { id: 81, front: "die Gewalt (Sg.)", back: "kekerasan / kekuasaan", example: "Gewalt ist keine Lösung.", example_id: "Kekerasan bukanlah solusi." },
+  { id: 82, front: "wild", back: "liar / bergejolak", example: "Das war eine wilde Zeit.", example_id: "Itu adalah masa-masa liar/penuh gejolak." },
+  { id: 83, front: "gut/schlecht gelaunt sein", back: "dalam suasana hati baik/buruk", example: "Heute bin ich sehr gut gelaunt.", example_id: "Hari ini saya sedang dalam suasana hati yang sangat baik." },
+  { id: 84, front: "knapp", back: "pas-pasan / singkat / hampir tidak cukup", example: "Unsere Zeit ist leider knapp.", example_id: "Waktu kita sayangnya mepet/singkat." },
+  { id: 85, front: "unendlich", back: "tak terbatas / tak terhingga", example: "Das Universum ist unendlich.", example_id: "Alam semesta tidak terbatas." },
+  { id: 86, front: "abschließend", back: "sebagai penutup / kesimpulan", example: "Abschließend möchte ich mich bei allen bedanken.", example_id: "Sebagai penutup saya ingin berterima kasih kepada semua orang." },
+  { id: 87, front: "insbesondere", back: "khususnya / terutama", example: "Das gefällt mir insbesondere gut.", example_id: "Itu sangat saya sukai khususnya." },
+  { id: 88, front: "auf|fallen, er fällt auf, ist aufgefallen", back: "menarik perhatian / mencolok", example: "Was fällt dir an dem Bild auf?", example_id: "Apa yang menarik perhatianmu pada gambar itu?" },
+  { id: 89, front: "erhalten, er erhält, hat erhalten", back: "menerima / memperoleh", example: "Ich habe gestern einen Brief erhalten.", example_id: "Saya menerima sepucuk surat kemarin." },
+  { id: 90, front: "die Hauptrolle, -n", back: "peran utama", example: "Sie spielt die Hauptrolle in meinem Lieblingsfilm.", example_id: "Dia memainkan peran utama dalam film favorit saya." },
+  { id: 91, front: "der Wanderer, -", back: "pendaki / pejalan kaki (laki-laki)", example: "Der Wanderer macht eine Pause auf dem Berg.", example_id: "Pendaki itu beristirahat di atas gunung." },
+  { id: 92, front: "die Wanderin, -nen", back: "pendaki / pejalan kaki (perempuan)", example: "Die Wanderin wandert durch den Wald.", example_id: "Pendaki perempuan itu mendaki melalui hutan." },
+  { id: 93, front: "die Realität (Sg.)", back: "realitas / kenyataan", example: "Das ist leider die traurige Realität.", example_id: "Sayangnya itulah kenyataan yang menyedihkan." },
+  { id: 94, front: "die Rückfrage, -n", back: "pertanyaan balik / konfirmasi", example: "Haben Sie noch Rückfragen dazu?", example_id: "Apakah Anda masih memiliki pertanyaan balik tentang hal itu?" },
+  { id: 95, front: "unter anderem (u. a.)", back: "antara lain", example: "Er spricht unter anderem Deutsch.", example_id: "Dia berbicara bahasa Jerman, antara lain." },
+  { id: 96, front: "wie immer", back: "seperti biasa", example: "Er kommt wie immer zu spät.", example_id: "Dia datang terlambat, seperti biasa." }
+];
 
 export const a2Kapitel12LatihanCards = [
   // Kunst & Kultur
@@ -1257,6 +1366,13 @@ export const flashcardLevels = [
             id: `A2-K${i + 1}`,
             title: `Kapitel ${i + 1}`,
             cards: a2Kapitel11Cards
+          };
+        }
+        if (i + 1 === 12) {
+          return {
+            id: `A2-K${i + 1}`,
+            title: `Kapitel ${i + 1}`,
+            cards: a2Kapitel12Cards
           };
         }
         return {
