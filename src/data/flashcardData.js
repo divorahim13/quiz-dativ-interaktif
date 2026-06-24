@@ -1301,38 +1301,8 @@ export const a2Kapitel12LatihanCards = [
   { id: 59, front: "der Grund, -¨e", back: "alasan", example: "Es gibt keinen Grund zur Sorge.", example_id: "Tidak ada alasan untuk khawatir." }
 ];
 
-export const a2Modellsatz49Cards = [
-  { id: 1, front: "die Einladung, -en", back: "undangan", example: "Vielen Dank für die Einladung zur Party.", example_id: "Terima kasih banyak atas undangan ke pestanya." },
-  { id: 2, front: "sich an|melden (hat sich angemeldet)", back: "mendaftar", example: "Ich möchte mich für den Deutschkurs anmelden.", example_id: "Saya ingin mendaftar untuk kursus bahasa Jerman." },
-  { id: 3, front: "die Besprechung, -en", back: "rapat / pertemuan", example: "Unsere Besprechung beginnt um 10 Uhr.", example_id: "Rapat kami mulai jam 10." },
-  { id: 4, front: "der Ausflug, -¨e", back: "karya wisata / rekreasi", example: "Am Sonntag machen wir einen Ausflug.", example_id: "Hari Minggu kami melakukan karya wisata." },
-  { id: 5, front: "sich verspäten (hat sich verspätet)", back: "terlambat", example: "Der Zug hat sich leider verspätet.", example_id: "Keretanya sayangnya terlambat." },
-  { id: 6, front: "die Verspätung, -en", back: "keterlambatan", example: "Der Bus hat 20 Minuten Verspätung.", example_id: "Busnya terlambat 20 menit." },
-  { id: 7, front: "der Absender, -", back: "pengirim", example: "Wer ist der Absender von diesem Brief?", example_id: "Siapa pengirim surat ini?" },
-  { id: 8, front: "der Empfänger, -", back: "penerima", example: "Tragen Sie hier den Empfänger ein.", example_id: "Isilah penerima di sini." },
-  { id: 9, front: "verschieben, verschiebt, hat verschoben", back: "menunda / menggeser (waktu)", example: "Können wir den Termin auf morgen verschieben?", example_id: "Bisakah kita menggeser janji temu ke besok?" },
-  { id: 10, front: "Bescheid geben/sagen", back: "memberitahu / memberi kabar", example: "Bitte geben Sie mir bis morgen Bescheid.", example_id: "Tolong beri tahu saya paling lambat besok." },
-  { id: 11, front: "absagen, sagt ab, hat abgesagt", back: "membatalkan", example: "Ich muss den Termin leider absagen.", example_id: "Sayangnya saya harus membatalkan janji temu tersebut." },
-  { id: 12, front: "vereinbaren, vereinbart, hat vereinbart", back: "menyepakati / membuat janji", example: "Wir müssen einen neuen Termin vereinbaren.", example_id: "Kita harus membuat janji temu baru." },
-  { id: 13, front: "teil|nehmen, nimmt teil, hat teilgenommen", back: "ikut serta / berpartisipasi", example: "Möchtest du an der Prüfung teilnehmen?", example_id: "Apakah kamu ingin ikut serta dalam ujian?" },
-  { id: 14, front: "die Teilnahme, -n", back: "keikutsertaan / partisipasi", example: "Die Teilnahme am Kurs ist kostenlos.", example_id: "Keikutsertaan dalam kursus ini gratis." },
-  { id: 15, front: "der Teilnehmer, -", back: "peserta (laki-laki)", example: "Es gibt zehn Teilnehmer im Kurs.", example_id: "Ada sepuluh peserta di dalam kursus." },
-  { id: 16, front: "die Durchsage, -n", back: "pengumuman (lewat pengeras suara)", example: "Achten Sie auf die Durchsage am Bahnhof.", example_id: "Perhatikan pengumuman di stasiun kereta." },
-  { id: 17, front: "aus|fallen, fällt aus, ist ausgefallen", back: "dibatalkan / tidak dilaksanakan", example: "Der Unterricht fällt heute aus.", example_id: "Pelajaran hari ini ditiadakan." },
-  { id: 18, front: "die Quittung, -en", back: "kuitansi / resi", example: "Brauchen Sie eine Quittung?", example_id: "Apakah Anda membutuhkan kuitansi?" },
-  { id: 19, front: "die Gebühr, -en", back: "biaya / tarif", example: "Die Gebühr für den Ausweis beträgt 10 Euro.", example_id: "Biaya untuk kartu identitas adalah 10 Euro." },
-  { id: 20, front: "die Anmeldung, -en", back: "pendaftaran", example: "Die Anmeldung ist bis Freitag möglich.", example_id: "Pendaftaran dimungkinkan sampai hari Jumat." },
-  { id: 21, front: "unterschreiben, unterschreibt, hat unterschrieben", back: "menandatangani", example: "Bitte unterschreiben Sie das Formular.", example_id: "Tolong tandatangani formulir ini." },
-  { id: 22, front: "die Unterschrift, -en", back: "tanda tangan", example: "Hier fehlt noch Ihre Unterschrift.", example_id: "Di sini masih kurang tanda tangan Anda." },
-  { id: 23, front: "der Ausweis, -e", back: "kartu identitas", example: "Zeigen Sie mir bitte Ihren Ausweis.", example_id: "Tolong tunjukkan kartu identitas Anda." },
-  { id: 24, front: "das Dokument, -e", back: "dokumen", example: "Bringen Sie alle wichtigen Dokumente mit.", example_id: "Bawa serta semua dokumen penting." },
-  { id: 25, front: "aus|füllen, füllt aus, hat ausgefüllt", back: "mengisi (formulir/dokumen)", example: "Sie müssen dieses Formular ausfüllen.", example_id: "Anda harus mengisi formulir ini." },
-  { id: 26, front: "günstig", back: "murah / terjangkau / menguntungkan", example: "Das Hotel ist sehr günstig.", example_id: "Hotelnya sangat murah." },
-  { id: 27, front: "dringend", back: "mendesak / penting sekali", example: "Ich muss dringend mit dem Arzt sprechen.", example_id: "Saya harus segera berbicara dengan dokter." },
-  { id: 28, front: "die Nachricht, -en", back: "pesan / berita", example: "Hinterlassen Sie bitte eine Nachricht.", example_id: "Tolong tinggalkan pesan." },
-  { id: 29, front: "erreichbar", back: "dapat dihubungi / terjangkau", example: "Ich bin morgen telefonisch erreichbar.", example_id: "Saya dapat dihubungi melalui telepon besok." },
-  { id: 30, front: "der Modellsatz, -¨e", back: "paket latihan soal model ujian", example: "Wir üben heute mit dem Modellsatz.", example_id: "Hari ini kita berlatih dengan paket soal model ujian." }
-];
+export const a2Modellsatz49Cards = [];
+
 
 export const flashcardLevels = [
   {
