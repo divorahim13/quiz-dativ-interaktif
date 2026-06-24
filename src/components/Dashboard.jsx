@@ -396,21 +396,21 @@ const Dashboard = ({ quizzes, onSelectQuiz, flashcardLevels, onSelectChapter, on
                   }}
                 >
                   <span style={{ 
-                    fontSize: chapter.id.includes('latihan') ? '0.95rem' : '1.25rem', 
+                    fontSize: (chapter.id.includes('latihan') || chapter.shortTitle) ? '0.95rem' : '1.25rem', 
                     fontWeight: 600, 
                     color: 'var(--text)', 
                     marginBottom: '0.5rem',
                     textAlign: 'center'
                   }}>
-                    {chapter.id.includes('latihan') ? '12 Latihan' : chapter.title.split(' ')[1]}
+                    {chapter.shortTitle || (chapter.id.includes('latihan') ? '12 Latihan' : chapter.title.split(' ')[1])}
                   </span>
                   <span style={{ 
-                    fontSize: chapter.id.includes('latihan') ? '0.65rem' : '0.75rem', 
+                    fontSize: (chapter.id.includes('latihan') || chapter.subtitle) ? '0.65rem' : '0.75rem', 
                     color: 'var(--text-secondary)',
                     textAlign: 'center',
                     lineHeight: 1.2
                   }}>
-                    {chapter.id.includes('latihan') ? 'Gute Unterhaltung' : 'Kapitel'}
+                    {chapter.subtitle || (chapter.id.includes('latihan') ? 'Gute Unterhaltung' : 'Kapitel')}
                   </span>
                   <div style={{ marginTop: '0.75rem', fontSize: '0.7rem', color: chapter.cards.length > 0 ? '#22c55e' : 'var(--text-secondary)', opacity: 0.8 }}>
                     {chapter.cards.length} Kartu
