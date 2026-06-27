@@ -1465,6 +1465,192 @@ export const a2Modellsatz49Cards = [
   { id: 161, front: "das Zentrum (Zentren)", back: "pusat kota", example: "Das Hotel befindet sich mitten im Zentrum.", example_id: "Hotel terletak di tengah-tengah pusat kota." }
 ];
 
+export const a2HoreWortschatzCards = [
+  // Rumah & Keluarga
+  { id: 1, front: "umziehen", back: "pindah rumah (trennbar)" },
+  { id: 2, front: "aufs Land ziehen", back: "pindah ke desa" },
+  { id: 3, front: "gesund → gesünder", back: "sehat → lebih sehat" },
+  { id: 4, front: "🔵 der Haushalt (-e)", back: "pekerjaan rumah tangga" },
+  { id: 5, front: "🟢 das Geschirr spülen", back: "mencuci piring" },
+  { id: 6, front: "aufräumen", back: "membereskan (trennbar)" },
+  { id: 7, front: "🔵 der Müll", back: "sampah" },
+  { id: 8, front: "Müll rausbringen", back: "membuang sampah (trennbar)" },
+  { id: 9, front: "aufpassen auf", back: "menjaga / mengawasi (trennbar)" },
+  { id: 10, front: "🔵 der Wecker (-)", back: "jam alarm" },
+  { id: 11, front: "klingeln", back: "berdering" },
+  { id: 12, front: "weinen", back: "menangis" },
+  { id: 13, front: "sich beruhigen", back: "menenangkan diri" },
+  { id: 14, front: "zuschauen", back: "menonton / menyaksikan (trennbar)" },
+  { id: 15, front: "sich ausruhen", back: "beristirahat" },
+  { id: 16, front: "🔴 die Radtour (-en)", back: "perjalanan bersepeda" },
+  { id: 17, front: "🟢 das Dreirad (-räder)", back: "sepeda roda tiga" },
+
+  // Sekolah & Belajar
+  { id: 18, front: "🔴 die Klassenarbeit (-en)", back: "ulangan / ujian kelas" },
+  { id: 19, front: "🔴 die Klassenfahrt (-en)", back: "piknik / perjalanan kelas" },
+  { id: 20, front: "🟢 das Fach (-fächer)", back: "mata pelajaran" },
+  { id: 21, front: "mindestens", back: "minimal / paling sedikit" },
+  { id: 22, front: "🔴 die Hausaufgabe (-n)", back: "pekerjaan rumah / PR" },
+  { id: 23, front: "🔵 der Schuldirektor (-en)", back: "kepala sekolah" },
+  { id: 24, front: "🔴 die Durchsage (-n)", back: "pengumuman" },
+  { id: 25, front: "🔵 der Lärm", back: "keributan / kebisingan" },
+  { id: 26, front: "🔴 die Badesachen (Pl.)", back: "perlengkapan berenang" },
+  { id: 27, front: "🔴 die Schulsachen (Pl.)", back: "perlengkapan sekolah" },
+  { id: 28, front: "🟢 das Abitur", back: "ujian kelulusan SMA Jerman" },
+  { id: 29, front: "🔴 die Abschlussprüfung (-en)", back: "ujian akhir / ujian kelulusan" },
+  { id: 30, front: "🔴 die Schwierigkeit (-en)", back: "kesulitan" },
+
+  // Olahraga & Aktivitas
+  { id: 31, front: "🔵 der Verein (-e)", back: "klub / perkumpulan" },
+  { id: 32, front: "🔵 der Federball", back: "bulu tangkis" },
+  { id: 33, front: "🔵 der Fotowettbewerb (-e)", back: "lomba foto" },
+  { id: 34, front: "joggen", back: "jogging / lari santai" },
+  { id: 35, front: "🔴 die Radtour (-en)", back: "tur bersepeda" },
+  { id: 36, front: "wandern", back: "mendaki / hiking" },
+  { id: 37, front: "🟢 das Volleyball(training)", back: "latihan voli" },
+  { id: 38, front: "ein Tor schießen", back: "mencetak gol" },
+  { id: 39, front: "🔵 der Tanzkurs (-e)", back: "kelas tari" },
+  { id: 40, front: "🟢 das Tischtennis", back: "tenis meja" },
+  { id: 41, front: "🟢 das Eisklettern", back: "panjat es / ice climbing" },
+  { id: 42, front: "🟢 das Fallschirmspringen", back: "terjun payung" },
+  { id: 43, front: "🟢 das Bungee-Jumping", back: "bungee jumping" },
+  { id: 44, front: "faszinieren", back: "memikat / mempesona" },
+  { id: 45, front: "gefährlich", back: "berbahaya" },
+
+  // Transport & Perjalanan
+  { id: 46, front: "🟢 das Gleis (-e)", back: "jalur / peron kereta" },
+  { id: 47, front: "🔴 die Verspätung (-en)", back: "keterlambatan" },
+  { id: 48, front: "🟢 das Verständnis", back: "pengertian / pemahaman" },
+  { id: 49, front: "angenehm", back: "menyenangkan / nyaman" },
+  { id: 50, front: "🔵 der IC-Bus (-se)", back: "bus antarkota (Intercity)" },
+  { id: 51, front: "🔴 die Abfahrtszeit (-en)", back: "waktu keberangkatan" },
+  { id: 52, front: "🔴 die Ankunft (-künfte)", back: "kedatangan / tiba" },
+  { id: 53, front: "🔴 die Rückfahrt (-en)", back: "perjalanan pulang" },
+  { id: 54, front: "🔴 die Ostsee", back: "Laut Baltik" },
+  { id: 55, front: "🔵 der Südkreuz", back: "stasiun Berlin Südkreuz" },
+
+  // Makanan & Belanja
+  { id: 56, front: "🔵 der Obsthändler (-)", back: "penjual buah" },
+  { id: 57, front: "🔴 die Tomate (-n)", back: "tomat" },
+  { id: 58, front: "🔴 die Kartoffel (-n)", back: "kentang" },
+  { id: 59, front: "🔴 die Zwiebel (-n)", back: "bawang bombay" },
+  { id: 60, front: "🔵 der Vorrat (-räte)", back: "persediaan / stok" },
+  { id: 61, front: "solange der Vorrat reicht", back: "selama persediaan masih ada" },
+  { id: 62, front: "🟢 das Schnitzel (-)", back: "schnitzel (daging geprek goreng)" },
+  { id: 63, front: "🔴 die Pommes (Pl.)", back: "kentang goreng" },
+  { id: 64, front: "🟢 das Hähnchen (-)", back: "ayam panggang" },
+  { id: 65, front: "🔵 der Käsekuchen (-)", back: "kue keju" },
+  { id: 66, front: "🔴 die Halskette (-n)", back: "kalung" },
+  { id: 67, front: "🟢 das Kochbuch (-bücher)", back: "buku masak" },
+  { id: 68, front: "🔴 die Tasche (-n)", back: "tas" },
+
+  // Kesehatan & Kecelakaan
+  { id: 69, front: "🔵 der Unfall (-fälle)", back: "kecelakaan" },
+  { id: 70, front: "sich verletzen", back: "melukai diri / cedera" },
+  { id: 71, front: "🔵 der Arm (-e)", back: "lengan" },
+  { id: 72, front: "🔵 der Kopf (-köpfe)", back: "kepala" },
+  { id: 73, front: "weh tun", back: "sakit / terasa nyeri" },
+  { id: 74, front: "🔵 der Hals (-hälse)", back: "tenggorokan / leher" },
+  { id: 75, front: "🟢 das Fieber (-)", back: "demam" },
+  { id: 76, front: "🟢 das Skateboard (-s)", back: "skateboard" },
+  { id: 77, front: "brechen", back: "mematahkan / memecahkan" },
+  { id: 78, front: "den Arm brechen", back: "mematahkan lengan" },
+  { id: 79, front: "kaputt", back: "rusak" },
+  { id: 80, front: "reparieren", back: "memperbaiki" },
+  { id: 81, front: "🔵 der Baum (-bäume)", back: "pohon" },
+  { id: 82, front: "gegen einen Baum fahren", back: "menabrak pohon" },
+  { id: 83, front: "🟢 das Krankenhaus (-häuser)", back: "rumah sakit" },
+  { id: 84, front: "🔴 die Arbeitsstelle (-n)", back: "posisi kerja / lowongan" },
+  { id: 85, front: "sich bewerben bei", back: "melamar kerja di" },
+
+  // Media & Hiburan
+  { id: 86, front: "🔵 der Lieblingssender (-)", back: "stasiun TV favorit" },
+  { id: 87, front: "🔴 die Diskussionsrunde (-n)", back: "sesi diskusi" },
+  { id: 88, front: "🟢 das E-Book (-s)", back: "buku elektronik" },
+  { id: 89, front: "🔵 der Mediaplayer (-)", back: "pemutar media" },
+  { id: 90, front: "🔵 der Actionfilm (-e)", back: "film aksi" },
+  { id: 91, front: "🔵 der Krimi (-s)", back: "film / buku detektif" },
+  { id: 92, front: "🟢 das Monopoly", back: "permainan Monopoli" },
+  { id: 93, front: "🟢 das Computerspiel (-e)", back: "game komputer" },
+  { id: 94, front: "ausprobieren", back: "mencoba (trennbar)" },
+
+  // Buchhandlung & Kultur
+  { id: 95, front: "🔴 die Buchhandlung (-en)", back: "toko buku" },
+  { id: 96, front: "🔴 die Buchausstellung (-en)", back: "pameran buku" },
+  { id: 97, front: "🔴 die Mitmachaktion (-en)", back: "kegiatan partisipasif" },
+  { id: 98, front: "vorlesen", back: "membacakan (trennbar)" },
+  { id: 99, front: "🔵 der Workshop (-s)", back: "lokakarya" },
+  { id: 100, front: "basteln", back: "membuat kerajinan tangan" },
+  { id: 101, front: "binden", back: "menjilid / mengikat" },
+  { id: 102, front: "🔴 die Bleistiftskizze (-n)", back: "sketsa pensil" },
+  { id: 103, front: "🔵 der Eintritt", back: "tiket masuk" },
+  { id: 104, front: "frei", back: "gratis / bebas" },
+  { id: 105, front: "spenden", back: "menyumbang / berdonasi" },
+  { id: 106, front: "🔴 die Spende (-n)", back: "sumbangan / donasi" },
+  { id: 107, front: "sammeln", back: "mengumpulkan" },
+
+  // Lingkungan & Sosial
+  { id: 108, front: "🔴 die Umwelt", back: "lingkungan hidup" },
+  { id: 109, front: "schützen", back: "melindungi" },
+  { id: 110, front: "🔴 die Hilfeleistung (-en)", back: "bantuan / pertolongan" },
+  { id: 111, front: "in Not sein", back: "dalam kesulitan / membutuhkan" },
+  { id: 112, front: "🟢 das Element (-e)", back: "elemen / unsur" },
+  { id: 113, front: "kreativ", back: "kreatif" },
+  { id: 114, front: "ausdrücken", back: "mengekspresikan (trennbar)" },
+  { id: 115, front: "verschmutzt", back: "tercemar / kotor" },
+  { id: 116, front: "🔴 die Umfrage (-n)", back: "survei / jajak pendapat" },
+  { id: 117, front: "🔵 der Ingenieur (-e)", back: "insinyur / engineer" },
+  { id: 118, front: "nennen", back: "menyebutkan" },
+  { id: 119, front: "am häufigsten", back: "paling sering" },
+
+  // Pesta & Hadiah
+  { id: 120, front: "🔴 die Geburtstagsparty (-s)", back: "pesta ulang tahun" },
+  { id: 121, front: "🔴 die Überraschung (-en)", back: "kejutan" },
+  { id: 122, front: "🔴 die Torte (-n)", back: "kue tart" },
+  { id: 123, front: "🟢 das Erfrischungsgetränk (-e)", back: "minuman segar" },
+  { id: 124, front: "🟢 das Gewinnspiel (-e)", back: "kuis berhadiah" },
+  { id: 125, front: "🟢 das Formular (-e)", back: "formulir" },
+  { id: 126, front: "liegen lassen", back: "meninggalkan begitu saja (trennbar)" },
+  { id: 127, front: "spontan", back: "spontan / tiba-tiba" },
+  { id: 128, front: "ausfüllen", back: "mengisi formulir (trennbar)" },
+  { id: 129, front: "🔵 der Eintritt", back: "tiket masuk" },
+
+  // Hewan Peliharaan
+  { id: 130, front: "🟢 das Haustier (-e)", back: "hewan peliharaan" },
+  { id: 131, front: "🔴 die Katze (-n)", back: "kucing" },
+  { id: 132, front: "🔵 der Hund (-e)", back: "anjing" },
+  { id: 133, front: "🔵 der Goldfisch (-e)", back: "ikan mas" },
+  { id: 134, front: "🔵 der Papagei (-en)", back: "burung beo / parkit" },
+  { id: 135, front: "sich kümmern um", back: "merawat / mengurus" },
+  { id: 136, front: "🔴 die Pflege", back: "perawatan" },
+
+  // Uang & Pekerjaan
+  { id: 137, front: "🟢 das Taschengeld", back: "uang saku" },
+  { id: 138, front: "reichen", back: "cukup / memadai" },
+  { id: 139, front: "ausreichen", back: "mencukupi (trennbar)" },
+  { id: 140, front: "jobben", back: "kerja sampingan" },
+  { id: 141, front: "🔴 die Bezahlung (-en)", back: "pembayaran / gaji" },
+  { id: 142, front: "ohne Bezahlung", back: "tanpa gaji / sukarela" },
+  { id: 143, front: "tätig sein", back: "aktif bekerja" },
+  { id: 144, front: "🔵 der Beruf (-e)", back: "pekerjaan / profesi" },
+  { id: 145, front: "🔴 die Zukunft", back: "masa depan" },
+  { id: 146, front: "🔴 die Ärztin (-nen)", back: "dokter wanita" },
+  { id: 147, front: "🔵 der Arzt (-ärzte)", back: "dokter pria" },
+
+  // ⚡ WC Paling Kritis — Wajib Hafal Malam Ini
+  { id: 148, front: "⚡ liegen lassen", back: "meninggalkan begitu saja", example: "Jebakan Q16 Test 5", example_id: "Beda total dengan: besorgen (mengambilkan)" },
+  { id: 149, front: "⚡ besorgen", back: "mengambilkan untuk orang lain", example: "Beda total dengan: liegen lassen (meninggalkan)" },
+  { id: 150, front: "⚡ spenden", back: "menyumbang (sukarela)", example: "Jebakan Q20 Test 6", example_id: "Beda dengan: zahlen (membayar / wajib)" },
+  { id: 151, front: "⚡ zahlen", back: "membayar (wajib)", example: "Beda dengan: spenden (menyumbang / sukarela)" },
+  { id: 152, front: "⚡ reichen", back: "cukup", example: "Beda dengan: bekommen (mendapatkan)" },
+  { id: 153, front: "⚡ sich bewerben", back: "melamar kerja", example: "Jebakan Q20 Test 4", example_id: "Beda dengan: warten (menunggu)" },
+  { id: 154, front: "⚡ warten", back: "menunggu pasif", example: "Beda dengan: sich bewerben (melamar kerja)" },
+  { id: 155, front: "⚡ die Verspätung", back: "keterlambatan", example: "Sering di Teil 1" },
+  { id: 156, front: "⚡ der Vorrat", back: "persediaan", example: "Jebakan pilihan angka" },
+  { id: 157, front: "⚡ mindestens", back: "minimal", example: "Jebakan angka Teil 1" },
+  { id: 158, front: "⚡ gar nicht", back: "sama sekali tidak", example: "Negasi tersembunyi" },
+  { id: 159, front: "⚡ doch nicht", back: "ternyata tidak", example: "Negasi tersembunyi" }
+];
 
 export const flashcardLevels = [
   {
@@ -1557,6 +1743,13 @@ export const flashcardLevels = [
         shortTitle: "Modellsatz 4.9",
         subtitle: "Vorberaitung A2",
         cards: a2Modellsatz49Cards
+      },
+      {
+        id: "A2-hore-wortschatz",
+        title: "Hore Wortschatz",
+        shortTitle: "Hore Wortschatz",
+        subtitle: "A2 Wortschatz",
+        cards: a2HoreWortschatzCards
       }
     ]
   },
