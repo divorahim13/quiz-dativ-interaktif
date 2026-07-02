@@ -55,6 +55,9 @@ const updateChapterStreak = (chapterId) => {
 };
 
 const FlashcardViewer = ({ chapter, onBack }) => {
+  const cards = chapter.cards || [];
+  const hasCards = cards.length > 0;
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [direction, setDirection] = useState(0);
@@ -258,8 +261,6 @@ const FlashcardViewer = ({ chapter, onBack }) => {
     setTempInput(String(currentIndex + 1));
   }, [currentIndex]);
 
-  const cards = chapter.cards || [];
-  const hasCards = cards.length > 0;
   const currentCard = hasCards ? cards[currentIndex] : null;
 
   const correctText = studyMode === 'passive' ? (currentCard ? currentCard.back : '') : (currentCard ? currentCard.front : '');
