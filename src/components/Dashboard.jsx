@@ -83,6 +83,43 @@ Materi/topik:
 ${material}`;
 };
 
+const getChapterAnkiStats = (chapter) => {
+  const cards = chapter.cards || [];
+  let dueCount = 0;
+  let learnedCount = 0;
+  let newCount = 0;
+  const now = Date.now();
+
+  cards.forEach((card) => {
+    const key = `anki_${chapter.id}_${card.id}`;
+    const stored = localStorage.getItem(key);
+    if (stored) {
+      try {
+        const data = JSON.parse(stored);
+        if (data.repetitions > 0) {
+          learnedCount++;
+          if (data.nextReview <= now) {
+            dueCount++;
+          }
+        } else {
+          newCount++;
+          dueCount++;
+        }
+      } catch (e) {
+        newCount++;
+        dueCount++;
+      }
+    } else {
+      newCount++;
+      dueCount++;
+    }
+  });
+
+  const streak = parseInt(localStorage.getItem(`anki_${chapter.id}_streak`) || '0', 10);
+
+  return { dueCount, learnedCount, newCount, streak };
+};
+
 const Dashboard = ({ quizzes, onSelectQuiz, flashcardLevels, onSelectChapter, onAddFlashcards }) => {
   const [activeTab, setActiveTab] = useState('kuis'); // 'kuis' | 'flashcard'
   const [selectedLevel, setSelectedLevel] = useState(null); // 'A1' | 'A2' | 'B1' | 'B2'
@@ -374,49 +411,84 @@ const Dashboard = ({ quizzes, onSelectQuiz, flashcardLevels, onSelectChapter, on
 
             <div style={{ 
               display: 'grid', 
-              gridTemplateColumns: 'repeat(auto-fill, minmax(120px, 1fr))', 
+              gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', 
               gap: '1rem' 
             }}>
-              {activeFlashcardLevel?.chapters.map((chapter) => (
-                <button
-                  key={chapter.id}
-                  onClick={() => onSelectChapter(chapter)}
-                  className="glass-card chapter-btn"
-                  style={{
-                    padding: '1.5rem 1rem',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    border: '1px solid rgba(255,255,255,0.1)',
-                    background: 'rgba(255,255,255,0.02)',
-                    cursor: 'pointer',
-                    transition: 'border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease',
-                    borderRadius: '12px'
-                  }}
-                >
-                  <span style={{ 
-                    fontSize: (chapter.id.includes('latihan') || chapter.shortTitle) ? '0.95rem' : '1.25rem', 
-                    fontWeight: 600, 
-                    color: 'var(--text)', 
-                    marginBottom: '0.5rem',
-                    textAlign: 'center'
-                  }}>
-                    {chapter.shortTitle || (chapter.id.includes('latihan') ? '12 Latihan' : chapter.title.split(' ')[1])}
-                  </span>
-                  <span style={{ 
-                    fontSize: (chapter.id.includes('latihan') || chapter.subtitle) ? '0.65rem' : '0.75rem', 
-                    color: 'var(--text-secondary)',
-                    textAlign: 'center',
-                    lineHeight: 1.2
-                  }}>
-                    {chapter.subtitle || (chapter.id.includes('latihan') ? 'Gute Unterhaltung' : 'Kapitel')}
-                  </span>
-                  <div style={{ marginTop: '0.75rem', fontSize: '0.7rem', color: chapter.cards.length > 0 ? '#22c55e' : 'var(--text-secondary)', opacity: 0.8 }}>
-                    {chapter.cards.length} Kartu
-                  </div>
-                </button>
-              ))}
+              {activeFlashcardLevel?.chapters.map((chapter) => {
+                const stats = getChapterAnkiStats(chapter);
+                return (
+                  <button
+                    key={chapter.id}
+                    onClick={() => onSelectChapter(chapter)}
+                    className="glass-card chapter-btn"
+                    style={{
+                      padding: '1.5rem 1rem',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      border: '1px solid rgba(255,255,255,0.1)',
+                      background: 'rgba(255,255,255,0.02)',
+                      cursor: 'pointer',
+                      transition: 'border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease',
+                      borderRadius: '12px',
+                      width: '100%'
+                    }}
+                  >
+                    <span style={{ 
+                      fontSize: (chapter.id.includes('latihan') || chapter.shortTitle) ? '0.95rem' : '1.25rem', 
+                      fontWeight: 600, 
+                      color: 'var(--text)', 
+                      marginBottom: '0.5rem',
+                      textAlign: 'center'
+                    }}>
+                      {chapter.shortTitle || (chapter.id.includes('latihan') ? '12 Latihan' : chapter.title.split(' ')[1])}
+                    </span>
+                    <span style={{ 
+                      fontSize: (chapter.id.includes('latihan') || chapter.subtitle) ? '0.65rem' : '0.75rem', 
+                      color: 'var(--text-secondary)',
+                      textAlign: 'center',
+                      lineHeight: 1.2
+                    }}>
+                      {chapter.subtitle || (chapter.id.includes('latihan') ? 'Gute Unterhaltung' : 'Kapitel')}
+                    </span>
+                    <div style={{ marginTop: '0.75rem', fontSize: '0.7rem', color: chapter.cards.length > 0 ? '#22c55e' : 'var(--text-secondary)', opacity: 0.8 }}>
+                      {chapter.cards.length} Kartu
+                    </div>
+                    {chapter.cards.length > 0 && (
+                      <div style={{ 
+                        marginTop: '0.75rem', 
+                        width: '100%', 
+                        textAlign: 'left', 
+                        fontSize: '0.68rem', 
+                        borderTop: '1px solid rgba(255,255,255,0.06)',
+                        paddingTop: '0.5rem',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: '4px',
+                        color: 'var(--text-secondary)'
+                      }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                          <span>Due Hari Ini:</span>
+                          <span style={{ color: stats.dueCount > 0 ? '#ef4444' : '#22c55e', fontWeight: 600 }}>{stats.dueCount}</span>
+                        </div>
+                        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                          <span>Dipelajari:</span>
+                          <span style={{ color: '#3b82f6', fontWeight: 600 }}>{stats.learnedCount}</span>
+                        </div>
+                        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                          <span>Baru:</span>
+                          <span style={{ color: '#a855f7', fontWeight: 600 }}>{stats.newCount}</span>
+                        </div>
+                        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                          <span>Streak:</span>
+                          <span style={{ color: '#facc15', fontWeight: 600 }}>{stats.streak} hari 🔥</span>
+                        </div>
+                      </div>
+                    )}
+                  </button>
+                );
+              })}
             </div>
           </motion.div>
         )}
