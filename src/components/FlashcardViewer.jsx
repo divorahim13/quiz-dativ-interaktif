@@ -184,6 +184,7 @@ const FlashcardViewer = ({ chapter, onBack }) => {
   };
 
   const handleAnkiRate = useCallback((rating) => {
+    if (!ankiIsFlipped) return;
     if (ankiCards.length === 0 || ankiCurrentIndex >= ankiCards.length) return;
     const card = ankiCards[ankiCurrentIndex];
     const key = `anki_${chapter.id}_${card.id}`;
@@ -245,17 +246,19 @@ const FlashcardViewer = ({ chapter, onBack }) => {
 
     localStorage.setItem(key, JSON.stringify(itemData));
 
-    // Move to next card
+    // Move to next card (unflip first, then advance index after transition)
     setAnkiIsFlipped(false);
     
-    // Check if session is finished
-    if (ankiCurrentIndex + 1 >= ankiCards.length) {
-      setAnkiSessionFinished(true);
-      updateChapterStreak(chapter.id);
-    } else {
-      setAnkiCurrentIndex(prev => prev + 1);
-    }
-  }, [ankiCards, ankiCurrentIndex, chapter.id]);
+    setTimeout(() => {
+      // Check if session is finished
+      if (ankiCurrentIndex + 1 >= ankiCards.length) {
+        setAnkiSessionFinished(true);
+        updateChapterStreak(chapter.id);
+      } else {
+        setAnkiCurrentIndex(prev => prev + 1);
+      }
+    }, 250); // Matches the flip rotation transition (250ms)
+  }, [ankiCards, ankiCurrentIndex, chapter.id, ankiIsFlipped]);
 
   useEffect(() => {
     setTempInput(String(currentIndex + 1));
