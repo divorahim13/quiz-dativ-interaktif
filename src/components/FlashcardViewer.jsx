@@ -264,6 +264,9 @@ const FlashcardViewer = ({ chapter, onBack }) => {
 
   const correctText = studyMode === 'passive' ? (currentCard ? currentCard.back : '') : (currentCard ? currentCard.front : '');
 
+  const currentAnkiCard = ankiCards[ankiCurrentIndex] || null;
+  const progressPercent = ankiTotalDueAtStart > 0 ? (ankiCompletedCount / ankiTotalDueAtStart) * 100 : 0;
+
   const handleInputChange = (e) => {
     const valueStr = e.target.value;
     setTempInput(valueStr);
