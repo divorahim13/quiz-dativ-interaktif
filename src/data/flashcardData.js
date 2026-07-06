@@ -1712,7 +1712,7 @@ export const b1Kapitel1Cards = [
   // 5. Urlaub in der Natur (Liburan di Alam)
   { id: 49, front: "die Alm, -en", back: "padang gembala pegunungan", context: "🏔️ Di alam / pegunungan", example: "Die Kühe grasen auf der Alm.", example_id: "Sapi-sapi merumput di padang gembala pegunungan." },
   { id: 50, front: "die Kuh, \"e", back: "sapi", context: "📌 Kosakata umum", example: "Eine Kuh gibt uns Milch.", example_id: "Seekor sapi memberi kita susu." },
-  { id: 51, front: "der Wanderer, -", back: "pejalan kaki/pendaki", context: "📝 Konektor / kata penghubung", example: "Die Wanderer machen eine Pause auf dem Berg.", example_id: "Para pendaki beristirahat di atas gunung." },
+  { id: 51, front: "der Wanderer, -", back: "pejalan kaki/pendaki", context: "🏔️ Di alam / pegunungan", example: "Der Wanderer macht eine Pause auf dem Berg.", example_id: "Sang pendaki beristirahat di atas gunung." },
   { id: 52, front: "das Gebirge, -", back: "pegunungan", context: "🏔️ Di alam / pegunungan", example: "Das Gebirge ist mit Schnee bedeckt.", example_id: "Pegunungan itu tertutup salju." },
   { id: 53, front: "der Himmel (Sg.)", back: "langit", context: "📌 Kosakata umum", example: "Der Himmel ist heute blau und wolkenlos.", example_id: "Langit hari ini biru dan tanpa awan." },
   { id: 54, front: "die Wiese, -n", back: "padang rumput", context: "🏔️ Di alam / pegunungan", example: "Wir picknicken auf einer grünen Wiese.", example_id: "Kami berpiknik di padang rumput hijau." },
