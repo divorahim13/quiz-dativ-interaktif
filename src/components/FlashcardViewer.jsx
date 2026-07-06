@@ -661,6 +661,11 @@ const FlashcardViewer = ({ chapter, onBack }) => {
                 <div className="flashcard-back">
                   <div style={{ height: '20px' }}></div>
                   <div className="flashcard-content" style={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', width: '100%' }}>
+                    {currentAnkiCard.context && (
+                      <div className="flashcard-context-wrapper">
+                        <span className="flashcard-context">{currentAnkiCard.context}</span>
+                      </div>
+                    )}
                     <h2 className="flashcard-title flashcard-title-back" style={{ 
                       fontSize: getAdaptiveFontSize(studyMode === 'passive' ? currentAnkiCard.back : currentAnkiCard.front, 'main'),
                       color: studyMode === 'active' ? '#fff' : 'var(--primary)'
@@ -1136,7 +1141,6 @@ const FlashcardViewer = ({ chapter, onBack }) => {
                         })}
                       </div>
 
-                      {/* Quiz Feedback and Translation / Example Sentence */}
                       {isQuizAnswered && (
                         <motion.div 
                           initial={{ opacity: 0 }}
@@ -1157,6 +1161,11 @@ const FlashcardViewer = ({ chapter, onBack }) => {
                           </div>
                           
                           <div style={{ background: 'rgba(255,255,255,0.04)', padding: '0.85rem 1rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)' }}>
+                            {currentCard.context && (
+                              <div style={{ marginBottom: '0.6rem' }}>
+                                <span className="flashcard-context" style={{ fontSize: '0.72rem', padding: '3px 10px' }}>{currentCard.context}</span>
+                              </div>
+                            )}
                             <p style={{ margin: 0, fontSize: '0.95rem', color: 'var(--text)' }}>
                               <strong>Arti:</strong> {currentCard.back}
                             </p>
@@ -1179,6 +1188,7 @@ const FlashcardViewer = ({ chapter, onBack }) => {
                       </div>
                     )}
                   </div>
+
                 ) : (
                   <motion.div 
                     className="flashcard-inner"
@@ -1211,6 +1221,11 @@ const FlashcardViewer = ({ chapter, onBack }) => {
                     <div className="flashcard-back">
                       <div style={{ height: '20px' }}></div> {/* Top spacer */}
                       <div className="flashcard-content" style={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', width: '100%' }}>
+                        {currentCard.context && (
+                          <div className="flashcard-context-wrapper">
+                            <span className="flashcard-context">{currentCard.context}</span>
+                          </div>
+                        )}
                         <h2 className="flashcard-title flashcard-title-back" style={{ 
                           fontSize: getAdaptiveFontSize(studyMode === 'passive' ? currentCard.back : currentCard.front, 'main'),
                           color: studyMode === 'active' ? '#fff' : 'var(--primary)'

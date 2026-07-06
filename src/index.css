@@ -833,3 +833,33 @@ h1 {
     width: 100%;
   }
 }
+
+/* -- Context Badge ------------------------------------------ */
+.flashcard-context {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px;
+  border-radius: 100px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  background: linear-gradient(135deg, rgba(99,102,241,0.18) 0%, rgba(168,85,247,0.18) 100%);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  color: #c4b5fd;
+  box-shadow: 0 0 12px -4px rgba(168, 85, 247, 0.25);
+  white-space: nowrap;
+  user-select: none;
+}
+
+.flashcard-context-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.9rem;
+  animation: contextFadeIn 0.3s ease both;
+}
+
+@keyframes contextFadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
