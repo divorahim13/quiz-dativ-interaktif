@@ -2183,173 +2183,3062 @@ export const b1Kapitel1Cards = [
 ];
 
 export const b1Kapitel2Cards = [
-  // 1. Geräte und Zubehör
-  { id: 1, front: "der Staubsauger, -", back: "penyedot debu", context: "📌 Kosakata umum", example: "Ich muss das Wohnzimmer mit dem Staubsauger saugen.", example_id: "Saya harus menyedot debu di ruang tamu dengan penyedot debu." },
-  { id: 2, front: "die Waschmaschine, -n", back: "mesin cuci", context: "📌 Kosakata umum", example: "Unsere neue Waschmaschine ist sehr leise.", example_id: "Mesin cuci baru kami sangat tenang (tidak berisik)." },
-  { id: 3, front: "der Kopfhörer, -", back: "headphone", context: "📌 Kosakata umum", example: "Er hört Musik mit seinen Kopfhörern.", example_id: "Dia mendengarkan musik dengan headphone-nya." },
-  { id: 4, front: "die Powerbank, -s", back: "powerbank", context: "📌 Kosakata umum", example: "Hast du eine Powerbank für mein Handy?", example_id: "Apakah kamu punya powerbank untuk ponsel saya?" },
-  { id: 5, front: "der USB-Stick, -s", back: "flashdisk", context: "📌 Kosakata umum", example: "Ich habe die Dokumente auf einem USB-Stick gespeichert.", example_id: "Saya menyimpan dokumen-dokumen itu di sebuah flashdisk." },
-  { id: 6, front: "der Knopf, -ü-e", back: "tombol / kancing", context: "📌 Kosakata umum", example: "Drück den roten Knopf, um das Gerät zu starten.", example_id: "Tekan tombol merah untuk menyalakan perangkat." },
-  { id: 7, front: "die Taste, -n", back: "tombol (keyboard/HP)", context: "📌 Kosakata umum", example: "Welche Taste muss ich auf der Tastatur drücken?", example_id: "Tombol mana yang harus saya tekan di keyboard?" },
-  { id: 8, front: "der Monitor, -e", back: "monitor/layar", context: "📌 Kosakata umum", example: "Der Monitor meines Computers ist sehr groß.", example_id: "Monitor komputer saya sangat besar." },
-  { id: 9, front: "der Handyakku, -s", back: "baterai HP", context: "📌 Kosakata umum", example: "Mein Handyakku ist fast leer.", example_id: "Baterai HP saya hampir habis." },
-  { id: 10, front: "der Lautsprecher, -", back: "speaker", context: "📌 Kosakata umum", example: "Der Ton kommt aus den Lautsprechern.", example_id: "Suaranya keluar dari speaker." },
-  { id: 11, front: "das Ladekabel, -", back: "kabel charger", context: "📝 Konektor / kata penghubung", example: "Ich habe mein Ladekabel zu Hause vergessen.", example_id: "Saya lupa kabel charger saya di rumah." },
-  { id: 12, front: "die Anleitung, -en", back: "petunjuk penggunaan", context: "📌 Kosakata umum", example: "Bitte lies zuerst die Anleitung durch.", example_id: "Tolong baca petunjuk penggunaan terlebih dahulu." },
-  { id: 13, front: "die Gebrauchsanweisung, -en", back: "buku panduan", context: "📌 Kosakata umum", example: "In der Gebrauchsanweisung steht, wie das Gerät funktioniert.", example_id: "Di dalam buku panduan tertulis bagaimana perangkat tersebut bekerja." },
-  { id: 14, front: "ein|schalten", back: "menhidupkan/menyalakan", context: "📌 Kosakata umum", example: "Kannst du bitte den Fernseher einschalten?", example_id: "Bisakah kamu menyalakan televisi?" },
-  { id: 15, front: "aus|schalten", back: "mematikan", context: "📌 Kosakata umum", example: "Vergiss nicht, das Licht auszuschalten.", example_id: "Jangan lupa untuk mematikan lampu." },
-  { id: 16, front: "installieren", back: "menginstal", context: "📌 Kosakata umum", example: "Ich muss ein neues Programm auf dem Laptop installieren.", example_id: "Saya harus menginstal program baru di laptop." },
-  { id: 17, front: "an|schließen", back: "menghubungkan/menyambungkan", context: "📌 Kosakata umum", example: "Du musst den Drucker an den Computer anschließen.", example_id: "Kamu harus menghubungkan printer ke komputer." },
-  { id: 18, front: "auf|laden", back: "mengisi daya (baterai)", context: "📝 Konektor / kata penghubung", example: "Ich muss mein Handy aufladen.", example_id: "Saya harus mengisi daya ponsel saya." },
-  { id: 19, front: "laden", back: "mengisi daya (HP)", context: "📝 Konektor / kata penghubung", example: "Der Akku lädt sehr schnell.", example_id: "Baterainya mengisi daya dengan sangat cepat." },
-  { id: 20, front: "stumm schalten", back: "menyilentkan", context: "📌 Kosakata umum", example: "Während des Meetings sollte man das Handy stumm schalten.", example_id: "Selama pertemuan, sebaiknya ponsel disilentkan." },
-  { id: 21, front: "sparsam", back: "hemat (energi)", context: "📌 Kosakata umum", example: "Dieses Gerät arbeitet sehr sparsam.", example_id: "Perangkat ini bekerja dengan sangat hemat energi." },
-  { id: 22, front: "dabei|haben", back: "membawa serta", context: "📝 Konektor / kata penghubung", example: "Hast du deinen Ausweis dabei?", example_id: "Apakah kamu membawa serta kartu identitasmu?" },
-  { id: 23, front: "(sich) an|schaffen", back: "membeli/mendapatkan (untuk diri sendiri)", context: "📝 Konektor / kata penghubung", example: "Ich möchte mir einen neuen Laptop anschaffen.", example_id: "Saya ingin membeli laptop baru (untuk saya sendiri)." },
-
-  // 2. Reparieren und Reklamieren
-  { id: 24, front: "reparieren", back: "memperbaiki", context: "📌 Kosakata umum", example: "Kannst du mein Fahrrad reparieren?", example_id: "Bisakah kamu memperbaiki sepeda saya?" },
-  { id: 25, front: "reklamieren", back: "mengajukan komplain", context: "📌 Kosakata umum", example: "Ich möchte diesen kaputten Schuh reklamieren.", example_id: "Saya ingin mengajukan komplain untuk sepatu yang rusak ini." },
-  { id: 26, front: "um|tauschen", back: "menukar barang", context: "📌 Kosakata umum", example: "Kann ich das Hemd umtauschen, wenn es nicht passt?", example_id: "Bisakah saya menukar kemeja ini jika tidak pas?" },
-  { id: 27, front: "zurück|geben", back: "mengembalikan", context: "📌 Kosakata umum", example: "Ich möchte die Ware zurückgeben und mein Geld zurückbekommen.", example_id: "Saya ingin mengembalikan barang tersebut dan mendapatkan uang saya kembali." },
-  { id: 28, front: "testen", back: "mencoba/mengetes", context: "📌 Kosakata umum", example: "Wir müssen das neue Gerät gründlich testen.", example_id: "Kita harus mengetes perangkat baru ini secara menyeluruh." },
-  { id: 29, front: "benötigen", back: "membutuhkan (formal)", context: "📌 Kosakata umum", example: "Für das Visum benötigen Sie Ihren Reisepass.", example_id: "Untuk visa, Anda membutuhkan paspor Anda." },
-  { id: 30, front: "zufrieden", back: "puas/senang", context: "😊 Mengungkapkan perasaan", example: "Der Kunde ist mit dem Service sehr zufrieden.", example_id: "Pelanggan sangat puas dengan pelayanannya." },
-  { id: 31, front: "kaputt|gehen", back: "menjadi rusak", context: "😊 Mengungkapkan perasaan", example: "Alte Handys können leicht kaputtgehen.", example_id: "Ponsel lama bisa dengan mudah menjadi rusak." },
-  { id: 32, front: "die Garantie, -n", back: "garansi", context: "📌 Kosakata umum", example: "Auf diesen Fernseher gibt es zwei Jahre Garantie.", example_id: "Ada garansi dua tahun untuk televisi ini." },
-  { id: 33, front: "die Quittung, -en", back: "struk/kuitansi", context: "📌 Kosakata umum", example: "Bitte heben Sie die Quittung gut auf.", example_id: "Tolong simpan struknya dengan baik." },
-
-  // 3. Smartes Wohnen
-  { id: 34, front: "automatisch", back: "otomatis", context: "📌 Kosakata umum", example: "Das Licht geht automatisch an, wenn man das Zimmer betritt.", example_id: "Lampu menyala secara otomatis ketika seseorang memasuki ruangan." },
-  { id: 35, front: "technisch", back: "teknis", context: "📌 Kosakata umum", example: "Bei technischen Problemen rufen Sie bitte den Service an.", example_id: "Untuk masalah teknis, silakan hubungi layanan servis." },
-  { id: 36, front: "smart", back: "pintar/cerdas", context: "📝 Konektor / kata penghubung", example: "Ein smartes Zuhause macht das Leben einfacher.", example_id: "Rumah pintar membuat hidup menjadi lebih mudah." },
-  { id: 37, front: "sicher", back: "aman", context: "📌 Kosakata umum", example: "Hier bist du absolut sicher.", example_id: "Di sini kamu benar-benar aman." },
-  { id: 38, front: "gleichzeitig", back: "pada saat yang sama", context: "📝 Konektor / kata penghubung", example: "Ich kann nicht zwei Dinge gleichzeitig tun.", example_id: "Saya tidak bisa melakukan dua hal pada saat yang sama." },
-  { id: 39, front: "bedienen", back: "mengoperasikan", context: "📌 Kosakata umum", example: "Dieses Gerät ist sehr einfach zu bedienen.", example_id: "Perangkat ini sangat mudah dioperasikan." },
-  { id: 40, front: "steuern", back: "mengendalikan", context: "📝 Konektor / kata penghubung", example: "Man kann die Heizung mit dem Handy steuern.", example_id: "Orang bisa mengendalikan pemanas dengan ponsel." },
-  { id: 41, front: "an|passen", back: "menyesuaikan", context: "📌 Kosakata umum", example: "Man kann die Lautstärke individuell anpassen.", example_id: "Orang bisa menyesuaikan volume secara individual." },
-  { id: 42, front: "berühren", back: "menyentuh", context: "📌 Kosakata umum", example: "Bitte den Bildschirm nicht berühren.", example_id: "Tolong jangan menyentuh layar." },
-  { id: 43, front: "reinigen", back: "membersihkan", context: "📌 Kosakata umum", example: "Der Saugroboter reinigt den Boden jeden tag.", example_id: "Robot penyedot debu membersihkan lantai setiap hari." },
-  { id: 44, front: "auf|nehmen", back: "merekam/mengambil", context: "📌 Kosakata umum", example: "Die Kamera nimmt Videos in hoher Qualität auf.", example_id: "Kamera tersebut merekam video dengan kualitas tinggi." },
-  { id: 45, front: "die Technologie, -n", back: "teknologi", context: "📌 Kosakata umum", example: "Die neue Technologie revolutioniert unseren Alltag.", example_id: "Teknologi baru merevolusi kehidupan sehari-hari kita." },
-  { id: 46, front: "die Alarmanlage, -n", back: "sistem alarm", context: "🏨 Di hotel / penginapan", example: "Wir haben eine moderne Alarmanlage installiert.", example_id: "Kami telah menginstal sistem alarm yang modern." },
-  { id: 47, front: "der Einbruch, -ü-e", back: "pencurian/pembobolan", context: "📌 Kosakata umum", example: "Nach dem Einbruch riefen die Nachbarn sofort die Polizei.", example_id: "Setelah pembobolan, para tetangga segera menelepon polisi." },
-  { id: 48, front: "die Gefahr, -en", back: "bahaya", context: "📌 Kosakata umum", example: "In der Nacht besteht hier keine Gefahr.", example_id: "Di malam hari tidak ada bahaya di sini." },
-  { id: 49, front: "der Neubau, -ten", back: "bangunan baru", context: "📌 Kosakata umum", example: "Wir wohnen in einem modernen Neubau.", example_id: "Kami tinggal di bangunan baru yang modern." },
-  { id: 50, front: "die Haustür, -en", back: "pintu depan rumah", context: "📌 Kosakata umum", example: "Wer hat die Haustür offen gelassen?", example_id: "Siapa yang membiarkan pintu depan rumah terbuka?" },
-  { id: 51, front: "der Fingerabdruck, -ü-e", back: "sidik jari", context: "📌 Kosakata umum", example: "Das Schloss lässt sich per Fingerabdruck öffnen.", example_id: "Kunci pintu dapat dibuka dengan sidik jari." },
-  { id: 52, front: "der Sprachassistent, -en", back: "asisten suara", context: "📌 Kosakata umum", example: "Ich frage meinen Sprachassistenten nach dem Wetter.", example_id: "Saya menanyakan cuaca kepada asisten suara saya." },
-  { id: 53, front: "der Tagesablauf, -ü-e", back: "rutinitas harian", context: "📌 Kosakata umum", example: "Mein Tagesablauf ist gut strukturiert.", example_id: "Rutinitas harian saya terstruktur dengan baik." },
-
-  // 4. Werbung
-  { id: 54, front: "ausgezeichnet", back: "luar biasa/sangat baik", context: "📌 Kosakata umum", example: "Das Essen in diesem Restaurant schmeckt ausgezeichnet.", example_id: "Makanan di restoran ini rasanya luar biasa enak." },
-  { id: 55, front: "frech", back: "kurang ajar/berani", context: "📌 Kosakata umum", example: "Der Hund war heute sehr frech.", example_id: "Anjing itu hari ini sangat kurang ajar/nakal." },
-  { id: 56, front: "aufmerksam", back: "penuh perhatian", context: "📌 Kosakata umum", example: "Der Schüler hört der Lehrerin aufmerksam zu.", example_id: "Siswa tersebut mendengarkan gurunya dengan penuh perhatian." },
-  { id: 57, front: "interessiert", back: "tertarik", context: "📌 Kosakata umum", example: "Sind Sie an unserem Angebot interessiert?", example_id: "Apakah Anda tertarik dengan penawaran kami." },
-  { id: 58, front: "merkwürdig", back: "aneh/mencurigakan", context: "📌 Kosakata umum", example: "Das ist ein merkwürdiges Geräusch.", example_id: "Itu adalah suara yang aneh." },
-  { id: 59, front: "seltsam", back: "ganjil/aneh", context: "📌 Kosakata umum", example: "Sie verhält sich heute sehr seltsam.", example_id: "Dia bersikap sangat aneh hari ini." },
-  { id: 60, front: "bemerken", back: "memperhatikan/menyadari", context: "📝 Konektor / kata penghubung", example: "Hast du die Veränderung bemerkt?", example_id: "Apakah kamu menyadari perubahannya?" },
-  { id: 61, front: "vertrauen", back: "mempercayai", context: "📌 Kosakata umum", example: "Man kann ihm voll und ganz vertrauen.", example_id: "Orang bisa mempercayainya sepenuhnya." },
-  { id: 62, front: "beeinflussen", back: "mempengaruhi", context: "📌 Kosakata umum", example: "Werbung kann unser Kaufverhalten stark beeinflussen.", example_id: "Iklan dapat sangat mempengaruhi perilaku belanja kita." },
-  { id: 63, front: "verbieten", back: "melarang", context: "📖 Catatan tata bahasa", example: "Meine Eltern verbieten mir, zu spät nach Hause zu kommen.", example_id: "Orang tua saya melarang saya pulang terlalu larut." },
-  { id: 64, front: "wirken", back: "bekerja/berpengaruh", context: "📌 Kosakata umum", example: "Die Tabletten beginnen zu wirken.", example_id: "Tablet tersebut mulai bekerja/beraksi." },
-  { id: 65, front: "wecken", back: "membangkitkan", context: "📌 Kosakata umum", example: "Das Plakat soll das Interesse der Kunden wecken.", example_id: "Poster tersebut bertujuan untuk membangkitkan minat pelanggan." },
-  { id: 66, front: "an|sprechen", back: "menyentuh/berbicara kepada", context: "📝 Konektor / kata penghubung", example: "Das Design spricht viele Jugendliche an.", example_id: "Desain tersebut menyentuh/menarik bagi banyak remaja." },
-  { id: 67, front: "auf|fallen", back: "menarik perhatian", context: "📌 Kosakata umum", example: "Es ist mir sofort aufgefallen, dass sie eine neue Brille trägt.", example_id: "Segera menarik perhatian saya bahwa dia memakai kacamata baru." },
-  { id: 68, front: "reichen", back: "cukup", context: "📌 Kosakata umum", example: "Das Geld reicht für die Reise.", example_id: "Uang tersebut cukup untuk perjalanan." },
-  { id: 69, front: "das Produkt, -e", back: "produk", context: "📝 Konektor / kata penghubung", example: "Wir verkaufen nur biologische Produkte.", example_id: "Kami hanya menjual produk organik." },
-  { id: 70, front: "das Kaufverhalten, -", back: "perilaku belanja", context: "📝 Konektor / kata penghubung", example: "Die Studie analysiert das Kaufverhalten von Jugendlichen.", example_id: "Studi tersebut menganalisis perilaku belanja para remaja." },
-  { id: 71, front: "das Verhalten, -", back: "perilaku", context: "📝 Konektor / kata penghubung", example: "Sein Verhalten in der Schule war immer vorbildlich.", example_id: "Perilakunya di sekolah selalu patut dicontoh." },
-  { id: 72, front: "das Merkmal, -e", back: "ciri khas/fitur", context: "📝 Konektor / kata penghubung", example: "Ein wichtiges Merkmal dieses Produkts ist die Qualität.", example_id: "Ciri khas penting dari produk ini adalah kualitasnya." },
-  { id: 73, front: "das Sonderangebot, -e", back: "penawaran khusus", context: "📝 Konektor / kata penghubung", example: "Diese Woche gibt es viele Sonderangebote im Supermarkt.", example_id: "Minggu ini ada banyak penawaran khusus di supermarket." },
-  { id: 74, front: "der Rabatt, -e", back: "diskon", context: "📌 Kosakata umum", example: "Kunden erhalten 10 % Rabatt auf alles.", example_id: "Pelanggan mendapatkan diskon 10% untuk semuanya." },
-  { id: 75, front: "der Slogan, -s", back: "slogan", context: "📌 Kosakata umum", example: "Dieser Slogan ist sehr leicht zu merken.", example_id: "Slogan ini sangat mudah diingat." },
-  { id: 76, front: "die Erinnerung, -en", back: "kenangan/ingatan", context: "📌 Kosakata umum", example: "Ich habe schöne Erinnerungen an meine Kindheit.", example_id: "Saya memiliki kenangan indah tentang masa kecil saya." },
-  { id: 77, front: "die Vorstellung, -en", back: "gambaran/bayangan", context: "📌 Kosakata umum", example: "Hast du eine genaue Vorstellung vom Projekt?", example_id: "Apakah kamu memiliki gambaran yang jelas tentang proyek tersebut?" },
-  { id: 78, front: "das Magazin, -e", back: "majalah", context: "📝 Konektor / kata penghubung", example: "Ich lese gerne dieses wöchentliche Magazin.", example_id: "Saya suka membaca majalah mingguan ini." },
-  { id: 79, front: "auf den Markt kommen", back: "masuk ke pasar", context: "📌 Kosakata umum", example: "Wann wird das neue Handy auf den Markt kommen?", example_id: "Kapan ponsel baru tersebut akan masuk ke pasar?" },
-
-  // 5. Geld und Banken
-  { id: 80, front: "gratis", back: "gratis", context: "📌 Kosakata umum", example: "Kinder unter sechs Jahren fahren gratis.", example_id: "Anak-anak di bawah usia enam tahun naik secara gratis." },
-  { id: 81, front: "genügen", back: "cukup/memadai", context: "📝 Konektor / kata penghubung", example: "Ein kurzer Anruf genügt.", example_id: "Panggilan singkat saja sudah cukup." },
-  { id: 82, front: "sich lohnen", back: "sepadan/worth it", context: "📝 Konektor / kata penghubung", example: "Der Ausflug auf den Berg lohnt sich auf jeden Fall.", example_id: "Tamasya ke atas gunung itu sangat sepadan/worth it bagaimanapun juga." },
-  { id: 83, front: "sich leisten", back: "mampu membeli", context: "📌 Kosakata umum", example: "Ich kann mir ein neues Auto leider nicht leisten.", example_id: "Sayang sekali saya tidak mampu membeli mobil baru." },
-  { id: 84, front: "die EC-Karte, -n", back: "kartu debit", context: "📌 Kosakata umum", example: "Kann ich hier mit EC-Karte bezahlen?", example_id: "Bisakah saya membayar dengan kartu debit di sini?" },
-  { id: 85, front: "die Geheimzahl, -en", back: "PIN", context: "📌 Kosakata umum", example: "Geben Sie Ihre Geheimzahl am Automaten ein.", example_id: "Masukkan nomor PIN Anda di mesin ATM." },
-  { id: 86, front: "der Geldautomat, -en", back: "ATM", context: "📝 Konektor / kata penghubung", example: "Wo steht der nächste Geldautomat?", example_id: "Di mana letak mesin ATM terdekat?" },
-  { id: 87, front: "das Girokonto, -konten", back: "rekening giro", context: "📝 Konektor / kata penghubung", example: "Ich möchte ein neues Girokonto eröffnen.", example_id: "Saya ingin membuka rekening giro baru." },
-  { id: 88, front: "das Portemonnaie, -s", back: "dompet", context: "📝 Konektor / kata penghubung", example: "Ich habe mein Portemonnaie im Auto vergessen.", example_id: "Saya lupa dompet saya di mobil." },
-
-  // 6. Andere wichtige Wörter
-  { id: 89, front: "bereits", back: "sudah/telah", context: "📝 Konektor / kata penghubung", example: "Der Zug ist bereits abgefahren.", example_id: "Keretanya sudah berangkat." },
-  { id: 90, front: "bloß", back: "hanya/cuma", context: "📌 Kosakata umum", example: "Ich wollte bloß fragen, wie es dir geht.", example_id: "Saya hanya ingin bertanya bagaimana kabarmu." },
-  { id: 91, front: "diesmal", back: "kali ini", context: "📌 Kosakata umum", example: "Diesmal klappt es bestimmt!", example_id: "Kali ini pasti berhasil!" },
-  { id: 92, front: "ebenfalls", back: "juga/demikian pula", context: "📌 Kosakata umum", example: "Schönes Wochenende! - Danke, ebenfalls!", example_id: "Semoga akhir pekanmu menyenangkan! - Terima kasih, kamu juga!" },
-  { id: 93, front: "rein", back: "murni", context: "📌 Kosakata umum", example: "Das ist reine Spekulation.", example_id: "Itu murni spekulasi." },
-  { id: 94, front: "ständig", back: "terus-menerus", context: "📮 Kirim kartu pos / ungkapan", example: "Er redet ständig über seine Arbeit.", example_id: "Dia terus-menerus membicarakan pekerjaannya." },
-  { id: 95, front: "gleichzeitig", back: "bersamaan", context: "📌 Kosakata umum", example: "Wir sind gleichzeitig angekommen.", example_id: "Kami tiba secara bersamaan." },
-  { id: 96, front: "seltsam", back: "ganjil", context: "📌 Kosakata umum", example: "Es ist seltsam, dass niemand da ist.", example_id: "Sungguh ganjil/aneh bahwa tidak ada seorang pun di sana." },
-  { id: 97, front: "nähen", back: "menjahit", context: "📌 Kosakata umum", example: "Meine Oma kann Kleidung nähen.", example_id: "Nenek saya bisa menjahit pakaian." },
-  { id: 98, front: "streichen", back: "mengecat (dinding)", context: "📌 Kosakata umum", example: "Wir wollen die Wände im Zimmer weiß streichen.", example_id: "Kami ingin mengecat dinding di kamar dengan warna putih." },
-  { id: 99, front: "verraten", back: "mengkhianati/membocorkan", context: "📌 Kosakata umum", example: "Bitte verrate mein Geheimnis nicht!", example_id: "Tolong jangan bocorkan rahasia saya!" },
-  { id: 100, front: "geschehen", back: "terjadi", context: "📌 Kosakata umum", example: "Was ist gestern Abend geschehen?", example_id: "Apa yang terjadi kemarin malam?" },
-  { id: 101, front: "vertrauen", back: "mempercayai", context: "📌 Kosakata umum", example: "Du kannst meinen Worten vertrauen.", example_id: "Kamu bisa mempercayai kata-kata saya." },
-  { id: 102, front: "sich Sorgen machen", back: "mengkhawatirkan", context: "📌 Kosakata umum", example: "Du musst dir keine Sorgen machen.", example_id: "Kamu tidak perlu khawatir." },
-  { id: 103, front: "vor einer Frage stehen", back: "dihadapkan pada sebuah pertanyaan", context: "📝 Konektor / kata penghubung", example: "Wir stehen vor einer schwierigen Frage.", example_id: "Kita dihadapkan pada pertanyaan yang sulit." },
-  { id: 104, front: "die Ausnahme, -n", back: "penengecualian", context: "📌 Kosakata umum", example: "Normalerweise ist das verboten, aber heute machen wir eine Ausnahme.", example_id: "Biasanya ini dilarang, tetapi hari ini kita membuat pengecualian." },
-  { id: 105, front: "die Wand, -ä-e", back: "dinding", context: "📌 Kosakata umum", example: "Das Bild hängt an der Wand.", example_id: "Gambar itu tergantung di dinding." },
-  { id: 106, front: "das Taschentuch, -ü-er", back: "sapu tangan/tisu", context: "📝 Konektor / kata penghubung", example: "Hast du ein Taschentuch für mich?", example_id: "Apakah kamu punya sapu tangan/tisu untuk saya?" },
-  { id: 107, front: "der Transport, -e", back: "transportasi", context: "📌 Kosakata umum", example: "Der Transport der Ware dauerte drei Tage.", example_id: "Transportasi barang tersebut memakan waktu tiga hari." },
-
-  // 7. Grammar Wörter (Wajib Hafal)
-  { id: 108, front: "deshalb", back: "oleh karena itu / makanya", context: "📝 Konektor / kata penghubung", example: "Ich war krank, deshalb bin ich zu Hause geblieben.", example_id: "Saya sakit, oleh karena itu saya tinggal di rumah." },
-  { id: 109, front: "deswegen", back: "karenanya / makanya", context: "📝 Konektor / kata penghubung", example: "Es hat geregnet, deswegen haben wir den Ausflug abgesagt.", example_id: "Hari hujan, karenanya kami membatalkan tamasya." },
-  { id: 110, front: "darum", back: "untuk itu / makanya", context: "📝 Konektor / kata penghubung", example: "Ich möchte fit bleiben, darum mache ich jeden Tag Sport.", example_id: "Saya ingin tetap bugar, untuk itu saya berolahraga setiap hari." },
-  { id: 111, front: "daher", back: "oleh karena itu / maka", context: "📝 Konektor / kata penghubung", example: "Er lernt sehr viel, daher hat er gute Noten.", example_id: "Dia belajar sangat keras, oleh karena itu dia mendapat nilai bagus." },
-  { id: 112, front: "sodass", back: "sehingga (Nebensatz)", context: "📝 Konektor / kata penghubung", example: "Er sprach sehr leise, sodass niemand ihn verstehen konnte.", example_id: "Dia berbicara sangat lirih, sehingga tidak ada yang bisa memahaminya." },
-  { id: 113, front: "so...dass", back: "begitu...sampai/sehingga", context: "📝 Konektor / kata penghubung", example: "Das Buch war so spannend, dass ich es in einer Nacht durchgelesen habe.", example_id: "Buku itu begitu menarik sampai saya membacanya habis dalam semalam." },
-  { id: 114, front: "wegen", back: "karena (+ Genitiv)", context: "📌 Kosakata umum", example: "Wegen des schlechten Wetters mussten wir zu Hause bleiben.", example_id: "Karena cuaca buruk kami harus tinggal di rumah." },
-  { id: 115, front: "trotz", back: "meskipun (+ Genitiv)", context: "🏔️ Di alam / pegunungan", example: "Trotz des Regens sind wir im Park spazieren gegangen.", example_id: "Meskipun hujan kami tetap berjalan-jalan di taman." },
-
-  // 8. Verben aus den Übungen
-  { id: 116, front: "waschen", back: "mencuci", context: "📌 Kosakata umum", example: "Ich muss meine Wäsche waschen.", example_id: "Saya harus mencuci pakaian saya." },
-  { id: 117, front: "putzen", back: "membersihkan", context: "🏕️ Aktivitas sehari-hari / camping", example: "Jeden Samstag putze ich meine Wohnung.", example_id: "Setiap hari Sabtu saya membersihkan apartemen saya." },
-  { id: 118, front: "schneiden", back: "memotong", context: "📌 Kosakata umum", example: "Kannst du bitte das Brot schneiden?", example_id: "Bisakah kamu memotong rotinya?" },
-  { id: 119, front: "ausdrucken", back: "mencetak", context: "📌 Kosakata umum", example: "Ich muss das Ticket ausdrucken.", example_id: "Saya harus mencetak tiketnya." },
-  { id: 120, front: "vorbereiten", back: "mempersiapkan", context: "📌 Kosakata umum", example: "Er muss sich auf die Prüfung vorbereiten.", example_id: "Dia harus mempersiapkan diri untuk ujian." },
-  { id: 121, front: "sparen", back: "menabung/berhemat", context: "📌 Kosakata umum", example: "Ich spare Geld für eine Reise nach Deutschland.", example_id: "Saya menabung uang untuk perjalanan ke Jerman." },
-  { id: 122, front: "bestellen", back: "memesan", context: "🛍️ Belanja online / komplain produk", example: "Wir haben Pizza bestellt.", example_id: "Kami telah memesan pizza." },
-  { id: 123, front: "abholen", back: "menjemput/mengambil", context: "📌 Kosakata umum", example: "Ich hole dich um 18 Uhr vom Bahnhof ab.", example_id: "Saya akan menjemputmu di stasiun jam 18." },
-  { id: 124, front: "stören", back: "mengganggu", context: "📌 Kosakata umum", example: "Entschuldigung, störe ich Sie?", example_id: "Maaf, apakah saya mengganggu Anda?" },
-  { id: 125, front: "recherchieren", back: "mencari informasi", context: "📌 Kosakata umum", example: "Für meine Hausarbeit muss ich viel im Internet recherchieren.", example_id: "Untuk tugas akhir saya, saya harus banyak mencari informasi di internet." },
-  { id: 126, front: "trainieren", back: "berlatih", context: "🏕️ Aktivitas sehari-hari / camping", example: "Die Sportler trainieren täglich im Stadion.", example_id: "Para atlet berlatih setiap hari di stadion." },
-  { id: 127, front: "unternehmen", back: "melakukan sesuatu", context: "📌 Kosakata umum", example: "Wollen wir am Wochenende etwas unternehmen?", example_id: "Apakah kita ingin melakukan sesuatu di akhir pekan?" },
-  { id: 128, front: "funktionieren", back: "berfungsi", context: "📌 Kosakata umum", example: "Das neue Gerät funktioniert einwandfrei.", example_id: "Perangkat baru itu berfungsi dengan baik tanpa masalah." },
-  { id: 129, front: "unterwegs sein", back: "sedang bepergian", context: "📮 Kirim kartu pos / ungkapan", example: "Ich bin gerade unterwegs nach Hause.", example_id: "Saya sedang di perjalanan pulang ke rumah." },
-
-  // 9. Nomen aus den Übungen
-  { id: 130, front: "der Mantel, -ä-", back: "mantel/jas", context: "📌 Kosakata umum", example: "Zieh deinen warmen Mantel an, es ist kalt draußen.", example_id: "Pakailah mantel hangatmu, di luar dingin." },
-  { id: 131, front: "der Drucker, -", back: "printer", context: "📌 Kosakata umum", example: "Der Drucker hat kein Papier mehr.", example_id: "Printer tersebut kehabisan kertas." },
-  { id: 132, front: "der Schlüssel, -", back: "kunci", context: "📌 Kosakata umum", example: "Ich habe meinen Schlüssel verloren.", example_id: "Saya telah kehilangan kunci saya." },
-  { id: 133, front: "der Lärm", back: "kebisingan", context: "📌 Kosakata umum", example: "Der Lärm von der Straße stört mich beim Lernen.", example_id: "Kebisingan dari jalan mengganggu saya saat belajar." },
-  { id: 134, front: "der Kellner, -", back: "pelayan (L)", context: "🍽️ Di restoran", example: "Der Kellner bringt uns die Speisekarte.", example_id: "Pelayan itu membawakan kami daftar menu." },
-  { id: 135, front: "die Kellnerin, -nen", back: "pelayan (P)", context: "🍽️ Di restoran", example: "Die Kellnerin war sehr freundlich und aufmerksam.", example_id: "Pelayan wanita itu sangat ramah dan penuh perhatian." },
-  { id: 136, front: "die Haare (Pl.)", back: "rambut", context: "📌 Kosakata umum", example: "Sie hat lange, blonde Haare.", example_id: "Dia memiliki rambut pirang yang panjang." },
-  { id: 137, front: "die Lage, -n", back: "lokasi/letak", context: "🏨 Di hotel / penginapan", example: "Die Lage der Wohnung ist sehr zentral.", example_id: "Lokasi apartemen sangat sentral." },
-  { id: 138, front: "die Atmosphäre, -n", back: "suasana", context: "🏛️ Jalan-jalan di kota", example: "Das Restaurant hat eine gemütliche Atmosphäre.", example_id: "Restoran itu memiliki suasana yang nyaman." },
-  { id: 139, front: "die Miete, -n", back: "uang sewa", context: "🏠 Mencari tempat tinggal", example: "Die Miete für das Zimmer muss pünktlich bezahlt werden.", example_id: "Uang sewa kamar harus dibayar tepat waktu." },
-  { id: 140, front: "die Folge, -n", back: "akibat/konsekuensi", context: "📌 Kosakata umum", example: "Sein Verhalten hatte schlimme Folgen.", example_id: "Perilakunya memiliki akibat/konsekuensi yang buruk." },
-  { id: 141, front: "die Beratung, -en", back: "konsultasi", context: "📌 Kosakata umum", example: "Vielen Dank für die nette Beratung!", example_id: "Terima kasih banyak atas konsultasi yang menyenangkan!" },
-  { id: 142, front: "die Präsentation, -en", back: "presentasi", context: "📌 Kosakata umum", example: "Morgen muss ich eine Präsentation halten.", example_id: "Besok saya harus menyampaikan presentasi." },
-  { id: 143, front: "die Universität, -en", back: "universitas", context: "📚 Sekolah / ujian", example: "Er studiert Medizin an der Universität Berlin.", example_id: "Dia kuliah kedokteran di Universitas Berlin." },
-  { id: 144, front: "das Fahrrad, -ä-er", back: "sepeda", context: "📝 Konektor / kata penghubung", example: "Ich fahre jeden Tag mit dem Fahrrad zur Arbeit.", example_id: "Saya pergi bekerja naik sepeda setiap hari." },
-  { id: 145, front: "das Kleid, -er", back: "gaun/baju", context: "📝 Konektor / kata penghubung", example: "Sie trägt ein wunderschönes rotes Kleid.", example_id: "Dia mengenakan gaun merah yang sangat indah." },
-  { id: 146, front: "das Zentrum, Zentren", back: "pusat kota", context: "📝 Konektor / kata penghubung", example: "Das Einkaufszentrum liegt direkt im Zentrum.", example_id: "Pusat perbelanjaan terletak tepat di pusat kota." },
-  { id: 147, front: "das Material, -ien", back: "material/bahan", context: "📝 Konektor / kata penghubung", example: "Aus welchem Material besteht diese Tasche?", example_id: "Terbuat dari bahan/material apa tas ini?" },
-  { id: 148, front: "der Inhalt, -e", back: "isi/konten", context: "📌 Kosakata umum", example: "Der Inhalt der Box ist noch eine Überraschung.", example_id: "Isi kotak tersebut masih menjadi kejutan." },
-  { id: 149, front: "die Größe, -n", back: "ukuran", context: "📌 Kosakata umum", example: "Welche Größe haben diese Schuhe?", example_id: "Ukuran berapa sepatu-sepatu ini?" },
-  { id: 150, front: "die Form, -en", back: "bentuk", context: "📌 Kosakata umum", example: "Die Tische haben eine runde Form.", example_id: "Meja-meja itu memiliki bentuk bulat." }
+  {
+    "id": 1,
+    "front": "der Staubsauger (Pl: Staubsauger)",
+    "back": "penyedot debu [maskulin]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 2,
+    "front": "die Waschmaschine (Pl: Waschmaschinen)",
+    "back": "mesin cuci [feminin]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 3,
+    "front": "der Kopfhörer (Pl: Kopfhörer)",
+    "back": "headphone [maskulin]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 4,
+    "front": "der Funkkopfhörer (Pl: Funkkopfhörer)",
+    "back": "headphone wireless [maskulin]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 5,
+    "front": "die Powerbank (Pl: Powerbanks)",
+    "back": "powerbank [feminin]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 6,
+    "front": "der USB-Stick (Pl: USB-Sticks)",
+    "back": "flashdisk [maskulin]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 7,
+    "front": "der Knopf (Pl: Knöpfe)",
+    "back": "tombol / kancing [maskulin]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 8,
+    "front": "die Taste (Pl: Tasten)",
+    "back": "tombol keyboard/HP [feminin]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 9,
+    "front": "der Monitor (Pl: Monitore)",
+    "back": "layar/monitor [maskulin]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 10,
+    "front": "der Bildschirm (Pl: Bildschirme)",
+    "back": "layar [maskulin]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 11,
+    "front": "der Lautsprecher (Pl: Lautsprecher)",
+    "back": "speaker [maskulin]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 12,
+    "front": "der Handyakku (Pl: Handyakkus)",
+    "back": "baterai HP [maskulin]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 13,
+    "front": "der Akku (Pl: Akkus)",
+    "back": "baterai/aki [maskulin]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 14,
+    "front": "das Ladekabel (Pl: Ladekabel)",
+    "back": "kabel charger [neutral]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 15,
+    "front": "das Kabel (Pl: Kabel)",
+    "back": "kabel [neutral]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 16,
+    "front": "die Batterie (Pl: Batterien)",
+    "back": "baterai AA/AAA [feminin]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 17,
+    "front": "der Drucker (Pl: Drucker)",
+    "back": "printer [maskulin]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 18,
+    "front": "der Laptop (Pl: Laptops)",
+    "back": "laptop [maskulin]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 19,
+    "front": "das Tablet (Pl: Tablets)",
+    "back": "tablet [neutral]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 20,
+    "front": "das Smartphone (Pl: Smartphones)",
+    "back": "smartphone [neutral]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 21,
+    "front": "das Handy (Pl: Handys)",
+    "back": "HP [neutral]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 22,
+    "front": "der Computer (Pl: Computer)",
+    "back": "komputer [maskulin]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 23,
+    "front": "der Fernseher (Pl: Fernseher)",
+    "back": "televisi [maskulin]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 24,
+    "front": "der Herd (Pl: Herde)",
+    "back": "kompor [maskulin]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 25,
+    "front": "die Spülmaschine (Pl: Spülmaschinen)",
+    "back": "mesin cuci piring [feminin]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 26,
+    "front": "der Geschirrspüler (Pl: Geschirrspüler)",
+    "back": "mesin cuci piring [maskulin]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 27,
+    "front": "der Kühlschrank (Pl: Kühlschränke)",
+    "back": "kulkas [maskulin]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 28,
+    "front": "das Gerät (Pl: Geräte)",
+    "back": "perangkat/alat [neutral]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 29,
+    "front": "der E-Book-Reader (Pl: E-Book-Reader)",
+    "back": "e-reader [maskulin]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 30,
+    "front": "die Smartwatch (Pl: Smartwatches)",
+    "back": "smartwatch [feminin]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 31,
+    "front": "die App (Pl: Apps)",
+    "back": "aplikasi [feminin]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 32,
+    "front": "die Anleitung (Pl: Anleitungen)",
+    "back": "petunjuk penggunaan [feminin]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 33,
+    "front": "die Gebrauchsanweisung (Pl: Gebrauchsanweisungen)",
+    "back": "buku panduan [feminin]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 34,
+    "front": "die Bedienungsanleitung (Pl: Bedienungsanleitungen)",
+    "back": "petunjuk pemakaian [feminin]",
+    "context": "📱 Perangkat & Aksesoris",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 35,
+    "front": "ein\\",
+    "back": "schalten (menyalakan)",
+    "context": "📱 Perangkat & Aksesoris (Verben (Geräte))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 36,
+    "front": "aus\\",
+    "back": "schalten (mematikan)",
+    "context": "📱 Perangkat & Aksesoris (Verben (Geräte))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 37,
+    "front": "an\\",
+    "back": "machen (menyalakan)",
+    "context": "📱 Perangkat & Aksesoris (Verben (Geräte))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 38,
+    "front": "aus\\",
+    "back": "machen (mematikan)",
+    "context": "📱 Perangkat & Aksesoris (Verben (Geräte))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 39,
+    "front": "instalar",
+    "back": "menginstal (installert)",
+    "context": "📱 Perangkat & Aksesoris (Verben (Geräte))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 40,
+    "front": "an\\",
+    "back": "schließen (menyambungkan)",
+    "context": "📱 Perangkat & Aksesoris (Verben (Geräte))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 41,
+    "front": "auf\\",
+    "back": "laden (mengisi daya)",
+    "context": "📱 Perangkat & Aksesoris (Verben (Geräte))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 42,
+    "front": "laden",
+    "back": "mengisi daya/mengunduh (lädt (hat geladen))",
+    "context": "📱 Perangkat & Aksesoris (Verben (Geräte))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 43,
+    "front": "stumm schalten",
+    "back": "membisukan (schaltet stumm)",
+    "context": "📱 Perangkat & Aksesoris (Verben (Geräte))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 44,
+    "front": "speichern",
+    "back": "menyimpan (speichert)",
+    "context": "📱 Perangkat & Aksesoris (Verben (Geräte))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 45,
+    "front": "herunter\\",
+    "back": "laden (mengunduh)",
+    "context": "📱 Perangkat & Aksesoris (Verben (Geräte))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 46,
+    "front": "an\\",
+    "back": "klicken (mengklik)",
+    "context": "📱 Perangkat & Aksesoris (Verben (Geräte))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 47,
+    "front": "einstecken",
+    "back": "mencolokkan (steckt ein)",
+    "context": "📱 Perangkat & Aksesoris (Verben (Geräte))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 48,
+    "front": "einsetzen",
+    "back": "memasang/menggunakan (setzt ein)",
+    "context": "📱 Perangkat & Aksesoris (Verben (Geräte))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 49,
+    "front": "bedienen",
+    "back": "mengoperasikan (bedient)",
+    "context": "📱 Perangkat & Aksesoris (Verben (Geräte))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 50,
+    "front": "dabei\\",
+    "back": "haben (membawa serta)",
+    "context": "📱 Perangkat & Aksesoris (Verben (Geräte))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 51,
+    "front": "(sich) an\\",
+    "back": "schaffen (membeli/mendapatkan)",
+    "context": "📱 Perangkat & Aksesoris (Verben (Geräte))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 52,
+    "front": "telefonieren",
+    "back": "menelepon (telefoniert)",
+    "context": "📱 Perangkat & Aksesoris (Verben (Geräte))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 53,
+    "front": "fotografieren",
+    "back": "memotret (fotografiert)",
+    "context": "📱 Perangkat & Aksesoris (Verben (Geräte))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 54,
+    "front": "recherchieren",
+    "back": "mencari info (recherchiert)",
+    "context": "📱 Perangkat & Aksesoris (Verben (Geräte))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 55,
+    "front": "an\\",
+    "back": "rufen (menelepon)",
+    "context": "📱 Perangkat & Aksesoris (Verben (Geräte))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 56,
+    "front": "schicken",
+    "back": "mengirim (schickt)",
+    "context": "📱 Perangkat & Aksesoris (Verben (Geräte))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 57,
+    "front": "herunter\\",
+    "back": "laden (mengunduh)",
+    "context": "📱 Perangkat & Aksesoris (Verben (Geräte))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 58,
+    "front": "reparieren",
+    "back": "memperbaiki (repariert)",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 59,
+    "front": "reklamieren",
+    "back": "komplain/mengajukan klaim (reklamiert)",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 60,
+    "front": "um\\",
+    "back": "tauschen (menukar barang)",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 61,
+    "front": "zurück\\",
+    "back": "geben (mengembalikan)",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 62,
+    "front": "zurück\\",
+    "back": "schicken (mengirim kembali)",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 63,
+    "front": "testen",
+    "back": "mencoba/mengetes (testet)",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 64,
+    "front": "benötigen",
+    "back": "membutuhkan (formal) (benötigt)",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 65,
+    "front": "ersetzen",
+    "back": "mengganti (ersetzt)",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 66,
+    "front": "aus\\",
+    "back": "tauschen (menukar/mengganti)",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 67,
+    "front": "sich beschweren",
+    "back": "mengeluh (beschwert sich)",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 68,
+    "front": "beanstanden",
+    "back": "mempermasalahkan (beanstandet)",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 69,
+    "front": "kaputt\\",
+    "back": "gehen (rusak/jadi rusak)",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 70,
+    "front": "funktionieren",
+    "back": "berfungsi (funktioniert)",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 71,
+    "front": "zufrieden",
+    "back": "puas",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 72,
+    "front": "unzufrieden",
+    "back": "tidak puas",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 73,
+    "front": "defekt",
+    "back": "cacat/rusak",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 74,
+    "front": "fehlerhaft",
+    "back": "cacat/ada kesalahan",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 75,
+    "front": "kaputt",
+    "back": "rusak",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 76,
+    "front": "die Garantie (Pl: Garantien)",
+    "back": "garansi [feminin]",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 77,
+    "front": "die Quittung (Pl: Quittungen)",
+    "back": "struk/kuitansi [feminin]",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 78,
+    "front": "der Kassenzettel (Pl: Kassenzettel)",
+    "back": "struk kasir [maskulin]",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 79,
+    "front": "der Kassenbon (Pl: Kassenbons)",
+    "back": "struk kasir [maskulin]",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 80,
+    "front": "der Beleg (Pl: Belege)",
+    "back": "bukti pembayaran [maskulin]",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 81,
+    "front": "die Reklamation (Pl: Reklamationen)",
+    "back": "komplain/klaim [feminin]",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 82,
+    "front": "die Reparatur (Pl: Reparaturen)",
+    "back": "perbaikan [feminin]",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 83,
+    "front": "die Werkstatt (Pl: Werkstätten)",
+    "back": "bengkel/tukang servis [feminin]",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 84,
+    "front": "der Handyladen (Pl: Handyläden)",
+    "back": "toko HP/servis HP [maskulin]",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 85,
+    "front": "der Kundendienst (Pl: Kundendienste)",
+    "back": "layanan pelanggan [maskulin]",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 86,
+    "front": "der Schaden (Pl: Schäden)",
+    "back": "kerusakan [maskulin]",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 87,
+    "front": "der Fehler (Pl: Fehler)",
+    "back": "kesalahan/kerusakan [maskulin]",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 88,
+    "front": "das Ersatzteil (Pl: Ersatzteile)",
+    "back": "suku cadang [neutral]",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 89,
+    "front": "die Lieferung (Pl: Lieferungen)",
+    "back": "pengiriman [feminin]",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 90,
+    "front": "die Bestellung (Pl: Bestellungen)",
+    "back": "pesanan [feminin]",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 91,
+    "front": "die Rechnung (Pl: Rechnungen)",
+    "back": "tagihan/faktur [feminin]",
+    "context": "🔧 Reparasi & Komplain",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 92,
+    "front": "Ich bin mit ... leider gar nicht zufrieden.",
+    "back": "Saya sangat tidak puas dengan ... [Kustomer]",
+    "context": "🔧 Reparasi & Komplain (Redemittel Kunde)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 93,
+    "front": "Kann ich Ihnen helfen?",
+    "back": "Bisa saya bantu Anda? [Penjual]",
+    "context": "🔧 Reparasi & Komplain (Redemittel Verkäufer)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 94,
+    "front": "... funktioniert nicht (richtig).",
+    "back": "... tidak berfungsi (dengan benar). [Kustomer]",
+    "context": "🔧 Reparasi & Komplain (Redemittel Kunde)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 95,
+    "front": "Was ist denn das Problem?",
+    "back": "Lalu apa masalahnya? [Penjual]",
+    "context": "🔧 Reparasi & Komplain (Redemittel Verkäufer)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 96,
+    "front": "... ist kaputt.",
+    "back": "... rusak. [Kustomer]",
+    "context": "🔧 Reparasi & Komplain (Redemittel Kunde)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 97,
+    "front": "Kann ich ... bitte mal sehen?",
+    "back": "Bisa tolong saya lihat ...? [Penjual]",
+    "context": "🔧 Reparasi & Komplain (Redemittel Verkäufer)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 98,
+    "front": "Ich möchte ... umtauschen.",
+    "back": "Saya ingin menukar ... [Kustomer]",
+    "context": "🔧 Reparasi & Komplain (Redemittel Kunde)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 99,
+    "front": "Haben Sie den Kassenzettel noch?",
+    "back": "Apakah Anda masih memiliki struk kasirnya? [Penjual]",
+    "context": "🔧 Reparasi & Komplain (Redemittel Verkäufer)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 100,
+    "front": "Kann ich ... zurückgeben?",
+    "back": "Bisakah saya mengembalikan ...? [Kustomer]",
+    "context": "🔧 Reparasi & Komplain (Redemittel Kunde)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 101,
+    "front": "Haben Sie noch Garantie?",
+    "back": "Apakah Anda masih memiliki garansi? [Penjual]",
+    "context": "🔧 Reparasi & Komplain (Redemittel Verkäufer)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 102,
+    "front": "Ich habe die Quittung noch.",
+    "back": "Saya masih memiliki kuitansinya. [Kustomer]",
+    "context": "🔧 Reparasi & Komplain (Redemittel Kunde)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 103,
+    "front": "Möchten Sie ein neues Gerät oder das Geld zurück?",
+    "back": "Apakah Anda ingin perangkat baru atau uang kembali? [Penjual]",
+    "context": "🔧 Reparasi & Komplain (Redemittel Verkäufer)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 104,
+    "front": "Ich habe noch ein Jahr Garantie.",
+    "back": "Saya masih memiliki garansi satu tahun. [Kustomer]",
+    "context": "🔧 Reparasi & Komplain (Redemittel Kunde)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 105,
+    "front": "Wir schicken das Gerät an unseren Kundenservice.",
+    "back": "Kami akan mengirim perangkat tersebut ke layanan pelanggan kami. [Penjual]",
+    "context": "🔧 Reparasi & Komplain (Redemittel Verkäufer)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 106,
+    "front": "automatisch",
+    "back": "otomatis",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 107,
+    "front": "technisch",
+    "back": "teknis",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 108,
+    "front": "smart",
+    "back": "pintar/cerdas",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 109,
+    "front": "sicher",
+    "back": "aman",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 110,
+    "front": "gleichzeitig",
+    "back": "bersamaan/sekaligus",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 111,
+    "front": "modern",
+    "back": "modern",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 112,
+    "front": "gemütlich",
+    "back": "nyaman/hangat",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 113,
+    "front": "berühren",
+    "back": "menyentuh (berührt)",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 114,
+    "front": "reinigen",
+    "back": "membersihkan (reinigt)",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 115,
+    "front": "steuern",
+    "back": "mengendalikan (steuert)",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 116,
+    "front": "an\\",
+    "back": "passen (an + A.) (menyesuaikan)",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 117,
+    "front": "auf\\",
+    "back": "nehmen (merekam)",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 118,
+    "front": "kontrollieren",
+    "back": "mengontrol (kontrolliert)",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 119,
+    "front": "überwachen",
+    "back": "memantau (überwacht)",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 120,
+    "front": "öffnen",
+    "back": "membuka (öffnet)",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 121,
+    "front": "erkennen",
+    "back": "mengenali (erkennt (hat erkannt))",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 122,
+    "front": "verbinden",
+    "back": "menghubungkan (verbindet (hat verbunden))",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 123,
+    "front": "einstellen",
+    "back": "mengatur (stellt ein)",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 124,
+    "front": "regeln",
+    "back": "mengatur (regelt)",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 125,
+    "front": "ändern",
+    "back": "mengubah (ändert)",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 126,
+    "front": "die Technologie (Pl: Technologien)",
+    "back": "teknologi [feminin]",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 127,
+    "front": "die Alarmanlage (Pl: Alarmanlagen)",
+    "back": "sistem alarm [feminin]",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 128,
+    "front": "der Einbruch (Pl: Einbrüche)",
+    "back": "pencurian/pembobolan [maskulin]",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 129,
+    "front": "die Gefahr (Pl: Gefahren)",
+    "back": "bahaya [feminin]",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 130,
+    "front": "der Neubau (Pl: Neubauten)",
+    "back": "bangunan baru [maskulin]",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 131,
+    "front": "die Haustür (Pl: Haustüren)",
+    "back": "pintu depan rumah [feminin]",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 132,
+    "front": "der Fingerabdruck (Pl: Fingerabdrücke)",
+    "back": "sidik jari [maskulin]",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 133,
+    "front": "der Sprachassistent (Pl: Sprachassistenten)",
+    "back": "asisten suara [maskulin]",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 134,
+    "front": "der Tagesablauf (Pl: Tagesabläufe)",
+    "back": "rutinitas harian [maskulin]",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 135,
+    "front": "der Sensor (Pl: Sensoren)",
+    "back": "sensor [maskulin]",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 136,
+    "front": "der Bewohner (Pl: Bewohner)",
+    "back": "penghuni (L) [maskulin]",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 137,
+    "front": "die Bewohnerin (Pl: Bewohnerinnen)",
+    "back": "penghuni (P) [feminin]",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 138,
+    "front": "der Besucher (Pl: Besucher)",
+    "back": "tamu/pengunjung (L) [maskulin]",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 139,
+    "front": "die Sicherheit",
+    "back": "keamanan [feminin]",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 140,
+    "front": "die Atmosphäre (Pl: Atmosphären)",
+    "back": "suasana/atmosfer [feminin]",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 141,
+    "front": "die Stimmung (Pl: Stimmungen)",
+    "back": "suasana hati [feminin]",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 142,
+    "front": "die Lampe (Pl: Lampen)",
+    "back": "lampu [feminin]",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 143,
+    "front": "das Licht (Pl: Lichter)",
+    "back": "cahaya/lampu [neutral]",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 144,
+    "front": "die Farbe (Pl: Farben)",
+    "back": "warna [feminin]",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 145,
+    "front": "die Temperatur (Pl: Temperaturen)",
+    "back": "suhu [feminin]",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 146,
+    "front": "die Heizung (Pl: Heizungen)",
+    "back": "pemanas [feminin]",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 147,
+    "front": "die Zentralheizung",
+    "back": "pemanas sentral [feminin]",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 148,
+    "front": "die Videokamera (Pl: Videokameras)",
+    "back": "kamera video [feminin]",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 149,
+    "front": "das Schloss (Pl: Schlösser)",
+    "back": "kunci/gembok [neutral]",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 150,
+    "front": "das Netz (Pl: Netze)",
+    "back": "jaringan [neutral]",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 151,
+    "front": "die WLAN-Verbindung (Pl: WLAN-Verbindungen)",
+    "back": "koneksi WiFi [feminin]",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 152,
+    "front": "die Nachrichten (Pl: - (Pl.))",
+    "back": "pesan/berita [feminin]",
+    "context": "🏠 Rumah Pintar (Smart Home)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 153,
+    "front": "witzig",
+    "back": "lucu [Positif]",
+    "context": "📢 Iklan & Promosi (Adjektive für Werbung)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 154,
+    "front": "langweilig",
+    "back": "membosankan [Negatif]",
+    "context": "📢 Iklan & Promosi (Adjektive für Werbung)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 155,
+    "front": "schön",
+    "back": "indah [Positif]",
+    "context": "📢 Iklan & Promosi (Adjektive für Werbung)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 156,
+    "front": "hässlich",
+    "back": "jelek [Negatif]",
+    "context": "📢 Iklan & Promosi (Adjektive für Werbung)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 157,
+    "front": "verständlich",
+    "back": "mudah dipahami [Positif]",
+    "context": "📢 Iklan & Promosi (Adjektive für Werbung)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 158,
+    "front": "unverständlich",
+    "back": "tidak [Negatif]",
+    "context": "📢 Iklan & Promosi (Adjektive für Werbung)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 159,
+    "front": "modern",
+    "back": "modern [Positif]",
+    "context": "📢 Iklan & Promosi (Adjektive für Werbung)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 160,
+    "front": "altmodisch",
+    "back": "kuno [Negatif]",
+    "context": "📢 Iklan & Promosi (Adjektive für Werbung)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 161,
+    "front": "interessant",
+    "back": "menarik [Positif]",
+    "context": "📢 Iklan & Promosi (Adjektive für Werbung)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 162,
+    "front": "uninteressant",
+    "back": "tidak menarik [Negatif]",
+    "context": "📢 Iklan & Promosi (Adjektive für Werbung)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 163,
+    "front": "kreativ",
+    "back": "kreatif [Positif]",
+    "context": "📢 Iklan & Promosi (Adjektive für Werbung)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 164,
+    "front": "passiv",
+    "back": "pasif [Negatif]",
+    "context": "📢 Iklan & Promosi (Adjektive für Werbung)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 165,
+    "front": "ansprechend",
+    "back": "menarik [Positif]",
+    "context": "📢 Iklan & Promosi (Adjektive für Werbung)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 166,
+    "front": "abstoßend",
+    "back": "menjijikkan [Negatif]",
+    "context": "📢 Iklan & Promosi (Adjektive für Werbung)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 167,
+    "front": "überzeugend",
+    "back": "meyakinkan [Positif]",
+    "context": "📢 Iklan & Promosi (Adjektive für Werbung)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 168,
+    "front": "unüberzeugend",
+    "back": "tidak [Negatif]",
+    "context": "📢 Iklan & Promosi (Adjektive für Werbung)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 169,
+    "front": "originell",
+    "back": "orisinal [Positif]",
+    "context": "📢 Iklan & Promosi (Adjektive für Werbung)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 170,
+    "front": "langweilig",
+    "back": "membosankan [Negatif]",
+    "context": "📢 Iklan & Promosi (Adjektive für Werbung)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 171,
+    "front": "einprägsam",
+    "back": "mudah diingat [Positif]",
+    "context": "📢 Iklan & Promosi (Adjektive für Werbung)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 172,
+    "front": "vergesslich",
+    "back": "terlupakan [Negatif]",
+    "context": "📢 Iklan & Promosi (Adjektive für Werbung)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 173,
+    "front": "aktuell",
+    "back": "terkini [Positif]",
+    "context": "📢 Iklan & Promosi (Adjektive für Werbung)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 174,
+    "front": "veraltet",
+    "back": "usang [Negatif]",
+    "context": "📢 Iklan & Promosi (Adjektive für Werbung)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 175,
+    "front": "frech",
+    "back": "berani [Positif]",
+    "context": "📢 Iklan & Promosi (Adjektive für Werbung)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 176,
+    "front": "langweilig",
+    "back": "nakal [Negatif]",
+    "context": "📢 Iklan & Promosi (Adjektive für Werbung)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 177,
+    "front": "ausgezeichnet sein",
+    "back": "luar biasa",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 178,
+    "front": "bemerken",
+    "back": "memperhatikan/menyadari (bemerkt)",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 179,
+    "front": "vertrauen",
+    "back": "mempercayai (vertraut)",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 180,
+    "front": "beeinflussen",
+    "back": "mempengaruhi (beeinflusst)",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 181,
+    "front": "verbieten",
+    "back": "melarang (verbietet (hat verboten))",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 182,
+    "front": "wirken (auf + A.)",
+    "back": "berpengaruh pada (wirkt)",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 183,
+    "front": "wecken",
+    "back": "membangkitkan (weckt)",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 184,
+    "front": "an\\",
+    "back": "sprechen (menyentuh/berbicara kepada)",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 185,
+    "front": "auf\\",
+    "back": "fallen (menarik perhatian)",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 186,
+    "front": "reichen",
+    "back": "cukup (reicht)",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 187,
+    "front": "werben",
+    "back": "mengiklankan (wirbt (hat geworben))",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 188,
+    "front": "vergleichen",
+    "back": "membandingkan (vergleicht (hat verglichen))",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 189,
+    "front": "überzeugen",
+    "back": "meyakinkan (überzeugt)",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 190,
+    "front": "das Produkt (Pl: Produkte)",
+    "back": "produk [neutral]",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 191,
+    "front": "das Kaufverhalten",
+    "back": "perilaku belanja [neutral]",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 192,
+    "front": "das Verhalten",
+    "back": "perilaku [neutral]",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 193,
+    "front": "das Merkmal (Pl: Merkmale)",
+    "back": "ciri khas/fitur [neutral]",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 194,
+    "front": "das Sonderangebot (Pl: Sonderangebote)",
+    "back": "penawaran khusus [neutral]",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 195,
+    "front": "der Rabatt (Pl: Rabatte)",
+    "back": "diskon [maskulin]",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 196,
+    "front": "der Slogan (Pl: Slogans)",
+    "back": "slogan [maskulin]",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 197,
+    "front": "die Erinnerung (Pl: Erinnerungen)",
+    "back": "kenangan/ingatan [feminin]",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 198,
+    "front": "die Vorstellung (Pl: Vorstellungen)",
+    "back": "gambaran/bayangan [feminin]",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 199,
+    "front": "das Magazin (Pl: Magazine)",
+    "back": "majalah [neutral]",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 200,
+    "front": "die Werbung",
+    "back": "iklan [feminin]",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 201,
+    "front": "die Werbeanzeige (Pl: Werbeanzeigen)",
+    "back": "iklan (tertulis) [feminin]",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 202,
+    "front": "der Werbespot (Pl: Werbespots)",
+    "back": "iklan video/radio [maskulin]",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 203,
+    "front": "das Werbeplakat (Pl: Werbeplakate)",
+    "back": "poster iklan [neutral]",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 204,
+    "front": "die Zielgruppe (Pl: Zielgruppen)",
+    "back": "target/sasaran [feminin]",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 205,
+    "front": "der Konsument (Pl: Konsumenten)",
+    "back": "konsumen (L) [maskulin]",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 206,
+    "front": "die Konsumentin (Pl: Konsumentinnen)",
+    "back": "konsumen (P) [feminin]",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 207,
+    "front": "das Markenprodukt (Pl: Markenprodukte)",
+    "back": "produk bermerek [neutral]",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 208,
+    "front": "der Markenname (Pl: Markennamen)",
+    "back": "nama merek [maskulin]",
+    "context": "📢 Iklan & Promosi",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 209,
+    "front": "auf den Markt kommen",
+    "back": "masuk ke pasaran",
+    "context": "📢 Iklan & Promosi (Wendungen (Ungkapan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 210,
+    "front": "Werbung schalten",
+    "back": "memasang iklan",
+    "context": "📢 Iklan & Promosi (Wendungen (Ungkapan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 211,
+    "front": "die Zielgruppe ansprechen",
+    "back": "menyasar target konsumen",
+    "context": "📢 Iklan & Promosi (Wendungen (Ungkapan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 212,
+    "front": "Gefühle ansprechen",
+    "back": "membangkitkan perasaan",
+    "context": "📢 Iklan & Promosi (Wendungen (Ungkapan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 213,
+    "front": "in Erinnerung bleiben",
+    "back": "diingat/berkesan",
+    "context": "📢 Iklan & Promosi (Wendungen (Ungkapan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 214,
+    "front": "Wünsche wecken",
+    "back": "membangkitkan keinginan",
+    "context": "📢 Iklan & Promosi (Wendungen (Ungkapan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 215,
+    "front": "sparen",
+    "back": "menabung/berhemat (spart)",
+    "context": "💶 Uang & Perbankan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 216,
+    "front": "ausgeben",
+    "back": "membelanjakan (gibt aus (hat ausgegeben))",
+    "context": "💶 Uang & Perbankan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 217,
+    "front": "bezahlen",
+    "back": "membayar (bezahlt)",
+    "context": "💶 Uang & Perbankan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 218,
+    "front": "bar bezahlen",
+    "back": "bayar tunai",
+    "context": "💶 Uang & Perbankan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 219,
+    "front": "mit Karte bezahlen",
+    "back": "bayar kartu",
+    "context": "💶 Uang & Perbankan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 220,
+    "front": "überweisen",
+    "back": "mentransfer uang (überweist (hat überwiesen))",
+    "context": "💶 Uang & Perbankan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 221,
+    "front": "ab\\",
+    "back": "heben (menarik uang)",
+    "context": "💶 Uang & Perbankan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 222,
+    "front": "ein\\",
+    "back": "zahlen (menyetor uang)",
+    "context": "💶 Uang & Perbankan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 223,
+    "front": "genügen",
+    "back": "cukup/memadai (genügt)",
+    "context": "💶 Uang & Perbankan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 224,
+    "front": "sich lohnen",
+    "back": "sepadan/worth it (lohnt sich)",
+    "context": "💶 Uang & Perbankan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 225,
+    "front": "sich leisten",
+    "back": "mampu membeli (leistet sich)",
+    "context": "💶 Uang & Perbankan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 226,
+    "front": "die EC-Karte (Pl: EC-Karten)",
+    "back": "kartu debit [feminin]",
+    "context": "💶 Uang & Perbankan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 227,
+    "front": "die Kreditkarte (Pl: Kreditkarten)",
+    "back": "kartu kredit [feminin]",
+    "context": "💶 Uang & Perbankan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 228,
+    "front": "die Geheimzahl (Pl: Geheimzahlen)",
+    "back": "PIN [feminin]",
+    "context": "💶 Uang & Perbankan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 229,
+    "front": "der Geldautomat (Pl: Geldautomaten)",
+    "back": "ATM [maskulin]",
+    "context": "💶 Uang & Perbankan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 230,
+    "front": "das Girokonto (Pl: Girokonten)",
+    "back": "rekening giro [neutral]",
+    "context": "💶 Uang & Perbankan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 231,
+    "front": "das Konto (Pl: Konten)",
+    "back": "rekening [neutral]",
+    "context": "💶 Uang & Perbankan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 232,
+    "front": "das Portemonnaie (Pl: Portemonnaies)",
+    "back": "dompet [neutral]",
+    "context": "💶 Uang & Perbankan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 233,
+    "front": "das Bargeld",
+    "back": "uang tunai [neutral]",
+    "context": "💶 Uang & Perbankan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 234,
+    "front": "der Betrag (Pl: Beträge)",
+    "back": "jumlah uang [maskulin]",
+    "context": "💶 Uang & Perbankan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 235,
+    "front": "der Wert (Pl: Werte)",
+    "back": "nilai/harga [maskulin]",
+    "context": "💶 Uang & Perbankan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 236,
+    "front": "der Kredit (Pl: Kredite)",
+    "back": "kredit/pinjaman [maskulin]",
+    "context": "💶 Uang & Perbankan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 237,
+    "front": "die Schulden (Pl: - (Pl.))",
+    "back": "utang [feminin]",
+    "context": "💶 Uang & Perbankan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 238,
+    "front": "die Überweisung (Pl: Überweisungen)",
+    "back": "transfer bank [feminin]",
+    "context": "💶 Uang & Perbankan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 239,
+    "front": "der Kontoauszug (Pl: Kontoauszüge)",
+    "back": "laporan rekening [maskulin]",
+    "context": "💶 Uang & Perbankan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 240,
+    "front": "das Wechselgeld",
+    "back": "uang kembalian [neutral]",
+    "context": "💶 Uang & Perbankan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 241,
+    "front": "die Kontonummer (Pl: Kontonummern)",
+    "back": "nomor rekening [feminin]",
+    "context": "💶 Uang & Perbankan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 242,
+    "front": "gratis",
+    "back": "gratis",
+    "context": "💶 Uang & Perbankan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 243,
+    "front": "der Handyshop (Pl: Handyshops)",
+    "back": "toko HP [maskulin]",
+    "context": "🎧 Audio - Wortschatz Khusus",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 244,
+    "front": "die Ansage (Pl: Ansagen)",
+    "back": "pengumuman [feminin]",
+    "context": "🎧 Audio - Wortschatz Khusus",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 245,
+    "front": "der Anrufbeantworter (Pl: Anrufbeantworter)",
+    "back": "mesin penjawab [maskulin]",
+    "context": "🎧 Audio - Wortschatz Khusus",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 246,
+    "front": "der Stadtteil-Treff",
+    "back": "pusat komunitas [maskulin]",
+    "context": "🎧 Audio - Wortschatz Khusus",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 247,
+    "front": "der Reparaturtag (Pl: Reparaturtage)",
+    "back": "hari reparasi [maskulin]",
+    "context": "🎧 Audio - Wortschatz Khusus",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 248,
+    "front": "der Flohmarkt (Pl: Flohmärkte)",
+    "back": "pasar loak [maskulin]",
+    "context": "🎧 Audio - Wortschatz Khusus",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 249,
+    "front": "der Hausmeister (Pl: Hausmeister)",
+    "back": "petugas gedung [maskulin]",
+    "context": "🎧 Audio - Wortschatz Khusus",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 250,
+    "front": "die Technikmesse (Pl: Technikmessen)",
+    "back": "pameran teknologi [feminin]",
+    "context": "🎧 Audio - Wortschatz Khusus",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 251,
+    "front": "der Roboter (Pl: Roboter)",
+    "back": "robot [maskulin]",
+    "context": "🎧 Audio - Wortschatz Khusus",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 252,
+    "front": "die Spülmaschine (Pl: Spülmaschinen)",
+    "back": "mesin cuci piring [feminin]",
+    "context": "🎧 Audio - Wortschatz Khusus",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 253,
+    "front": "der Geschirrspüler (Pl: Geschirrspüler)",
+    "back": "mesin cuci piring [maskulin]",
+    "context": "🎧 Audio - Wortschatz Khusus",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 254,
+    "front": "Bescheid geben",
+    "back": "memberitahu",
+    "context": "🎧 Audio - Wortschatz Khusus",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 255,
+    "front": "stattfinden (Pl: fand statt / hat stattgefunden)",
+    "back": "berlangsung/diadakan",
+    "context": "🎧 Audio - Wortschatz Khusus",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 256,
+    "front": "das Interesse haben (an + D.)",
+    "back": "memiliki minat",
+    "context": "🎧 Audio - Wortschatz Khusus",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 257,
+    "front": "hoffen (Pl: hofft)",
+    "back": "berharap",
+    "context": "🎧 Audio - Wortschatz Khusus",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 258,
+    "front": "das Repair Café (Pl: Repair Cafés)",
+    "back": "kafe reparasi [neutral]",
+    "context": "☕ Repair Café - Landeskunde",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 259,
+    "front": "das Werkzeug (Pl: Werkzeuge)",
+    "back": "alat/perkakas [neutral]",
+    "context": "☕ Repair Café - Landeskunde",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 260,
+    "front": "der Helfer (Pl: Helfer)",
+    "back": "penolong (L) [maskulin]",
+    "context": "☕ Repair Café - Landeskunde",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 261,
+    "front": "die Helferin (Pl: Helferinnen)",
+    "back": "penolong (P) [feminin]",
+    "context": "☕ Repair Café - Landeskunde",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 262,
+    "front": "das Ersatzteil (Pl: Ersatzteile)",
+    "back": "suku cadang [neutral]",
+    "context": "☕ Repair Café - Landeskunde",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 263,
+    "front": "die Gebühr (Pl: Gebühren)",
+    "back": "biaya/iuran [feminin]",
+    "context": "☕ Repair Café - Landeskunde",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 264,
+    "front": "die Spende (Pl: Spenden)",
+    "back": "donasi [feminin]",
+    "context": "☕ Repair Café - Landeskunde",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 265,
+    "front": "freiwillig",
+    "back": "sukarela [Adjektiv]",
+    "context": "☕ Repair Café - Landeskunde",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 266,
+    "front": "ehrenamtlich",
+    "back": "sukarela/tidak dibayar [Adjektiv]",
+    "context": "☕ Repair Café - Landeskunde",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 267,
+    "front": "die Umwelt",
+    "back": "lingkungan hidup [feminin]",
+    "context": "☕ Repair Café - Landeskunde",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 268,
+    "front": "die Mülltonne (Pl: Mülltonnen)",
+    "back": "tong sampah [feminin]",
+    "context": "☕ Repair Café - Landeskunde",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 269,
+    "front": "das Risiko (Pl: Risiken)",
+    "back": "risiko [neutral]",
+    "context": "☕ Repair Café - Landeskunde",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 270,
+    "front": "das Fachwissen",
+    "back": "pengetahuan ahli [neutral]",
+    "context": "☕ Repair Café - Landeskunde",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 271,
+    "front": "die Veranstaltung (Pl: Veranstaltungen)",
+    "back": "acara/kegiatan [feminin]",
+    "context": "☕ Repair Café - Landeskunde",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 272,
+    "front": "unterstützen (Pl: unterstützt)",
+    "back": "mendukung [Verb]",
+    "context": "☕ Repair Café - Landeskunde",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 273,
+    "front": "der Käufer (Pl: Käufer)",
+    "back": "pembeli (laki-laki)",
+    "context": "✍️ Wortbildung (Pembentukan Kata)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 274,
+    "front": "die Käuferin (Pl: Käuferininnen)",
+    "back": "pembeli (perempuan)",
+    "context": "✍️ Wortbildung (Pembentukan Kata)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 275,
+    "front": "der Leser (Pl: Leser)",
+    "back": "pembaca (laki-laki)",
+    "context": "✍️ Wortbildung (Pembentukan Kata)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 276,
+    "front": "die Leserin (Pl: Leserininnen)",
+    "back": "pembaca (perempuan)",
+    "context": "✍️ Wortbildung (Pembentukan Kata)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 277,
+    "front": "der Besucher (Pl: Besucher)",
+    "back": "pengunjung (laki-laki)",
+    "context": "✍️ Wortbildung (Pembentukan Kata)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 278,
+    "front": "die Besucherin (Pl: Besucherininnen)",
+    "back": "pengunjung (perempuan)",
+    "context": "✍️ Wortbildung (Pembentukan Kata)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 279,
+    "front": "der Fahrer (Pl: Fahrer)",
+    "back": "pengemudi (laki-laki)",
+    "context": "✍️ Wortbildung (Pembentukan Kata)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 280,
+    "front": "die Fahrerin (Pl: Fahrerininnen)",
+    "back": "pengemudi (perempuan)",
+    "context": "✍️ Wortbildung (Pembentukan Kata)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 281,
+    "front": "der Arbeiter (Pl: Arbeiter)",
+    "back": "pekerja (laki-laki)",
+    "context": "✍️ Wortbildung (Pembentukan Kata)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 282,
+    "front": "die Arbeiterin (Pl: Arbeiterininnen)",
+    "back": "pekerja (perempuan)",
+    "context": "✍️ Wortbildung (Pembentukan Kata)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 283,
+    "front": "der Schwimmer (Pl: Schwimmer)",
+    "back": "perenang (laki-laki)",
+    "context": "✍️ Wortbildung (Pembentukan Kata)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 284,
+    "front": "die Schwimmerin (Pl: Schwimmerininnen)",
+    "back": "perenang (perempuan)",
+    "context": "✍️ Wortbildung (Pembentukan Kata)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 285,
+    "front": "der Berater (Pl: Berater)",
+    "back": "konsultan (laki-laki)",
+    "context": "✍️ Wortbildung (Pembentukan Kata)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 286,
+    "front": "die Beraterin (Pl: Beraterininnen)",
+    "back": "konsultan (perempuan)",
+    "context": "✍️ Wortbildung (Pembentukan Kata)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 287,
+    "front": "der Verkäufer (Pl: Verkäufer)",
+    "back": "penjual (laki-laki)",
+    "context": "✍️ Wortbildung (Pembentukan Kata)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 288,
+    "front": "die Verkäuferin (Pl: Verkäuferininnen)",
+    "back": "penjual (perempuan)",
+    "context": "✍️ Wortbildung (Pembentukan Kata)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 289,
+    "front": "der Händler (Pl: Händler)",
+    "back": "pedagang (laki-laki)",
+    "context": "✍️ Wortbildung (Pembentukan Kata)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 290,
+    "front": "die Händlerin (Pl: Händlerininnen)",
+    "back": "pedagang (perempuan)",
+    "context": "✍️ Wortbildung (Pembentukan Kata)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 291,
+    "front": "bereits",
+    "back": "sudah/telah",
+    "context": "📌 Kosakata Penting Lainnya (Adverbien und Partikeln)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 292,
+    "front": "bloß",
+    "back": "hanya/cuma",
+    "context": "📌 Kosakata Penting Lainnya (Adverbien und Partikeln)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 293,
+    "front": "diesmal",
+    "back": "kali ini",
+    "context": "📌 Kosakata Penting Lainnya (Adverbien und Partikeln)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 294,
+    "front": "ebenfalls",
+    "back": "juga/demikian pula",
+    "context": "📌 Kosakata Penting Lainnya (Adverbien und Partikeln)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 295,
+    "front": "rein",
+    "back": "murni",
+    "context": "📌 Kosakata Penting Lainnya (Adverbien und Partikeln)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 296,
+    "front": "ständig",
+    "back": "terus-menerus",
+    "context": "📌 Kosakata Penting Lainnya (Adverbien und Partikeln)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 297,
+    "front": "gleichzeitig",
+    "back": "bersamaan",
+    "context": "📌 Kosakata Penting Lainnya (Adverbien und Partikeln)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 298,
+    "front": "seltsam",
+    "back": "ganjil/aneh",
+    "context": "📌 Kosakata Penting Lainnya (Adverbien und Partikeln)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 299,
+    "front": "zufällig",
+    "back": "kebetulan",
+    "context": "📌 Kosakata Penting Lainnya (Adverbien und Partikeln)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 300,
+    "front": "allein",
+    "back": "sendiri/sendirian",
+    "context": "📌 Kosakata Penting Lainnya (Adverbien und Partikeln)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 301,
+    "front": "fast",
+    "back": "hampir",
+    "context": "📌 Kosakata Penting Lainnya (Adverbien und Partikeln)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 302,
+    "front": "täglich",
+    "back": "setiap hari",
+    "context": "📌 Kosakata Penting Lainnya (Adverbien und Partikeln)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 303,
+    "front": "merkwürdig",
+    "back": "aneh/mencurigakan",
+    "context": "📌 Kosakata Penting Lainnya (Adverbien und Partikeln)",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 304,
+    "front": "nähen",
+    "back": "menjahit (näht)",
+    "context": "📌 Kosakata Penting Lainnya",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 305,
+    "front": "streichen",
+    "back": "mengecat dinding (streicht (hat gestrichen))",
+    "context": "📌 Kosakata Penting Lainnya",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 306,
+    "front": "verraten",
+    "back": "mengkhianati/membocorkan (verrät (hat verraten))",
+    "context": "📌 Kosakata Penting Lainnya",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 307,
+    "front": "geschehen",
+    "back": "terjadi (geschieht (ist geschehen))",
+    "context": "📌 Kosakata Penting Lainnya",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 308,
+    "front": "vertrauen",
+    "back": "mempercayai (vertraut)",
+    "context": "📌 Kosakata Penting Lainnya",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 309,
+    "front": "sich Sorgen machen",
+    "back": "mengkhawatirkan (macht sich Sorgen)",
+    "context": "📌 Kosakata Penting Lainnya",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 310,
+    "front": "vor einer Frage stehen",
+    "back": "dihadapkan pada pertanyaan",
+    "context": "📌 Kosakata Penting Lainnya",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 311,
+    "front": "die Ausnahme (Pl: Ausnahmen)",
+    "back": "pengecualian [feminin]",
+    "context": "📌 Kosakata Penting Lainnya",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 312,
+    "front": "die Wand (Pl: Wände)",
+    "back": "dinding [feminin]",
+    "context": "📌 Kosakata Penting Lainnya",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 313,
+    "front": "das Taschentuch (Pl: Taschentücher)",
+    "back": "sapu tangan/tisu [neutral]",
+    "context": "📌 Kosakata Penting Lainnya",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 314,
+    "front": "der Transport (Pl: Transporte)",
+    "back": "transportasi [maskulin]",
+    "context": "📌 Kosakata Penting Lainnya",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 315,
+    "front": "die Lust (Pl: Lüste)",
+    "back": "keinginan/selera [feminin]",
+    "context": "📌 Kosakata Penting Lainnya",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 316,
+    "front": "die Folge (Pl: Folgen)",
+    "back": "akibat/konsekuensi [feminin]",
+    "context": "📌 Kosakata Penting Lainnya",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 317,
+    "front": "das Zentrum (Pl: Zentren)",
+    "back": "pusat kota [neutral]",
+    "context": "📌 Kosakata Penting Lainnya",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 318,
+    "front": "die Lage (Pl: Lagen)",
+    "back": "lokasi/letak [feminin]",
+    "context": "📌 Kosakata Penting Lainnya",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 319,
+    "front": "die Atmosphäre (Pl: Atmosphären)",
+    "back": "suasana [feminin]",
+    "context": "📌 Kosakata Penting Lainnya",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 320,
+    "front": "die Miete (Pl: Mieten)",
+    "back": "uang sewa [feminin]",
+    "context": "📌 Kosakata Penting Lainnya",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 321,
+    "front": "der Inhalt (Pl: Inhalte)",
+    "back": "isi/konten [maskulin]",
+    "context": "📌 Kosakata Penting Lainnya",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 322,
+    "front": "die Größe (Pl: Größen)",
+    "back": "ukuran [feminin]",
+    "context": "📌 Kosakata Penting Lainnya",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 323,
+    "front": "die Form (Pl: Formen)",
+    "back": "bentuk [feminin]",
+    "context": "📌 Kosakata Penting Lainnya",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 324,
+    "front": "deshalb [Struktur: Hauptsatz + Inversion]",
+    "back": "makanya / oleh karena itu",
+    "context": "📝 Grammatik (Tata Bahasa) (Folgen ausdrücken)",
+    "example": "Mein Handy ist kaputt, deshalb kaufe ich ein neues.",
+    "example_id": "Ponsel saya rusak, makanya saya membeli yang baru."
+  },
+  {
+    "id": 325,
+    "front": "deswegen [Struktur: Hauptsatz + Inversion]",
+    "back": "karenanya / makanya",
+    "context": "📝 Grammatik (Tata Bahasa) (Folgen ausdrücken)",
+    "example": "Ich habe kein Geld, deswegen kann ich es nicht kaufen.",
+    "example_id": "Saya tidak punya uang, karenanya saya tidak bisa membelinya."
+  },
+  {
+    "id": 326,
+    "front": "darum [Struktur: Hauptsatz + Inversion]",
+    "back": "untuk itu / makanya",
+    "context": "📝 Grammatik (Tata Bahasa) (Folgen ausdrücken)",
+    "example": "Er ist oft unterwegs, darum braucht er eine Powerbank.",
+    "example_id": "Dia sering bepergian, makanya dia butuh powerbank."
+  },
+  {
+    "id": 327,
+    "front": "daher [Struktur: Hauptsatz + Inversion]",
+    "back": "oleh karena itu / maka",
+    "context": "📝 Grammatik (Tata Bahasa) (Folgen ausdrücken)",
+    "example": "Das Gerät ist defekt, daher will er es umtauschen.",
+    "example_id": "Perangkatnya rusak, oleh karena itu dia ingin menukarnya."
+  },
+  {
+    "id": 328,
+    "front": "sodass [Struktur: Nebensatz (verb ujung)]",
+    "back": "sehingga",
+    "context": "📝 Grammatik (Tata Bahasa) (Folgen ausdrücken)",
+    "example": "Das Handy ist kaputt, sodass ich es reparieren lassen muss.",
+    "example_id": "Ponselnya rusak, sehingga saya harus membawanya untuk diperbaiki."
+  },
+  {
+    "id": 329,
+    "front": "so...dass [Struktur: Nebensatz (verb ujung)]",
+    "back": "begitu...sampai/sehingga",
+    "context": "📝 Grammatik (Tata Bahasa) (Folgen ausdrücken)",
+    "example": "Der Kopfhörer war so teuer, dass sie sparen musste.",
+    "example_id": "Headphone-nya begitu mahal sampai dia harus menabung."
+  },
+  {
+    "id": 330,
+    "front": "wegen [Struktur: wegen + Genitiv]",
+    "back": "karena",
+    "context": "📝 Grammatik (Tata Bahasa) (Präpositionen mit Genitiv)",
+    "example": "Wegen der hohen Kosten kaufe ich kein Smart Home.",
+    "example_id": "Karena biaya yang tinggi, saya tidak membeli (sistem) Smart Home."
+  },
+  {
+    "id": 331,
+    "front": "trotz [Struktur: trotz + Genitiv]",
+    "back": "meskipun",
+    "context": "📝 Grammatik (Tata Bahasa) (Präpositionen mit Genitiv)",
+    "example": "Trotz der smarten Technik ist die Wohnung gemütlich.",
+    "example_id": "Meskipun menggunakan teknologi pintar, apartemennya tetap nyaman."
+  },
+  {
+    "id": 332,
+    "front": "lassen + Infinitiv [Struktur: Subjekt + lassen + Benda + Infinitiv]",
+    "back": "menyuruh orang lain melakukan",
+    "context": "📝 Grammatik (Tata Bahasa) (Verb lassen)",
+    "example": "Ich lasse mein Handy reparieren.",
+    "example_id": "Saya menyuruh orang memperbaiki HP saya."
+  },
+  {
+    "id": 333,
+    "front": "gut",
+    "back": "baik (Antonym: schlecht - buruk)",
+    "context": "🔄 Antonym (Lawan Kata) (Untuk Werbung (Iklan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 334,
+    "front": "schlecht",
+    "back": "buruk (Antonym: gut - baik)",
+    "context": "🔄 Antonym (Lawan Kata) (Untuk Werbung (Iklan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 335,
+    "front": "einfach",
+    "back": "mudah (Antonym: schwierig - sulit)",
+    "context": "🔄 Antonym (Lawan Kata) (Untuk Werbung (Iklan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 336,
+    "front": "schwierig",
+    "back": "sulit (Antonym: einfach - mudah)",
+    "context": "🔄 Antonym (Lawan Kata) (Untuk Werbung (Iklan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 337,
+    "front": "gesund",
+    "back": "sehat (Antonym: ungesund - tidak sehat)",
+    "context": "🔄 Antonym (Lawan Kata) (Untuk Werbung (Iklan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 338,
+    "front": "ungesund",
+    "back": "tidak sehat (Antonym: gesund - sehat)",
+    "context": "🔄 Antonym (Lawan Kata) (Untuk Werbung (Iklan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 339,
+    "front": "aktiv",
+    "back": "aktif (Antonym: passiv - pasif)",
+    "context": "🔄 Antonym (Lawan Kata) (Untuk Werbung (Iklan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 340,
+    "front": "passiv",
+    "back": "pasif (Antonym: aktiv - aktif)",
+    "context": "🔄 Antonym (Lawan Kata) (Untuk Werbung (Iklan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 341,
+    "front": "fröhlich",
+    "back": "ceria (Antonym: traurig - sedih)",
+    "context": "🔄 Antonym (Lawan Kata) (Untuk Werbung (Iklan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 342,
+    "front": "traurig",
+    "back": "sedih (Antonym: fröhlich - ceria)",
+    "context": "🔄 Antonym (Lawan Kata) (Untuk Werbung (Iklan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 343,
+    "front": "modern",
+    "back": "modern (Antonym: altmodisch - kuno)",
+    "context": "🔄 Antonym (Lawan Kata) (Untuk Werbung (Iklan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 344,
+    "front": "altmodisch",
+    "back": "kuno (Antonym: modern - modern)",
+    "context": "🔄 Antonym (Lawan Kata) (Untuk Werbung (Iklan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 345,
+    "front": "teuer",
+    "back": "mahal (Antonym: günstig/billig - murah/terjangkau)",
+    "context": "🔄 Antonym (Lawan Kata) (Untuk Werbung (Iklan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 346,
+    "front": "günstig/billig",
+    "back": "murah/terjangkau (Antonym: teuer - mahal)",
+    "context": "🔄 Antonym (Lawan Kata) (Untuk Werbung (Iklan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 347,
+    "front": "interessant",
+    "back": "menarik (Antonym: langweilig - membosankan)",
+    "context": "🔄 Antonym (Lawan Kata) (Untuk Werbung (Iklan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 348,
+    "front": "langweilig",
+    "back": "membosankan (Antonym: interessant - menarik)",
+    "context": "🔄 Antonym (Lawan Kata) (Untuk Werbung (Iklan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 349,
+    "front": "jung",
+    "back": "muda (Antonym: alt - tua)",
+    "context": "🔄 Antonym (Lawan Kata) (Untuk Werbung (Iklan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 350,
+    "front": "alt",
+    "back": "tua (Antonym: jung - muda)",
+    "context": "🔄 Antonym (Lawan Kata) (Untuk Werbung (Iklan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 351,
+    "front": "schnell",
+    "back": "cepat (Antonym: langsam - lambat)",
+    "context": "🔄 Antonym (Lawan Kata) (Untuk Werbung (Iklan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 352,
+    "front": "langsam",
+    "back": "lambat (Antonym: schnell - cepat)",
+    "context": "🔄 Antonym (Lawan Kata) (Untuk Werbung (Iklan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 353,
+    "front": "sicher",
+    "back": "aman (Antonym: gefährlich - berbahaya)",
+    "context": "🔄 Antonym (Lawan Kata) (Untuk Werbung (Iklan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 354,
+    "front": "gefährlich",
+    "back": "berbahaya (Antonym: sicher - aman)",
+    "context": "🔄 Antonym (Lawan Kata) (Untuk Werbung (Iklan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 355,
+    "front": "schön",
+    "back": "indah (Antonym: schrecklich - mengerikan)",
+    "context": "🔄 Antonym (Lawan Kata) (Untuk Werbung (Iklan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 356,
+    "front": "schrecklich",
+    "back": "mengerikan (Antonym: schön - indah)",
+    "context": "🔄 Antonym (Lawan Kata) (Untuk Werbung (Iklan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 357,
+    "front": "witzig",
+    "back": "lucu (Antonym: langweilig - membosankan)",
+    "context": "🔄 Antonym (Lawan Kata) (Untuk Werbung (Iklan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 358,
+    "front": "langweilig",
+    "back": "membosankan (Antonym: witzig - lucu)",
+    "context": "🔄 Antonym (Lawan Kata) (Untuk Werbung (Iklan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 359,
+    "front": "verständlich",
+    "back": "mudah dipahami (Antonym: unverständlich - sulit dipahami)",
+    "context": "🔄 Antonym (Lawan Kata) (Untuk Werbung (Iklan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 360,
+    "front": "unverständlich",
+    "back": "sulit dipahami (Antonym: verständlich - mudah dipahami)",
+    "context": "🔄 Antonym (Lawan Kata) (Untuk Werbung (Iklan))",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 361,
+    "front": "Ich lasse mein Handy reparieren. (Ubah ke Perfekt)",
+    "back": "Ich habe mein Handy reparieren lassen.",
+    "context": "📋 Konjugation 'lassen' (Latihan Perfekt)",
+    "example": "",
+    "example_id": "Saya telah menyuruh orang memperbaiki HP saya."
+  },
+  {
+    "id": 362,
+    "front": "Er lässt das Auto waschen. (Ubah ke Perfekt)",
+    "back": "Er hat das Auto waschen lassen.",
+    "context": "📋 Konjugation 'lassen' (Latihan Perfekt)",
+    "example": "",
+    "example_id": "Dia telah menyuruh orang mencuci mobil."
+  },
+  {
+    "id": 363,
+    "front": "Sie lässt sich die Haare schneiden. (Ubah ke Perfekt)",
+    "back": "Sie hat sich die Haare schneiden lassen.",
+    "context": "📋 Konjugation 'lassen' (Latihan Perfekt)",
+    "example": "",
+    "example_id": "Dia telah menyuruh orang memotong rambutnya."
+  },
+  {
+    "id": 364,
+    "front": "auf den Markt kommen",
+    "back": "masuk ke pasaran",
+    "context": "🗣️ Wendungen & Ungkapan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 365,
+    "front": "Werbung schalten",
+    "back": "memasang iklan",
+    "context": "🗣️ Wendungen & Ungkapan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 366,
+    "front": "die Zielgruppe ansprechen",
+    "back": "menyasar konsumen",
+    "context": "🗣️ Wendungen & Ungkapan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 367,
+    "front": "in Erinnerung bleiben",
+    "back": "mudah diingat",
+    "context": "🗣️ Wendungen & Ungkapan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 368,
+    "front": "Wünsche wecken",
+    "back": "membangkitkan keinginan",
+    "context": "🗣️ Wendungen & Ungkapan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 369,
+    "front": "sich Sorgen machen",
+    "back": "mengkhawatirkan sesuatu",
+    "context": "🗣️ Wendungen & Ungkapan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 370,
+    "front": "vor einer Frage stehen",
+    "back": "dihadapkan pada pertanyaan",
+    "context": "🗣️ Wendungen & Ungkapan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 371,
+    "front": "Das reicht nicht.",
+    "back": "Itu tidak cukup.",
+    "context": "🗣️ Wendungen & Ungkapan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 372,
+    "front": "Das lohnt sich nicht.",
+    "back": "Itu tidak sepadan.",
+    "context": "🗣️ Wendungen & Ungkapan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 373,
+    "front": "Das kann ich mir nicht leisten.",
+    "back": "Saya tidak mampu membeli itu.",
+    "context": "🗣️ Wendungen & Ungkapan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 374,
+    "front": "Bescheid geben",
+    "back": "memberitahu/mengabarkan",
+    "context": "🗣️ Wendungen & Ungkapan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 375,
+    "front": "Spaß haben",
+    "back": "bersenang-senang",
+    "context": "🗣️ Wendungen & Ungkapan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 376,
+    "front": "etwas unternehmen",
+    "back": "melakukan sesuatu/beraktivitas",
+    "context": "🗣️ Wendungen & Ungkapan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 377,
+    "front": "gut gelaunt sein",
+    "back": "sedang dalam suasana hati baik",
+    "context": "🗣️ Wendungen & Ungkapan",
+    "example": "",
+    "example_id": ""
+  },
+  {
+    "id": 378,
+    "front": "Konjugation 'lassen' (Präsens)",
+    "back": "ich lasse\ndu lässt (Umlaut!)\ner/es/sie lässt (Umlaut!)\nwir lassen\nihr lasst (KEIN Umlaut!)\nsie/Sie lassen",
+    "context": "📋 Konjugation 'lassen'",
+    "example": "Er lässt sein Auto in der Werkstatt reparieren.",
+    "example_id": "Dia menyuruh orang memperbaiki mobilnya di bengkel."
+  },
+  {
+    "id": 379,
+    "front": "Genitiv Artikel (Bestimmt & Unbestimmt) untuk Maskulin dan Neutral",
+    "back": "Bestimmt: des (+s/es)\nUnbestimmt: eines (+s/es)\nPossessiv: meines/seines/ihres (+s/es)\nNegation: keines (+s/es)",
+    "context": "📚 Genitiv (Kasus Kepemilikan)",
+    "example": "Das ist das Handy des Mannes / eines Kindes.",
+    "example_id": "Itu adalah HP dari pria tersebut / dari seorang anak."
+  },
+  {
+    "id": 380,
+    "front": "Genitiv Artikel (Bestimmt & Unbestimmt) untuk Feminin dan Plural",
+    "back": "Bestimmt: der\nUnbestimmt: einer (fem.) / - (Plural)\nPossessiv: meiner/seiner/ihrer\nNegation: keiner",
+    "context": "📚 Genitiv (Kasus Kepemilikan)",
+    "example": "Das ist die Tasche der Frau / meiner Freunde.",
+    "example_id": "Itu adalah tas dari wanita tersebut / dari teman-teman saya."
+  },
+  {
+    "id": 381,
+    "front": "Genitiv Nomen Endings: Kapan mendapat akhiran -es dan kapan -s?",
+    "back": "-es: Kata benda 1 suku kata (des Mannes, des Hauses) ATAU berakhiran s, ß, z, tz, sch, st (des Glases, des Platzes)\n-s: Kata benda banyak suku kata (des Kühlschranks, des Gartens)\n*Catatan: Feminin & Plural tidak mendapat akhiran tambahan pada kata bendanya.",
+    "context": "📚 Genitiv (Kasus Kepemilikan)",
+    "example": "des Kochs (dari juru masak), des Telefons (dari telepon)",
+    "example_id": ""
+  },
+  {
+    "id": 382,
+    "front": "Genitiv Adjektiv Endings: Bagaimana akhiran Adjektif dalam Genitiv?",
+    "back": "Akhiran adjektif dalam kasus Genitiv SELALU berakhiran -en (untuk semua Genus & Plural jika didahului artikel).",
+    "context": "📚 Genitiv (Kasus Kepemilikan)",
+    "example": "wegen der hohen Kosten, trotz der smarten Technik, des schlechten Wetters",
+    "example_id": "karena biaya yang tinggi, meskipun teknologi pintar, karena cuaca yang buruk"
+  }
 ];
 
 export const flashcardLevels = [
