@@ -5241,6 +5241,204 @@ export const b1Kapitel2Cards = [
   }
 ];
 
+export const b1Kapitel3Cards = [
+  // 1. Medizin und Behandlung
+  {
+    id: 1,
+    front: "die Hygiene",
+    back: "kebersihan",
+    context: "🏥 Medizin und Behandlung",
+    example: "",
+    example_id: ""
+  },
+  {
+    id: 2,
+    front: "als Pflegekraft arbeiten",
+    back: "bekerja sebagai perawat",
+    context: "🏥 Medizin und Behandlung",
+    example: "",
+    example_id: ""
+  },
+  {
+    id: 3,
+    front: "die Ausbildung",
+    back: "pelatihan/pendidikan kejuruan",
+    context: "🏥 Medizin und Behandlung",
+    example: "",
+    example_id: ""
+  },
+  {
+    id: 4,
+    front: "medizinische Geräte bedienen",
+    back: "mengoperasikan alat medis",
+    context: "🏥 Medizin und Behandlung",
+    example: "",
+    example_id: ""
+  },
+  {
+    id: 5,
+    front: "die Diagnose",
+    back: "diagnosis",
+    context: "🏥 Medizin und Behandlung",
+    example: "",
+    example_id: ""
+  },
+  {
+    id: 6,
+    front: "eine Krankheit heilen",
+    back: "menyembuhkan penyakit",
+    context: "🏥 Medizin und Behandlung",
+    example: "",
+    example_id: ""
+  },
+  {
+    id: 7,
+    front: "die Behandlung",
+    back: "perawatan/pengobatan",
+    context: "🏥 Medizin und Behandlung",
+    example: "",
+    example_id: ""
+  },
+  {
+    id: 8,
+    front: "operieren",
+    back: "mengoperasi",
+    context: "🏥 Medizin und Behandlung",
+    example: "",
+    example_id: ""
+  },
+  // 2. Arbeit und Handwerk
+  {
+    id: 9,
+    front: "in einem großen/kleinen Betrieb arbeiten",
+    back: "bekerja di perusahaan besar/kecil",
+    context: "🛠️ Arbeit und Handwerk",
+    example: "",
+    example_id: ""
+  },
+  {
+    id: 10,
+    front: "produzieren",
+    back: "memproduksi",
+    context: "🛠️ Arbeit und Handwerk",
+    example: "",
+    example_id: ""
+  },
+  {
+    id: 11,
+    front: "die Bedingungen (Pl.)",
+    back: "syarat/kondisi kerja",
+    context: "🛠️ Arbeit und Handwerk",
+    example: "",
+    example_id: ""
+  },
+  {
+    id: 12,
+    front: "der Arbeiter / die Arbeiterin",
+    back: "buruh/pekerja",
+    context: "🛠️ Arbeit und Handwerk",
+    example: "",
+    example_id: ""
+  },
+  {
+    id: 13,
+    front: "automatisiert",
+    back: "terotomatisasi",
+    context: "🛠️ Arbeit und Handwerk",
+    example: "",
+    example_id: ""
+  },
+  {
+    id: 14,
+    front: "die monotone Tätigkeit",
+    back: "pekerjaan monoton",
+    context: "🛠️ Arbeit und Handwerk",
+    example: "",
+    example_id: ""
+  },
+  {
+    id: 15,
+    front: "die Handarbeit",
+    back: "kerja tangan",
+    context: "🛠️ Arbeit und Handwerk",
+    example: "",
+    example_id: ""
+  },
+  {
+    id: 16,
+    front: "die Konkurrenz",
+    back: "persaingan",
+    context: "🛠️ Arbeit und Handwerk",
+    example: "",
+    example_id: ""
+  },
+  // 3. Schule und Unterricht
+  {
+    id: 17,
+    front: "die Schulbildung",
+    back: "pendidikan sekolah",
+    context: "🏫 Schule und Unterricht",
+    example: "",
+    example_id: ""
+  },
+  {
+    id: 18,
+    front: "die Unterrichtsform",
+    back: "bentuk pengajaran",
+    context: "🏫 Schule und Unterricht",
+    example: "",
+    example_id: ""
+  },
+  {
+    id: 19,
+    front: "eine Gruppenarbeit machen",
+    back: "mengerjakan tugas kelompok",
+    context: "🏫 Schule und Unterricht",
+    example: "",
+    example_id: ""
+  },
+  {
+    id: 20,
+    front: "die Disziplin",
+    back: "disiplin",
+    context: "🏫 Schule und Unterricht",
+    example: "",
+    example_id: ""
+  },
+  {
+    id: 21,
+    front: "streng sein",
+    back: "bersikap keras/tegas",
+    context: "🏫 Schule und Unterricht",
+    example: "",
+    example_id: ""
+  },
+  {
+    id: 22,
+    front: "tolerant sein",
+    back: "bersikap toleran",
+    context: "🏫 Schule und Unterricht",
+    example: "",
+    example_id: ""
+  },
+  {
+    id: 23,
+    front: "eine Strafe bekommen",
+    back: "mendapat hukuman",
+    context: "🏫 Schule und Unterricht",
+    example: "",
+    example_id: ""
+  },
+  {
+    id: 24,
+    front: "Medien nutzen",
+    back: "menggunakan media",
+    context: "🏫 Schule und Unterricht",
+    example: "",
+    example_id: ""
+  }
+];
+
 export const flashcardLevels = [
   {
     id: "A1",
@@ -5349,7 +5547,7 @@ export const flashcardLevels = [
     chapters: Array.from({ length: 12 }, (_, i) => ({
       id: `B1-K${i + 1}`,
       title: `Kapitel ${i + 1}`,
-      cards: i === 0 ? b1Kapitel1Cards : i === 1 ? b1Kapitel2Cards : [] 
+      cards: i === 0 ? b1Kapitel1Cards : i === 1 ? b1Kapitel2Cards : i === 2 ? b1Kapitel3Cards : [] 
     }))
   },
   {
