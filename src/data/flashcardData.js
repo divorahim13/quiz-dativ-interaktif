@@ -5248,64 +5248,64 @@ export const b1Kapitel3Cards = [
     front: "die Hygiene",
     back: "kebersihan",
     context: "🏥 Medizin und Behandlung",
-    example: "",
-    example_id: ""
+    example: "In Krankenhäusern spielt die Hygiene eine lebenswichtige Rolle.",
+    example_id: "Di rumah sakit, kebersihan memainkan peran yang sangat penting."
   },
   {
     id: 2,
     front: "als Pflegekraft arbeiten",
     back: "bekerja sebagai perawat",
     context: "🏥 Medizin und Behandlung",
-    example: "",
-    example_id: ""
+    example: "Sie möchte später im Altenheim als Pflegekraft arbeiten.",
+    example_id: "Dia ingin bekerja sebagai perawat di panti jompo nanti."
   },
   {
     id: 3,
     front: "die Ausbildung",
     back: "pelatihan/pendidikan kejuruan",
     context: "🏥 Medizin und Behandlung",
-    example: "",
-    example_id: ""
+    example: "Nach der Schule hat er eine Ausbildung zum Mechatroniker gemacht.",
+    example_id: "Setelah lulus sekolah, ia menempuh pendidikan kejuruan sebagai mekanik mekatronika."
   },
   {
     id: 4,
     front: "medizinische Geräte bedienen",
     back: "mengoperasikan alat medis",
     context: "🏥 Medizin und Behandlung",
-    example: "",
-    example_id: ""
+    example: "Krankenschwestern müssen lernen, komplizierte medizinische Geräte zu bedienen.",
+    example_id: "Perawat harus belajar mengoperasikan alat medis yang rumit."
   },
   {
     id: 5,
     front: "die Diagnose",
     back: "diagnosis",
     context: "🏥 Medizin und Behandlung",
-    example: "",
-    example_id: ""
+    example: "Der Arzt stellt nach der Untersuchung die Diagnose.",
+    example_id: "Dokter membuat diagnosis setelah pemeriksaan."
   },
   {
     id: 6,
     front: "eine Krankheit heilen",
     back: "menyembuhkan penyakit",
     context: "🏥 Medizin und Behandlung",
-    example: "",
-    example_id: ""
+    example: "Dieses neue Medikament kann die Krankheit schnell heilen.",
+    example_id: "Obat baru ini dapat menyembuhkan penyakit dengan cepat."
   },
   {
     id: 7,
     front: "die Behandlung",
     back: "perawatan/pengobatan",
     context: "🏥 Medizin und Behandlung",
-    example: "",
-    example_id: ""
+    example: "Die Behandlung im Krankenhaus dauert zwei Wochen.",
+    example_id: "Perawatan di rumah sakit berlangsung selama dua minggu."
   },
   {
     id: 8,
     front: "operieren",
     back: "mengoperasi",
     context: "🏥 Medizin und Behandlung",
-    example: "",
-    example_id: ""
+    example: "Der Chirurg muss den Patienten am Knie operieren.",
+    example_id: "Ahli bedah harus mengoperasi lutut pasien tersebut."
   },
   // 2. Arbeit und Handwerk
   {
@@ -5313,64 +5313,64 @@ export const b1Kapitel3Cards = [
     front: "in einem großen/kleinen Betrieb arbeiten",
     back: "bekerja di perusahaan besar/kecil",
     context: "🛠️ Arbeit und Handwerk",
-    example: "",
-    example_id: ""
+    example: "Ich möchte lieber in einem kleinen Betrieb arbeiten, weil es dort familiärer ist.",
+    example_id: "Saya lebih suka bekerja di perusahaan kecil karena suasananya lebih kekeluargaan."
   },
   {
     id: 10,
     front: "produzieren",
     back: "memproduksi",
     context: "🛠️ Arbeit und Handwerk",
-    example: "",
-    example_id: ""
+    example: "Die Fabrik produziert moderne Autoteile für den Export.",
+    example_id: "Pabrik tersebut memproduksi suku cadang mobil modern untuk ekspor."
   },
   {
     id: 11,
     front: "die Bedingungen (Pl.)",
     back: "syarat/kondisi kerja",
     context: "🛠️ Arbeit und Handwerk",
-    example: "",
-    example_id: ""
+    example: "Die Bedingungen am Arbeitsplatz müssen für alle Mitarbeiter sicher sein.",
+    example_id: "Kondisi di tempat kerja harus aman bagi semua karyawan."
   },
   {
     id: 12,
     front: "der Arbeiter / die Arbeiterin",
     back: "buruh/pekerja",
     context: "🛠️ Arbeit und Handwerk",
-    example: "",
-    example_id: ""
+    example: "Die Arbeiter fordern bessere Löhne und kürzere Arbeitszeiten.",
+    example_id: "Para pekerja menuntut upah yang lebih baik dan jam kerja yang lebih pendek."
   },
   {
     id: 13,
     front: "automatisiert",
     back: "terotomatisasi",
     context: "🛠️ Arbeit und Handwerk",
-    example: "",
-    example_id: ""
+    example: "In dieser Fabrik sind fast alle Prozesse automatisiert.",
+    example_id: "Di pabrik ini, hampir semua proses sudah terotomatisasi."
   },
   {
     id: 14,
     front: "die monotone Tätigkeit",
     back: "pekerjaan monoton",
     context: "🛠️ Arbeit und Handwerk",
-    example: "",
-    example_id: ""
+    example: "Fließbandarbeit ist oft eine sehr monotone Tätigkeit.",
+    example_id: "Pekerjaan di lini perakitan sering kali merupakan pekerjaan yang sangat monoton."
   },
   {
     id: 15,
     front: "die Handarbeit",
     back: "kerja tangan",
     context: "🛠️ Arbeit und Handwerk",
-    example: "",
-    example_id: ""
+    example: "Diese Tasche ist keine Fabrikware, sondern echte Handarbeit.",
+    example_id: "Tas ini bukan barang pabrikan, melainkan murni kerja tangan."
   },
   {
     id: 16,
     front: "die Konkurrenz",
     back: "persaingan",
     context: "🛠️ Arbeit und Handwerk",
-    example: "",
-    example_id: ""
+    example: "Die Konkurrenz unter den Software-Firmen ist sehr groß.",
+    example_id: "Persaingan di antara perusahaan perangkat lunak sangatlah besar."
   },
   // 3. Schule und Unterricht
   {
@@ -5378,64 +5378,64 @@ export const b1Kapitel3Cards = [
     front: "die Schulbildung",
     back: "pendidikan sekolah",
     context: "🏫 Schule und Unterricht",
-    example: "",
-    example_id: ""
+    example: "Eine gute Schulbildung ist der Schlüssel für eine erfolgreiche Karriere.",
+    example_id: "Pendidikan sekolah yang baik adalah kunci untuk karier yang sukses."
   },
   {
     id: 18,
     front: "die Unterrichtsform",
     back: "bentuk pengajaran",
     context: "🏫 Schule und Unterricht",
-    example: "",
-    example_id: ""
+    example: "Projektarbeit ist eine sehr beliebte Unterrichtsform in Deutschland.",
+    example_id: "Kerja proyek adalah bentuk pengajaran yang sangat populer di Jerman."
   },
   {
     id: 19,
     front: "eine Gruppenarbeit machen",
     back: "mengerjakan tugas kelompok",
     context: "🏫 Schule und Unterricht",
-    example: "",
-    example_id: ""
+    example: "Im Deutschunterricht machen wir oft eine Gruppenarbeit.",
+    example_id: "Dalam pelajaran bahasa Jerman, kami sering mengerjakan tugas kelompok."
   },
   {
     id: 20,
     front: "die Disziplin",
     back: "disiplin",
     context: "🏫 Schule und Unterricht",
-    example: "",
-    example_id: ""
+    example: "Um ein Musikinstrument zu lernen, braucht man viel Disziplin.",
+    example_id: "Untuk mempelajari alat musik, seseorang membutuhkan banyak disiplin."
   },
   {
     id: 21,
     front: "streng sein",
     back: "bersikap keras/tegas",
     context: "🏫 Schule und Unterricht",
-    example: "",
-    example_id: ""
+    example: "Unser Lehrer kann streng sein, aber er erklärt alles sehr gut.",
+    example_id: "Guru kami bisa bersikap tegas, tetapi ia menjelaskan semuanya dengan sangat baik."
   },
   {
     id: 22,
     front: "tolerant sein",
     back: "bersikap toleran",
     context: "🏫 Schule und Unterricht",
-    example: "",
-    example_id: ""
+    example: "In einer internationalen Schule muss man gegenüber anderen Kulturen tolerant sein.",
+    example_id: "Di sekolah internasional, seseorang harus bersikap toleran terhadap budaya lain."
   },
   {
     id: 23,
     front: "eine Strafe bekommen",
     back: "mendapat hukuman",
     context: "🏫 Schule und Unterricht",
-    example: "",
-    example_id: ""
+    example: "Schüler, die die Hausaufgaben vergessen, können eine Strafe bekommen.",
+    example_id: "Siswa yang lupa mengerjakan PR bisa mendapat hukuman."
   },
   {
     id: 24,
     front: "Medien nutzen",
     back: "menggunakan media",
     context: "🏫 Schule und Unterricht",
-    example: "",
-    example_id: ""
+    example: "Im modernen Unterricht nutzen Lehrer oft digitale Medien.",
+    example_id: "Dalam pengajaran modern, guru sering menggunakan media digital."
   }
 ];
 
