@@ -5436,6 +5436,71 @@ export const b1Kapitel3Cards = [
     context: "🏫 Schule und Unterricht",
     example: "Im modernen Unterricht nutzen Lehrer oft digitale Medien.",
     example_id: "Dalam pengajaran modern, guru sering menggunakan media digital."
+  },
+  // 4. Lebenswege und Wendepunkte
+  {
+    id: 25,
+    front: "die Krise, die Krisen",
+    back: "krisis [Nomen]",
+    context: "🌱 Lebenswege und Wendepunkte",
+    example: "Viele Unternehmen haben während der Krise finanzielle Probleme.",
+    example_id: "Banyak perusahaan mengalami masalah keuangan selama krisis."
+  },
+  {
+    id: 26,
+    front: "die Trennung, die Trennungen",
+    back: "perpisahan [Nomen]",
+    context: "🌱 Lebenswege und Wendepunkte",
+    example: "Die Trennung von den Eltern war für das Kind nicht einfach.",
+    example_id: "Perpisahan dengan orang tua tidaklah mudah bagi anak itu."
+  },
+  {
+    id: 27,
+    front: "der Wendepunkt, die Wendepunkte",
+    back: "titik balik [Nomen]",
+    context: "🌱 Lebenswege und Wendepunkte",
+    example: "Der Umzug in eine andere Stadt war ein wichtiger Wendepunkt in ihrem Leben.",
+    example_id: "Pindah ke kota lain adalah titik balik penting dalam hidupnya."
+  },
+  {
+    id: 28,
+    front: "die Rückkehr",
+    back: "kepulangan [Nomen]",
+    context: "🌱 Lebenswege und Wendepunkte",
+    example: "Nach fünf Jahren im Ausland feierten wir seine Rückkehr.",
+    example_id: "Setelah lima tahun di luar negeri, kami merayakan kepulangannya."
+  },
+  {
+    id: 29,
+    front: "sich entscheiden",
+    back: "memutuskan [Verb]",
+    context: "🌱 Lebenswege und Wendepunkte",
+    example: "Du musst dich entscheiden, welchen Weg du gehen möchtest.",
+    example_id: "Kamu harus memutuskan jalan mana yang ingin kamu tempuh."
+  },
+  {
+    id: 30,
+    front: "verursachen",
+    back: "menyebabkan [Verb]",
+    context: "🌱 Lebenswege und Wendepunkte",
+    example: "Der starke Regen hat viele Verkehrsunfälle verursacht.",
+    example_id: "Hujan deras menyebabkan banyak kecelakaan lalu lintas."
+  },
+  {
+    id: 31,
+    front: "führen (zu + D.)",
+    back: "mengarah (ke) / mengakibatkan [Verb]",
+    context: "🌱 Lebenswege und Wendepunkte",
+    example: "Diese Entscheidung kann zu großen Problemen führen.",
+    example_id: "Keputusan ini dapat mengakibatkan masalah besar."
+  },
+  {
+    id: 32,
+    front: "zufällig",
+    back: "kebetulan [Adverb]",
+    context: "🌱 Lebenswege und Wendepunkte",
+    example: "Ich habe gestern zufällig einen alten Schulfreund getroffen.",
+    example_id: "Kemarin saya kebetulan bertemu dengan seorang teman lama sekolah."
   }
 ];
 
