@@ -5246,7 +5246,7 @@ export const b1Kapitel3Cards = [
   {
     id: 1,
     front: "die Hygiene",
-    back: "kebersihan",
+    back: "kebersihan [Nomen]",
     context: "🏥 Medizin und Behandlung",
     example: "In Krankenhäusern spielt die Hygiene eine lebenswichtige Rolle.",
     example_id: "Di rumah sakit, kebersihan memainkan peran yang sangat penting."
@@ -5254,7 +5254,7 @@ export const b1Kapitel3Cards = [
   {
     id: 2,
     front: "als Pflegekraft arbeiten",
-    back: "bekerja sebagai perawat",
+    back: "bekerja sebagai perawat [Verb]",
     context: "🏥 Medizin und Behandlung",
     example: "Sie möchte später im Altenheim als Pflegekraft arbeiten.",
     example_id: "Dia ingin bekerja sebagai perawat di panti jompo nanti."
@@ -5262,7 +5262,7 @@ export const b1Kapitel3Cards = [
   {
     id: 3,
     front: "die Ausbildung",
-    back: "pelatihan/pendidikan kejuruan",
+    back: "pelatihan/pendidikan kejuruan [Nomen]",
     context: "🏥 Medizin und Behandlung",
     example: "Nach der Schule hat er eine Ausbildung zum Mechatroniker gemacht.",
     example_id: "Setelah lulus sekolah, ia menempuh pendidikan kejuruan sebagai mekanik mekatronika."
@@ -5270,7 +5270,7 @@ export const b1Kapitel3Cards = [
   {
     id: 4,
     front: "medizinische Geräte bedienen",
-    back: "mengoperasikan alat medis",
+    back: "mengoperasikan alat medis [Verb]",
     context: "🏥 Medizin und Behandlung",
     example: "Krankenschwestern müssen lernen, komplizierte medizinische Geräte zu bedienen.",
     example_id: "Perawat harus belajar mengoperasikan alat medis yang rumit."
@@ -5278,7 +5278,7 @@ export const b1Kapitel3Cards = [
   {
     id: 5,
     front: "die Diagnose",
-    back: "diagnosis",
+    back: "diagnosis [Nomen]",
     context: "🏥 Medizin und Behandlung",
     example: "Der Arzt stellt nach der Untersuchung die Diagnose.",
     example_id: "Dokter membuat diagnosis setelah pemeriksaan."
@@ -5286,7 +5286,7 @@ export const b1Kapitel3Cards = [
   {
     id: 6,
     front: "eine Krankheit heilen",
-    back: "menyembuhkan penyakit",
+    back: "menyembuhkan penyakit [Verb]",
     context: "🏥 Medizin und Behandlung",
     example: "Dieses neue Medikament kann die Krankheit schnell heilen.",
     example_id: "Obat baru ini dapat menyembuhkan penyakit dengan cepat."
@@ -5294,7 +5294,7 @@ export const b1Kapitel3Cards = [
   {
     id: 7,
     front: "die Behandlung",
-    back: "perawatan/pengobatan",
+    back: "perawatan/pengobatan [Nomen]",
     context: "🏥 Medizin und Behandlung",
     example: "Die Behandlung im Krankenhaus dauert zwei Wochen.",
     example_id: "Perawatan di rumah sakit berlangsung selama dua minggu."
@@ -5302,7 +5302,7 @@ export const b1Kapitel3Cards = [
   {
     id: 8,
     front: "operieren",
-    back: "mengoperasi",
+    back: "mengoperasi [Verb]",
     context: "🏥 Medizin und Behandlung",
     example: "Der Chirurg muss den Patienten am Knie operieren.",
     example_id: "Ahli bedah harus mengoperasi lutut pasien tersebut."
@@ -5311,7 +5311,7 @@ export const b1Kapitel3Cards = [
   {
     id: 9,
     front: "in einem großen/kleinen Betrieb arbeiten",
-    back: "bekerja di perusahaan besar/kecil",
+    back: "bekerja di perusahaan besar/kecil [Verb]",
     context: "🛠️ Arbeit und Handwerk",
     example: "Ich möchte lieber in einem kleinen Betrieb arbeiten, weil es dort familiärer ist.",
     example_id: "Saya lebih suka bekerja di perusahaan kecil karena suasananya lebih kekeluargaan."
@@ -5319,7 +5319,7 @@ export const b1Kapitel3Cards = [
   {
     id: 10,
     front: "produzieren",
-    back: "memproduksi",
+    back: "memproduksi [Verb]",
     context: "🛠️ Arbeit und Handwerk",
     example: "Die Fabrik produziert moderne Autoteile für den Export.",
     example_id: "Pabrik tersebut memproduksi suku cadang mobil modern untuk ekspor."
@@ -5327,7 +5327,7 @@ export const b1Kapitel3Cards = [
   {
     id: 11,
     front: "die Bedingungen (Pl.)",
-    back: "syarat/kondisi kerja",
+    back: "syarat/kondisi kerja [Nomen]",
     context: "🛠️ Arbeit und Handwerk",
     example: "Die Bedingungen am Arbeitsplatz müssen für alle Mitarbeiter sicher sein.",
     example_id: "Kondisi di tempat kerja harus aman bagi semua karyawan."
@@ -5335,7 +5335,7 @@ export const b1Kapitel3Cards = [
   {
     id: 12,
     front: "der Arbeiter / die Arbeiterin",
-    back: "buruh/pekerja",
+    back: "buruh/pekerja [Nomen]",
     context: "🛠️ Arbeit und Handwerk",
     example: "Die Arbeiter fordern bessere Löhne und kürzere Arbeitszeiten.",
     example_id: "Para pekerja menuntut upah yang lebih baik dan jam kerja yang lebih pendek."
@@ -5343,7 +5343,7 @@ export const b1Kapitel3Cards = [
   {
     id: 13,
     front: "automatisiert",
-    back: "terotomatisasi",
+    back: "terotomatisasi [Adjektiv]",
     context: "🛠️ Arbeit und Handwerk",
     example: "In dieser Fabrik sind fast alle Prozesse automatisiert.",
     example_id: "Di pabrik ini, hampir semua proses sudah terotomatisasi."
@@ -5351,7 +5351,7 @@ export const b1Kapitel3Cards = [
   {
     id: 14,
     front: "die monotone Tätigkeit",
-    back: "pekerjaan monoton",
+    back: "pekerjaan monoton [Nomen]",
     context: "🛠️ Arbeit und Handwerk",
     example: "Fließbandarbeit ist oft eine sehr monotone Tätigkeit.",
     example_id: "Pekerjaan di lini perakitan sering kali merupakan pekerjaan yang sangat monoton."
@@ -5359,7 +5359,7 @@ export const b1Kapitel3Cards = [
   {
     id: 15,
     front: "die Handarbeit",
-    back: "kerja tangan",
+    back: "kerja tangan [Nomen]",
     context: "🛠️ Arbeit und Handwerk",
     example: "Diese Tasche ist keine Fabrikware, sondern echte Handarbeit.",
     example_id: "Tas ini bukan barang pabrikan, melainkan murni kerja tangan."
@@ -5367,7 +5367,7 @@ export const b1Kapitel3Cards = [
   {
     id: 16,
     front: "die Konkurrenz",
-    back: "persaingan",
+    back: "persaingan [Nomen]",
     context: "🛠️ Arbeit und Handwerk",
     example: "Die Konkurrenz unter den Software-Firmen ist sehr groß.",
     example_id: "Persaingan di antara perusahaan perangkat lunak sangatlah besar."
@@ -5376,7 +5376,7 @@ export const b1Kapitel3Cards = [
   {
     id: 17,
     front: "die Schulbildung",
-    back: "pendidikan sekolah",
+    back: "pendidikan sekolah [Nomen]",
     context: "🏫 Schule und Unterricht",
     example: "Eine gute Schulbildung ist der Schlüssel für eine erfolgreiche Karriere.",
     example_id: "Pendidikan sekolah yang baik adalah kunci untuk karier yang sukses."
@@ -5384,7 +5384,7 @@ export const b1Kapitel3Cards = [
   {
     id: 18,
     front: "die Unterrichtsform",
-    back: "bentuk pengajaran",
+    back: "bentuk pengajaran [Nomen]",
     context: "🏫 Schule und Unterricht",
     example: "Projektarbeit ist eine sehr beliebte Unterrichtsform in Deutschland.",
     example_id: "Kerja proyek adalah bentuk pengajaran yang sangat populer di Jerman."
@@ -5392,7 +5392,7 @@ export const b1Kapitel3Cards = [
   {
     id: 19,
     front: "eine Gruppenarbeit machen",
-    back: "mengerjakan tugas kelompok",
+    back: "mengerjakan tugas kelompok [Verb]",
     context: "🏫 Schule und Unterricht",
     example: "Im Deutschunterricht machen wir oft eine Gruppenarbeit.",
     example_id: "Dalam pelajaran bahasa Jerman, kami sering mengerjakan tugas kelompok."
@@ -5400,7 +5400,7 @@ export const b1Kapitel3Cards = [
   {
     id: 20,
     front: "die Disziplin",
-    back: "disiplin",
+    back: "disiplin [Nomen]",
     context: "🏫 Schule und Unterricht",
     example: "Um ein Musikinstrument zu lernen, braucht man viel Disziplin.",
     example_id: "Untuk mempelajari alat musik, seseorang membutuhkan banyak disiplin."
@@ -5408,7 +5408,7 @@ export const b1Kapitel3Cards = [
   {
     id: 21,
     front: "streng sein",
-    back: "bersikap keras/tegas",
+    back: "bersikap keras/tegas [Adjektiv]",
     context: "🏫 Schule und Unterricht",
     example: "Unser Lehrer kann streng sein, aber er erklärt alles sehr gut.",
     example_id: "Guru kami bisa bersikap tegas, tetapi ia menjelaskan semuanya dengan sangat baik."
@@ -5416,7 +5416,7 @@ export const b1Kapitel3Cards = [
   {
     id: 22,
     front: "tolerant sein",
-    back: "bersikap toleran",
+    back: "bersikap toleran [Adjektiv]",
     context: "🏫 Schule und Unterricht",
     example: "In einer internationalen Schule muss man gegenüber anderen Kulturen tolerant sein.",
     example_id: "Di sekolah internasional, seseorang harus bersikap toleran terhadap budaya lain."
@@ -5424,7 +5424,7 @@ export const b1Kapitel3Cards = [
   {
     id: 23,
     front: "eine Strafe bekommen",
-    back: "mendapat hukuman",
+    back: "mendapat hukuman [Verb]",
     context: "🏫 Schule und Unterricht",
     example: "Schüler, die die Hausaufgaben vergessen, können eine Strafe bekommen.",
     example_id: "Siswa yang lupa mengerjakan PR bisa mendapat hukuman."
@@ -5432,7 +5432,7 @@ export const b1Kapitel3Cards = [
   {
     id: 24,
     front: "Medien nutzen",
-    back: "menggunakan media",
+    back: "menggunakan media [Verb]",
     context: "🏫 Schule und Unterricht",
     example: "Im modernen Unterricht nutzen Lehrer oft digitale Medien.",
     example_id: "Dalam pengajaran modern, guru sering menggunakan media digital."
