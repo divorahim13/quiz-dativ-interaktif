@@ -5472,7 +5472,7 @@ export const b1Kapitel3Cards = [
   },
   {
     id: 29,
-    front: "sich entscheiden",
+    front: "sich entscheiden (entschied sich, hat sich entschieden)",
     back: "memutuskan [Verb]",
     context: "🌱 Lebenswege und Wendepunkte",
     example: "Du musst dich entscheiden, welchen Weg du gehen möchtest.",
@@ -5501,6 +5501,122 @@ export const b1Kapitel3Cards = [
     context: "🌱 Lebenswege und Wendepunkte",
     example: "Ich habe gestern zufällig einen alten Schulfreund getroffen.",
     example_id: "Kemarin saya kebetulan bertemu dengan seorang teman lama sekolah."
+  },
+  // 5. Grammatik-kritis (Perfekt haben vs sein)
+  {
+    id: 33,
+    front: "umziehen (ist umgezogen)",
+    back: "pindah rumah [Verb]",
+    context: "📝 Grammatik & Perfekt",
+    example: "Ich bin letzte Woche in eine neue Wohnung umgezogen.",
+    example_id: "Saya pindah ke apartemen baru minggu lalu."
+  },
+  {
+    id: 34,
+    front: "einziehen (ist eingezogen)",
+    back: "pindah masuk [Verb]",
+    context: "📝 Grammatik & Perfekt",
+    example: "Wann seid ihr in das neue Haus eingezogen?",
+    example_id: "Kapan kalian pindah masuk ke rumah baru?"
+  },
+  {
+    id: 35,
+    front: "kündigen (kündigte, hat gekündigt)",
+    back: "berhenti kerja [Verb]",
+    context: "📝 Grammatik & Perfekt",
+    example: "Er hat seine Stelle gekündigt, weil er eine neue Ausbildung anfängt.",
+    example_id: "Dia berhenti dari pekerjaannya karena dia memulai pendidikan kejuruan yang baru."
+  },
+  // 6. Wendepunkt-Vokabular
+  {
+    id: 36,
+    front: "die Herausforderung, -en",
+    back: "tantangan [Nomen]",
+    context: "🌱 Lebenswege und Wendepunkte",
+    example: "Das neue Projekt ist eine große Herausforderung für das Team.",
+    example_id: "Proyek baru ini merupakan tantangan besar bagi tim."
+  },
+  {
+    id: 37,
+    front: "sich verändern",
+    back: "berubah [Verb]",
+    context: "🌱 Lebenswege und Wendepunkte",
+    example: "Die Stadt hat sich in den letzten Jahren stark verändert.",
+    example_id: "Kota ini telah banyak berubah dalam beberapa tahun terakhir."
+  },
+  {
+    id: 38,
+    front: "die Selbstständigkeit",
+    back: "kemandirian [Nomen]",
+    context: "🌱 Lebenswege und Wendepunkte",
+    example: "Viele Menschen träumen von der beruflichen Selbstständigkeit.",
+    example_id: "Banyak orang memimpikan kemandirian profesional (berwirausaha)."
+  },
+  // 7. Kolokasi Tetap
+  {
+    id: 39,
+    front: "eine Diagnose stellen",
+    back: "menegakkan diagnosis [Verb]",
+    context: "🔗 Feste Verbindungen",
+    example: "Der Arzt konnte nach den Tests eine genaue Diagnose stellen.",
+    example_id: "Dokter dapat menegakkan diagnosis yang akurat setelah tes."
+  },
+  {
+    id: 40,
+    front: "jemandem Mut machen",
+    back: "memberi semangat pada seseorang [Verb]",
+    context: "🔗 Feste Verbindungen",
+    example: "Meine Freunde haben mir vor der Prüfung Mut gemacht.",
+    example_id: "Teman-teman saya menyemangati saya sebelum ujian."
+  },
+  {
+    id: 41,
+    front: "Erfahrungen sammeln",
+    back: "mengumpulkan pengalaman [Verb]",
+    context: "🔗 Feste Verbindungen",
+    example: "Während des Praktikums konnte ich viele wertvolle Erfahrungen sammeln.",
+    example_id: "Selama magang, saya dapat mengumpulkan banyak pengalaman berharga."
+  },
+  {
+    id: 42,
+    front: "eine Diät halten",
+    back: "menjalani diet [Verb]",
+    context: "🔗 Feste Verbindungen",
+    example: "Er möchte etwas abnehmen, deshalb muss er eine Diät halten.",
+    example_id: "Ia ingin menurunkan berat badan, oleh karena itu ia harus menjalani diet."
+  },
+  // 8. Verba Baru dari Tagebuch
+  {
+    id: 43,
+    front: "aufwachen (wachte auf, ist aufgewacht)",
+    back: "bangun tidur [Verb]",
+    context: "📖 Verben (Tagebuch)",
+    example: "Ich wache normalerweise jeden Morgen um 6 Uhr auf.",
+    example_id: "Saya biasanya bangun tidur setiap pagi jam 6."
+  },
+  {
+    id: 44,
+    front: "hören (hörte, hat gehört)",
+    back: "mendengar [Verb]",
+    context: "📖 Verben (Tagebuch)",
+    example: "Hast du die Nachrichten im Radio gehört?",
+    example_id: "Apakah kamu mendengar berita di radio?"
+  },
+  {
+    id: 45,
+    front: "lesen (las, hat gelesen)",
+    back: "membaca [Verb]",
+    context: "📖 Verben (Tagebuch)",
+    example: "Ich lese jeden Abend vor dem Schlafen ein Kapitel in meinem Buch.",
+    example_id: "Saya membaca satu bab di buku saya setiap malam sebelum tidur."
+  },
+  {
+    id: 46,
+    front: "sprechen (sprach, hat gesprochen)",
+    back: "berbicara [Verb]",
+    context: "📖 Verben (Tagebuch)",
+    example: "Wir müssen morgen über das neue Projekt sprechen.",
+    example_id: "Kita harus berbicara tentang proyek baru itu besok."
   }
 ];
 
