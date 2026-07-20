@@ -54,6 +54,183 @@ const updateChapterStreak = (chapterId) => {
   localStorage.setItem(`anki_${chapterId}_last_review_date`, todayStr);
 };
 
+const RenderVerbMemoryCard = ({ card }) => {
+  if (!card) return null;
+
+  let praeteritum = card.praeteritum;
+  let perfekt = card.perfekt;
+  let exPraeteritum = card.example_praeteritum;
+  let exPerfekt = card.example_perfekt;
+
+  if (!praeteritum && card.example && card.example.includes('Präteritum')) {
+    const matchP = card.example.match(/Präteritum[^:]*:\s*([^\s|]+)/i);
+    const matchPerf = card.example.match(/Perfekt:\s*([^|]+)/i);
+    if (matchP) praeteritum = matchP[1].trim();
+    if (matchPerf) perfekt = matchPerf[1].trim();
+  }
+
+  if (card.example_id && (!exPraeteritum || !exPerfekt)) {
+    const parts = card.example_id.split(/\s*\/\s*/);
+    if (parts.length >= 2) {
+      exPraeteritum = parts[0];
+      exPerfekt = parts[1];
+    } else {
+      exPraeteritum = card.example_id;
+    }
+  }
+
+  const isVerb = !!(praeteritum || perfekt || (card.context && card.context.includes('Verben')));
+
+  if (!isVerb) {
+    return (
+      <>
+        {card.example && (
+          <div className="flashcard-example-container">
+            <div className="flashcard-example">
+              <div>"{card.example}"</div>
+              {card.example_id && (
+                <div className="flashcard-example-translation" style={{ 
+                  fontSize: '0.85rem', 
+                  color: 'var(--text-secondary)', 
+                  marginTop: '0.5rem',
+                  fontStyle: 'normal',
+                  opacity: 0.8,
+                  borderTop: '1px solid rgba(255,255,255,0.1)',
+                  paddingTop: '0.5rem'
+                }}>
+                  {card.example_id}
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+      </>
+    );
+  }
+
+  return (
+    <div style={{
+      marginTop: '0.75rem',
+      width: '100%',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '0.65rem'
+    }}>
+      {/* 2 Photographic Memory Grid Cards */}
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: '1fr 1fr',
+        gap: '0.65rem',
+        width: '100%'
+      }}>
+        {/* Präteritum Box */}
+        <div style={{
+          background: 'linear-gradient(135deg, rgba(245, 158, 11, 0.22), rgba(180, 83, 9, 0.15))',
+          border: '2px solid rgba(251, 191, 36, 0.6)',
+          borderRadius: '14px',
+          padding: '0.75rem 0.5rem',
+          textAlign: 'center',
+          boxShadow: '0 4px 20px rgba(245, 158, 11, 0.25)',
+          backdropFilter: 'blur(10px)'
+        }}>
+          <div style={{ 
+            fontSize: '0.68rem', 
+            fontWeight: 800, 
+            letterSpacing: '1.2px', 
+            color: '#fef08a', 
+            textTransform: 'uppercase',
+            marginBottom: '0.3rem',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: '4px'
+          }}>
+            ⚡ PRÄTERITUM (ICH)
+          </div>
+          <div style={{ 
+            fontSize: '1.65rem', 
+            fontWeight: 900, 
+            color: '#fde047',
+            textShadow: '0 2px 12px rgba(250, 204, 21, 0.4)',
+            letterSpacing: '0.5px'
+          }}>
+            {praeteritum || '-'}
+          </div>
+        </div>
+
+        {/* Perfekt Box */}
+        <div style={{
+          background: 'linear-gradient(135deg, rgba(16, 185, 129, 0.22), rgba(4, 120, 87, 0.15))',
+          border: '2px solid rgba(52, 211, 153, 0.6)',
+          borderRadius: '14px',
+          padding: '0.75rem 0.5rem',
+          textAlign: 'center',
+          boxShadow: '0 4px 20px rgba(16, 185, 129, 0.25)',
+          backdropFilter: 'blur(10px)'
+        }}>
+          <div style={{ 
+            fontSize: '0.68rem', 
+            fontWeight: 800, 
+            letterSpacing: '1.2px', 
+            color: '#a7f3d0', 
+            textTransform: 'uppercase',
+            marginBottom: '0.3rem',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: '4px'
+          }}>
+            🟢 HILFSVERB + PERFEKT
+          </div>
+          <div style={{ 
+            fontSize: '1.35rem', 
+            fontWeight: 900, 
+            color: '#6ee7b7',
+            textShadow: '0 2px 12px rgba(52, 211, 153, 0.4)',
+            letterSpacing: '0.5px'
+          }}>
+            {perfekt || '-'}
+          </div>
+        </div>
+      </div>
+
+      {/* Example Sentences Box */}
+      {(exPraeteritum || exPerfekt || card.example_id) && (
+        <div style={{
+          background: 'rgba(15, 23, 42, 0.75)',
+          border: '1px solid rgba(255, 255, 255, 0.15)',
+          borderRadius: '12px',
+          padding: '0.65rem 0.85rem',
+          textAlign: 'left',
+          fontSize: '0.85rem',
+          boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)'
+        }}>
+          <div style={{ fontSize: '0.7rem', color: '#cbd5e1', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.8px', marginBottom: '0.35rem', display: 'flex', alignItems: 'center', gap: '5px' }}>
+            <span>📖</span> CONTOH KALIMAT:
+          </div>
+          {exPraeteritum && (
+            <div style={{ color: '#f8fafc', marginBottom: exPerfekt ? '0.25rem' : '0', display: 'flex', alignItems: 'flex-start', gap: '6px' }}>
+              <span style={{ color: '#fde047', fontWeight: 800, minWidth: '72px', fontSize: '0.72rem', marginTop: '2px', textTransform: 'uppercase' }}>Präteritum:</span>
+              <span style={{ fontStyle: 'italic', opacity: 0.95 }}>"{exPraeteritum}"</span>
+            </div>
+          )}
+          {exPerfekt && (
+            <div style={{ color: '#f8fafc', display: 'flex', alignItems: 'flex-start', gap: '6px' }}>
+              <span style={{ color: '#6ee7b7', fontWeight: 800, minWidth: '72px', fontSize: '0.72rem', marginTop: '2px', textTransform: 'uppercase' }}>Perfekt:</span>
+              <span style={{ fontStyle: 'italic', opacity: 0.95 }}>"{exPerfekt}"</span>
+            </div>
+          )}
+          {!exPraeteritum && !exPerfekt && card.example_id && (
+            <div style={{ color: '#f8fafc', fontStyle: 'italic' }}>
+              "{card.example_id}"
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  );
+};
+
 const FlashcardViewer = ({ chapter, onBack }) => {
   const cards = chapter.cards || [];
   const hasCards = cards.length > 0;
@@ -672,28 +849,7 @@ const FlashcardViewer = ({ chapter, onBack }) => {
                     }}>
                       {studyMode === 'passive' ? currentAnkiCard.back : renderColorizedText(currentAnkiCard.front)}
                     </h2>
-                    {currentAnkiCard.example && (
-                      <div className="flashcard-example-container">
-                        <div className="flashcard-example" style={{ 
-                          fontSize: getAdaptiveFontSize(currentAnkiCard.example, 'example')
-                        }}>
-                          <div>"{currentAnkiCard.example}"</div>
-                          {currentAnkiCard.example_id && (
-                            <div className="flashcard-example-translation" style={{ 
-                              fontSize: '0.85rem', 
-                              color: 'var(--text-secondary)', 
-                              marginTop: '0.5rem',
-                              fontStyle: 'normal',
-                              opacity: 0.8,
-                              borderTop: '1px solid rgba(255,255,255,0.1)',
-                              paddingTop: '0.5rem'
-                            }}>
-                              {currentAnkiCard.example_id}
-                            </div>
-                          )}
-                        </div>
-                      </div>
-                    )}
+                    <RenderVerbMemoryCard card={currentAnkiCard} />
                   </div>
                   <div className="flashcard-hint" style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginTop: 'auto' }}>
                     Pilih tingkat kesulitan untuk menjadwalkan review
@@ -1169,14 +1325,7 @@ const FlashcardViewer = ({ chapter, onBack }) => {
                             <p style={{ margin: 0, fontSize: '0.95rem', color: 'var(--text)' }}>
                               <strong>Arti:</strong> {currentCard.back}
                             </p>
-                            {currentCard.example && (
-                              <div style={{ marginTop: '0.5rem', borderTop: '1px solid rgba(255,255,255,0.06)', paddingTop: '0.5rem' }}>
-                                <div style={{ fontStyle: 'italic', color: '#a5b4fc', fontSize: '0.9rem' }}>"{currentCard.example}"</div>
-                                {currentCard.example_id && (
-                                  <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginTop: '0.25rem' }}>{currentCard.example_id}</div>
-                                )}
-                              </div>
-                            )}
+                            <RenderVerbMemoryCard card={currentCard} />
                           </div>
                         </motion.div>
                       )}
@@ -1232,28 +1381,7 @@ const FlashcardViewer = ({ chapter, onBack }) => {
                         }}>
                           {studyMode === 'passive' ? currentCard.back : renderColorizedText(currentCard.front)}
                         </h2>
-                        {currentCard.example && (
-                          <div className="flashcard-example-container">
-                            <div className="flashcard-example" style={{ 
-                              fontSize: getAdaptiveFontSize(currentCard.example, 'example')
-                            }}>
-                              <div>"{currentCard.example}"</div>
-                              {currentCard.example_id && (
-                                <div className="flashcard-example-translation" style={{ 
-                                  fontSize: '0.85rem', 
-                                  color: 'var(--text-secondary)', 
-                                  marginTop: '0.5rem',
-                                  fontStyle: 'normal',
-                                  opacity: 0.8,
-                                  borderTop: '1px solid rgba(255,255,255,0.1)',
-                                  paddingTop: '0.5rem'
-                                }}>
-                                  {currentCard.example_id}
-                                </div>
-                              )}
-                            </div>
-                          </div>
-                        )}
+                        <RenderVerbMemoryCard card={currentCard} />
                       </div>
                       <div className="flashcard-hint" style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginTop: 'auto' }}>
                         Klik atau spasi untuk membalik
