@@ -5620,6 +5620,47 @@ export const b1Kapitel3Cards = [
   }
 ];
 
+export const verbenUnregelmaessigPrateritumCards = [
+  { id: 1, front: "sehen", back: "melihat", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): sah | Perfekt: hat gesehen", example_id: "Er sah den Film. / Er hat den Film gesehen." },
+  { id: 2, front: "gehen", back: "pergi", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): ging | Perfekt: ist gegangen", example_id: "Sie ging nach Hause. / Sie ist nach Hause gegangen." },
+  { id: 3, front: "gefallen", back: "disukai", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): gefiel | Perfekt: hat gefallen", example_id: "Das Buch gefiel mir. / Das Buch hat mir gefallen." },
+  { id: 4, front: "gewinnen", back: "menang", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): gewann | Perfekt: hat gewonnen", example_id: "Er gewann das Spiel. / Er hat das Spiel gewonnen." },
+  { id: 5, front: "beginnen", back: "memulai", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): begann | Perfekt: hat begonnen", example_id: "Der Kurs begann um 8 Uhr. / Der Kurs hat um 8 Uhr begonnen." },
+  { id: 6, front: "fliegen", back: "terbang", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): flog | Perfekt: ist geflogen", example_id: "Er flog nach Deutschland. / Er ist nach Deutschland geflogen." },
+  { id: 7, front: "fahren", back: "berkendara", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): fuhr | Perfekt: ist gefahren", example_id: "Wir fuhren mit dem Auto. / Wir sind mit dem Auto gefahren." },
+  { id: 8, front: "treffen", back: "bertemu", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): traf | Perfekt: hat getroffen", example_id: "Ich traf meine Freunde. / Ich habe meine Freunde getroffen." },
+  { id: 9, front: "kommen", back: "datang", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): kam | Perfekt: ist gekommen", example_id: "Er kam pünktlich an. / Er ist pünktlich angekommen." },
+  { id: 10, front: "stehen", back: "berdiri", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): stand | Perfekt: hat gestanden", example_id: "Er stand vor der Tür. / Er hat vor der Tür gestanden." },
+  { id: 11, front: "erhalten", back: "menerima", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): erhielt | Perfekt: hat erhalten", example_id: "Sie erhielt einen Brief. / Sie hat einen Brief erhalten." },
+  { id: 12, front: "bekommen", back: "mendapat", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): bekam | Perfekt: hat bekommen", example_id: "Ich bekam eine gute Note. / Ich habe eine gute Note bekommen." },
+  { id: 13, front: "lesen", back: "membaca", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): las | Perfekt: hat gelesen", example_id: "Er las ein Buch. / Er hat ein Buch gelesen." },
+  { id: 14, front: "sprechen", back: "berbicara", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): sprach | Perfekt: hat gesprochen", example_id: "Sie sprach Deutsch. / Sie hat Deutsch gesprochen." },
+  { id: 15, front: "sitzen", back: "duduk", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): saß | Perfekt: hat gesessen", example_id: "Wir saßen im Park. / Wir haben im Park gesessen." },
+  { id: 16, front: "geben", back: "memberi", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): gab | Perfekt: hat gegeben", example_id: "Er gab mir den Schlüssel. / Er hat mir den Schlüssel gegeben." },
+  { id: 17, front: "schließen", back: "menutup", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): schloss | Perfekt: hat geschlossen", example_id: "Sie schloss das Fenster. / Sie hat das Fenster geschlossen." },
+  { id: 18, front: "finden", back: "menemukan", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): fand | Perfekt: hat gefunden", example_id: "Er fand seine Tasche. / Er hat seine Tasche gefunden." },
+  { id: 19, front: "ziehen", back: "pindah/menarik", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): zog | Perfekt: ist gezogen", example_id: "Sie zog nach Berlin. / Sie ist nach Berlin gezogen." },
+  { id: 20, front: "verlassen", back: "meninggalkan", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): verließ | Perfekt: hat verlassen", example_id: "Er verließ das Haus. / Er hat das Haus verlassen." },
+  { id: 21, front: "nehmen", back: "mengambil", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): nahm | Perfekt: hat genommen", example_id: "Sie nahm den Bus. / Sie hat den Bus genommen." },
+  { id: 22, front: "vergessen", back: "melupakan", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): vergaß | Perfekt: hat vergessen", example_id: "Ich vergaß den Namen. / Ich habe den Namen vergessen." },
+  { id: 23, front: "reiten", back: "menunggang kuda", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): ritt | Perfekt: ist geritten", example_id: "Sie ritt auf einem Pferd. / Sie ist auf einem Pferd geritten." },
+  { id: 24, front: "frieren", back: "kedinginan", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): fror | Perfekt: hat gefroren", example_id: "Ich fror gestern sehr. / Ich habe gestern sehr gefroren." },
+  { id: 25, front: "binden", back: "mengikat", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): band | Perfekt: hat gebunden", example_id: "Er band das Paket. / Er hat das Paket gebunden." },
+  { id: 26, front: "schieben", back: "mendorong", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): schob | Perfekt: hat geschoben", example_id: "Er schob den Wagen. / Er hat den Wagen geschoben." },
+  { id: 27, front: "schlafen", back: "tidur", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): schlief | Perfekt: hat geschlafen", example_id: "Er schlief acht Stunden. / Er hat acht Stunden geschlafen." },
+  { id: 28, front: "scheinen", back: "bersinar", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): schien | Perfekt: hat geschienen", example_id: "Die Sonne schien hell. / Die Sonne hat hell geschienen." },
+  { id: 29, front: "liegen", back: "berbaring/terletak", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): lag | Perfekt: hat gelegen", example_id: "Er lag auf dem Bett. / Er hat auf dem Bett gelegen." },
+  { id: 30, front: "hängen", back: "tergantung", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): hing | Perfekt: hat gehangen", example_id: "Das Bild hing dort. / Das Bild hat dort gehangen." },
+  { id: 31, front: "verstehen", back: "memahami", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): verstand | Perfekt: hat verstanden", example_id: "Ich verstand den Satz. / Ich habe den Satz verstanden." },
+  { id: 32, front: "sinken", back: "tenggelam/turun", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): sank | Perfekt: ist gesunken", example_id: "Die Temperatur sank schnell. / Die Temperatur ist schnell gesunken." },
+  { id: 33, front: "schießen", back: "menembak", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): schoss | Perfekt: hat geschossen", example_id: "Er schoss das Tor. / Er hat das Tor geschossen." },
+  { id: 34, front: "springen", back: "melompat", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): sprang | Perfekt: ist gesprungen", example_id: "Er sprang weit. / Er ist weit gesprungen." },
+  { id: 35, front: "essen", back: "makan", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): aß | Perfekt: hat gegessen", example_id: "Er aß Pizza. / Er hat Pizza gegessen." },
+  { id: 36, front: "helfen", back: "membantu", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): half | Perfekt: hat geholfen", example_id: "Sie half mir gern. / Sie hat mir gern geholfen." },
+  { id: 37, front: "schreiben", back: "menulis", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): schrieb | Perfekt: hat geschrieben", example_id: "Er schrieb eine Karte. / Er hat eine Karte geschrieben." },
+  { id: 38, front: "sich unterhalten", back: "mengobrol", context: "⚡ Verben Unregelmäßig", example: "Präteritum (ich): unterhielt mich | Perfekt: hat sich unterhalten", example_id: "Ich unterhielt mich nett. / Er hat sich gut unterhalten." }
+];
+
 export const flashcardLevels = [
   {
     id: "A1",
@@ -5725,11 +5766,20 @@ export const flashcardLevels = [
     id: "B1",
     title: "Niveau B1",
     description: "Kosakata tingkat menengah.",
-    chapters: Array.from({ length: 12 }, (_, i) => ({
-      id: `B1-K${i + 1}`,
-      title: `Kapitel ${i + 1}`,
-      cards: i === 0 ? b1Kapitel1Cards : i === 1 ? b1Kapitel2Cards : i === 2 ? b1Kapitel3Cards : [] 
-    }))
+    chapters: [
+      ...Array.from({ length: 12 }, (_, i) => ({
+        id: `B1-K${i + 1}`,
+        title: `Kapitel ${i + 1}`,
+        cards: i === 0 ? b1Kapitel1Cards : i === 1 ? b1Kapitel2Cards : i === 2 ? b1Kapitel3Cards : [] 
+      })),
+      {
+        id: "verben-unregelmaessig-prateritum",
+        title: "Verben Unregelmäßig (Präteritum & Perfekt)",
+        shortTitle: "Verben Präteritum",
+        subtitle: "38 Kata Kerja Tidak Teratur",
+        cards: verbenUnregelmaessigPrateritumCards
+      }
+    ]
   },
   {
     id: "B2",
@@ -5740,5 +5790,20 @@ export const flashcardLevels = [
       title: `Kapitel ${i + 1}`,
       cards: [] 
     }))
+  },
+  {
+    id: "Grammatik",
+    title: "Grammatik & Verben",
+    description: "Kartu khusus tata bahasa dan bentuk kata kerja.",
+    chapters: [
+      {
+        id: "verben-unregelmaessig-prateritum-grammatik",
+        title: "Verben Unregelmäßig (Präteritum & Perfekt)",
+        shortTitle: "Verben Präteritum",
+        subtitle: "38 Kata Kerja Tidak Teratur",
+        cards: verbenUnregelmaessigPrateritumCards
+      }
+    ]
   }
 ];
+
